@@ -2,12 +2,21 @@
   "name": "eoy-dash",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test:parsers": "tsx scripts/test-parsers.mts",
+    "test:cohorts": "tsx scripts/test-cohorts.mts",
+    "test:triage": "tsx scripts/test-triage.mts",
+    "test:district-data": "tsx scripts/test-district-data.mts",
+    "test": "npm run test:parsers && npm run test:cohorts && npm run test:triage && npm run test:district-data",
+    "refresh": "tsx scripts/refresh.mts"
   },
   "dependencies": {
+    "csv-parse": "^6.2.1",
+    "date-fns": "^4.1.0",
     "next": "16.2.5",
     "react": "19.2.4",
     "react-dom": "19.2.4"
@@ -18,6 +27,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

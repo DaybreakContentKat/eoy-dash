@@ -1,0 +1,68 @@
+import type { CSMConfig } from './types';
+
+export const PROJECT_URL =
+  'https://claude.ai/project/019dacd2-8a9b-7376-93a1-678a1a462b3b';
+
+export const BTS_TRACKER_FILE_ID = '16gycwzxACC2--gNuWpGeN0kcjtXUGv1d';
+export const DISTRICT_DATA_FILE_ID = '1C0CqG1jTAp40_3Tr2zCOlGU7bC_8f7ogYeRoqmeqE0A';
+// BTS_2026_Training_Cohorts — source of truth for cohort/tier assignment, CSM
+// ownership, enrollment, and YTD pacing. Replaces the old tiers section that
+// used to live inside the BTS tracker.
+export const COHORT_FILE_ID = '1DN6Cxc8gcM5GHLq4-3FnLV-kCRAqVHEW6QDGxLBgVfE';
+
+export const ASYNC_FORM_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSckbtqio2hvbN5DmwiDamIkdNOrmS89XV0oLuqkiKrbyHiVtA/viewform?usp=header';
+
+export const BOOKING_WINDOW_DAYS_BEFORE_LDOS = 28;
+// Flag a district as an upsell candidate when ≥15% of its referred students are
+// blocked from care for insurance reasons (expired coverage, coordination-of-
+// benefits issues, failed-to-send-to-RCM). Denominator is blocked + in-network.
+// Also require a minimum sample size so a 1/1=100% blocked rate doesn't flag.
+export const UPSELL_INSURANCE_BLOCKED_PCT_THRESHOLD = 0.15;
+export const UPSELL_MIN_INSURANCE_SAMPLE = 10;
+
+export const CSM_CONFIG: Record<string, CSMConfig> = {
+  brianna: {
+    fullName: 'Brianna Masciel',
+    firstName: 'Brianna',
+    calendly: 'https://calendly.com/brianna-daybreakhealth/30min',
+    slug: 'brianna',
+  },
+  sarah: {
+    fullName: 'Sarah Hough',
+    firstName: 'Sarah',
+    calendly: 'https://calendly.com/sarah-daybreakhealth/30min',
+    slug: 'sarah',
+  },
+  monica: {
+    fullName: 'Monica Knott',
+    firstName: 'Monica',
+    calendly: 'https://calendly.com/monica-daybreakhealth/30min',
+    slug: 'monica',
+  },
+  daisy: {
+    fullName: 'Daisy Leahy',
+    firstName: 'Daisy',
+    calendly: 'https://calendly.com/daisy-daybreakhealth/30min',
+    slug: 'daisy',
+  },
+};
+
+export const CSM_SLUGS = Object.keys(CSM_CONFIG);
+
+const CSM_FULLNAME_TO_SLUG = Object.fromEntries(
+  Object.entries(CSM_CONFIG).map(([slug, c]) => [c.fullName.toLowerCase(), slug]),
+);
+
+const CSM_FIRSTNAME_TO_SLUG = Object.fromEntries(
+  Object.entries(CSM_CONFIG).map(([slug, c]) => [c.firstName.toLowerCase(), slug]),
+);
+
+export function csmSlugFromName(name: string | null | undefined): string | null {
+  if (!name) return null;
+  const trimmed = name.trim().toLowerCase();
+  if (!trimmed) return null;
+  if (CSM_FULLNAME_TO_SLUG[trimmed]) return CSM_FULLNAME_TO_SLUG[trimmed];
+  const first = trimmed.split(/\s+/)[0];
+  return CSM_FIRSTNAME_TO_SLUG[first] ?? null;
+}
