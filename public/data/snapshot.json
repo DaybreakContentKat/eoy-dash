@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-05-07T18:55:23.894Z",
+  "refreshedAt": "2026-05-08T00:47:35.378Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
@@ -7,9 +7,9 @@
       "booked": 34,
       "completed": 23,
       "unbooked": 62,
-      "weeklyTarget": 56,
-      "thisWeekUrgent": 55,
-      "atRisk": 55,
+      "weeklyTarget": 57,
+      "thisWeekUrgent": 57,
+      "atRisk": 57,
       "byUrgency": {
         "thisWeek": [
           {
@@ -245,8 +245,8 @@
             "outreachSent": true,
             "completed": false,
             "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "utilization": {
               "inNetworkStudents": 0,
               "insuranceBlockedStudents": 1,
@@ -516,8 +516,8 @@
             "outreachSent": false,
             "completed": false,
             "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "utilization": null,
             "isUpsellCandidate": false,
             "mpocs": [
@@ -744,8 +744,8 @@
             "outreachSent": false,
             "completed": false,
             "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "utilization": {
               "inNetworkStudents": 0,
               "insuranceBlockedStudents": 1,
@@ -825,6 +825,49 @@
             ],
             "enrollment": 2672,
             "ytdPacing": 1.31,
+            "csmSlug": "sarah"
+          },
+          {
+            "name": "Eureka City School District",
+            "shortName": "Eureka City",
+            "owner": "Sarah Hough",
+            "csm": "Sarah Hough",
+            "tier": "Tier 2",
+            "tierNum": 2,
+            "activeRenewal": false,
+            "lastDayOfSchool": "2026-06-11",
+            "bookingTarget": "2026-05-14",
+            "booked": false,
+            "meetingDate": null,
+            "outreachSent": true,
+            "completed": false,
+            "notes": "",
+            "status": "schedule-soon",
+            "overdue": false,
+            "utilization": {
+              "inNetworkStudents": 0,
+              "insuranceBlockedStudents": 0,
+              "insuranceBlockedPct": 0,
+              "topConcerns": [
+                {
+                  "category": "Trauma",
+                  "patients": 1
+                },
+                {
+                  "category": "Mood Issues",
+                  "patients": 1
+                }
+              ]
+            },
+            "isUpsellCandidate": false,
+            "mpocs": [
+              {
+                "name": "Sarah Duncan",
+                "email": "duncansarah@eurekacityschools.org"
+              }
+            ],
+            "enrollment": 3689,
+            "ytdPacing": 0.19,
             "csmSlug": "sarah"
           },
           {
@@ -1102,8 +1145,8 @@
             "outreachSent": true,
             "completed": false,
             "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "utilization": {
               "inNetworkStudents": 3,
               "insuranceBlockedStudents": 0,
@@ -1192,8 +1235,8 @@
             "outreachSent": false,
             "completed": false,
             "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "utilization": {
               "inNetworkStudents": 10,
               "insuranceBlockedStudents": 0,
@@ -1239,8 +1282,8 @@
             "outreachSent": true,
             "completed": false,
             "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "utilization": {
               "inNetworkStudents": 0,
               "insuranceBlockedStudents": 0,
@@ -1337,8 +1380,8 @@
             "outreachSent": true,
             "completed": false,
             "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "utilization": {
               "inNetworkStudents": 31,
               "insuranceBlockedStudents": 3,
@@ -1793,8 +1836,8 @@
             "outreachSent": false,
             "completed": false,
             "notes": "RIF- Sarah find out new contact",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "utilization": {
               "inNetworkStudents": 22,
               "insuranceBlockedStudents": 1,
@@ -1869,8 +1912,8 @@
             "outreachSent": false,
             "completed": false,
             "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "utilization": {
               "inNetworkStudents": 18,
               "insuranceBlockedStudents": 2,
@@ -2283,6 +2326,49 @@
             "enrollment": 9275,
             "ytdPacing": 0.97,
             "csmSlug": "monica"
+          },
+          {
+            "name": "Del Norte County Office of Education (including Del Norte Unified School District)",
+            "shortName": "Del Norte County Office of Education (including Del Norte Unified School District)",
+            "owner": "Monica Knott",
+            "csm": "Monica Knott",
+            "tier": "Tier 1",
+            "tierNum": 1,
+            "activeRenewal": true,
+            "lastDayOfSchool": "2026-06-11",
+            "bookingTarget": "2026-05-14",
+            "booked": false,
+            "meetingDate": null,
+            "outreachSent": true,
+            "completed": false,
+            "notes": "will need to be a June meeting per MPOC, date TBD",
+            "status": "schedule-soon",
+            "overdue": false,
+            "utilization": {
+              "inNetworkStudents": 4,
+              "insuranceBlockedStudents": 0,
+              "insuranceBlockedPct": 0,
+              "topConcerns": [
+                {
+                  "category": "Trauma",
+                  "patients": 11
+                },
+                {
+                  "category": "Relationship or Family Issues",
+                  "patients": 2
+                }
+              ]
+            },
+            "isUpsellCandidate": false,
+            "mpocs": [
+              {
+                "name": "Michael Hawkins",
+                "email": "mhawkins@delnorte.k12.ca.us"
+              }
+            ],
+            "enrollment": 3533,
+            "ytdPacing": 0.33,
+            "csmSlug": "monica"
           }
         ],
         "nextWeek": [
@@ -2334,49 +2420,6 @@
             "csmSlug": "sarah"
           },
           {
-            "name": "Eureka City School District",
-            "shortName": "Eureka City",
-            "owner": "Sarah Hough",
-            "csm": "Sarah Hough",
-            "tier": "Tier 2",
-            "tierNum": 2,
-            "activeRenewal": false,
-            "lastDayOfSchool": "2026-06-11",
-            "bookingTarget": "2026-05-14",
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": true,
-            "completed": false,
-            "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
-            "utilization": {
-              "inNetworkStudents": 0,
-              "insuranceBlockedStudents": 0,
-              "insuranceBlockedPct": 0,
-              "topConcerns": [
-                {
-                  "category": "Trauma",
-                  "patients": 1
-                },
-                {
-                  "category": "Mood Issues",
-                  "patients": 1
-                }
-              ]
-            },
-            "isUpsellCandidate": false,
-            "mpocs": [
-              {
-                "name": "Sarah Duncan",
-                "email": "duncansarah@eurekacityschools.org"
-              }
-            ],
-            "enrollment": 3689,
-            "ytdPacing": 0.19,
-            "csmSlug": "sarah"
-          },
-          {
             "name": "Gilroy Unified School District",
             "shortName": "Gilroy",
             "owner": "Sarah Hough",
@@ -2420,51 +2463,6 @@
             "csmSlug": "sarah"
           },
           {
-            "name": "Del Norte County Office of Education (including Del Norte Unified School District)",
-            "shortName": "Del Norte County Office of Education (including Del Norte Unified School District)",
-            "owner": "Monica Knott",
-            "csm": "Monica Knott",
-            "tier": "Tier 1",
-            "tierNum": 1,
-            "activeRenewal": true,
-            "lastDayOfSchool": "2026-06-11",
-            "bookingTarget": "2026-05-14",
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": true,
-            "completed": false,
-            "notes": "will need to be a June meeting per MPOC, date TBD",
-            "status": "schedule-soon",
-            "overdue": false,
-            "utilization": {
-              "inNetworkStudents": 4,
-              "insuranceBlockedStudents": 0,
-              "insuranceBlockedPct": 0,
-              "topConcerns": [
-                {
-                  "category": "Trauma",
-                  "patients": 11
-                },
-                {
-                  "category": "Relationship or Family Issues",
-                  "patients": 2
-                }
-              ]
-            },
-            "isUpsellCandidate": false,
-            "mpocs": [
-              {
-                "name": "Michael Hawkins",
-                "email": "mhawkins@delnorte.k12.ca.us"
-              }
-            ],
-            "enrollment": 3533,
-            "ytdPacing": 0.33,
-            "csmSlug": "monica"
-          }
-        ],
-        "soon": [
-          {
             "name": "Madera Unified School District",
             "shortName": "Madera",
             "owner": "Sarah Hough",
@@ -2489,6 +2487,7 @@
             "csmSlug": "sarah"
           }
         ],
+        "soon": [],
         "later": [],
         "noDate": [
           {
@@ -2561,7 +2560,7 @@
       "completed": 12,
       "booked": 46,
       "outreachSent": 45,
-      "overdue": 32,
+      "overdue": 41,
       "upsellCandidates": 7,
       "byTier": {
         "1": {
@@ -2569,21 +2568,21 @@
           "completed": 0,
           "booked": 12,
           "remaining": 30,
-          "overdue": 17
+          "overdue": 21
         },
         "2": {
           "total": 66,
           "completed": 12,
           "booked": 34,
           "remaining": 32,
-          "overdue": 15
+          "overdue": 20
         },
         "3": {
           "total": 71,
           "completed": 11,
           "booked": 21,
           "remaining": 50,
-          "overdue": 37
+          "overdue": 41
         }
       }
     }
@@ -3218,8 +3217,8 @@
           "outreachSent": false,
           "completed": false,
           "notes": "",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 10,
             "insuranceBlockedStudents": 0,
@@ -3264,8 +3263,8 @@
           "outreachSent": true,
           "completed": false,
           "notes": "",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 0,
             "insuranceBlockedStudents": 0,
@@ -3310,8 +3309,8 @@
           "outreachSent": true,
           "completed": false,
           "notes": "",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 31,
             "insuranceBlockedStudents": 3,
@@ -3891,8 +3890,8 @@
               "outreachSent": false,
               "completed": false,
               "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "utilization": {
                 "inNetworkStudents": 10,
                 "insuranceBlockedStudents": 0,
@@ -3938,8 +3937,8 @@
               "outreachSent": true,
               "completed": false,
               "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "utilization": {
                 "inNetworkStudents": 0,
                 "insuranceBlockedStudents": 0,
@@ -3985,8 +3984,8 @@
               "outreachSent": true,
               "completed": false,
               "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "utilization": {
                 "inNetworkStudents": 31,
                 "insuranceBlockedStudents": 3,
@@ -4072,7 +4071,7 @@
         "completed": 2,
         "booked": 15,
         "outreachSent": 3,
-        "overdue": 1,
+        "overdue": 4,
         "upsellCandidates": 1,
         "byTier": {
           "1": {
@@ -4087,7 +4086,7 @@
             "completed": 2,
             "booked": 15,
             "remaining": 5,
-            "overdue": 1
+            "overdue": 4
           },
           "3": {
             "total": 13,
@@ -4303,8 +4302,8 @@
           "outreachSent": true,
           "completed": false,
           "notes": "",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 0,
             "insuranceBlockedStudents": 1,
@@ -5213,8 +5212,8 @@
           "outreachSent": true,
           "completed": false,
           "notes": "",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 3,
             "insuranceBlockedStudents": 0,
@@ -5921,8 +5920,8 @@
           "outreachSent": false,
           "completed": false,
           "notes": "RIF- Sarah find out new contact",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 22,
             "insuranceBlockedStudents": 1,
@@ -6502,8 +6501,8 @@
         "completed": 19,
         "unbooked": 25,
         "weeklyTarget": 25,
-        "thisWeekUrgent": 21,
-        "atRisk": 21,
+        "thisWeekUrgent": 22,
+        "atRisk": 22,
         "byUrgency": {
           "thisWeek": [
             {
@@ -6560,8 +6559,8 @@
               "outreachSent": true,
               "completed": false,
               "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "utilization": {
                 "inNetworkStudents": 0,
                 "insuranceBlockedStudents": 1,
@@ -6746,6 +6745,49 @@
               "csmSlug": "sarah"
             },
             {
+              "name": "Eureka City School District",
+              "shortName": "Eureka City",
+              "owner": "Sarah Hough",
+              "csm": "Sarah Hough",
+              "tier": "Tier 2",
+              "tierNum": 2,
+              "activeRenewal": false,
+              "lastDayOfSchool": "2026-06-11",
+              "bookingTarget": "2026-05-14",
+              "booked": false,
+              "meetingDate": null,
+              "outreachSent": true,
+              "completed": false,
+              "notes": "",
+              "status": "schedule-soon",
+              "overdue": false,
+              "utilization": {
+                "inNetworkStudents": 0,
+                "insuranceBlockedStudents": 0,
+                "insuranceBlockedPct": 0,
+                "topConcerns": [
+                  {
+                    "category": "Trauma",
+                    "patients": 1
+                  },
+                  {
+                    "category": "Mood Issues",
+                    "patients": 1
+                  }
+                ]
+              },
+              "isUpsellCandidate": false,
+              "mpocs": [
+                {
+                  "name": "Sarah Duncan",
+                  "email": "duncansarah@eurekacityschools.org"
+                }
+              ],
+              "enrollment": 3689,
+              "ytdPacing": 0.19,
+              "csmSlug": "sarah"
+            },
+            {
               "name": "Forsyth County Schools",
               "shortName": "Forsyth County",
               "owner": "Sarah Hough",
@@ -6922,8 +6964,8 @@
               "outreachSent": true,
               "completed": false,
               "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "utilization": {
                 "inNetworkStudents": 3,
                 "insuranceBlockedStudents": 0,
@@ -7145,8 +7187,8 @@
               "outreachSent": false,
               "completed": false,
               "notes": "RIF- Sarah find out new contact",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "utilization": {
                 "inNetworkStudents": 22,
                 "insuranceBlockedStudents": 1,
@@ -7371,49 +7413,6 @@
               "csmSlug": "sarah"
             },
             {
-              "name": "Eureka City School District",
-              "shortName": "Eureka City",
-              "owner": "Sarah Hough",
-              "csm": "Sarah Hough",
-              "tier": "Tier 2",
-              "tierNum": 2,
-              "activeRenewal": false,
-              "lastDayOfSchool": "2026-06-11",
-              "bookingTarget": "2026-05-14",
-              "booked": false,
-              "meetingDate": null,
-              "outreachSent": true,
-              "completed": false,
-              "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
-              "utilization": {
-                "inNetworkStudents": 0,
-                "insuranceBlockedStudents": 0,
-                "insuranceBlockedPct": 0,
-                "topConcerns": [
-                  {
-                    "category": "Trauma",
-                    "patients": 1
-                  },
-                  {
-                    "category": "Mood Issues",
-                    "patients": 1
-                  }
-                ]
-              },
-              "isUpsellCandidate": false,
-              "mpocs": [
-                {
-                  "name": "Sarah Duncan",
-                  "email": "duncansarah@eurekacityschools.org"
-                }
-              ],
-              "enrollment": 3689,
-              "ytdPacing": 0.19,
-              "csmSlug": "sarah"
-            },
-            {
               "name": "Gilroy Unified School District",
               "shortName": "Gilroy",
               "owner": "Sarah Hough",
@@ -7455,9 +7454,7 @@
               "enrollment": 10621,
               "ytdPacing": 0.2,
               "csmSlug": "sarah"
-            }
-          ],
-          "soon": [
+            },
             {
               "name": "Madera Unified School District",
               "shortName": "Madera",
@@ -7483,6 +7480,7 @@
               "csmSlug": "sarah"
             }
           ],
+          "soon": [],
           "later": [],
           "noDate": []
         }
@@ -7492,7 +7490,7 @@
         "completed": 10,
         "booked": 17,
         "outreachSent": 34,
-        "overdue": 14,
+        "overdue": 17,
         "upsellCandidates": 4,
         "byTier": {
           "1": {
@@ -7500,14 +7498,14 @@
             "completed": 0,
             "booked": 0,
             "remaining": 4,
-            "overdue": 3
+            "overdue": 4
           },
           "2": {
             "total": 38,
             "completed": 10,
             "booked": 17,
             "remaining": 21,
-            "overdue": 11
+            "overdue": 13
           },
           "3": {
             "total": 25,
@@ -8991,7 +8989,7 @@
           "completed": false,
           "notes": "",
           "status": "t3-async",
-          "overdue": false,
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 0,
             "insuranceBlockedStudents": 0,
@@ -9024,7 +9022,7 @@
           "completed": false,
           "notes": "",
           "status": "t3-async",
-          "overdue": false,
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 43,
             "insuranceBlockedStudents": 0,
@@ -9272,8 +9270,8 @@
         "completed": 1,
         "unbooked": 18,
         "weeklyTarget": 16,
-        "thisWeekUrgent": 16,
-        "atRisk": 16,
+        "thisWeekUrgent": 17,
+        "atRisk": 17,
         "byUrgency": {
           "thisWeek": [
             {
@@ -9968,9 +9966,7 @@
               "enrollment": 9275,
               "ytdPacing": 0.97,
               "csmSlug": "monica"
-            }
-          ],
-          "nextWeek": [
+            },
             {
               "name": "Del Norte County Office of Education (including Del Norte Unified School District)",
               "shortName": "Del Norte County Office of Education (including Del Norte Unified School District)",
@@ -10015,6 +10011,7 @@
               "csmSlug": "monica"
             }
           ],
+          "nextWeek": [],
           "soon": [],
           "later": [],
           "noDate": [
@@ -10077,7 +10074,7 @@
             "completed": 1,
             "booked": 4,
             "remaining": 20,
-            "overdue": 17
+            "overdue": 19
           }
         }
       }
@@ -10242,7 +10239,7 @@
           "completed": false,
           "notes": "",
           "status": "t3-async",
-          "overdue": false,
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 18,
             "insuranceBlockedStudents": 1,
@@ -10324,8 +10321,8 @@
           "outreachSent": false,
           "completed": false,
           "notes": "",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "utilization": null,
           "isUpsellCandidate": false,
           "mpocs": [
@@ -10357,7 +10354,7 @@
           "completed": false,
           "notes": "",
           "status": "t3-async",
-          "overdue": false,
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 8,
             "insuranceBlockedStudents": 0,
@@ -10444,8 +10441,8 @@
           "outreachSent": false,
           "completed": false,
           "notes": "",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 0,
             "insuranceBlockedStudents": 1,
@@ -11110,8 +11107,8 @@
           "outreachSent": false,
           "completed": false,
           "notes": "",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "utilization": {
             "inNetworkStudents": 18,
             "insuranceBlockedStudents": 2,
@@ -11811,8 +11808,8 @@
               "outreachSent": false,
               "completed": false,
               "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "utilization": null,
               "isUpsellCandidate": false,
               "mpocs": [
@@ -11891,8 +11888,8 @@
               "outreachSent": false,
               "completed": false,
               "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "utilization": {
                 "inNetworkStudents": 0,
                 "insuranceBlockedStudents": 1,
@@ -12132,8 +12129,8 @@
               "outreachSent": false,
               "completed": false,
               "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "utilization": {
                 "inNetworkStudents": 18,
                 "insuranceBlockedStudents": 2,
@@ -12261,7 +12258,7 @@
         "completed": 0,
         "booked": 13,
         "outreachSent": 1,
-        "overdue": 4,
+        "overdue": 7,
         "upsellCandidates": 1,
         "byTier": {
           "1": {
@@ -12269,7 +12266,7 @@
             "completed": 0,
             "booked": 11,
             "remaining": 14,
-            "overdue": 4
+            "overdue": 7
           },
           "2": {
             "total": 2,
@@ -12283,7 +12280,7 @@
             "completed": 0,
             "booked": 3,
             "remaining": 6,
-            "overdue": 1
+            "overdue": 3
           }
         }
       }
