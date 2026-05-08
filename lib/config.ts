@@ -13,6 +13,12 @@ export const COHORT_FILE_ID = '1DN6Cxc8gcM5GHLq4-3FnLV-kCRAqVHEW6QDGxLBgVfE';
 export const ASYNC_FORM_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLSckbtqio2hvbN5DmwiDamIkdNOrmS89XV0oLuqkiKrbyHiVtA/viewform?usp=header';
 
+// CSMs log their bookings/meetings/outreach back into this tracker so the
+// dashboard, the source data, and the team's day-to-day workflow stay
+// aligned. Linked from each CSM page.
+export const BTS_TRACKER_URL =
+  'https://docs.google.com/spreadsheets/d/16gycwzxACC2--gNuWpGeN0kcjtXUGv1d/edit?gid=175562126#gid=175562126';
+
 export const BOOKING_WINDOW_DAYS_BEFORE_LDOS = 28;
 // Flag a district as an upsell candidate when ≥15% of its referred students are
 // blocked from care for insurance reasons (expired coverage, coordination-of-

@@ -47,9 +47,14 @@ export default async function Home() {
         </section>
 
         <section>
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-500">
-            CSM portfolios
-          </h2>
+          <div className="mb-3 flex items-baseline justify-between gap-3">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500">
+              CSM portfolios
+            </h2>
+            <p className="text-xs text-zinc-600">
+              👇 Click your name to prep this week's actions.
+            </p>
+          </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {CSM_SLUGS.map((slug) => {
               const csm = CSM_CONFIG[slug];

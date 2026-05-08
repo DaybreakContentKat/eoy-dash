@@ -33,26 +33,6 @@ export function buildBatchBookingPrompt(csm: CSMConfig, districts: District[]): 
   ].join('\n');
 }
 
-export function buildBatchPrepPrompt(csm: CSMConfig, districts: District[]): string {
-  const items = districts.map((d, i) => formatPrepItem(d, i + 1)).join('\n\n');
-  return [
-    '[ACTION: BATCH_PREP_PACKS]',
-    `CSM: ${csm.fullName}`,
-    `Project: ${PROJECT_URL}`,
-    `District Data Sheet ID: ${DISTRICT_DATA_FILE_ID}`,
-    '',
-    `Districts (${districts.length}):`,
-    items,
-    '',
-    '---',
-    'For each district above, build the EOY deck and data report.',
-    'Pull utilization, insurance status, and presenting-concerns data from the District Data sheet.',
-    'Include the upsell talking point in the deck notes if the district is flagged above.',
-    'Use the daybreak-eoy-deck skill in this project.',
-    'Generate all in sequence without confirmation between districts.',
-  ].join('\n');
-}
-
 export function buildIndividualBookingPrompt(csm: CSMConfig, d: District): string {
   return [
     '[ACTION: BOOKING_EMAIL]',
@@ -97,18 +77,6 @@ function formatBookingItem(d: District, n: number): string {
     `   MPOC: ${formatMPOCs(d) || '(no contact on file)'}`,
     `   LDoS: ${formatDate(d.lastDayOfSchool) ?? 'unknown'} | Status: ${status}`,
   ];
-  return lines.join('\n');
-}
-
-function formatPrepItem(d: District, n: number): string {
-  const lines = [
-    `${n}. ${d.name}`,
-    `   MPOC: ${formatMPOCs(d) || '(no contact on file)'}`,
-    `   Meeting: ${formatDate(d.meetingDate) ?? 'TBD'}`,
-  ];
-  const upsell = upsellTalkingPoint(d);
-  if (upsell) lines.push(`   Upsell flag: YES — ${upsell}`);
-  if (d.enrollment != null) lines.push(`   Enrollment: ${d.enrollment.toLocaleString('en-US')}`);
   return lines.join('\n');
 }
 

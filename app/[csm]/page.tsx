@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { CSM_CONFIG, CSM_SLUGS } from '@/lib/config';
+import { BTS_TRACKER_URL, CSM_CONFIG, CSM_SLUGS } from '@/lib/config';
 import { formatNumber, formatRefreshedAt, loadSnapshot } from '@/lib/snapshot';
 import { BatchActionBar } from '@/components/BatchActionBar';
 import { DistrictCard } from '@/components/DistrictCard';
@@ -51,6 +51,18 @@ export default async function CSMPage({ params }: PageProps) {
         </header>
 
         {snapshot.stale && <StaleWarning />}
+
+        <a
+          href={BTS_TRACKER_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between gap-4 rounded-md border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-900 hover:bg-blue-100"
+        >
+          <span>
+            📊 <span className="font-semibold">Log your actions in the BTS tracker</span> after sending emails or completing meetings — keeps the dashboard and source data in sync.
+          </span>
+          <span className="shrink-0 text-xs font-semibold underline">Open tracker →</span>
+        </a>
 
         <QuickStats stats={csmSnap.stats} />
 
