@@ -111,18 +111,9 @@ for row in rows[header_idx + 1:]:
         break
     data_rows.append(row)
 
-# Parse tier assignments from the separate cohort workbook.
-# Each "Cohort N" tab in tier_wb maps to Tier N. Columns: A=district, B=owner,
-# C=csm, D=market, E=package, F=touch level, G=training cohort, H=cohort reason,
-# I=ytd pacing, J=enrollment.
-def to_num(v):
-    if v is None or v == '':
-        return None
-    try:
-        return float(v)
-    except (TypeError, ValueError):
-        return None
-
+# Tier assignments come from the cohort workbook. Each "Cohort N" tab maps to
+# Tier N. We only use tier number from this workbook — account owner and all
+# other per-district data come from the BTS District Tracker.
 tier_data = {}
 for tier_num in (1, 2, 3):
     target = f'cohort {tier_num}'
@@ -143,25 +134,16 @@ for tier_num in (1, 2, 3):
     for row in tab_rows[header_idx + 1:]:
         if not row or not row[0].strip():
             continue
-        name = row[0].strip()
-        csm = row[2].strip() if len(row) > 2 else ''
-        ytd_pacing = to_num(row[8]) if len(row) > 8 else None
-        enrollment = to_num(row[9]) if len(row) > 9 else None
-        tier_data[name.lower()] = {
-            'csm': csm,
-            'tierNum': tier_num,
-            'ytdPacing': ytd_pacing,
-            'enrollment': enrollment,
-        }
+        tier_data[row[0].strip().lower()] = tier_num
 
-def get_tier_info(name):
+def get_tier_num(name):
     key = name.lower()
     if key in tier_data:
         return tier_data[key]
     for k, v in tier_data.items():
         if k in key or key in k:
             return v
-    return {'csm': None, 'tierNum': 3, 'ytdPacing': None, 'enrollment': None}
+    return 3
 
 csm_map = {
     'Brianna Masciel': 'brianna',
@@ -209,10 +191,9 @@ def empty_portfolio_stats():
         }
     }
 
-def make_district(row, csm_slug, csm_name, tier_info):
+def make_district(row, csm_slug, csm_name, tier_num):
     name = row[0].strip()
     owner = row[1].strip()
-    tier_num = tier_info['tierNum']
     ldos = parse_date(row[4])
     bt = booking_target(ldos)
     booked_raw = row[6].strip()
@@ -248,8 +229,8 @@ def make_district(row, csm_slug, csm_name, tier_info):
         'isUpsellCandidate': False,
         'utilization': None,
         'mpocs': [],
-        'enrollment': tier_info.get('enrollment'),
-        'ytdPacing': tier_info.get('ytdPacing'),
+        'enrollment': None,
+        'ytdPacing': None,
     }
 
 # Build districts
@@ -263,13 +244,12 @@ for row in data_rows:
     if not name:
         continue
     owner = row[1].strip()
-    tier_info = get_tier_info(name)
-    csm_name = tier_info['csm'] or owner
-    csm_slug = csm_map.get(csm_name, csm_map.get(owner))
+    tier_num = get_tier_num(name)
+    csm_slug = csm_map.get(owner)
     if not csm_slug:
-        orphans.append(make_district(row, 'unassigned', owner, tier_info))
+        orphans.append(make_district(row, 'unassigned', owner, tier_num))
         continue
-    districts.append(make_district(row, csm_slug, csm_name, tier_info))
+    districts.append(make_district(row, csm_slug, owner, tier_num))
 
 def build_urgency_buckets(unbooked_districts):
     buckets = empty_urgency_buckets()
