@@ -49,7 +49,7 @@ export function isUpsellCandidate(util: UtilizationData | null): boolean {
 
 export function getStatus(d: District, today: Date): CardStatus {
   if (d.completed) return 'completed';
-  if (d.tierNum === 3) return 't3-async';
+  if (d.meetingType === 'async') return 'async';
   if (isOverdue(d, today)) return 'overdue';
   if (d.booked) return 'booked';
   return 'schedule-soon';

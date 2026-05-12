@@ -19,6 +19,7 @@ function makeDistrict(overrides: Partial<District> = {}): District {
     csm: 'Brianna Masciel',
     tier: 'Tier 2',
     tierNum: 2,
+    meetingType: 'live',
     activeRenewal: false,
     lastDayOfSchool: '2026-06-04',
     bookingTarget: '2026-05-07',
@@ -70,13 +71,13 @@ assert(
 
 console.log('\n--- getStatus precedence ---');
 assert(getStatus(makeDistrict({ completed: true }), TODAY) === 'completed', 'completed > all');
-assert(getStatus(makeDistrict({ tierNum: 3 }), TODAY) === 't3-async', 'tier 3 → async (not booked, not completed)');
+assert(getStatus(makeDistrict({ meetingType: 'async' }), TODAY) === 'async', 'meetingType async → async (not booked, not completed)');
 assert(
   getStatus(
-    makeDistrict({ tierNum: 3, completed: true }),
+    makeDistrict({ meetingType: 'async', completed: true }),
     TODAY,
   ) === 'completed',
-  'tier 3 + completed → completed (completed wins)',
+  'async + completed → completed (completed wins)',
 );
 assert(
   getStatus(makeDistrict({ bookingTarget: '2026-04-01' }), TODAY) === 'overdue',

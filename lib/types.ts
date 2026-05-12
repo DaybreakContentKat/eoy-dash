@@ -2,8 +2,10 @@ export type CardStatus =
   | 'overdue'
   | 'schedule-soon'
   | 'booked'
-  | 't3-async'
+  | 'async'
   | 'completed';
+
+export type MeetingType = 'live' | 'async';
 
 export type Tier = 'Tier 1' | 'Tier 2' | 'Tier 3';
 export type TierNum = 1 | 2 | 3;
@@ -40,6 +42,7 @@ export interface District {
   csm: string;
   tier: Tier;
   tierNum: TierNum;
+  meetingType: MeetingType;
   activeRenewal: boolean;
   lastDayOfSchool: string | null;
   bookingTarget: string | null;

@@ -17,7 +17,6 @@ creds = Credentials.from_service_account_info(
 
 drive = build('drive', 'v3', credentials=creds)
 SHEET_ID = '16gycwzxACC2--gNuWpGeN0kcjtXUGv1d'
-TIER_SHEET_ID = '1DN6Cxc8gcM5GHLq4-3FnLV-kCRAqVHEW6QDGxLBgVfE'
 
 XLSX_MIME = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 
@@ -36,7 +35,24 @@ def download_workbook(file_id):
     return openpyxl.load_workbook(buf, data_only=True)
 
 wb = download_workbook(SHEET_ID)
-tier_wb = download_workbook(TIER_SHEET_ID)
+
+# Static enrollment + YTD pacing — baked once from the cohort workbook so the
+# daily refresh only needs to read the BTS Tracker.
+STATIC_METRICS_PATH = os.path.join(os.path.dirname(__file__), 'static-metrics.json')
+try:
+    with open(STATIC_METRICS_PATH) as f:
+        static_metrics = json.load(f)
+except FileNotFoundError:
+    static_metrics = {}
+
+def get_static_metrics(name):
+    key = name.lower()
+    if key in static_metrics:
+        return static_metrics[key]
+    for k, v in static_metrics.items():
+        if k in key or key in k:
+            return v
+    return {'enrollment': None, 'ytdPacing': None}
 
 # Find District Tracker sheet
 sheet = None
@@ -83,13 +99,31 @@ def needs_nudge(booked, completed, outreach, last_outreach):
         return False
     return (today - last_outreach).days >= 3
 
-def get_status(completed, tier_num, overdue, booked, nudge):
+def get_status(completed, meeting_type, overdue, booked, nudge):
     if completed: return 'completed'
-    if tier_num == 3: return 't3-async'
+    if meeting_type == 'async': return 'async'
     if overdue: return 'overdue'
     if booked: return 'booked'
     if nudge: return 'nudge'
     return 'schedule-soon'
+
+def parse_tier(val):
+    s = str(val or '').strip().lower()
+    if not s:
+        return 3
+    if '1' in s: return 1
+    if '2' in s: return 2
+    if '3' in s: return 3
+    return 3
+
+def parse_meeting_type(val, tier_num):
+    if val:
+        s = str(val).strip().lower()
+        if s in ('y', 'yes', 'true', '1', 'live'):
+            return 'live'
+        if s in ('n', 'no', 'false', '0', 'async'):
+            return 'async'
+    return 'async' if tier_num == 3 else 'live'
 
 # Find header row
 header_idx = None
@@ -110,52 +144,6 @@ for row in rows[header_idx + 1:]:
     if any(x in first for x in ["Monica", "Daisy", "How to Use", "BTS Training"]):
         break
     data_rows.append(row)
-
-# Cohort workbook provides: tier (= tab number), YTD pacing (col I), enrollment
-# (col J). Account owner and all other per-district fields come from the BTS
-# Tracker, not from here.
-def to_num(v):
-    if v is None or v == '':
-        return None
-    try:
-        return float(v)
-    except (TypeError, ValueError):
-        return None
-
-tier_data = {}
-for tier_num in (1, 2, 3):
-    target = f'cohort {tier_num}'
-    tab_name = next((n for n in tier_wb.sheetnames if n.strip().lower() == target), None)
-    if not tab_name:
-        continue
-    ws = tier_wb[tab_name]
-    tab_rows = [
-        [str(cell) if cell is not None else '' for cell in row]
-        for row in ws.iter_rows(values_only=True)
-    ]
-    header_idx = next(
-        (i for i, r in enumerate(tab_rows) if r and 'district' in r[0].strip().lower()),
-        None,
-    )
-    if header_idx is None:
-        continue
-    for row in tab_rows[header_idx + 1:]:
-        if not row or not row[0].strip():
-            continue
-        tier_data[row[0].strip().lower()] = {
-            'tierNum': tier_num,
-            'ytdPacing': to_num(row[8]) if len(row) > 8 else None,
-            'enrollment': to_num(row[9]) if len(row) > 9 else None,
-        }
-
-def get_tier_info(name):
-    key = name.lower()
-    if key in tier_data:
-        return tier_data[key]
-    for k, v in tier_data.items():
-        if k in key or key in k:
-            return v
-    return {'tierNum': 3, 'ytdPacing': None, 'enrollment': None}
 
 csm_map = {
     'Brianna Masciel': 'brianna',
@@ -203,22 +191,27 @@ def empty_portfolio_stats():
         }
     }
 
-def make_district(row, csm_slug, csm_name, tier_info):
+def make_district(row, csm_slug, csm_name, tier_num, meeting_type):
+    # Columns (post-shift): A=name, B=training tier, C=live meeting Y/N,
+    # D=account owner, E=active renewal, F=mpoc, G=LDoS, H=call target,
+    # I=booked, J=meeting date, K=outreach sent, L=last outreach,
+    # M=completed, ..., T=notes
     name = row[0].strip()
-    owner = row[1].strip()
-    tier_num = tier_info['tierNum']
-    ldos = parse_date(row[4])
+    owner = row[3].strip()
+    ldos = parse_date(row[6])
     bt = booking_target(ldos)
-    booked_raw = row[6].strip()
-    is_async = 'async' in booked_raw.lower() or 'async' in row[7].lower()
-    booked = yn(booked_raw) and not is_async
-    outreach = yn(row[8])
-    last_outreach = parse_date(row[9])
-    completed = yn(row[10])
+    booked_raw = row[8].strip()
+    is_async_text = 'async' in booked_raw.lower() or 'async' in row[9].lower()
+    booked = yn(booked_raw) and not is_async_text
+    outreach = yn(row[10])
+    last_outreach = parse_date(row[11])
+    completed = yn(row[12])
 
     overdue = is_overdue(booked, completed, bt)
     nudge = needs_nudge(booked, completed, outreach, last_outreach)
-    status = get_status(completed, tier_num, overdue, booked, nudge)
+    status = get_status(completed, meeting_type, overdue, booked, nudge)
+
+    m = get_static_metrics(name)
 
     return {
         'name': name,
@@ -228,22 +221,23 @@ def make_district(row, csm_slug, csm_name, tier_info):
         'csmName': csm_name,
         'tier': f'Tier {tier_num}',
         'tierNum': tier_num,
-        'activeRenewal': yn(row[2]),
+        'meetingType': meeting_type,
+        'activeRenewal': yn(row[4]),
         'lastDayOfSchool': ldos.isoformat() if ldos else None,
         'bookingTarget': bt.isoformat() if bt else None,
         'booked': booked,
-        'meetingDate': parse_date(row[7]).isoformat() if parse_date(row[7]) else None,
+        'meetingDate': parse_date(row[9]).isoformat() if parse_date(row[9]) else None,
         'outreachSent': outreach,
         'completed': completed,
-        'notes': row[17] if len(row) > 17 else '',
+        'notes': row[19] if len(row) > 19 else '',
         'status': status,
         'overdue': overdue,
         'needsNudge': nudge,
         'isUpsellCandidate': False,
         'utilization': None,
         'mpocs': [],
-        'enrollment': tier_info.get('enrollment'),
-        'ytdPacing': tier_info.get('ytdPacing'),
+        'enrollment': m.get('enrollment'),
+        'ytdPacing': m.get('ytdPacing'),
     }
 
 # Build districts
@@ -251,18 +245,19 @@ districts = []
 orphans = []
 
 for row in data_rows:
-    while len(row) < 18:
+    while len(row) < 20:
         row.append('')
     name = row[0].strip()
     if not name:
         continue
-    owner = row[1].strip()
-    tier_info = get_tier_info(name)
+    tier_num = parse_tier(row[1])
+    meeting_type = parse_meeting_type(row[2], tier_num)
+    owner = row[3].strip()
     csm_slug = csm_map.get(owner)
     if not csm_slug:
-        orphans.append(make_district(row, 'unassigned', owner, tier_info))
+        orphans.append(make_district(row, 'unassigned', owner, tier_num, meeting_type))
         continue
-    districts.append(make_district(row, csm_slug, owner, tier_info))
+    districts.append(make_district(row, csm_slug, owner, tier_num, meeting_type))
 
 def build_urgency_buckets(unbooked_districts):
     buckets = empty_urgency_buckets()

@@ -84,7 +84,7 @@ export function DistrictCard({ district: d, csm }: Props) {
 
 function ActionButton({ district: d, csm }: { district: District; csm: CSMConfig }) {
   if (d.completed) return null;
-  if (d.tierNum === 3) {
+  if (d.meetingType === 'async') {
     return (
       <a
         href={ASYNC_FORM_URL}

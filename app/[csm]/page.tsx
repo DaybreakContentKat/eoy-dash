@@ -95,10 +95,10 @@ export default async function CSMPage({ params }: PageProps) {
           csm={config}
         />
         <Section
-          title="Tier 3 / Async"
+          title="Async only"
           icon="📋"
-          districts={sections['t3-async']}
-          emptyHint="No T3 districts."
+          districts={sections['async']}
+          emptyHint="No async-only districts."
           sortBy="name"
           collapsedByDefault
           csm={config}
@@ -202,10 +202,13 @@ function bucketDistricts(districts: District[]): Record<CardStatus, District[]> 
     overdue: [],
     'schedule-soon': [],
     booked: [],
-    't3-async': [],
+    async: [],
     completed: [],
   };
-  for (const d of districts) out[d.status].push(d);
+  for (const d of districts) {
+    const bucket = out[d.status] ?? out['schedule-soon'];
+    bucket.push(d);
+  }
   return out;
 }
 

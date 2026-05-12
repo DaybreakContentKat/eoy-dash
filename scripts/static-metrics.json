@@ -1,0 +1,594 @@
+{
+  "adelanto elementary school district": {
+    "enrollment": 7440.0,
+    "ytdPacing": 0.56
+  },
+  "alamance-burlington schools": {
+    "enrollment": 21996.0,
+    "ytdPacing": 0.51
+  },
+  "alisal union elementary school district": {
+    "enrollment": 7232.0,
+    "ytdPacing": 0.07
+  },
+  "alliance collins": {
+    "enrollment": 627.0,
+    "ytdPacing": 1.67
+  },
+  "antelope valley union high school district": {
+    "enrollment": 27782.0,
+    "ytdPacing": 0.6
+  },
+  "apple valley unified school district": {
+    "enrollment": 14023.0,
+    "ytdPacing": 0.66
+  },
+  "arp independent school district": {
+    "enrollment": 991.0,
+    "ytdPacing": 1.58
+  },
+  "atwood heights school district 125": {
+    "enrollment": 542.0,
+    "ytdPacing": 1.53
+  },
+  "beaufort county schools": {
+    "enrollment": 5823.0,
+    "ytdPacing": 0.44
+  },
+  "beaumont unified school district": {
+    "enrollment": 13410.0,
+    "ytdPacing": 0.73
+  },
+  "bellflower unified school district": {
+    "enrollment": 9413.0,
+    "ytdPacing": 0.08
+  },
+  "belmont-redwood shores elementary school district": {
+    "enrollment": 4020.0,
+    "ytdPacing": 0.55
+  },
+  "belvidere community unit school district 100": {
+    "enrollment": 7262.0,
+    "ytdPacing": 0.04
+  },
+  "berryessa union school district": {
+    "enrollment": 6026.0,
+    "ytdPacing": 0.48
+  },
+  "big oak flat-groveland unified school district": {
+    "enrollment": 594.0,
+    "ytdPacing": 0.19
+  },
+  "bladen county schools": {
+    "enrollment": 3744.0,
+    "ytdPacing": 0.14
+  },
+  "bradford county public schools": {
+    "enrollment": 3116.0,
+    "ytdPacing": 1.0
+  },
+  "bremen community high school district 228": {
+    "enrollment": 5461.0,
+    "ytdPacing": 1.66
+  },
+  "buena park elementary school district": {
+    "enrollment": 3811.0,
+    "ytdPacing": 0.36
+  },
+  "buford city school district": {
+    "enrollment": 6105.0,
+    "ytdPacing": 0.71
+  },
+  "burbank unified school district": {
+    "enrollment": 19925.0,
+    "ytdPacing": 0.38
+  },
+  "campbell union high school district": {
+    "enrollment": 9696.0,
+    "ytdPacing": 1.09
+  },
+  "castro valley unified school district": {
+    "enrollment": 10100.0,
+    "ytdPacing": 0.33
+  },
+  "caswell county schools": {
+    "enrollment": 2063.0,
+    "ytdPacing": 0.16
+  },
+  "cedar hill independent school district": {
+    "enrollment": 6401.0,
+    "ytdPacing": 0.0
+  },
+  "chapel hill-carrboro city schools": {
+    "enrollment": 11530.0,
+    "ytdPacing": 0.5
+  },
+  "charlton county school district": {
+    "enrollment": 1550.0,
+    "ytdPacing": 0.41
+  },
+  "chatham county schools": {
+    "enrollment": 9064.0,
+    "ytdPacing": 1.62
+  },
+  "chicago heights school district 170": {
+    "enrollment": 2684.0,
+    "ytdPacing": 2.57
+  },
+  "clarke county school district": {
+    "enrollment": 12305.0,
+    "ytdPacing": 1.18
+  },
+  "clayton county public school district": {
+    "enrollment": 51348.0,
+    "ytdPacing": 0.48
+  },
+  "coalinga-huron joint unified school district": {
+    "enrollment": 4501.0,
+    "ytdPacing": 0.08
+  },
+  "cobb county school district": {
+    "enrollment": 107994.0,
+    "ytdPacing": 0.61
+  },
+  "colquitt county school district": {
+    "enrollment": 8681.0,
+    "ytdPacing": 0.32
+  },
+  "community high school district 155": {
+    "enrollment": 5339.0,
+    "ytdPacing": 0.01
+  },
+  "community independent school district": {
+    "enrollment": 4524.0,
+    "ytdPacing": 0.21
+  },
+  "corpus christi independent school district": {
+    "enrollment": 31904.0,
+    "ytdPacing": 0.89
+  },
+  "crystal lake community consolidated school district 47": {
+    "enrollment": 7045.0,
+    "ytdPacing": 1.61
+  },
+  "currituck county schools": {
+    "enrollment": 4642.0,
+    "ytdPacing": 90.0
+  },
+  "dare county schools": {
+    "enrollment": 5133.0,
+    "ytdPacing": 0.55
+  },
+  "dekalb community unit school district 428": {
+    "enrollment": 7051.0,
+    "ytdPacing": 2.01
+  },
+  "del norte county office of education (including del norte unified school district)": {
+    "enrollment": 3533.0,
+    "ytdPacing": 0.33
+  },
+  "del valle": {
+    "enrollment": 11482.0,
+    "ytdPacing": 1.06
+  },
+  "desert center unified school district": {
+    "enrollment": 30.0,
+    "ytdPacing": 0.71
+  },
+  "desert sands unified school district": {
+    "enrollment": 25233.0,
+    "ytdPacing": 1.11
+  },
+  "dodge county school district": {
+    "enrollment": 2935.0,
+    "ytdPacing": 0.15
+  },
+  "east side union high school district": {
+    "enrollment": 22893.0,
+    "ytdPacing": 0.46
+  },
+  "east whittier city elementary school district": {
+    "enrollment": 7281.0,
+    "ytdPacing": 0.82
+  },
+  "eastmont": {
+    "enrollment": 5964.0,
+    "ytdPacing": 1.11
+  },
+  "effingham county school district": {
+    "enrollment": 15352.0,
+    "ytdPacing": 0.11
+  },
+  "escalon unified school district": {
+    "enrollment": 2672.0,
+    "ytdPacing": 1.31
+  },
+  "eureka city school district": {
+    "enrollment": 3689.0,
+    "ytdPacing": 0.19
+  },
+  "evans county school district": {
+    "enrollment": 1814.0,
+    "ytdPacing": 0.04
+  },
+  "farmersville unified school district": {
+    "enrollment": 2487.0,
+    "ytdPacing": 0.31
+  },
+  "ferris independent school district": {
+    "enrollment": 2705.0,
+    "ytdPacing": 0.29
+  },
+  "fillmore unified school district": {
+    "enrollment": 4076.0,
+    "ytdPacing": 0.87
+  },
+  "forsyth county schools": {
+    "enrollment": 55051.0,
+    "ytdPacing": 0.22
+  },
+  "freeport school district 145": {
+    "enrollment": 3535.0,
+    "ytdPacing": 0.41
+  },
+  "fullerton elementary school district": {
+    "enrollment": 11304.0,
+    "ytdPacing": 1.68
+  },
+  "fulton county school district": {
+    "enrollment": 87637.0,
+    "ytdPacing": 0.41
+  },
+  "gaston county schools": {
+    "enrollment": 29445.0,
+    "ytdPacing": 0.46
+  },
+  "gilroy unified school district": {
+    "enrollment": 10621.0,
+    "ytdPacing": 0.2
+  },
+  "gompers preparatory academy (charter)": {
+    "enrollment": 2100.0,
+    "ytdPacing": 0.37
+  },
+  "grady county school district": {
+    "enrollment": 4463.0,
+    "ytdPacing": 0.0
+  },
+  "granville county schools": {
+    "enrollment": 6436.0,
+    "ytdPacing": 0.07
+  },
+  "griffin-spalding county schools": {
+    "enrollment": 9379.0,
+    "ytdPacing": 0.43
+  },
+  "hays consolidated independent school district": {
+    "enrollment": 25590.0,
+    "ytdPacing": 0.59
+  },
+  "hayward unified school district": {
+    "enrollment": 21427.0,
+    "ytdPacing": 0.71
+  },
+  "helendale elementary school district": {
+    "enrollment": 1095.0,
+    "ytdPacing": 0.33
+  },
+  "highland park independent school district": {
+    "enrollment": 6352.0,
+    "ytdPacing": 1.0
+  },
+  "horizon charters (district)": {
+    "enrollment": 1800.0,
+    "ytdPacing": 0.94
+  },
+  "hurst-euless-bedford independent school district": {
+    "enrollment": 22921.0,
+    "ytdPacing": 0.59
+  },
+  "international community school": {
+    "enrollment": 445.0,
+    "ytdPacing": 0.25
+  },
+  "jackson county school district": {
+    "enrollment": 10594.0,
+    "ytdPacing": 0.73
+  },
+  "jefferson county school district": {
+    "enrollment": 1924.0,
+    "ytdPacing": 0.65
+  },
+  "jefferson davis parish": {
+    "enrollment": 5397.0,
+    "ytdPacing": 0.09
+  },
+  "joliet public school district 86": {
+    "enrollment": 9242.0,
+    "ytdPacing": 0.09
+  },
+  "keppel union school district": {
+    "enrollment": 2621.0,
+    "ytdPacing": 0.0
+  },
+  "kipp public schools northern california": {
+    "enrollment": 7000.0,
+    "ytdPacing": 0.28
+  },
+  "lammersville joint unified school district": {
+    "enrollment": 8173.0,
+    "ytdPacing": 0.94
+  },
+  "lansing school district 158": {
+    "enrollment": 2477.0,
+    "ytdPacing": 0.2
+  },
+  "legacy preparatory": {
+    "enrollment": 1387.0,
+    "ytdPacing": 0.89
+  },
+  "lemont township high school district 210": {
+    "enrollment": 1338.0,
+    "ytdPacing": 0.76
+  },
+  "lewistown community unit school district 97": {
+    "enrollment": 593.0,
+    "ytdPacing": 1.6
+  },
+  "lincoln county schools": {
+    "enrollment": 12162.0,
+    "ytdPacing": 0.32
+  },
+  "little elm independent school district": {
+    "enrollment": 8508.0,
+    "ytdPacing": 0.11
+  },
+  "livingston parish": {
+    "enrollment": 26163.0,
+    "ytdPacing": 2.48
+  },
+  "lockhart independent school district": {
+    "enrollment": 6563.0,
+    "ytdPacing": 0.72
+  },
+  "lompoc unified school district": {
+    "enrollment": 9697.0,
+    "ytdPacing": 0.1
+  },
+  "los angeles unified school district": {
+    "enrollment": 434816.0,
+    "ytdPacing": 0.21
+  },
+  "lucia mar unified school district": {
+    "enrollment": 9275.0,
+    "ytdPacing": 0.97
+  },
+  "madera unified school district": {
+    "enrollment": 20018.0,
+    "ytdPacing": 0.04
+  },
+  "manor independent school district": {
+    "enrollment": 10569.0,
+    "ytdPacing": 0.66
+  },
+  "marlin independent school district": {
+    "enrollment": 753.0,
+    "ytdPacing": 0.0
+  },
+  "martin county schools": {
+    "enrollment": 2636.0,
+    "ytdPacing": 0.94
+  },
+  "mchenry community consolidated school district 15": {
+    "enrollment": 3932.0,
+    "ytdPacing": 2.0
+  },
+  "mclean county unit school district 5": {
+    "enrollment": 12293.0,
+    "ytdPacing": 4.78
+  },
+  "metamora township high school district #122": {
+    "enrollment": 910.0,
+    "ytdPacing": 0.42
+  },
+  "milpitas unified school district": {
+    "enrollment": 10184.0,
+    "ytdPacing": 0.6
+  },
+  "morgan hill unified school district": {
+    "enrollment": 8034.0,
+    "ytdPacing": 0.25
+  },
+  "morongo unified school district": {
+    "enrollment": 7200.0,
+    "ytdPacing": 0.98
+  },
+  "mountain empire unified school district": {
+    "enrollment": 1929.0,
+    "ytdPacing": 1.11
+  },
+  "new haven unified school district": {
+    "enrollment": 9968.0,
+    "ytdPacing": 3.36
+  },
+  "newport school district": {
+    "enrollment": 1010.0,
+    "ytdPacing": 5.23
+  },
+  "north boone community unit school district 200": {
+    "enrollment": 1490.0,
+    "ytdPacing": 1.67
+  },
+  "oak lawn-hometown school district 123": {
+    "enrollment": 3738.0,
+    "ytdPacing": 0.37
+  },
+  "oakley union": {
+    "enrollment": 4939.0,
+    "ytdPacing": 0.06
+  },
+  "oconee county school district": {
+    "enrollment": 8928.0,
+    "ytdPacing": 0.08
+  },
+  "oglethorpe county school district": {
+    "enrollment": 2224.0,
+    "ytdPacing": 0.57
+  },
+  "okeechobee county public schools": {
+    "enrollment": 6761.0,
+    "ytdPacing": 0.02
+  },
+  "opportunities for learning - baldwin park": {
+    "enrollment": 2307.0,
+    "ytdPacing": 0.0
+  },
+  "opportunities for learning - duarte": {
+    "enrollment": 122.0,
+    "ytdPacing": 0.0
+  },
+  "options for youth - duarte inc district": {
+    "enrollment": 915.0,
+    "ytdPacing": 0.0
+  },
+  "options for youth san bernardino (district)": {
+    "enrollment": 1118.0,
+    "ytdPacing": 0.39
+  },
+  "options for youth-acton district": {
+    "enrollment": 2182.0,
+    "ytdPacing": 0.2
+  },
+  "orange county schools": {
+    "enrollment": 6856.0,
+    "ytdPacing": 0.11
+  },
+  "oroville union high school district": {
+    "enrollment": 2542.0,
+    "ytdPacing": 0.11
+  },
+  "oxnard union high school district": {
+    "enrollment": 19401.0,
+    "ytdPacing": 0.13
+  },
+  "palm springs unified school district": {
+    "enrollment": 19987.0,
+    "ytdPacing": 0.77
+  },
+  "palmdale aerospace academy (district)": {
+    "enrollment": 2639.0,
+    "ytdPacing": 1.09
+  },
+  "palmdale school district": {
+    "enrollment": 17045.0,
+    "ytdPacing": 0.54
+  },
+  "park forest school district 163": {
+    "enrollment": 1412.0,
+    "ytdPacing": 0.23
+  },
+  "pasadena unified school district": {
+    "enrollment": 13740.0,
+    "ytdPacing": 0.98
+  },
+  "paulding county school district": {
+    "enrollment": 32716.0,
+    "ytdPacing": 1.34
+  },
+  "person county schools": {
+    "enrollment": 4426.0,
+    "ytdPacing": 0.35
+  },
+  "pickens county school district": {
+    "enrollment": 4146.0,
+    "ytdPacing": 0.08
+  },
+  "pleasanton unified school district": {
+    "enrollment": 14023.0,
+    "ytdPacing": 2.71
+  },
+  "ramirez school district": {
+    "enrollment": 28.0,
+    "ytdPacing": 0.0
+  },
+  "redwood city elementary school district": {
+    "enrollment": 6169.0,
+    "ytdPacing": 1.29
+  },
+  "reef-sunset unified school district": {
+    "enrollment": 2687.0,
+    "ytdPacing": 0.56
+  },
+  "rincon valley union elementary school district": {
+    "enrollment": 3043.0,
+    "ytdPacing": 0.68
+  },
+  "rio elementary school district": {
+    "enrollment": 5270.0,
+    "ytdPacing": 0.42
+  },
+  "riverbank unified school district": {
+    "enrollment": 2993.0,
+    "ytdPacing": 0.19
+  },
+  "rockingham county public schools": {
+    "enrollment": 11288.0,
+    "ytdPacing": 0.81
+  },
+  "rockport-fulton independent school district": {
+    "enrollment": 3023.0,
+    "ytdPacing": 2.06
+  },
+  "rowland unified school district": {
+    "enrollment": 18545.0,
+    "ytdPacing": 0.43
+  },
+  "salinas city elementary school district": {
+    "enrollment": 7933.0,
+    "ytdPacing": 0.46
+  },
+  "salinas union high school district": {
+    "enrollment": 16656.0,
+    "ytdPacing": 0.92
+  },
+  "sampson county schools": {
+    "enrollment": 7795.0,
+    "ytdPacing": 1.13
+  },
+  "san benito": {
+    "enrollment": 6593.0,
+    "ytdPacing": 0.34
+  },
+  "san jacinto unified school district": {
+    "enrollment": 11970.0,
+    "ytdPacing": 1.12
+  },
+  "san jose unified school district": {
+    "enrollment": 25320.0,
+    "ytdPacing": 0.27
+  },
+  "san lorenzo unified school district": {
+    "enrollment": 8154.0,
+    "ytdPacing": 0.47
+  },
+  "san marcos consolidated independent school district": {
+    "enrollment": 8643.0,
+    "ytdPacing": 0.07
+  },
+  "san mateo union high school district": {
+    "enrollment": 9093.0,
+    "ytdPacing": 0.03
+  },
+  "santa barbara unified school district": {
+    "enrollment": 12384.0,
+    "ytdPacing": 0.46
+  },
+  "the accelerated school": {
+    "enrollment": 2425.0,
+    "ytdPacing": 0.18
+  },
+  "willis independent school district": {
+    "enrollment": 9253.0,
+    "ytdPacing": 1.36
+  }
+}
