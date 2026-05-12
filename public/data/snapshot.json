@@ -1,11 +1,11 @@
 {
-  "refreshedAt": "2026-05-12T19:53:55.454161Z",
+  "refreshedAt": "2026-05-12T20:58:19.392682Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 91,
       "booked": 49,
-      "completed": 22,
+      "completed": 23,
       "unbooked": 41,
       "weeklyTarget": 13,
       "thisWeekUrgent": 38,
@@ -34,8 +34,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 14023.0,
+            "ytdPacing": 0.66
           },
           {
             "name": "Atwood Heights School District 125",
@@ -59,8 +59,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 542.0,
+            "ytdPacing": 1.53
           },
           {
             "name": "Beaufort County Schools",
@@ -84,8 +84,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 5823.0,
+            "ytdPacing": 0.44
           },
           {
             "name": "Berryessa Union School District",
@@ -109,8 +109,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 6026.0,
+            "ytdPacing": 0.48
           },
           {
             "name": "Big Oak Flat-Groveland Unified School District",
@@ -134,8 +134,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 594.0,
+            "ytdPacing": 0.19
           },
           {
             "name": "San Marcos Consolidated Independent School District",
@@ -159,8 +159,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 8643.0,
+            "ytdPacing": 0.07
           },
           {
             "name": "Castro Valley Unified School District",
@@ -184,8 +184,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 10100.0,
+            "ytdPacing": 0.33
           },
           {
             "name": "Clarke County School District",
@@ -209,8 +209,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 12305.0,
+            "ytdPacing": 1.18
           },
           {
             "name": "Colquitt County School District",
@@ -234,8 +234,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 8681.0,
+            "ytdPacing": 0.32
           },
           {
             "name": "Community High School District 155",
@@ -259,8 +259,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 5339.0,
+            "ytdPacing": 0.01
           },
           {
             "name": "Dare County Schools",
@@ -284,8 +284,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 5133.0,
+            "ytdPacing": 0.55
           },
           {
             "name": "Del Norte County Office of Education (including Del Norte Unified School District)",
@@ -309,8 +309,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 3533.0,
+            "ytdPacing": 0.33
           },
           {
             "name": "Desert Sands Unified School District",
@@ -334,8 +334,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 25233.0,
+            "ytdPacing": 1.11
           },
           {
             "name": "East Side Union High School District",
@@ -359,8 +359,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 22893.0,
+            "ytdPacing": 0.46
           },
           {
             "name": "Eureka City School District",
@@ -384,8 +384,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 3689.0,
+            "ytdPacing": 0.19
           },
           {
             "name": "Forsyth County Schools",
@@ -409,8 +409,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 55051.0,
+            "ytdPacing": 0.22
           },
           {
             "name": "Evans County School District",
@@ -434,8 +434,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 1814.0,
+            "ytdPacing": 0.04
           },
           {
             "name": "Fullerton Elementary School District",
@@ -459,8 +459,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 11304.0,
+            "ytdPacing": 1.68
           },
           {
             "name": "Gilroy Unified School District",
@@ -484,8 +484,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 10621.0,
+            "ytdPacing": 0.2
           },
           {
             "name": "KIPP Public Schools Northern California",
@@ -509,8 +509,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 7000.0,
+            "ytdPacing": 0.28
           },
           {
             "name": "Lemont Township High School District 210",
@@ -534,8 +534,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 1338.0,
+            "ytdPacing": 0.76
           },
           {
             "name": "Beaumont Unified School District",
@@ -559,8 +559,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 13410.0,
+            "ytdPacing": 0.73
           },
           {
             "name": "Farmersville Unified School District",
@@ -584,8 +584,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 2487.0,
+            "ytdPacing": 0.31
           },
           {
             "name": "Livingston Parish",
@@ -609,8 +609,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 26163.0,
+            "ytdPacing": 2.48
           },
           {
             "name": "Lucia Mar Unified School District",
@@ -634,8 +634,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 9275.0,
+            "ytdPacing": 0.97
           },
           {
             "name": "Milpitas Unified School District",
@@ -659,8 +659,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 10184.0,
+            "ytdPacing": 0.6
           },
           {
             "name": "Opportunities for Learning - Baldwin Park",
@@ -684,8 +684,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 2307.0,
+            "ytdPacing": 0.0
           },
           {
             "name": "Opportunities for Learning - Duarte",
@@ -709,8 +709,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 122.0,
+            "ytdPacing": 0.0
           },
           {
             "name": "Options For Youth San Bernardino (District)",
@@ -734,8 +734,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 1118.0,
+            "ytdPacing": 0.39
           },
           {
             "name": "Oroville Union High School District",
@@ -759,8 +759,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 2542.0,
+            "ytdPacing": 0.11
           },
           {
             "name": "Park Forest School District 163",
@@ -784,8 +784,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 1412.0,
+            "ytdPacing": 0.23
           },
           {
             "name": "Pleasanton Unified School District",
@@ -809,8 +809,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 14023.0,
+            "ytdPacing": 2.71
           },
           {
             "name": "Reef-Sunset Unified School District",
@@ -834,8 +834,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 2687.0,
+            "ytdPacing": 0.56
           },
           {
             "name": "Rincon Valley Union Elementary School District",
@@ -859,8 +859,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 3043.0,
+            "ytdPacing": 0.68
           },
           {
             "name": "Salinas City Elementary School District",
@@ -884,8 +884,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 7933.0,
+            "ytdPacing": 0.46
           },
           {
             "name": "Paulding County School District",
@@ -909,8 +909,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 32716.0,
+            "ytdPacing": 1.34
           },
           {
             "name": "Mountain Empire Unified School District",
@@ -934,8 +934,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 1929.0,
+            "ytdPacing": 1.11
           },
           {
             "name": "San Lorenzo Unified School District",
@@ -959,8 +959,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 8154.0,
+            "ytdPacing": 0.47
           }
         ],
         "nextWeek": [
@@ -986,8 +986,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 20018.0,
+            "ytdPacing": 0.04
           }
         ],
         "soon": [],
@@ -1015,8 +1015,8 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 15352.0,
+            "ytdPacing": 0.11
           },
           {
             "name": "Options For Youth - Duarte Inc District",
@@ -1040,15 +1040,15 @@
             "isUpsellCandidate": false,
             "utilization": null,
             "mpocs": [],
-            "enrollment": null,
-            "ytdPacing": null
+            "enrollment": 915.0,
+            "ytdPacing": 0.0
           }
         ]
       }
     },
     "stats": {
       "totalT1T2": 91,
-      "completed": 13,
+      "completed": 14,
       "booked": 49,
       "outreachSent": 52,
       "overdue": 34,
@@ -1063,8 +1063,8 @@
         },
         "2": {
           "total": 55,
-          "completed": 12,
-          "booked": 24,
+          "completed": 13,
+          "booked": 23,
           "remaining": 19,
           "overdue": 15
         },
@@ -1103,8 +1103,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 991.0,
+          "ytdPacing": 1.58
         },
         {
           "name": "Hays Consolidated Independent School District",
@@ -1128,8 +1128,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 25590.0,
+          "ytdPacing": 0.59
         },
         {
           "name": "Rockport-Fulton Independent School District",
@@ -1153,8 +1153,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3023.0,
+          "ytdPacing": 2.06
         },
         {
           "name": "San Marcos Consolidated Independent School District",
@@ -1178,8 +1178,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 8643.0,
+          "ytdPacing": 0.07
         },
         {
           "name": "Cedar Hill Independent School District",
@@ -1203,8 +1203,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6401.0,
+          "ytdPacing": 0.0
         },
         {
           "name": "Ferris Independent School District",
@@ -1228,8 +1228,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2705.0,
+          "ytdPacing": 0.29
         },
         {
           "name": "Highland Park Independent School District",
@@ -1253,8 +1253,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6352.0,
+          "ytdPacing": 1.0
         },
         {
           "name": "Hurst-Euless-Bedford Independent School District",
@@ -1278,8 +1278,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 22921.0,
+          "ytdPacing": 0.59
         },
         {
           "name": "Little Elm Independent School District",
@@ -1303,8 +1303,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 8508.0,
+          "ytdPacing": 0.11
         },
         {
           "name": "Lockhart Independent School District",
@@ -1328,8 +1328,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6563.0,
+          "ytdPacing": 0.72
         },
         {
           "name": "Willis Independent School District",
@@ -1353,8 +1353,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 9253.0,
+          "ytdPacing": 1.36
         },
         {
           "name": "Buena Park Elementary School District",
@@ -1378,8 +1378,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3811.0,
+          "ytdPacing": 0.36
         },
         {
           "name": "Burbank Unified School District",
@@ -1403,8 +1403,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 19925.0,
+          "ytdPacing": 0.38
         },
         {
           "name": "Helendale Elementary School District",
@@ -1428,8 +1428,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1095.0,
+          "ytdPacing": 0.33
         },
         {
           "name": "Ramirez School District",
@@ -1453,8 +1453,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 28.0,
+          "ytdPacing": 0.0
         },
         {
           "name": "Community Independent School District",
@@ -1478,8 +1478,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 4524.0,
+          "ytdPacing": 0.21
         },
         {
           "name": "Marlin Independent School District",
@@ -1503,8 +1503,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 753.0,
+          "ytdPacing": 0.0
         },
         {
           "name": "East Whittier City Elementary School District",
@@ -1528,8 +1528,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7281.0,
+          "ytdPacing": 0.82
         },
         {
           "name": "Beaumont Unified School District",
@@ -1553,8 +1553,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 13410.0,
+          "ytdPacing": 0.73
         },
         {
           "name": "Farmersville Unified School District",
@@ -1578,8 +1578,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2487.0,
+          "ytdPacing": 0.31
         },
         {
           "name": "Fillmore Unified School District",
@@ -1603,8 +1603,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 4076.0,
+          "ytdPacing": 0.87
         },
         {
           "name": "Lompoc Unified School District",
@@ -1628,8 +1628,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 9697.0,
+          "ytdPacing": 0.1
         },
         {
           "name": "Oxnard Union High School District",
@@ -1653,8 +1653,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 19401.0,
+          "ytdPacing": 0.13
         },
         {
           "name": "Pasadena Unified School District",
@@ -1678,8 +1678,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 13740.0,
+          "ytdPacing": 0.98
         },
         {
           "name": "Rowland Unified School District",
@@ -1703,8 +1703,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 18545.0,
+          "ytdPacing": 0.43
         },
         {
           "name": "Rio Elementary School District",
@@ -1728,8 +1728,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 5270.0,
+          "ytdPacing": 0.42
         },
         {
           "name": "San Jacinto Unified School District",
@@ -1753,8 +1753,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 11970.0,
+          "ytdPacing": 1.12
         },
         {
           "name": "Bellflower Unified School District",
@@ -1778,8 +1778,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 9413.0,
+          "ytdPacing": 0.08
         },
         {
           "name": "Mountain Empire Unified School District",
@@ -1803,8 +1803,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1929.0,
+          "ytdPacing": 1.11
         },
         {
           "name": "The Accelerated School",
@@ -1828,8 +1828,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2425.0,
+          "ytdPacing": 0.18
         }
       ],
       "gapToGoal": {
@@ -1864,8 +1864,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 8643.0,
+              "ytdPacing": 0.07
             },
             {
               "name": "Beaumont Unified School District",
@@ -1889,8 +1889,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 13410.0,
+              "ytdPacing": 0.73
             },
             {
               "name": "Farmersville Unified School District",
@@ -1914,8 +1914,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 2487.0,
+              "ytdPacing": 0.31
             },
             {
               "name": "Mountain Empire Unified School District",
@@ -1939,8 +1939,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 1929.0,
+              "ytdPacing": 1.11
             }
           ],
           "nextWeek": [],
@@ -2005,8 +2005,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7232.0,
+          "ytdPacing": 0.07
         },
         {
           "name": "Alliance Collins",
@@ -2030,8 +2030,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 627.0,
+          "ytdPacing": 1.67
         },
         {
           "name": "Beaufort County Schools",
@@ -2055,8 +2055,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 5823.0,
+          "ytdPacing": 0.44
         },
         {
           "name": "Belmont-Redwood Shores Elementary School District",
@@ -2080,8 +2080,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 4020.0,
+          "ytdPacing": 0.55
         },
         {
           "name": "Berryessa Union School District",
@@ -2105,8 +2105,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6026.0,
+          "ytdPacing": 0.48
         },
         {
           "name": "Big Oak Flat-Groveland Unified School District",
@@ -2130,8 +2130,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 594.0,
+          "ytdPacing": 0.19
         },
         {
           "name": "Bladen County Schools",
@@ -2155,8 +2155,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3744.0,
+          "ytdPacing": 0.14
         },
         {
           "name": "Chapel Hill-Carrboro City Schools",
@@ -2180,8 +2180,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 11530.0,
+          "ytdPacing": 0.5
         },
         {
           "name": "Colquitt County School District",
@@ -2205,8 +2205,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 8681.0,
+          "ytdPacing": 0.32
         },
         {
           "name": "Community High School District 155",
@@ -2230,8 +2230,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 5339.0,
+          "ytdPacing": 0.01
         },
         {
           "name": "Corpus Christi Independent School District",
@@ -2255,8 +2255,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 31904.0,
+          "ytdPacing": 0.89
         },
         {
           "name": "Currituck County Schools",
@@ -2280,8 +2280,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 4642.0,
+          "ytdPacing": 90.0
         },
         {
           "name": "Dare County Schools",
@@ -2305,8 +2305,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 5133.0,
+          "ytdPacing": 0.55
         },
         {
           "name": "Del Valle",
@@ -2330,8 +2330,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 11482.0,
+          "ytdPacing": 1.06
         },
         {
           "name": "Escalon Unified School District",
@@ -2347,16 +2347,16 @@
           "booked": true,
           "meetingDate": null,
           "outreachSent": true,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2672.0,
+          "ytdPacing": 1.31
         },
         {
           "name": "Eureka City School District",
@@ -2380,8 +2380,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3689.0,
+          "ytdPacing": 0.19
         },
         {
           "name": "Forsyth County Schools",
@@ -2405,8 +2405,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 55051.0,
+          "ytdPacing": 0.22
         },
         {
           "name": "Freeport School District 145",
@@ -2430,8 +2430,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3535.0,
+          "ytdPacing": 0.41
         },
         {
           "name": "Gaston County Schools",
@@ -2455,8 +2455,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 29445.0,
+          "ytdPacing": 0.46
         },
         {
           "name": "Gilroy Unified School District",
@@ -2480,8 +2480,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 10621.0,
+          "ytdPacing": 0.2
         },
         {
           "name": "Granville County Schools",
@@ -2505,8 +2505,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6436.0,
+          "ytdPacing": 0.07
         },
         {
           "name": "Hayward Unified School District",
@@ -2530,8 +2530,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 21427.0,
+          "ytdPacing": 0.71
         },
         {
           "name": "Horizon Charters (District)",
@@ -2555,8 +2555,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1800.0,
+          "ytdPacing": 0.94
         },
         {
           "name": "International Community School",
@@ -2580,8 +2580,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 445.0,
+          "ytdPacing": 0.25
         },
         {
           "name": "Jackson County School District",
@@ -2605,8 +2605,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 10594.0,
+          "ytdPacing": 0.73
         },
         {
           "name": "Jefferson County School District",
@@ -2630,8 +2630,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1924.0,
+          "ytdPacing": 0.65
         },
         {
           "name": "Joliet Public School District 86",
@@ -2655,8 +2655,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 9242.0,
+          "ytdPacing": 0.09
         },
         {
           "name": "KIPP Public Schools Northern California",
@@ -2680,8 +2680,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7000.0,
+          "ytdPacing": 0.28
         },
         {
           "name": "Lammersville Joint Unified School District",
@@ -2705,8 +2705,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 8173.0,
+          "ytdPacing": 0.94
         },
         {
           "name": "Lansing School District 158",
@@ -2730,8 +2730,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2477.0,
+          "ytdPacing": 0.2
         },
         {
           "name": "Lincoln County Schools",
@@ -2755,8 +2755,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 12162.0,
+          "ytdPacing": 0.32
         },
         {
           "name": "Madera Unified School District",
@@ -2780,8 +2780,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 20018.0,
+          "ytdPacing": 0.04
         },
         {
           "name": "Manor Independent School District",
@@ -2805,8 +2805,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 10569.0,
+          "ytdPacing": 0.66
         },
         {
           "name": "McLean County Unit School District 5",
@@ -2830,8 +2830,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 12293.0,
+          "ytdPacing": 4.78
         },
         {
           "name": "Metamora Township High School District #122",
@@ -2855,8 +2855,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 910.0,
+          "ytdPacing": 0.42
         },
         {
           "name": "Milpitas Unified School District",
@@ -2880,8 +2880,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 10184.0,
+          "ytdPacing": 0.6
         },
         {
           "name": "Morgan Hill Unified School District",
@@ -2905,8 +2905,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 8034.0,
+          "ytdPacing": 0.25
         },
         {
           "name": "North Boone Community Unit School District 200",
@@ -2930,8 +2930,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1490.0,
+          "ytdPacing": 1.67
         },
         {
           "name": "Oakley Union",
@@ -2955,8 +2955,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 4939.0,
+          "ytdPacing": 0.06
         },
         {
           "name": "Oconee County School District",
@@ -2980,8 +2980,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 8928.0,
+          "ytdPacing": 0.08
         },
         {
           "name": "Okeechobee County Public Schools",
@@ -3005,8 +3005,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6761.0,
+          "ytdPacing": 0.02
         },
         {
           "name": "Options for Youth-Acton District",
@@ -3030,8 +3030,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2182.0,
+          "ytdPacing": 0.2
         },
         {
           "name": "Orange County Schools",
@@ -3055,8 +3055,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6856.0,
+          "ytdPacing": 0.11
         },
         {
           "name": "Person County Schools",
@@ -3080,8 +3080,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 4426.0,
+          "ytdPacing": 0.35
         },
         {
           "name": "Pickens County School District",
@@ -3105,8 +3105,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 4146.0,
+          "ytdPacing": 0.08
         },
         {
           "name": "Pleasanton Unified School District",
@@ -3130,8 +3130,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 14023.0,
+          "ytdPacing": 2.71
         },
         {
           "name": "Reef-Sunset Unified School District",
@@ -3155,8 +3155,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2687.0,
+          "ytdPacing": 0.56
         },
         {
           "name": "rincon Valley Union Elementary School District",
@@ -3180,8 +3180,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3043.0,
+          "ytdPacing": 0.68
         },
         {
           "name": "Rincon Valley Union Elementary School District",
@@ -3205,8 +3205,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3043.0,
+          "ytdPacing": 0.68
         },
         {
           "name": "Riverbank Unified School District",
@@ -3230,8 +3230,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2993.0,
+          "ytdPacing": 0.19
         },
         {
           "name": "Rockingham County Public Schools",
@@ -3255,8 +3255,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 11288.0,
+          "ytdPacing": 0.81
         },
         {
           "name": "San Benito",
@@ -3280,8 +3280,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6593.0,
+          "ytdPacing": 0.34
         },
         {
           "name": "San Jose Unified School District",
@@ -3305,8 +3305,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 25320.0,
+          "ytdPacing": 0.27
         },
         {
           "name": "San Mateo Union High School District",
@@ -3330,14 +3330,14 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 9093.0,
+          "ytdPacing": 0.03
         }
       ],
       "gapToGoal": {
         "totalNeedingCall": 36,
         "booked": 20,
-        "completed": 16,
+        "completed": 17,
         "unbooked": 15,
         "weeklyTarget": 5,
         "thisWeekUrgent": 14,
@@ -3366,8 +3366,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 5823.0,
+              "ytdPacing": 0.44
             },
             {
               "name": "Berryessa Union School District",
@@ -3391,8 +3391,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 6026.0,
+              "ytdPacing": 0.48
             },
             {
               "name": "Big Oak Flat-Groveland Unified School District",
@@ -3416,8 +3416,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 594.0,
+              "ytdPacing": 0.19
             },
             {
               "name": "Colquitt County School District",
@@ -3441,8 +3441,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 8681.0,
+              "ytdPacing": 0.32
             },
             {
               "name": "Community High School District 155",
@@ -3466,8 +3466,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 5339.0,
+              "ytdPacing": 0.01
             },
             {
               "name": "Dare County Schools",
@@ -3491,8 +3491,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 5133.0,
+              "ytdPacing": 0.55
             },
             {
               "name": "Eureka City School District",
@@ -3516,8 +3516,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 3689.0,
+              "ytdPacing": 0.19
             },
             {
               "name": "Forsyth County Schools",
@@ -3541,8 +3541,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 55051.0,
+              "ytdPacing": 0.22
             },
             {
               "name": "Gilroy Unified School District",
@@ -3566,8 +3566,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 10621.0,
+              "ytdPacing": 0.2
             },
             {
               "name": "KIPP Public Schools Northern California",
@@ -3591,8 +3591,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 7000.0,
+              "ytdPacing": 0.28
             },
             {
               "name": "Milpitas Unified School District",
@@ -3616,8 +3616,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 10184.0,
+              "ytdPacing": 0.6
             },
             {
               "name": "Pleasanton Unified School District",
@@ -3641,8 +3641,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 14023.0,
+              "ytdPacing": 2.71
             },
             {
               "name": "Reef-Sunset Unified School District",
@@ -3666,8 +3666,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 2687.0,
+              "ytdPacing": 0.56
             },
             {
               "name": "Rincon Valley Union Elementary School District",
@@ -3691,8 +3691,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 3043.0,
+              "ytdPacing": 0.68
             }
           ],
           "nextWeek": [
@@ -3718,8 +3718,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 20018.0,
+              "ytdPacing": 0.04
             }
           ],
           "soon": [],
@@ -3729,7 +3729,7 @@
       },
       "stats": {
         "totalT1T2": 36,
-        "completed": 9,
+        "completed": 10,
         "booked": 20,
         "outreachSent": 33,
         "overdue": 11,
@@ -3744,8 +3744,8 @@
           },
           "2": {
             "total": 32,
-            "completed": 8,
-            "booked": 11,
+            "completed": 9,
+            "booked": 10,
             "remaining": 13,
             "overdue": 9
           },
@@ -3783,8 +3783,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 21996.0,
+          "ytdPacing": 0.51
         },
         {
           "name": "Atwood Heights School District 125",
@@ -3808,8 +3808,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 542.0,
+          "ytdPacing": 1.53
         },
         {
           "name": "Belvidere Community Unit School District 100",
@@ -3833,8 +3833,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7262.0,
+          "ytdPacing": 0.04
         },
         {
           "name": "Bradford County Public Schools",
@@ -3858,8 +3858,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3116.0,
+          "ytdPacing": 1.0
         },
         {
           "name": "Bremen Community High School District 228",
@@ -3883,8 +3883,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 5461.0,
+          "ytdPacing": 1.66
         },
         {
           "name": "Buford City School District",
@@ -3908,8 +3908,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6105.0,
+          "ytdPacing": 0.71
         },
         {
           "name": "Charlton County School District",
@@ -3933,8 +3933,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1550.0,
+          "ytdPacing": 0.41
         },
         {
           "name": "Chatham County Schools",
@@ -3958,8 +3958,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 9064.0,
+          "ytdPacing": 1.62
         },
         {
           "name": "Chicago Heights School District 170",
@@ -3983,8 +3983,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2684.0,
+          "ytdPacing": 2.57
         },
         {
           "name": "Clarke County School District",
@@ -4008,8 +4008,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 12305.0,
+          "ytdPacing": 1.18
         },
         {
           "name": "Clayton County Public School District",
@@ -4033,8 +4033,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 51348.0,
+          "ytdPacing": 0.48
         },
         {
           "name": "Cobb County School District",
@@ -4058,8 +4058,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 107994.0,
+          "ytdPacing": 0.61
         },
         {
           "name": "Crystal Lake Community Consolidated School District 47",
@@ -4083,8 +4083,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7045.0,
+          "ytdPacing": 1.61
         },
         {
           "name": "Dekalb Community Unit School District 428",
@@ -4108,8 +4108,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7051.0,
+          "ytdPacing": 2.01
         },
         {
           "name": "Del Norte County Office of Education (including Del Norte Unified School District)",
@@ -4133,8 +4133,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3533.0,
+          "ytdPacing": 0.33
         },
         {
           "name": "Dodge County School District",
@@ -4158,8 +4158,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2935.0,
+          "ytdPacing": 0.15
         },
         {
           "name": "Effingham County School District",
@@ -4183,8 +4183,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 15352.0,
+          "ytdPacing": 0.11
         },
         {
           "name": "Evans County School District",
@@ -4208,8 +4208,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1814.0,
+          "ytdPacing": 0.04
         },
         {
           "name": "Fullerton Elementary School District",
@@ -4233,8 +4233,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 11304.0,
+          "ytdPacing": 1.68
         },
         {
           "name": "Fulton County School District",
@@ -4258,8 +4258,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 87637.0,
+          "ytdPacing": 0.41
         },
         {
           "name": "Grady County School District",
@@ -4283,8 +4283,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 4463.0,
+          "ytdPacing": 0.0
         },
         {
           "name": "Jefferson Davis Parish",
@@ -4308,8 +4308,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 5397.0,
+          "ytdPacing": 0.09
         },
         {
           "name": "Legacy Preparatory",
@@ -4333,8 +4333,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1387.0,
+          "ytdPacing": 0.89
         },
         {
           "name": "Lemont Township High School District 210",
@@ -4358,8 +4358,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1338.0,
+          "ytdPacing": 0.76
         },
         {
           "name": "Lewistown Community Unit School District 97",
@@ -4383,8 +4383,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 593.0,
+          "ytdPacing": 1.6
         },
         {
           "name": "Livingston Parish",
@@ -4408,8 +4408,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 26163.0,
+          "ytdPacing": 2.48
         },
         {
           "name": "Lucia Mar Unified School District",
@@ -4433,8 +4433,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 9275.0,
+          "ytdPacing": 0.97
         },
         {
           "name": "Martin County Schools",
@@ -4458,8 +4458,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2636.0,
+          "ytdPacing": 0.94
         },
         {
           "name": "McHenry Community Consolidated School District 15",
@@ -4483,8 +4483,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3932.0,
+          "ytdPacing": 2.0
         },
         {
           "name": "New Haven Unified School District",
@@ -4508,8 +4508,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 9968.0,
+          "ytdPacing": 3.36
         },
         {
           "name": "Oak Lawn-Hometown School District 123",
@@ -4533,8 +4533,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 3738.0,
+          "ytdPacing": 0.37
         },
         {
           "name": "Oglethorpe County School District",
@@ -4558,8 +4558,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2224.0,
+          "ytdPacing": 0.57
         },
         {
           "name": "Park Forest School District 163",
@@ -4583,8 +4583,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1412.0,
+          "ytdPacing": 0.23
         },
         {
           "name": "Paulding County School District",
@@ -4608,8 +4608,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 32716.0,
+          "ytdPacing": 1.34
         },
         {
           "name": "Sampson County Schools",
@@ -4633,8 +4633,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7795.0,
+          "ytdPacing": 1.13
         },
         {
           "name": "San Lorenzo Unified School District",
@@ -4658,8 +4658,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 8154.0,
+          "ytdPacing": 0.47
         }
       ],
       "gapToGoal": {
@@ -4694,8 +4694,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 542.0,
+              "ytdPacing": 1.53
             },
             {
               "name": "Clarke County School District",
@@ -4719,8 +4719,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 12305.0,
+              "ytdPacing": 1.18
             },
             {
               "name": "Del Norte County Office of Education (including Del Norte Unified School District)",
@@ -4744,8 +4744,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 3533.0,
+              "ytdPacing": 0.33
             },
             {
               "name": "Evans County School District",
@@ -4769,8 +4769,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 1814.0,
+              "ytdPacing": 0.04
             },
             {
               "name": "Fullerton Elementary School District",
@@ -4794,8 +4794,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 11304.0,
+              "ytdPacing": 1.68
             },
             {
               "name": "Lemont Township High School District 210",
@@ -4819,8 +4819,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 1338.0,
+              "ytdPacing": 0.76
             },
             {
               "name": "Livingston Parish",
@@ -4844,8 +4844,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 26163.0,
+              "ytdPacing": 2.48
             },
             {
               "name": "Lucia Mar Unified School District",
@@ -4869,8 +4869,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 9275.0,
+              "ytdPacing": 0.97
             },
             {
               "name": "Park Forest School District 163",
@@ -4894,8 +4894,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 1412.0,
+              "ytdPacing": 0.23
             },
             {
               "name": "Paulding County School District",
@@ -4919,8 +4919,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 32716.0,
+              "ytdPacing": 1.34
             },
             {
               "name": "San Lorenzo Unified School District",
@@ -4944,8 +4944,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 8154.0,
+              "ytdPacing": 0.47
             }
           ],
           "nextWeek": [],
@@ -4974,8 +4974,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 15352.0,
+              "ytdPacing": 0.11
             }
           ]
         }
@@ -5036,8 +5036,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7440.0,
+          "ytdPacing": 0.56
         },
         {
           "name": "Antelope Valley Union High School District",
@@ -5061,8 +5061,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 27782.0,
+          "ytdPacing": 0.6
         },
         {
           "name": "Apple Valley Unified School District",
@@ -5086,8 +5086,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 14023.0,
+          "ytdPacing": 0.66
         },
         {
           "name": "Campbell Union High School District",
@@ -5111,8 +5111,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 9696.0,
+          "ytdPacing": 1.09
         },
         {
           "name": "Castro Valley Unified School District",
@@ -5136,8 +5136,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 10100.0,
+          "ytdPacing": 0.33
         },
         {
           "name": "Coalinga-Huron Joint Unified School District",
@@ -5161,8 +5161,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 4501.0,
+          "ytdPacing": 0.08
         },
         {
           "name": "Desert Center Unified School District",
@@ -5186,8 +5186,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 30.0,
+          "ytdPacing": 0.71
         },
         {
           "name": "Desert Sands Unified School District",
@@ -5211,8 +5211,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 25233.0,
+          "ytdPacing": 1.11
         },
         {
           "name": "East Side Union High School District",
@@ -5236,8 +5236,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 22893.0,
+          "ytdPacing": 0.46
         },
         {
           "name": "Eastmont",
@@ -5261,8 +5261,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 5964.0,
+          "ytdPacing": 1.11
         },
         {
           "name": "Gompers Preparatory Academy (Charter)",
@@ -5286,8 +5286,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2100.0,
+          "ytdPacing": 0.37
         },
         {
           "name": "Keppel Union School District",
@@ -5311,8 +5311,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2621.0,
+          "ytdPacing": 0.0
         },
         {
           "name": "Los Angeles Unified School District",
@@ -5336,8 +5336,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 434816.0,
+          "ytdPacing": 0.21
         },
         {
           "name": "Morongo Unified School District",
@@ -5361,8 +5361,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7200.0,
+          "ytdPacing": 0.98
         },
         {
           "name": "Newport School District",
@@ -5386,8 +5386,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1010.0,
+          "ytdPacing": 5.23
         },
         {
           "name": "Opportunities for Learning - Baldwin Park",
@@ -5411,8 +5411,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2307.0,
+          "ytdPacing": 0.0
         },
         {
           "name": "Opportunities for Learning - Duarte",
@@ -5436,8 +5436,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 122.0,
+          "ytdPacing": 0.0
         },
         {
           "name": "Options For Youth - Duarte Inc District",
@@ -5461,8 +5461,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 915.0,
+          "ytdPacing": 0.0
         },
         {
           "name": "Options For Youth San Bernardino (District)",
@@ -5486,8 +5486,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 1118.0,
+          "ytdPacing": 0.39
         },
         {
           "name": "Oroville Union High School District",
@@ -5511,8 +5511,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2542.0,
+          "ytdPacing": 0.11
         },
         {
           "name": "Palm Springs Unified School District",
@@ -5536,8 +5536,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 19987.0,
+          "ytdPacing": 0.77
         },
         {
           "name": "Palmdale Aerospace Academy (District)",
@@ -5561,8 +5561,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 2639.0,
+          "ytdPacing": 1.09
         },
         {
           "name": "Palmdale School District",
@@ -5586,8 +5586,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 17045.0,
+          "ytdPacing": 0.54
         },
         {
           "name": "Redwood City Elementary School District",
@@ -5611,8 +5611,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 6169.0,
+          "ytdPacing": 1.29
         },
         {
           "name": "Salinas City Elementary School District",
@@ -5636,8 +5636,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 7933.0,
+          "ytdPacing": 0.46
         },
         {
           "name": "Salinas Union High School District",
@@ -5661,8 +5661,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 16656.0,
+          "ytdPacing": 0.92
         },
         {
           "name": "Santa Barbara Unified School District",
@@ -5686,8 +5686,8 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "mpocs": [],
-          "enrollment": null,
-          "ytdPacing": null
+          "enrollment": 12384.0,
+          "ytdPacing": 0.46
         }
       ],
       "gapToGoal": {
@@ -5722,8 +5722,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 14023.0,
+              "ytdPacing": 0.66
             },
             {
               "name": "Castro Valley Unified School District",
@@ -5747,8 +5747,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 10100.0,
+              "ytdPacing": 0.33
             },
             {
               "name": "Desert Sands Unified School District",
@@ -5772,8 +5772,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 25233.0,
+              "ytdPacing": 1.11
             },
             {
               "name": "East Side Union High School District",
@@ -5797,8 +5797,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 22893.0,
+              "ytdPacing": 0.46
             },
             {
               "name": "Opportunities for Learning - Baldwin Park",
@@ -5822,8 +5822,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 2307.0,
+              "ytdPacing": 0.0
             },
             {
               "name": "Opportunities for Learning - Duarte",
@@ -5847,8 +5847,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 122.0,
+              "ytdPacing": 0.0
             },
             {
               "name": "Options For Youth San Bernardino (District)",
@@ -5872,8 +5872,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 1118.0,
+              "ytdPacing": 0.39
             },
             {
               "name": "Oroville Union High School District",
@@ -5897,8 +5897,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 2542.0,
+              "ytdPacing": 0.11
             },
             {
               "name": "Salinas City Elementary School District",
@@ -5922,8 +5922,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 7933.0,
+              "ytdPacing": 0.46
             }
           ],
           "nextWeek": [],
@@ -5952,8 +5952,8 @@
               "isUpsellCandidate": false,
               "utilization": null,
               "mpocs": [],
-              "enrollment": null,
-              "ytdPacing": null
+              "enrollment": 915.0,
+              "ytdPacing": 0.0
             }
           ]
         }
@@ -6014,8 +6014,8 @@
       "isUpsellCandidate": false,
       "utilization": null,
       "mpocs": [],
-      "enrollment": null,
-      "ytdPacing": null
+      "enrollment": 2063.0,
+      "ytdPacing": 0.16
     },
     {
       "name": "Fort Bragg Unified School District",
@@ -6114,8 +6114,8 @@
       "isUpsellCandidate": false,
       "utilization": null,
       "mpocs": [],
-      "enrollment": null,
-      "ytdPacing": null
+      "enrollment": 9379.0,
+      "ytdPacing": 0.43
     },
     {
       "name": "Lake Elsinore Unified School District (all other campuses)",
