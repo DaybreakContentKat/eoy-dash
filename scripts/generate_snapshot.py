@@ -1,10 +1,9 @@
 import json
 import os
 import io
-import csv
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
-from googleapiclient.http import MediaIoBaseDownload
+import openpyxl
 from datetime import datetime, date, timedelta
 
 # Auth
@@ -13,7 +12,6 @@ creds_dict = json.loads(creds_json)
 creds = Credentials.from_service_account_info(
     creds_dict,
     scopes=[
-        'https://www.googleapis.com/auth/spreadsheets.readonly',
         'https://www.googleapis.com/auth/drive.readonly'
     ]
 )
@@ -22,25 +20,36 @@ drive = build('drive', 'v3', credentials=creds)
 
 SHEET_ID = '16gycwzxACC2--gNuWpGeN0kcjtXUGv1d'
 
-# Export the xlsx as CSV (first sheet)
-request = drive.files().export_media(
-    fileId=SHEET_ID,
-    mimeType='text/csv'
-)
+# Download raw xlsx bytes
+request = drive.files().get_media(fileId=SHEET_ID)
 fh = io.BytesIO()
+from googleapiclient.http import MediaIoBaseDownload
 downloader = MediaIoBaseDownload(fh, request)
 done = False
 while not done:
     _, done = downloader.next_chunk()
 
 fh.seek(0)
-content = fh.read().decode('utf-8')
-rows = list(csv.reader(io.StringIO(content)))
+wb = openpyxl.load_workbook(fh, data_only=True)
+
+# Find the District Tracker sheet
+sheet = None
+for name in wb.sheetnames:
+    if 'District Tracker' in name or 'district tracker' in name.lower():
+        sheet = wb[name]
+        break
+if sheet is None:
+    sheet = wb.active
+
+# Convert to list of rows (all as strings)
+rows = []
+for row in sheet.iter_rows(values_only=True):
+    rows.append([str(cell) if cell is not None else '' for cell in row])
 
 today = date.today()
 
 def parse_date(s):
-    if not s or s.strip() in ['', '#VALUE!', 'N/A', 'not stated in website']:
+    if not s or s.strip() in ['', '#VALUE!', 'N/A', 'not stated in website', 'None']:
         return None
     s = s.strip()
     for fmt in ['%m/%d/%Y', '%m/%d/%y', '%m-%d-%Y', '%m-%d-%y']:
