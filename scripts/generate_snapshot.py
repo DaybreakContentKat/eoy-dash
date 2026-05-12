@@ -17,17 +17,20 @@ creds = Credentials.from_service_account_info(
 
 drive = build('drive', 'v3', credentials=creds)
 SHEET_ID = '16gycwzxACC2--gNuWpGeN0kcjtXUGv1d'
+TIER_SHEET_ID = '1DN6Cxc8gcM5GHLq4-3FnLV-kCRAqVHEW6QDGxLBgVfE'
 
-# Download raw xlsx
-request = drive.files().get_media(fileId=SHEET_ID)
-fh = io.BytesIO()
-downloader = MediaIoBaseDownload(fh, request)
-done = False
-while not done:
-    _, done = downloader.next_chunk()
+def download_workbook(file_id):
+    request = drive.files().get_media(fileId=file_id)
+    buf = io.BytesIO()
+    downloader = MediaIoBaseDownload(buf, request)
+    done = False
+    while not done:
+        _, done = downloader.next_chunk()
+    buf.seek(0)
+    return openpyxl.load_workbook(buf, data_only=True)
 
-fh.seek(0)
-wb = openpyxl.load_workbook(fh, data_only=True)
+wb = download_workbook(SHEET_ID)
+tier_wb = download_workbook(TIER_SHEET_ID)
 
 # Find District Tracker sheet
 sheet = None
@@ -102,26 +105,48 @@ for row in rows[header_idx + 1:]:
         break
     data_rows.append(row)
 
-# Parse tier assignments
-tier_data = {}
-tiers_start = None
-for i, row in enumerate(rows):
-    if row and 'BTS Tiers' in str(row[0]):
-        tiers_start = i
-        break
+# Parse tier assignments from the separate cohort workbook.
+# Each "Cohort N" tab in tier_wb maps to Tier N. Columns: A=district, B=owner,
+# C=csm, D=market, E=package, F=touch level, G=training cohort, H=cohort reason,
+# I=ytd pacing, J=enrollment.
+def to_num(v):
+    if v is None or v == '':
+        return None
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
 
-if tiers_start:
-    for row in rows[tiers_start + 2:]:
+tier_data = {}
+for tier_num in (1, 2, 3):
+    target = f'cohort {tier_num}'
+    tab_name = next((n for n in tier_wb.sheetnames if n.strip().lower() == target), None)
+    if not tab_name:
+        continue
+    ws = tier_wb[tab_name]
+    tab_rows = [
+        [str(cell) if cell is not None else '' for cell in row]
+        for row in ws.iter_rows(values_only=True)
+    ]
+    header_idx = next(
+        (i for i, r in enumerate(tab_rows) if r and 'district' in r[0].strip().lower()),
+        None,
+    )
+    if header_idx is None:
+        continue
+    for row in tab_rows[header_idx + 1:]:
         if not row or not row[0].strip():
-            continue
-        if len(row) < 7:
             continue
         name = row[0].strip()
         csm = row[2].strip() if len(row) > 2 else ''
-        cohort = row[6].strip() if len(row) > 6 else ''
-        tier_num = 1 if 'Cohort 1' in cohort else (2 if 'Cohort 2' in cohort else 3)
-        if name:
-            tier_data[name.lower()] = {'csm': csm, 'tierNum': tier_num}
+        ytd_pacing = to_num(row[8]) if len(row) > 8 else None
+        enrollment = to_num(row[9]) if len(row) > 9 else None
+        tier_data[name.lower()] = {
+            'csm': csm,
+            'tierNum': tier_num,
+            'ytdPacing': ytd_pacing,
+            'enrollment': enrollment,
+        }
 
 def get_tier_info(name):
     key = name.lower()
@@ -130,7 +155,7 @@ def get_tier_info(name):
     for k, v in tier_data.items():
         if k in key or key in k:
             return v
-    return {'csm': None, 'tierNum': 3}
+    return {'csm': None, 'tierNum': 3, 'ytdPacing': None, 'enrollment': None}
 
 csm_map = {
     'Brianna Masciel': 'brianna',
@@ -178,9 +203,10 @@ def empty_portfolio_stats():
         }
     }
 
-def make_district(row, csm_slug, csm_name, tier_num):
+def make_district(row, csm_slug, csm_name, tier_info):
     name = row[0].strip()
     owner = row[1].strip()
+    tier_num = tier_info['tierNum']
     ldos = parse_date(row[4])
     bt = booking_target(ldos)
     booked_raw = row[6].strip()
@@ -216,8 +242,8 @@ def make_district(row, csm_slug, csm_name, tier_num):
         'isUpsellCandidate': False,
         'utilization': None,
         'mpocs': [],
-        'enrollment': None,
-        'ytdPacing': None,
+        'enrollment': tier_info.get('enrollment'),
+        'ytdPacing': tier_info.get('ytdPacing'),
     }
 
 # Build districts
@@ -232,13 +258,12 @@ for row in data_rows:
         continue
     owner = row[1].strip()
     tier_info = get_tier_info(name)
-    tier_num = tier_info['tierNum']
     csm_name = tier_info['csm'] or owner
     csm_slug = csm_map.get(csm_name, csm_map.get(owner))
     if not csm_slug:
-        orphans.append(make_district(row, 'unassigned', owner, tier_num))
+        orphans.append(make_district(row, 'unassigned', owner, tier_info))
         continue
-    districts.append(make_district(row, csm_slug, csm_name, tier_num))
+    districts.append(make_district(row, csm_slug, csm_name, tier_info))
 
 def build_urgency_buckets(unbooked_districts):
     buckets = empty_urgency_buckets()
