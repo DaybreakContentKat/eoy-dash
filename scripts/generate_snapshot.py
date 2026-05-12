@@ -19,8 +19,14 @@ drive = build('drive', 'v3', credentials=creds)
 SHEET_ID = '16gycwzxACC2--gNuWpGeN0kcjtXUGv1d'
 TIER_SHEET_ID = '1DN6Cxc8gcM5GHLq4-3FnLV-kCRAqVHEW6QDGxLBgVfE'
 
+XLSX_MIME = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+
 def download_workbook(file_id):
-    request = drive.files().get_media(fileId=file_id)
+    meta = drive.files().get(fileId=file_id, fields='mimeType').execute()
+    if meta['mimeType'] == 'application/vnd.google-apps.spreadsheet':
+        request = drive.files().export_media(fileId=file_id, mimeType=XLSX_MIME)
+    else:
+        request = drive.files().get_media(fileId=file_id)
     buf = io.BytesIO()
     downloader = MediaIoBaseDownload(buf, request)
     done = False
