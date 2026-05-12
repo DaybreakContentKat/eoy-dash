@@ -61,6 +61,12 @@ export function DistrictCard({ district: d, csm }: Props) {
             <dd className="tabular-nums">{formatNumber(d.enrollment)}</dd>
           </div>
         )}
+        {d.ytdPacing != null && (
+          <div className="flex justify-between gap-2">
+            <dt className="text-zinc-400">YTD pacing</dt>
+            <dd className="tabular-nums">{Math.round(d.ytdPacing * 100)}%</dd>
+          </div>
+        )}
       </dl>
 
       {d.notes && (
