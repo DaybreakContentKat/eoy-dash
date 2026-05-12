@@ -1,0 +1,32 @@
+name: Refresh EOY Snapshot
+
+on:
+  schedule:
+    - cron: '0 13 * * *'  # 8am EST daily
+  workflow_dispatch:  # allows manual trigger
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install gspread google-auth
+
+      - name: Generate snapshot
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+        run: python scripts/generate_snapshot.py
+
+      - name: Commit and push snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/snapshot.json
+          git diff --staged --quiet || git commit -m "chore: refresh snapshot $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
