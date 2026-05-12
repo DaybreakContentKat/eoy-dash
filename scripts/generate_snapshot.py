@@ -1,7 +1,10 @@
 import json
 import os
-import gspread
+import io
+import csv
 from google.oauth2.service_account import Credentials
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaIoBaseDownload
 from datetime import datetime, date, timedelta
 
 # Auth
@@ -14,13 +17,25 @@ creds = Credentials.from_service_account_info(
         'https://www.googleapis.com/auth/drive.readonly'
     ]
 )
-client = gspread.authorize(creds)
 
-# Open sheet
+drive = build('drive', 'v3', credentials=creds)
+
 SHEET_ID = '16gycwzxACC2--gNuWpGeN0kcjtXUGv1d'
-spreadsheet = client.open_by_key(SHEET_ID)
-sheet = spreadsheet.worksheet('📋 District Tracker')
-rows = sheet.get_all_values()
+
+# Export the xlsx as CSV (first sheet)
+request = drive.files().export_media(
+    fileId=SHEET_ID,
+    mimeType='text/csv'
+)
+fh = io.BytesIO()
+downloader = MediaIoBaseDownload(fh, request)
+done = False
+while not done:
+    _, done = downloader.next_chunk()
+
+fh.seek(0)
+content = fh.read().decode('utf-8')
+rows = list(csv.reader(io.StringIO(content)))
 
 today = date.today()
 
@@ -72,7 +87,7 @@ for i, row in enumerate(rows):
 if header_idx is None:
     raise Exception("Could not find header row")
 
-# Parse district rows — stop at Monica's or Daisy's sheet
+# Parse district rows
 data_rows = []
 for row in rows[header_idx + 1:]:
     if not row or not row[0].strip():
