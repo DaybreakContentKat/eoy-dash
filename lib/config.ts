@@ -27,12 +27,17 @@ export const BTS_TRACKER_URL =
   'https://docs.google.com/spreadsheets/d/16gycwzxACC2--gNuWpGeN0kcjtXUGv1d/edit?gid=175562126#gid=175562126';
 
 export const BOOKING_WINDOW_DAYS_BEFORE_LDOS = 28;
-// Upsell thresholds calibrated for ACTUAL patient counts (not enrollment
-// estimates). At real volumes, the prior 50-student threshold never fired.
-// The flag itself is sourced from scripts/static-upsell.json (baked once
-// from Looker on 2026-05-12 — not refreshed).
-export const UPSELL_UNINSURED_COUNT_THRESHOLD = 5;
-export const UPSELL_UNINSURED_PCT_THRESHOLD = 0.05;
+// Primary upsell signal is the COMBINED gap (uninsured + OON), not uninsured
+// alone. Threshold = 10 patients; flag is sourced from
+// scripts/static-upsell.json (baked once from Looker on 2026-05-12 — not
+// refreshed). All Unlimited (including CYBHI Unlimited) is excluded since
+// those contracts already cover these students.
+export const UPSELL_GAP_COUNT_THRESHOLD = 10;
+export const UPSELL_ELIGIBLE_CONTRACTS = [
+  'No Cost',
+  'No Cost + CYBHI',
+  'Blended',
+] as const;
 
 export const CSM_CONFIG: Record<string, CSMConfig> = {
   brianna: {

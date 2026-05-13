@@ -16,13 +16,21 @@ export interface ConcernCategory {
 }
 
 export interface UpsellData {
-  // From Looker District Health Plan, 2026-05-12 snapshot (static — not refreshed daily).
+  // From Looker District Health Plan + District Assignments + CYBHI sheets,
+  // 2026-05-12 (static — not refreshed daily). Pre-filtered to contracts
+  // where an upsell pitch makes sense: No Cost, No Cost + CYBHI, or Blended.
+  // Unlimited and Unlimited+CYBHI districts are excluded — those contracts
+  // already cover uninsured and OON patients.
   uninsured: number;
   uninsuredPct: number;
   oon: number;
   oonPct: number;
   totalPatients: number;
+  gap: number;
   combinedPct: number;
+  contract: string;
+  csm: string;
+  state: string;
 }
 
 export interface UtilizationData {

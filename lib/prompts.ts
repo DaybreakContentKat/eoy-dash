@@ -144,16 +144,12 @@ function formatBookingItem(d: District, n: number): string {
 function upsellTalkingPoint(d: District): string | null {
   if (!d.isUpsellCandidate || !d.upsellData) return null;
   const u = d.upsellData;
-  const lines = [
-    `${u.uninsured} uninsured patients in care (${u.uninsuredPct.toFixed(1)}% of active caseload).`,
-  ];
-  if (u.oon > 10) {
-    lines.push(`Also ${u.oon} out-of-network (${u.oonPct.toFixed(1)}%).`);
-  }
-  lines.push(
-    'District sponsorship could cover these students at no cost to families. Include in EOY talking points.',
+  return (
+    `${u.gap} patients lack full coverage (${u.combinedPct.toFixed(1)}% of caseload). ` +
+    `Breakdown: ${u.uninsured} uninsured, ${u.oon} out-of-network. ` +
+    `Current contract: ${u.contract}. ` +
+    `Upgrading to Unlimited would cover these students at no cost to families. Include in EOY talking points.`
   );
-  return lines.join(' ');
 }
 
 function formatMPOCs(d: District): string {
