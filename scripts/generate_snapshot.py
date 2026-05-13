@@ -65,13 +65,11 @@ except FileNotFoundError:
     static_upsell = {}
 
 def get_static_upsell(name):
-    key = name.lower()
-    if key in static_upsell:
-        return static_upsell[key]
-    for k, v in static_upsell.items():
-        if k in key or key in k:
-            return v
-    return None
+    # Exact match only — substring matching was too permissive (e.g., "union
+    # elementary school district" silently flagging "Alisal Union Elementary").
+    # If a curated upsell name doesn't exactly match a tracker name, fix the
+    # name in static-upsell.json (or the tracker) so the join is explicit.
+    return static_upsell.get(name.strip().lower())
 
 # Find District Tracker sheet
 sheet = None
