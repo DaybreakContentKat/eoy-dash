@@ -15,6 +15,11 @@ export const COHORT_FILE_ID = '1DN6Cxc8gcM5GHLq4-3FnLV-kCRAqVHEW6QDGxLBgVfE';
 export const ASYNC_FORM_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLScjV4W70VMPWLhVAo5QQiB66Ihh_TAwwVi-xSnxYrCvOJU0-Q/viewform?usp=sharing&ouid=104846538771365128927';
 
+// Static Claude artifact with the full upsell candidate report — linked from
+// the Upsell candidates stat tile on the dashboard homepage.
+export const UPSELL_REPORT_URL =
+  'https://claude.ai/artifacts/latest/481017a1-55e3-49be-a874-6ab3be3f09f1';
+
 export const PARTNERSHIP_EMAIL = 'partnership@daybreakhealth.com';
 
 export const NOTION_ASYNC_GUIDE_URL =
