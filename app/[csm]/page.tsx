@@ -8,6 +8,8 @@ import { GapToGoalBanner } from '@/components/GapToGoalBanner';
 import { StaleWarning } from '@/components/StaleWarning';
 import type { CardStatus, CSMConfig, District } from '@/lib/types';
 
+export const dynamic = 'force-dynamic';
+
 export function generateStaticParams() {
   return CSM_SLUGS.map((csm) => ({ csm }));
 }

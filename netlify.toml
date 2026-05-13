@@ -1,6 +1,10 @@
 [build]
   command = "npm run build"
   publish = ".next"
+  # Skip the Netlify build when the only file that changed is the snapshot.
+  # The deployed site fetches snapshot.json from GitHub raw at request time,
+  # so the daily refresh doesn't need a rebuild to reflect new data.
+  ignore = "git diff --quiet HEAD^ HEAD -- ':!public/data/snapshot.json'"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

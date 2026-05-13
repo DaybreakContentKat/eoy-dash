@@ -1,5 +1,7 @@
 import { CSM_CONFIG, CSM_SLUGS } from '@/lib/config';
 import { formatRefreshedAt, loadSnapshot } from '@/lib/snapshot';
+
+export const dynamic = 'force-dynamic';
 import { CSMCard } from '@/components/CSMCard';
 import { GapToGoalBanner } from '@/components/GapToGoalBanner';
 import { OrphanSection } from '@/components/OrphanSection';
