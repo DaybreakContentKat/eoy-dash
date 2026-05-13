@@ -72,17 +72,21 @@ def get_static_upsell(name):
     return static_upsell.get(name.strip().lower())
 
 # Find District Tracker sheet
+print(f'DEBUG: workbook tabs: {wb.sheetnames}', flush=True)
 sheet = None
 for name in wb.sheetnames:
     if 'district tracker' in name.lower():
         sheet = wb[name]
+        print(f'DEBUG: picked tab: {name!r}', flush=True)
         break
 if sheet is None:
     sheet = wb.active
+    print(f'DEBUG: no district-tracker tab found, using active: {sheet.title!r}', flush=True)
 
 rows = []
 for row in sheet.iter_rows(values_only=True):
     rows.append([str(cell) if cell is not None else '' for cell in row])
+print(f'DEBUG: total rows in picked tab: {len(rows)}', flush=True)
 
 today = date.today()
 
@@ -159,8 +163,10 @@ for row in rows[header_idx + 1:]:
         continue
     first = row[0].strip()
     if any(x in first for x in ["Monica", "Daisy", "How to Use", "BTS Training"]):
+        print(f'DEBUG: parser break at row col-A={first!r}', flush=True)
         break
     data_rows.append(row)
+print(f'DEBUG: data_rows extracted: {len(data_rows)}', flush=True)
 
 csm_map = {
     'Brianna Masciel': 'brianna',
