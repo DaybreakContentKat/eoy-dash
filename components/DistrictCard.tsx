@@ -1,5 +1,9 @@
-import { ASYNC_FORM_URL, PROJECT_URL } from '@/lib/config';
-import { buildIndividualBookingPrompt, buildIndividualPrepPrompt } from '@/lib/prompts';
+import { PROJECT_URL } from '@/lib/config';
+import {
+  buildIndividualAsyncEmailPrompt,
+  buildIndividualBookingPrompt,
+  buildIndividualPrepPrompt,
+} from '@/lib/prompts';
 import { formatNumber } from '@/lib/snapshot';
 import type { CSMConfig, District } from '@/lib/types';
 import { CopyPromptButton } from './CopyPromptButton';
@@ -85,15 +89,21 @@ export function DistrictCard({ district: d, csm }: Props) {
 function ActionButton({ district: d, csm }: { district: District; csm: CSMConfig }) {
   if (d.completed) return null;
   if (d.meetingType === 'async') {
+    if (d.asyncFormSent) {
+      return (
+        <span className="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-xs font-medium text-emerald-700">
+          ✓ Form sent {formatShortDate(d.asyncFormSent)}
+        </span>
+      );
+    }
+    const noMpoc = d.mpocs.length === 0;
     return (
-      <a
-        href={ASYNC_FORM_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center justify-center rounded-md border border-zinc-200 bg-white px-2.5 py-1 text-xs font-medium text-zinc-700 hover:bg-zinc-50"
-      >
-        Send async form ↗
-      </a>
+      <CopyPromptButton
+        label={noMpoc ? '📨 Draft email (no MPOC — Claude will ask)' : '📨 Copy async email prompt'}
+        prompt={buildIndividualAsyncEmailPrompt(csm, d)}
+        projectUrl={PROJECT_URL}
+        variant="compact"
+      />
     );
   }
   if (d.booked) {

@@ -1,5 +1,5 @@
 import { PROJECT_URL } from '@/lib/config';
-import { buildBatchBookingPrompt } from '@/lib/prompts';
+import { buildBatchAsyncEmailPrompt, buildBatchBookingPrompt } from '@/lib/prompts';
 import type { CSMConfig, District } from '@/lib/types';
 import { CopyPromptButton } from './CopyPromptButton';
 
@@ -12,7 +12,11 @@ export function BatchActionBar({ csm, districts }: Props) {
   const bookingTargets = districts.filter(
     (d) => d.status === 'overdue' || d.status === 'schedule-soon',
   );
+  const asyncTargets = districts.filter(
+    (d) => d.meetingType === 'async' && !d.completed && !d.asyncFormSent,
+  );
   const bookingPrompt = buildBatchBookingPrompt(csm, bookingTargets);
+  const asyncPrompt = buildBatchAsyncEmailPrompt(csm, asyncTargets);
 
   return (
     <section className="rounded-lg border border-zinc-200 bg-white p-4 shadow-sm">
@@ -20,17 +24,24 @@ export function BatchActionBar({ csm, districts }: Props) {
         This week's actions
       </h2>
       <p className="mt-1 text-xs text-zinc-600">
-        Click <strong>Draft all booking emails</strong> to copy one prompt covering every overdue + schedule-soon
-        district at once. Or use the individual button on each card below to handle one district at a time —
-        prep packs are individual-only since they're heavier per district.
+        <strong>Draft booking emails</strong> covers every overdue + schedule-soon live-meeting district.
+        <strong> Draft async partnership emails</strong> covers every async district whose form hasn't gone out
+        yet — drafts come from <code>partnership@</code> in the team voice. Use individual buttons on cards for one-offs.
       </p>
-      <div className="mt-3">
+      <div className="mt-3 flex flex-wrap gap-2">
         <CopyPromptButton
           label={`📧 Draft all ${bookingTargets.length} booking email${bookingTargets.length === 1 ? '' : 's'}`}
           prompt={bookingPrompt}
           projectUrl={PROJECT_URL}
           variant="primary"
           disabled={bookingTargets.length === 0}
+        />
+        <CopyPromptButton
+          label={`📨 Draft all ${asyncTargets.length} async partnership email${asyncTargets.length === 1 ? '' : 's'}`}
+          prompt={asyncPrompt}
+          projectUrl={PROJECT_URL}
+          variant="secondary"
+          disabled={asyncTargets.length === 0}
         />
       </div>
     </section>

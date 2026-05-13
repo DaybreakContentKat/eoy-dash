@@ -192,10 +192,11 @@ def empty_portfolio_stats():
     }
 
 def make_district(row, csm_slug, csm_name, tier_num, meeting_type):
-    # Columns (post-shift): A=name, B=training tier, C=live meeting Y/N,
+    # Columns (post-shifts): A=name, B=training tier, C=live meeting Y/N,
     # D=account owner, E=active renewal, F=mpoc, G=LDoS, H=call target,
-    # I=booked, J=meeting date, K=outreach sent, L=last outreach,
-    # M=completed, ..., T=notes
+    # I=booked, J=meeting date, K=outreach sent,
+    # L=async form sent on date (tier 3), M=last outreach, N=completed,
+    # ..., U=notes
     name = row[0].strip()
     owner = row[3].strip()
     ldos = parse_date(row[6])
@@ -204,8 +205,9 @@ def make_district(row, csm_slug, csm_name, tier_num, meeting_type):
     is_async_text = 'async' in booked_raw.lower() or 'async' in row[9].lower()
     booked = yn(booked_raw) and not is_async_text
     outreach = yn(row[10])
-    last_outreach = parse_date(row[11])
-    completed = yn(row[12])
+    async_form_sent = parse_date(row[11])
+    last_outreach = parse_date(row[12])
+    completed = yn(row[13])
 
     overdue = is_overdue(booked, completed, bt)
     nudge = needs_nudge(booked, completed, outreach, last_outreach)
@@ -228,8 +230,9 @@ def make_district(row, csm_slug, csm_name, tier_num, meeting_type):
         'booked': booked,
         'meetingDate': parse_date(row[9]).isoformat() if parse_date(row[9]) else None,
         'outreachSent': outreach,
+        'asyncFormSent': async_form_sent.isoformat() if async_form_sent else None,
         'completed': completed,
-        'notes': row[19] if len(row) > 19 else '',
+        'notes': row[20] if len(row) > 20 else '',
         'status': status,
         'overdue': overdue,
         'needsNudge': nudge,
@@ -245,7 +248,7 @@ districts = []
 orphans = []
 
 for row in data_rows:
-    while len(row) < 20:
+    while len(row) < 21:
         row.append('')
     name = row[0].strip()
     if not name:

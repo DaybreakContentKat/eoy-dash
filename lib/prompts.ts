@@ -1,4 +1,10 @@
-import { DISTRICT_DATA_FILE_ID, PROJECT_URL } from './config';
+import {
+  ASYNC_FORM_URL,
+  DISTRICT_DATA_FILE_ID,
+  NOTION_ASYNC_GUIDE_URL,
+  PARTNERSHIP_EMAIL,
+  PROJECT_URL,
+} from './config';
 import type { CSMConfig, District } from './types';
 
 /**
@@ -65,6 +71,61 @@ export function buildIndividualPrepPrompt(csm: CSMConfig, d: District): string {
     'Pull utilization and presenting-concerns data from the District Data sheet.',
     'Include the upsell talking point in the deck notes if flagged above.',
     'Use the daybreak-eoy-deck skill in this project.',
+  ].join('\n');
+}
+
+export function buildIndividualAsyncEmailPrompt(csm: CSMConfig, d: District): string {
+  const mpoc = formatMPOCs(d);
+  const mpocLine = mpoc
+    ? `MPOC: ${mpoc}`
+    : 'MPOC: (no contact on file — ask user for the MPOC name and email before drafting)';
+  return [
+    '[ACTION: ASYNC_EMAIL]',
+    `CSM: ${csm.fullName} (sending from their own inbox)`,
+    `Project: ${PROJECT_URL}`,
+    `Notion guide: ${NOTION_ASYNC_GUIDE_URL}`,
+    '',
+    `District: ${d.name}`,
+    mpocLine,
+    `LDoS: ${formatDate(d.lastDayOfSchool) ?? 'unknown'}`,
+    '',
+    '---',
+    `Draft a Gmail to the MPOC above using Template 1 (CSM/AM personal voice) from the Notion guide.`,
+    `Subject (use verbatim): Quick check-in before the year wraps up`,
+    `Signed by ${csm.firstName}. Use "I" language. Offer a quick call as a fallback.`,
+    `Insert this form link where the template says [INSERT FORM LINK]: ${ASYNC_FORM_URL}`,
+    `If no MPOC was provided above, ask the user for the contact before creating the draft — do not invent an address.`,
+    'Execute via the Gmail MCP now.',
+  ].join('\n');
+}
+
+export function buildBatchAsyncEmailPrompt(csm: CSMConfig, districts: District[]): string {
+  const items = districts.map((d, i) => formatAsyncItem(d, i + 1)).join('\n\n');
+  return [
+    '[ACTION: BATCH_ASYNC_EMAILS]',
+    `Sender: ${PARTNERSHIP_EMAIL} (team voice)`,
+    `Account owner reference: ${csm.fullName}`,
+    `Project: ${PROJECT_URL}`,
+    `Notion guide: ${NOTION_ASYNC_GUIDE_URL}`,
+    '',
+    `Districts (${districts.length}):`,
+    items,
+    '',
+    '---',
+    `For each district above, create a Gmail draft from ${PARTNERSHIP_EMAIL} to the listed MPOC using Template 2 (partnership/team voice) from the Notion guide.`,
+    `Subject (use verbatim): 5 minutes to set your district up for a great fall`,
+    `Use "we" language. Replies should route to their Daybreak contact — do not personalize per CSM.`,
+    `Insert this form link where the template says [INSERT FORM LINK]: ${ASYNC_FORM_URL}`,
+    'Execute all drafts now via the Gmail MCP. Do not ask for confirmation between drafts.',
+    'If a district has no MPOC contact listed, skip it and report which were skipped.',
+  ].join('\n');
+}
+
+function formatAsyncItem(d: District, n: number): string {
+  return [
+    `${n}. ${d.name}`,
+    `   MPOC: ${formatMPOCs(d) || '(no contact on file — skip and flag)'}`,
+    `   LDoS: ${formatDate(d.lastDayOfSchool) ?? 'unknown'}`,
   ].join('\n');
 }
 

@@ -26,6 +26,7 @@ function makeDistrict(overrides: Partial<District> = {}): District {
     booked: false,
     meetingDate: null,
     outreachSent: false,
+    asyncFormSent: null,
     completed: false,
     notes: '',
     status: 'schedule-soon',

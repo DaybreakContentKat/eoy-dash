@@ -10,8 +10,15 @@ export const DISTRICT_DATA_FILE_ID = '1C0CqG1jTAp40_3Tr2zCOlGU7bC_8f7ogYeRoqmeqE
 // used to live inside the BTS tracker.
 export const COHORT_FILE_ID = '1DN6Cxc8gcM5GHLq4-3FnLV-kCRAqVHEW6QDGxLBgVfE';
 
+// Fall Planning Quick Check-In — embedded in async email prompts. Source of
+// truth for which form to send is the Notion guide below.
 export const ASYNC_FORM_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLSckbtqio2hvbN5DmwiDamIkdNOrmS89XV0oLuqkiKrbyHiVtA/viewform?usp=header';
+  'https://docs.google.com/forms/d/e/1FAIpQLScjV4W70VMPWLhVAo5QQiB66Ihh_TAwwVi-xSnxYrCvOJU0-Q/viewform?usp=sharing&ouid=104846538771365128927';
+
+export const PARTNERSHIP_EMAIL = 'partnership@daybreakhealth.com';
+
+export const NOTION_ASYNC_GUIDE_URL =
+  'https://www.notion.so/daybreakhealth/Async-EOY-Check-In-Email-Templates-Guide-35d10de5425e810382dce5602a180f67';
 
 // CSMs log their bookings/meetings/outreach back into this tracker so the
 // dashboard, the source data, and the team's day-to-day workflow stay

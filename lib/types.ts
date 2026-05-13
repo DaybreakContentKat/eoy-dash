@@ -49,6 +49,7 @@ export interface District {
   booked: boolean;
   meetingDate: string | null;
   outreachSent: boolean;
+  asyncFormSent: string | null;
   completed: boolean;
   notes: string;
   status: CardStatus;
