@@ -1,11 +1,11 @@
 {
-  "refreshedAt": "2026-05-13T03:07:00.914567Z",
+  "refreshedAt": "2026-05-13T15:37:24.310253Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 107,
       "booked": 62,
-      "completed": 31,
+      "completed": 32,
       "unbooked": 44,
       "weeklyTarget": 14,
       "thisWeekUrgent": 41,
@@ -1332,8 +1332,8 @@
         },
         "3": {
           "total": 69,
-          "completed": 12,
-          "booked": 16,
+          "completed": 13,
+          "booked": 15,
           "remaining": 41,
           "overdue": 37
         }
@@ -3138,7 +3138,7 @@
           "csmName": "Sarah Hough",
           "tier": "Tier 3",
           "tierNum": 3,
-          "meetingType": "async",
+          "meetingType": "live",
           "activeRenewal": true,
           "lastDayOfSchool": "2026-05-28",
           "bookingTarget": "2026-04-30",
@@ -3146,9 +3146,9 @@
           "meetingDate": null,
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "async",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -4431,7 +4431,7 @@
       "gapToGoal": {
         "totalNeedingCall": 42,
         "booked": 25,
-        "completed": 22,
+        "completed": 23,
         "unbooked": 16,
         "weeklyTarget": 5,
         "thisWeekUrgent": 15,
@@ -4973,8 +4973,8 @@
           },
           "3": {
             "total": 23,
-            "completed": 9,
-            "booked": 5,
+            "completed": 10,
+            "booked": 4,
             "remaining": 9,
             "overdue": 8
           }
