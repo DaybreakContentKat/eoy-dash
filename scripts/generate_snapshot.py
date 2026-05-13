@@ -71,22 +71,19 @@ def get_static_upsell(name):
     # name in static-upsell.json (or the tracker) so the join is explicit.
     return static_upsell.get(name.strip().lower())
 
-# Find District Tracker sheet
-print(f'DEBUG: workbook tabs: {wb.sheetnames}', flush=True)
+# Find District Tracker sheet. Other sheets (Monicas Sheet, Daisys Sheet, How
+# to Use) live in their own tabs and are ignored here.
 sheet = None
 for name in wb.sheetnames:
     if 'district tracker' in name.lower():
         sheet = wb[name]
-        print(f'DEBUG: picked tab: {name!r}', flush=True)
         break
 if sheet is None:
     sheet = wb.active
-    print(f'DEBUG: no district-tracker tab found, using active: {sheet.title!r}', flush=True)
 
 rows = []
 for row in sheet.iter_rows(values_only=True):
     rows.append([str(cell) if cell is not None else '' for cell in row])
-print(f'DEBUG: total rows in picked tab: {len(rows)}', flush=True)
 
 today = date.today()
 
@@ -156,17 +153,16 @@ for i, row in enumerate(rows):
 if header_idx is None:
     raise Exception("Could not find header row")
 
-# Parse district rows
+# Parse district rows. Section-header break logic was removed — sections that
+# used to live in this tab now live in their own tabs (Monicas Sheet, etc.),
+# and the substring break was misfiring on real district names like
+# "Santa Monica-Malibu" and "Del Norte" (no Monica/Daisy in those, but the
+# substring trigger caught any name that happened to contain them).
 data_rows = []
 for row in rows[header_idx + 1:]:
     if not row or not row[0].strip():
         continue
-    first = row[0].strip()
-    if any(x in first for x in ["Monica", "Daisy", "How to Use", "BTS Training"]):
-        print(f'DEBUG: parser break at row col-A={first!r}', flush=True)
-        break
     data_rows.append(row)
-print(f'DEBUG: data_rows extracted: {len(data_rows)}', flush=True)
 
 csm_map = {
     'Brianna Masciel': 'brianna',
