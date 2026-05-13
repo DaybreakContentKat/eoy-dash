@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-05-13T02:50:12.894336Z",
+  "refreshedAt": "2026-05-13T02:58:38.028698Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
@@ -1202,7 +1202,7 @@
       "booked": 50,
       "outreachSent": 53,
       "overdue": 33,
-      "upsellCandidates": 14,
+      "upsellCandidates": 13,
       "byTier": {
         "1": {
           "total": 37,
@@ -2256,20 +2256,9 @@
           "status": "completed",
           "overdue": false,
           "needsNudge": false,
-          "isUpsellCandidate": true,
+          "isUpsellCandidate": false,
           "utilization": null,
-          "upsellData": {
-            "uninsured": 0,
-            "uninsuredPct": 0.0,
-            "oon": 13,
-            "oonPct": 21.0,
-            "totalPatients": 62,
-            "gap": 13,
-            "combinedPct": 21.0,
-            "contract": "No Cost",
-            "csm": "Sarah Hough",
-            "state": "CA"
-          },
+          "upsellData": null,
           "mpocs": [],
           "enrollment": 7232.0,
           "ytdPacing": 0.07
@@ -4351,7 +4340,7 @@
         "booked": 21,
         "outreachSent": 34,
         "overdue": 10,
-        "upsellCandidates": 12,
+        "upsellCandidates": 11,
         "byTier": {
           "1": {
             "total": 4,
