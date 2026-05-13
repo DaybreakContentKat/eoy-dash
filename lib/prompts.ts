@@ -4,6 +4,7 @@ import {
   NOTION_ASYNC_GUIDE_URL,
   PARTNERSHIP_EMAIL,
   PROJECT_URL,
+  SELF_CONSENT_STATES,
 } from './config';
 import type { CSMConfig, District } from './types';
 
@@ -144,10 +145,30 @@ function formatBookingItem(d: District, n: number): string {
 function upsellTalkingPoint(d: District): string | null {
   if (!d.isUpsellCandidate || !d.upsellData) return null;
   const u = d.upsellData;
+  const scLaw = SELF_CONSENT_STATES[u.state];
+
+  // Three mutually-exclusive context lines around the self-consent angle:
+  //  - district has both self-consent law AND minor-self-consent intake data → strongest pitch
+  //  - district has self-consent intake data but state isn't in our enumerated map → softer note
+  //  - district has self-consent law but no intake data this season → permanence note
+  let contextLine = '';
+  if (u.minorSelfAddendum && scLaw) {
+    contextLine =
+      `Additionally, ${u.minorSelfAddendum} students (${(u.minorSelfAddendumPct ?? 0).toFixed(1)}% of referrals) came in via minor self-consent — ` +
+      `a legal pathway in ${u.state} (${scLaw.note}). These students cannot always provide insurance information. ` +
+      `This is a structural, recurring gap — not a one-off. District sponsorship through Unlimited would cover them regardless of insurance status. `;
+  } else if (u.minorSelfAddendum) {
+    contextLine = `Additionally, ${u.minorSelfAddendum} students self-consented without a parent and could not provide insurance. `;
+  } else if (scLaw) {
+    contextLine =
+      `Note: ${u.state} allows minor self-consent (${scLaw.note}). Students may continue to access care without parental insurance information — Unlimited would cover this gap permanently. `;
+  }
+
   return (
     `${u.gap} patients lack full coverage (${u.combinedPct.toFixed(1)}% of caseload). ` +
     `Breakdown: ${u.uninsured} uninsured, ${u.oon} out-of-network. ` +
     `Current contract: ${u.contract}. ` +
+    contextLine +
     `Upgrading to Unlimited would cover these students at no cost to families. Include in EOY talking points.`
   );
 }

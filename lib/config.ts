@@ -33,16 +33,33 @@ export const BTS_TRACKER_URL =
 
 export const BOOKING_WINDOW_DAYS_BEFORE_LDOS = 28;
 // Primary upsell signal is the COMBINED gap (uninsured + OON), not uninsured
-// alone. Threshold = 10 patients; flag is sourced from
-// scripts/static-upsell.json (baked once from Looker on 2026-05-12 — not
-// refreshed). All Unlimited (including CYBHI Unlimited) is excluded since
-// those contracts already cover these students.
-export const UPSELL_GAP_COUNT_THRESHOLD = 10;
+// alone. Flag is sourced from scripts/static-upsell.json (baked once from
+// Looker on 2026-05-12 — not refreshed). All Unlimited (including CYBHI
+// Unlimited) is excluded since those contracts already cover these students.
 export const UPSELL_ELIGIBLE_CONTRACTS = [
   'No Cost',
   'No Cost + CYBHI',
   'Blended',
 ] as const;
+
+// Minor self-consent laws — only states where flagged upsell districts live
+// are enumerated here. Other states with laws (AK, CO, CT, DE, HI, ME, MD,
+// MN, NH, NY, TN, DC) are intentionally omitted; add them if a candidate
+// district in one of those states ever lands in static-upsell.json.
+// Confirmed exclusions (no self-consent law for this use case): NC, TX, GA, VA.
+export const SELF_CONSENT_STATES: Record<string, { age: number; note: string }> = {
+  CA: { age: 12, note: '12+ with provider maturity determination — covers private insurance and Medi-Cal' },
+  IL: { age: 14, note: 'varying ~14–16' },
+};
+
+export const isInSelfConsentState = (state: string | null | undefined): boolean =>
+  !!state && state in SELF_CONSENT_STATES;
+
+// Tiered threshold: self-consent states get a smaller floor because the gap
+// is structural (legal pathway → recurs every season). Documentation only;
+// the curated static list in static-upsell.json is already filtered to this.
+export const getUpsellThreshold = (state: string): number =>
+  state in SELF_CONSENT_STATES ? 5 : 10;
 
 export const CSM_CONFIG: Record<string, CSMConfig> = {
   brianna: {

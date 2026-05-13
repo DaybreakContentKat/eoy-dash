@@ -31,6 +31,11 @@ export interface UpsellData {
   contract: string;
   csm: string;
   state: string;
+  // Optional — number of students who came in via minor self-consent this
+  // season. Only populated for districts where this signal is meaningful
+  // (CA districts with at least one self-consent intake on record).
+  minorSelfAddendum?: number;
+  minorSelfAddendumPct?: number;
 }
 
 export interface UtilizationData {

@@ -1,3 +1,4 @@
+import { SELF_CONSENT_STATES } from '@/lib/config';
 import type { UpsellData } from '@/lib/types';
 
 interface Props {
@@ -7,9 +8,11 @@ interface Props {
 export function UpsellTag({ data }: Props) {
   const combinedPct = data.combinedPct.toFixed(1);
   const smallN = data.totalPatients < 20;
+  const scLaw = SELF_CONSENT_STATES[data.state];
+  const scNote = scLaw ? ` · ${data.state} minor self-consent law (age ${scLaw.age}+)` : '';
   const tooltip = smallN
-    ? `${data.gap} patients without full coverage (${combinedPct}% of caseload — small caseload N=${data.totalPatients}, flag with caveat) · ${data.contract}.`
-    : `${data.gap} patients without full coverage (${combinedPct}% of caseload) · ${data.contract}.`;
+    ? `${data.gap} patients without full coverage (${combinedPct}% of caseload — small caseload N=${data.totalPatients}, flag with caveat) · ${data.contract}${scNote}.`
+    : `${data.gap} patients without full coverage (${combinedPct}% of caseload) · ${data.contract}${scNote}.`;
   return (
     <span
       title={tooltip}
