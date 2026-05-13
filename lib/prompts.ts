@@ -142,11 +142,18 @@ function formatBookingItem(d: District, n: number): string {
 }
 
 function upsellTalkingPoint(d: District): string | null {
-  if (!d.isUpsellCandidate || !d.utilization) return null;
-  const blocked = d.utilization.insuranceBlockedStudents;
-  const inNet = d.utilization.inNetworkStudents;
-  const pct = (d.utilization.insuranceBlockedPct * 100).toFixed(1);
-  return `${blocked} of ${blocked + inNet} students blocked by insurance reasons (${pct}%). District sponsorship could extend access to these students. Recommend raising as expansion of existing investment.`;
+  if (!d.isUpsellCandidate || !d.upsellData) return null;
+  const u = d.upsellData;
+  const lines = [
+    `${u.uninsured} uninsured patients in care (${u.uninsuredPct.toFixed(1)}% of active caseload).`,
+  ];
+  if (u.oon > 10) {
+    lines.push(`Also ${u.oon} out-of-network (${u.oonPct.toFixed(1)}%).`);
+  }
+  lines.push(
+    'District sponsorship could cover these students at no cost to families. Include in EOY talking points.',
+  );
+  return lines.join(' ');
 }
 
 function formatMPOCs(d: District): string {

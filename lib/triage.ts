@@ -1,8 +1,4 @@
-import {
-  BOOKING_WINDOW_DAYS_BEFORE_LDOS,
-  UPSELL_INSURANCE_BLOCKED_PCT_THRESHOLD,
-  UPSELL_MIN_INSURANCE_SAMPLE,
-} from './config';
+import { BOOKING_WINDOW_DAYS_BEFORE_LDOS } from './config';
 import type {
   CardStatus,
   District,
@@ -11,7 +7,6 @@ import type {
   TierNum,
   TierStats,
   UrgencyBuckets,
-  UtilizationData,
 } from './types';
 
 const MS_PER_DAY = 1000 * 60 * 60 * 24;
@@ -40,13 +35,6 @@ export function isOverdue(d: District, today: Date): boolean {
   return todayUtcMidnight(today) > utcMidnight(d.bookingTarget);
 }
 
-export function isUpsellCandidate(util: UtilizationData | null): boolean {
-  if (!util) return false;
-  const sample = util.inNetworkStudents + util.insuranceBlockedStudents;
-  if (sample < UPSELL_MIN_INSURANCE_SAMPLE) return false;
-  return util.insuranceBlockedPct >= UPSELL_INSURANCE_BLOCKED_PCT_THRESHOLD;
-}
-
 export function getStatus(d: District, today: Date): CardStatus {
   if (d.completed) return 'completed';
   if (d.meetingType === 'async') return 'async';
@@ -60,7 +48,6 @@ export function annotateDistrict(d: District, today: Date): District {
     ...d,
     overdue: isOverdue(d, today),
     status: getStatus(d, today),
-    isUpsellCandidate: isUpsellCandidate(d.utilization),
   };
 }
 

@@ -27,12 +27,12 @@ export const BTS_TRACKER_URL =
   'https://docs.google.com/spreadsheets/d/16gycwzxACC2--gNuWpGeN0kcjtXUGv1d/edit?gid=175562126#gid=175562126';
 
 export const BOOKING_WINDOW_DAYS_BEFORE_LDOS = 28;
-// Flag a district as an upsell candidate when ≥15% of its referred students are
-// blocked from care for insurance reasons (expired coverage, coordination-of-
-// benefits issues, failed-to-send-to-RCM). Denominator is blocked + in-network.
-// Also require a minimum sample size so a 1/1=100% blocked rate doesn't flag.
-export const UPSELL_INSURANCE_BLOCKED_PCT_THRESHOLD = 0.15;
-export const UPSELL_MIN_INSURANCE_SAMPLE = 10;
+// Upsell thresholds calibrated for ACTUAL patient counts (not enrollment
+// estimates). At real volumes, the prior 50-student threshold never fired.
+// The flag itself is sourced from scripts/static-upsell.json (baked once
+// from Looker on 2026-05-12 — not refreshed).
+export const UPSELL_UNINSURED_COUNT_THRESHOLD = 5;
+export const UPSELL_UNINSURED_PCT_THRESHOLD = 0.05;
 
 export const CSM_CONFIG: Record<string, CSMConfig> = {
   brianna: {

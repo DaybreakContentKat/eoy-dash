@@ -15,6 +15,16 @@ export interface ConcernCategory {
   patients: number;
 }
 
+export interface UpsellData {
+  // From Looker District Health Plan, 2026-05-12 snapshot (static — not refreshed daily).
+  uninsured: number;
+  uninsuredPct: number;
+  oon: number;
+  oonPct: number;
+  totalPatients: number;
+  combinedPct: number;
+}
+
 export interface UtilizationData {
   // From the Insurance / Health Plan tab — students per district summed across schools.
   inNetworkStudents: number;
@@ -56,6 +66,7 @@ export interface District {
   overdue: boolean;
   utilization: UtilizationData | null;
   isUpsellCandidate: boolean;
+  upsellData: UpsellData | null;
   mpocs: MPOCContact[];
   enrollment: number | null;
   ytdPacing: number | null;

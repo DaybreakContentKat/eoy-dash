@@ -2,7 +2,6 @@ import {
   aggregateUtilization,
   parseDistrictData,
 } from '../lib/parsers/districtData.ts';
-import { isUpsellCandidate } from '../lib/triage.ts';
 import { normalizeDistrict } from '../lib/parsers/btsTracker.ts';
 
 // Fixture distilled from the real markdown export. Includes:
@@ -87,10 +86,5 @@ assert(
 
 assert(util[beaumontKey].inNetworkStudents === 0, 'Beaumont has no insurance data');
 assert(util[beaumontKey].topConcerns.length === 1, 'Beaumont still gets top concerns from concerns sheet');
-
-console.log('\n--- isUpsellCandidate (≥ 15% threshold) ---');
-assert(isUpsellCandidate(util[lompocKey]), 'Lompoc 16.7% blocked → upsell candidate');
-assert(!isUpsellCandidate(util[adelantoKey]), 'Adelanto 2.2% blocked → NOT upsell candidate');
-assert(!isUpsellCandidate(util[beaumontKey]), 'Beaumont no insurance data → NOT upsell candidate (denominator 0)');
 
 console.log('\n✓ all district-data tests passed');

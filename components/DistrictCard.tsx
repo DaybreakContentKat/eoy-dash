@@ -26,7 +26,7 @@ export function DistrictCard({ district: d, csm }: Props) {
         <h3 className="flex-1 truncate text-sm font-semibold text-zinc-900" title={d.name}>
           {d.shortName || d.name}
         </h3>
-        {d.isUpsellCandidate && d.utilization && <UpsellTag util={d.utilization} />}
+        {d.isUpsellCandidate && d.upsellData && <UpsellTag data={d.upsellData} />}
       </header>
 
       <dl className="mt-2 space-y-1 text-xs text-zinc-600">

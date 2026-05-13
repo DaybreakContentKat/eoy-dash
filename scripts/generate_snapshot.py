@@ -54,6 +54,25 @@ def get_static_metrics(name):
             return v
     return {'enrollment': None, 'ytdPacing': None}
 
+# Static upsell flags — baked one-time from Looker (District Health Plan, pulled
+# 2026-05-12). Not refreshed; upsell conversations happen once per district
+# during EOY meetings, so flags must stay consistent through the season.
+STATIC_UPSELL_PATH = os.path.join(os.path.dirname(__file__), 'static-upsell.json')
+try:
+    with open(STATIC_UPSELL_PATH) as f:
+        static_upsell = json.load(f)
+except FileNotFoundError:
+    static_upsell = {}
+
+def get_static_upsell(name):
+    key = name.lower()
+    if key in static_upsell:
+        return static_upsell[key]
+    for k, v in static_upsell.items():
+        if k in key or key in k:
+            return v
+    return None
+
 # Find District Tracker sheet
 sheet = None
 for name in wb.sheetnames:
@@ -214,6 +233,7 @@ def make_district(row, csm_slug, csm_name, tier_num, meeting_type):
     status = get_status(completed, meeting_type, overdue, booked, nudge)
 
     m = get_static_metrics(name)
+    upsell = get_static_upsell(name)
 
     return {
         'name': name,
@@ -236,8 +256,9 @@ def make_district(row, csm_slug, csm_name, tier_num, meeting_type):
         'status': status,
         'overdue': overdue,
         'needsNudge': nudge,
-        'isUpsellCandidate': False,
+        'isUpsellCandidate': upsell is not None,
         'utilization': None,
+        'upsellData': upsell,
         'mpocs': [],
         'enrollment': m.get('enrollment'),
         'ytdPacing': m.get('ytdPacing'),

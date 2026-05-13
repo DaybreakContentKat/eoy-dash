@@ -4,7 +4,6 @@ import {
   gapToGoal,
   getStatus,
   isOverdue,
-  isUpsellCandidate,
   portfolioStats,
 } from '../lib/triage.ts';
 import type { District } from '../lib/types.ts';
@@ -33,6 +32,7 @@ function makeDistrict(overrides: Partial<District> = {}): District {
     overdue: false,
     utilization: null,
     isUpsellCandidate: false,
+    upsellData: null,
     mpocs: [],
     enrollment: null,
     ytdPacing: null,
@@ -94,45 +94,6 @@ assert(
 assert(
   getStatus(makeDistrict({ bookingTarget: '2026-06-01' }), TODAY) === 'schedule-soon',
   'future target, unbooked → schedule-soon',
-);
-
-console.log('\n--- isUpsellCandidate ---');
-assert(!isUpsellCandidate(null), 'no utilization → not upsell');
-assert(
-  isUpsellCandidate({
-    inNetworkStudents: 50,
-    insuranceBlockedStudents: 10,
-    insuranceBlockedPct: 10 / 60,
-    topConcerns: [],
-  }),
-  'blocked pct ≥ 15% (16.7%) with 60-student sample → upsell',
-);
-assert(
-  !isUpsellCandidate({
-    inNetworkStudents: 100,
-    insuranceBlockedStudents: 5,
-    insuranceBlockedPct: 5 / 105,
-    topConcerns: [],
-  }),
-  'blocked pct < 15% (4.8%) → not upsell',
-);
-assert(
-  !isUpsellCandidate({
-    inNetworkStudents: 0,
-    insuranceBlockedStudents: 1,
-    insuranceBlockedPct: 1,
-    topConcerns: [],
-  }),
-  'sample too small (1 student) → not upsell even at 100% blocked',
-);
-assert(
-  !isUpsellCandidate({
-    inNetworkStudents: 0,
-    insuranceBlockedStudents: 0,
-    insuranceBlockedPct: 0,
-    topConcerns: [],
-  }),
-  'no insurance data → not upsell',
 );
 
 console.log('\n--- annotateDistrict / gapToGoal portfolio ---');
