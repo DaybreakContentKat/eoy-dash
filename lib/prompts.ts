@@ -32,11 +32,12 @@ export function buildBatchBookingPrompt(csm: CSMConfig, districts: District[]): 
     items,
     '',
     '---',
-    'For each district above, create a Gmail draft to the listed MPOC(s).',
-    `Subject: Let's schedule our EOY check-in — [District Short Name]`,
+    'For EVERY district above, create a Gmail draft — do not skip any.',
+    `Subject (when MPOC present): Let's schedule our EOY check-in — [District Short Name]`,
+    'If a district has no MPOC on file, still create the draft, but leave the To: field empty and prefix the subject with "[ADD MPOC] " so the rep sees it before sending.',
     `Tone: warm, brief, CSM is ${csm.firstName}. Include the Calendly link.`,
     'Execute all drafts now via the Gmail MCP. Do not ask for confirmation between drafts.',
-    'If a district has no MPOC contact listed, skip it and report which were skipped.',
+    'At the end, report a count of how many drafts were created and how many were flagged "[ADD MPOC]".',
   ].join('\n');
 }
 
@@ -50,7 +51,9 @@ export function buildIndividualBookingPrompt(csm: CSMConfig, d: District): strin
     formatBookingItem(d, 1),
     '',
     '---',
-    `Create a Gmail draft to the MPOC(s) listed above. Subject: Let's schedule our EOY check-in — ${d.shortName || d.name}.`,
+    `Create a Gmail draft for this district — always create it, never skip.`,
+    `If MPOC is listed above, address the draft to them. Subject: Let's schedule our EOY check-in — ${d.shortName || d.name}.`,
+    `If MPOC is "(no contact on file)", still create the draft: leave the To: field empty and prefix the subject with "[ADD MPOC] " so the rep sees it before sending.`,
     `Tone: warm, brief, CSM is ${csm.firstName}. Include the Calendly link.`,
     'Execute via the Gmail MCP now.',
   ].join('\n');
