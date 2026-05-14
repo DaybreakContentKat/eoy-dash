@@ -121,8 +121,11 @@ def parse_date(s):
     if not s or s.strip() in ['', '#VALUE!', 'N/A', 'not stated in website', 'None']:
         return None
     s = s.strip()
-    # Dates with an explicit year — accept and validate.
-    for fmt in ['%m/%d/%Y', '%m/%d/%y', '%m-%d-%Y', '%m-%d-%y']:
+    # Dates with an explicit year — accept and validate. Includes the ISO
+    # formats that openpyxl produces when a cell is typed as a date (most
+    # Google Sheets date cells come through as `2026-06-22 00:00:00`).
+    for fmt in ['%m/%d/%Y', '%m/%d/%y', '%m-%d-%Y', '%m-%d-%y',
+                '%Y-%m-%d %H:%M:%S', '%Y-%m-%d']:
         try:
             d = datetime.strptime(s, fmt)
             if d.year > 2027:
