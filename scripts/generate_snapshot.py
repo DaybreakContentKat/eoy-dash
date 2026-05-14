@@ -115,17 +115,28 @@ for row in sheet.iter_rows(values_only=True):
 
 today = date.today()
 
+BTS_DEFAULT_YEAR = 2026
+
 def parse_date(s):
     if not s or s.strip() in ['', '#VALUE!', 'N/A', 'not stated in website', 'None']:
         return None
     s = s.strip()
+    # Dates with an explicit year — accept and validate.
     for fmt in ['%m/%d/%Y', '%m/%d/%y', '%m-%d-%Y', '%m-%d-%y']:
         try:
             d = datetime.strptime(s, fmt)
             if d.year > 2027:
                 return None
             return d.date()
-        except:
+        except ValueError:
+            pass
+    # Dates without a year (e.g. "5/13" or "5-13") — common in the tracker.
+    # Default to the BTS season year so the dash can render them.
+    for fmt in ['%m/%d', '%m-%d']:
+        try:
+            d = datetime.strptime(s, fmt).replace(year=BTS_DEFAULT_YEAR)
+            return d.date()
+        except ValueError:
             pass
     return None
 
