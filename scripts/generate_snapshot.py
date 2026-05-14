@@ -1,3 +1,4 @@
+import csv
 import json
 import os
 import io
@@ -70,6 +71,33 @@ def get_static_upsell(name):
     # If a curated upsell name doesn't exactly match a tracker name, fix the
     # name in static-upsell.json (or the tracker) so the join is explicit.
     return static_upsell.get(name.strip().lower())
+
+# MPOC contacts — one row per (district, contact). Multiple contacts per
+# district are joined into a single list. Used to populate the `mpocs` field
+# so booking-email prompts have actual addresses to draft against.
+MPOC_CSV_PATH = os.path.join(os.path.dirname(__file__), '..', 'public', 'data', 'mpocs.csv')
+mpoc_map = {}
+try:
+    with open(MPOC_CSV_PATH) as f:
+        for row in csv.DictReader(f):
+            district = (row.get('Account Name') or '').strip()
+            if not district:
+                continue
+            first = (row.get('First Name') or '').strip()
+            last = (row.get('Last Name') or '').strip()
+            email = (row.get('Email') or '').strip()
+            full_name = ' '.join(p for p in (first, last) if p).strip()
+            if not full_name and not email:
+                continue
+            mpoc_map.setdefault(district.lower(), []).append({
+                'name': full_name,
+                'email': email,
+            })
+except FileNotFoundError:
+    pass
+
+def get_mpocs(name):
+    return mpoc_map.get(name.strip().lower(), [])
 
 # Find District Tracker sheet. Other sheets (Monicas Sheet, Daisys Sheet, How
 # to Use) live in their own tabs and are ignored here.
@@ -259,7 +287,7 @@ def make_district(row, csm_slug, csm_name, tier_num, meeting_type):
         'isUpsellCandidate': upsell is not None,
         'utilization': None,
         'upsellData': upsell,
-        'mpocs': [],
+        'mpocs': get_mpocs(name),
         'enrollment': m.get('enrollment'),
         'ytdPacing': m.get('ytdPacing'),
     }
