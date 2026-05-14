@@ -1,14 +1,14 @@
 {
-  "refreshedAt": "2026-05-13T20:14:48.083529Z",
+  "refreshedAt": "2026-05-14T15:15:33.070894Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 107,
       "booked": 64,
-      "completed": 36,
+      "completed": 39,
       "unbooked": 42,
       "weeklyTarget": 14,
-      "thisWeekUrgent": 39,
+      "thisWeekUrgent": 40,
       "atRisk": 36,
       "byUrgency": {
         "thisWeek": [
@@ -681,6 +681,34 @@
             "ytdPacing": 0.97
           },
           {
+            "name": "Madera Unified School District",
+            "shortName": "Madera",
+            "owner": "Sarah Hough",
+            "csm": "sarah",
+            "csmName": "Sarah Hough",
+            "tier": "Tier 2",
+            "tierNum": 2,
+            "meetingType": "live",
+            "activeRenewal": false,
+            "lastDayOfSchool": "2026-06-18",
+            "bookingTarget": "2026-05-21",
+            "booked": false,
+            "meetingDate": null,
+            "outreachSent": true,
+            "asyncFormSent": null,
+            "completed": false,
+            "notes": "",
+            "status": "schedule-soon",
+            "overdue": false,
+            "needsNudge": false,
+            "isUpsellCandidate": false,
+            "utilization": null,
+            "upsellData": null,
+            "mpocs": [],
+            "enrollment": 20018.0,
+            "ytdPacing": 0.04
+          },
+          {
             "name": "Mountain Empire Unified School District",
             "shortName": "Mountain Empire",
             "owner": "Brianna Masciel",
@@ -1164,36 +1192,7 @@
             "ytdPacing": null
           }
         ],
-        "nextWeek": [
-          {
-            "name": "Madera Unified School District",
-            "shortName": "Madera",
-            "owner": "Sarah Hough",
-            "csm": "sarah",
-            "csmName": "Sarah Hough",
-            "tier": "Tier 2",
-            "tierNum": 2,
-            "meetingType": "live",
-            "activeRenewal": false,
-            "lastDayOfSchool": "2026-06-18",
-            "bookingTarget": "2026-05-21",
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": true,
-            "asyncFormSent": null,
-            "completed": false,
-            "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
-            "needsNudge": false,
-            "isUpsellCandidate": false,
-            "utilization": null,
-            "upsellData": null,
-            "mpocs": [],
-            "enrollment": 20018.0,
-            "ytdPacing": 0.04
-          }
-        ],
+        "nextWeek": [],
         "soon": [],
         "later": [],
         "noDate": [
@@ -1258,7 +1257,7 @@
     },
     "stats": {
       "totalT1T2": 107,
-      "completed": 23,
+      "completed": 26,
       "booked": 64,
       "outreachSent": 60,
       "overdue": 36,
@@ -1266,15 +1265,15 @@
       "byTier": {
         "1": {
           "total": 42,
-          "completed": 3,
-          "booked": 17,
+          "completed": 4,
+          "booked": 16,
           "remaining": 22,
           "overdue": 20
         },
         "2": {
           "total": 65,
-          "completed": 20,
-          "booked": 25,
+          "completed": 22,
+          "booked": 23,
           "remaining": 20,
           "overdue": 16
         },
@@ -3200,9 +3199,9 @@
           "meetingDate": null,
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": true,
@@ -4014,9 +4013,9 @@
           "meetingDate": null,
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -4070,9 +4069,9 @@
           "meetingDate": null,
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": true,
@@ -4449,10 +4448,10 @@
       "gapToGoal": {
         "totalNeedingCall": 42,
         "booked": 25,
-        "completed": 26,
+        "completed": 29,
         "unbooked": 16,
         "weeklyTarget": 5,
-        "thisWeekUrgent": 15,
+        "thisWeekUrgent": 16,
         "atRisk": 12,
         "byUrgency": {
           "thisWeek": [
@@ -4761,6 +4760,34 @@
               "ytdPacing": 0.28
             },
             {
+              "name": "Madera Unified School District",
+              "shortName": "Madera",
+              "owner": "Sarah Hough",
+              "csm": "sarah",
+              "csmName": "Sarah Hough",
+              "tier": "Tier 2",
+              "tierNum": 2,
+              "meetingType": "live",
+              "activeRenewal": false,
+              "lastDayOfSchool": "2026-06-18",
+              "bookingTarget": "2026-05-21",
+              "booked": false,
+              "meetingDate": null,
+              "outreachSent": true,
+              "asyncFormSent": null,
+              "completed": false,
+              "notes": "",
+              "status": "schedule-soon",
+              "overdue": false,
+              "needsNudge": false,
+              "isUpsellCandidate": false,
+              "utilization": null,
+              "upsellData": null,
+              "mpocs": [],
+              "enrollment": 20018.0,
+              "ytdPacing": 0.04
+            },
+            {
               "name": "Pleasanton Unified School District",
               "shortName": "Pleasanton",
               "owner": "Sarah Hough",
@@ -4936,36 +4963,7 @@
               "ytdPacing": null
             }
           ],
-          "nextWeek": [
-            {
-              "name": "Madera Unified School District",
-              "shortName": "Madera",
-              "owner": "Sarah Hough",
-              "csm": "sarah",
-              "csmName": "Sarah Hough",
-              "tier": "Tier 2",
-              "tierNum": 2,
-              "meetingType": "live",
-              "activeRenewal": false,
-              "lastDayOfSchool": "2026-06-18",
-              "bookingTarget": "2026-05-21",
-              "booked": false,
-              "meetingDate": null,
-              "outreachSent": true,
-              "asyncFormSent": null,
-              "completed": false,
-              "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
-              "needsNudge": false,
-              "isUpsellCandidate": false,
-              "utilization": null,
-              "upsellData": null,
-              "mpocs": [],
-              "enrollment": 20018.0,
-              "ytdPacing": 0.04
-            }
-          ],
+          "nextWeek": [],
           "soon": [],
           "later": [],
           "noDate": []
@@ -4973,7 +4971,7 @@
       },
       "stats": {
         "totalT1T2": 42,
-        "completed": 16,
+        "completed": 19,
         "booked": 25,
         "outreachSent": 39,
         "overdue": 12,
@@ -4981,15 +4979,15 @@
         "byTier": {
           "1": {
             "total": 4,
-            "completed": 1,
-            "booked": 1,
+            "completed": 2,
+            "booked": 0,
             "remaining": 2,
             "overdue": 2
           },
           "2": {
             "total": 38,
-            "completed": 15,
-            "booked": 9,
+            "completed": 17,
+            "booked": 7,
             "remaining": 14,
             "overdue": 10
           },
