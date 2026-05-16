@@ -1,91 +1,17 @@
 {
-  "refreshedAt": "2026-05-15T15:11:31.985440Z",
+  "refreshedAt": "2026-05-16T14:20:37.277507Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 107,
-      "booked": 71,
-      "completed": 43,
-      "unbooked": 36,
-      "weeklyTarget": 12,
-      "thisWeekUrgent": 34,
-      "atRisk": 31,
+      "booked": 74,
+      "completed": 45,
+      "unbooked": 33,
+      "weeklyTarget": 11,
+      "thisWeekUrgent": 31,
+      "atRisk": 30,
       "byUrgency": {
         "thisWeek": [
-          {
-            "name": "Apple Valley Unified School District",
-            "shortName": "Apple Valley",
-            "owner": "Daisy Leahy",
-            "csm": "daisy",
-            "csmName": "Daisy Leahy",
-            "tier": "Tier 1",
-            "tierNum": 1,
-            "meetingType": "live",
-            "activeRenewal": true,
-            "lastDayOfSchool": "2026-05-29",
-            "bookingTarget": "2026-05-01",
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": false,
-            "asyncFormSent": null,
-            "completed": false,
-            "notes": "\u2b1c Not Started",
-            "status": "overdue",
-            "overdue": true,
-            "needsNudge": false,
-            "isUpsellCandidate": false,
-            "utilization": null,
-            "upsellData": null,
-            "mpocs": [
-              {
-                "name": "Patrick Schlosser",
-                "email": "patrick_schlosser@avusd.org"
-              },
-              {
-                "name": "Renee Castillo",
-                "email": "renee_castillo@avusd.org"
-              },
-              {
-                "name": "Mariana Torres",
-                "email": "mariana_torres@avusd.org"
-              }
-            ],
-            "enrollment": 14023.0,
-            "ytdPacing": 0.66
-          },
-          {
-            "name": "Beaufort County Schools",
-            "shortName": "Beaufort County Schools",
-            "owner": "Sarah Hough",
-            "csm": "sarah",
-            "csmName": "Sarah Hough",
-            "tier": "Tier 2",
-            "tierNum": 2,
-            "meetingType": "live",
-            "activeRenewal": false,
-            "lastDayOfSchool": "2026-05-29",
-            "bookingTarget": "2026-05-01",
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": true,
-            "asyncFormSent": null,
-            "completed": false,
-            "notes": "\u2b1c Not Started",
-            "status": "overdue",
-            "overdue": true,
-            "needsNudge": false,
-            "isUpsellCandidate": false,
-            "utilization": null,
-            "upsellData": null,
-            "mpocs": [
-              {
-                "name": "Candace Bruder",
-                "email": "candace.bruder@beaufort.k12.sc.us"
-              }
-            ],
-            "enrollment": 5823.0,
-            "ytdPacing": 0.44
-          },
           {
             "name": "Beaumont Unified School District",
             "shortName": "Beaumont",
@@ -141,8 +67,8 @@
             "asyncFormSent": null,
             "completed": false,
             "notes": "\u2b1c Not Started",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "needsNudge": false,
             "isUpsellCandidate": true,
             "utilization": null,
@@ -579,12 +505,12 @@
             "bookingTarget": "2026-05-15",
             "booked": false,
             "meetingDate": null,
-            "outreachSent": false,
+            "outreachSent": true,
             "asyncFormSent": null,
             "completed": false,
             "notes": "",
-            "status": "schedule-soon",
-            "overdue": false,
+            "status": "overdue",
+            "overdue": true,
             "needsNudge": false,
             "isUpsellCandidate": false,
             "utilization": null,
@@ -1123,43 +1049,6 @@
             "ytdPacing": 0.07
           },
           {
-            "name": "Sierra Sands Unified School District",
-            "shortName": "Sierra Sands",
-            "owner": "Daisy Leahy",
-            "csm": "daisy",
-            "csmName": "Daisy Leahy",
-            "tier": "Tier 1",
-            "tierNum": 1,
-            "meetingType": "live",
-            "activeRenewal": true,
-            "lastDayOfSchool": "2026-05-28",
-            "bookingTarget": "2026-04-30",
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": false,
-            "asyncFormSent": null,
-            "completed": false,
-            "notes": "",
-            "status": "overdue",
-            "overdue": true,
-            "needsNudge": false,
-            "isUpsellCandidate": false,
-            "utilization": null,
-            "upsellData": null,
-            "mpocs": [
-              {
-                "name": "Laura Hebert",
-                "email": "lherbert@ssusd.org"
-              },
-              {
-                "name": "Amy Self",
-                "email": "aself@ssusd.org"
-              }
-            ],
-            "enrollment": null,
-            "ytdPacing": null
-          },
-          {
             "name": "Sumter County Public Schools",
             "shortName": "Sumter County Public Schools",
             "owner": "Sarah Hough",
@@ -1310,31 +1199,31 @@
     "stats": {
       "totalT1T2": 107,
       "completed": 30,
-      "booked": 71,
-      "outreachSent": 60,
-      "overdue": 31,
+      "booked": 74,
+      "outreachSent": 61,
+      "overdue": 30,
       "upsellCandidates": 26,
       "byTier": {
         "1": {
           "total": 42,
           "completed": 7,
-          "booked": 14,
-          "remaining": 21,
-          "overdue": 19
+          "booked": 16,
+          "remaining": 19,
+          "overdue": 17
         },
         "2": {
           "total": 65,
           "completed": 23,
-          "booked": 27,
-          "remaining": 15,
-          "overdue": 12
+          "booked": 28,
+          "remaining": 14,
+          "overdue": 13
         },
         "3": {
           "total": 68,
-          "completed": 13,
-          "booked": 16,
+          "completed": 15,
+          "booked": 14,
           "remaining": 39,
-          "overdue": 35
+          "overdue": 38
         }
       }
     }
@@ -2770,7 +2659,7 @@
           "completed": false,
           "notes": "\u2b1c Not Started",
           "status": "async",
-          "overdue": false,
+          "overdue": true,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -2791,14 +2680,14 @@
           "activeRenewal": false,
           "lastDayOfSchool": "2026-05-29",
           "bookingTarget": "2026-05-01",
-          "booked": false,
-          "meetingDate": null,
+          "booked": true,
+          "meetingDate": "2026-05-21",
           "outreachSent": true,
           "asyncFormSent": null,
           "completed": false,
           "notes": "\u2b1c Not Started",
-          "status": "overdue",
-          "overdue": true,
+          "status": "booked",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -2874,8 +2763,8 @@
           "asyncFormSent": null,
           "completed": false,
           "notes": "\u2b1c Not Started",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "needsNudge": false,
           "isUpsellCandidate": true,
           "utilization": null,
@@ -2981,9 +2870,9 @@
           "meetingDate": "2026-05-15",
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "\u2b1c Not Started",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -3405,12 +3294,12 @@
           "bookingTarget": "2026-05-15",
           "booked": false,
           "meetingDate": null,
-          "outreachSent": false,
+          "outreachSent": true,
           "asyncFormSent": null,
           "completed": false,
           "notes": "",
-          "status": "schedule-soon",
-          "overdue": false,
+          "status": "overdue",
+          "overdue": true,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -4155,9 +4044,9 @@
           "meetingDate": "2026-05-15",
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -5074,47 +4963,14 @@
       ],
       "gapToGoal": {
         "totalNeedingCall": 42,
-        "booked": 31,
-        "completed": 29,
-        "unbooked": 11,
+        "booked": 32,
+        "completed": 31,
+        "unbooked": 10,
         "weeklyTarget": 3,
-        "thisWeekUrgent": 11,
-        "atRisk": 8,
+        "thisWeekUrgent": 10,
+        "atRisk": 9,
         "byUrgency": {
           "thisWeek": [
-            {
-              "name": "Beaufort County Schools",
-              "shortName": "Beaufort County Schools",
-              "owner": "Sarah Hough",
-              "csm": "sarah",
-              "csmName": "Sarah Hough",
-              "tier": "Tier 2",
-              "tierNum": 2,
-              "meetingType": "live",
-              "activeRenewal": false,
-              "lastDayOfSchool": "2026-05-29",
-              "bookingTarget": "2026-05-01",
-              "booked": false,
-              "meetingDate": null,
-              "outreachSent": true,
-              "asyncFormSent": null,
-              "completed": false,
-              "notes": "\u2b1c Not Started",
-              "status": "overdue",
-              "overdue": true,
-              "needsNudge": false,
-              "isUpsellCandidate": false,
-              "utilization": null,
-              "upsellData": null,
-              "mpocs": [
-                {
-                  "name": "Candace Bruder",
-                  "email": "candace.bruder@beaufort.k12.sc.us"
-                }
-              ],
-              "enrollment": 5823.0,
-              "ytdPacing": 0.44
-            },
             {
               "name": "Berryessa Union School District",
               "shortName": "Berryessa Union",
@@ -5133,8 +4989,8 @@
               "asyncFormSent": null,
               "completed": false,
               "notes": "\u2b1c Not Started",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "needsNudge": false,
               "isUpsellCandidate": true,
               "utilization": null,
@@ -5325,12 +5181,12 @@
               "bookingTarget": "2026-05-15",
               "booked": false,
               "meetingDate": null,
-              "outreachSent": false,
+              "outreachSent": true,
               "asyncFormSent": null,
               "completed": false,
               "notes": "",
-              "status": "schedule-soon",
-              "overdue": false,
+              "status": "overdue",
+              "overdue": true,
               "needsNudge": false,
               "isUpsellCandidate": false,
               "utilization": null,
@@ -5504,9 +5360,9 @@
       "stats": {
         "totalT1T2": 42,
         "completed": 19,
-        "booked": 31,
-        "outreachSent": 39,
-        "overdue": 8,
+        "booked": 32,
+        "outreachSent": 40,
+        "overdue": 9,
         "upsellCandidates": 19,
         "byTier": {
           "1": {
@@ -5519,16 +5375,16 @@
           "2": {
             "total": 38,
             "completed": 17,
-            "booked": 12,
-            "remaining": 9,
-            "overdue": 6
+            "booked": 13,
+            "remaining": 8,
+            "overdue": 7
           },
           "3": {
             "total": 23,
-            "completed": 10,
-            "booked": 5,
+            "completed": 12,
+            "booked": 3,
             "remaining": 8,
-            "overdue": 7
+            "overdue": 8
           }
         }
       }
@@ -5589,7 +5445,7 @@
           "outreachSent": true,
           "asyncFormSent": null,
           "completed": false,
-          "notes": "\u2b1c Not Started",
+          "notes": "",
           "status": "booked",
           "overdue": false,
           "needsNudge": false,
@@ -5641,7 +5497,7 @@
           "csmName": "Monica Knott",
           "tier": "Tier 3",
           "tierNum": 3,
-          "meetingType": "async",
+          "meetingType": "live",
           "activeRenewal": true,
           "lastDayOfSchool": "2026-05-28",
           "bookingTarget": "2026-04-30",
@@ -5651,7 +5507,7 @@
           "asyncFormSent": null,
           "completed": false,
           "notes": "\u2b1c Not Started",
-          "status": "async",
+          "status": "booked",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -5791,7 +5647,7 @@
           "csmName": "Monica Knott",
           "tier": "Tier 3",
           "tierNum": 3,
-          "meetingType": "async",
+          "meetingType": "live",
           "activeRenewal": true,
           "lastDayOfSchool": "2026-06-19",
           "bookingTarget": "2026-05-22",
@@ -5801,7 +5657,7 @@
           "asyncFormSent": null,
           "completed": false,
           "notes": "",
-          "status": "async",
+          "status": "schedule-soon",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -5819,7 +5675,7 @@
           "csmName": "Monica Knott",
           "tier": "Tier 3",
           "tierNum": 3,
-          "meetingType": "async",
+          "meetingType": "live",
           "activeRenewal": true,
           "lastDayOfSchool": "2026-05-28",
           "bookingTarget": "2026-04-30",
@@ -5828,7 +5684,7 @@
           "outreachSent": true,
           "asyncFormSent": null,
           "completed": true,
-          "notes": "\u2b1c Not Started",
+          "notes": "",
           "status": "completed",
           "overdue": false,
           "needsNudge": false,
@@ -7480,14 +7336,14 @@
           "activeRenewal": true,
           "lastDayOfSchool": "2026-05-29",
           "bookingTarget": "2026-05-01",
-          "booked": false,
-          "meetingDate": null,
+          "booked": true,
+          "meetingDate": "2026-05-21",
           "outreachSent": false,
           "asyncFormSent": null,
           "completed": false,
           "notes": "\u2b1c Not Started",
-          "status": "overdue",
-          "overdue": true,
+          "status": "booked",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -8378,7 +8234,7 @@
           "completed": false,
           "notes": "",
           "status": "async",
-          "overdue": false,
+          "overdue": true,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -8408,14 +8264,14 @@
           "activeRenewal": true,
           "lastDayOfSchool": "2026-05-28",
           "bookingTarget": "2026-04-30",
-          "booked": false,
-          "meetingDate": null,
+          "booked": true,
+          "meetingDate": "2026-05-28",
           "outreachSent": false,
           "asyncFormSent": null,
           "completed": false,
           "notes": "",
-          "status": "overdue",
-          "overdue": true,
+          "status": "booked",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -8643,7 +8499,7 @@
           "completed": false,
           "notes": "",
           "status": "async",
-          "overdue": false,
+          "overdue": true,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -8692,55 +8548,14 @@
       ],
       "gapToGoal": {
         "totalNeedingCall": 27,
-        "booked": 16,
+        "booked": 18,
         "completed": 7,
-        "unbooked": 11,
+        "unbooked": 9,
         "weeklyTarget": 3,
-        "thisWeekUrgent": 10,
-        "atRisk": 10,
+        "thisWeekUrgent": 8,
+        "atRisk": 8,
         "byUrgency": {
           "thisWeek": [
-            {
-              "name": "Apple Valley Unified School District",
-              "shortName": "Apple Valley",
-              "owner": "Daisy Leahy",
-              "csm": "daisy",
-              "csmName": "Daisy Leahy",
-              "tier": "Tier 1",
-              "tierNum": 1,
-              "meetingType": "live",
-              "activeRenewal": true,
-              "lastDayOfSchool": "2026-05-29",
-              "bookingTarget": "2026-05-01",
-              "booked": false,
-              "meetingDate": null,
-              "outreachSent": false,
-              "asyncFormSent": null,
-              "completed": false,
-              "notes": "\u2b1c Not Started",
-              "status": "overdue",
-              "overdue": true,
-              "needsNudge": false,
-              "isUpsellCandidate": false,
-              "utilization": null,
-              "upsellData": null,
-              "mpocs": [
-                {
-                  "name": "Patrick Schlosser",
-                  "email": "patrick_schlosser@avusd.org"
-                },
-                {
-                  "name": "Renee Castillo",
-                  "email": "renee_castillo@avusd.org"
-                },
-                {
-                  "name": "Mariana Torres",
-                  "email": "mariana_torres@avusd.org"
-                }
-              ],
-              "enrollment": 14023.0,
-              "ytdPacing": 0.66
-            },
             {
               "name": "Castro Valley Unified School District",
               "shortName": "Castro Valley",
@@ -9006,43 +8821,6 @@
               ],
               "enrollment": 7933.0,
               "ytdPacing": 0.46
-            },
-            {
-              "name": "Sierra Sands Unified School District",
-              "shortName": "Sierra Sands",
-              "owner": "Daisy Leahy",
-              "csm": "daisy",
-              "csmName": "Daisy Leahy",
-              "tier": "Tier 1",
-              "tierNum": 1,
-              "meetingType": "live",
-              "activeRenewal": true,
-              "lastDayOfSchool": "2026-05-28",
-              "bookingTarget": "2026-04-30",
-              "booked": false,
-              "meetingDate": null,
-              "outreachSent": false,
-              "asyncFormSent": null,
-              "completed": false,
-              "notes": "",
-              "status": "overdue",
-              "overdue": true,
-              "needsNudge": false,
-              "isUpsellCandidate": false,
-              "utilization": null,
-              "upsellData": null,
-              "mpocs": [
-                {
-                  "name": "Laura Hebert",
-                  "email": "lherbert@ssusd.org"
-                },
-                {
-                  "name": "Amy Self",
-                  "email": "aself@ssusd.org"
-                }
-              ],
-              "enrollment": null,
-              "ytdPacing": null
             }
           ],
           "nextWeek": [],
@@ -9092,17 +8870,17 @@
       "stats": {
         "totalT1T2": 27,
         "completed": 7,
-        "booked": 16,
+        "booked": 18,
         "outreachSent": 2,
-        "overdue": 10,
+        "overdue": 8,
         "upsellCandidates": 2,
         "byTier": {
           "1": {
             "total": 25,
             "completed": 5,
-            "booked": 9,
-            "remaining": 11,
-            "overdue": 10
+            "booked": 11,
+            "remaining": 9,
+            "overdue": 8
           },
           "2": {
             "total": 2,
@@ -9116,7 +8894,7 @@
             "completed": 0,
             "booked": 5,
             "remaining": 4,
-            "overdue": 2
+            "overdue": 4
           }
         }
       }
