@@ -1,15 +1,15 @@
 {
-  "refreshedAt": "2026-05-17T14:24:14.152764Z",
+  "refreshedAt": "2026-05-18T16:20:05.015423Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 107,
-      "booked": 74,
+      "booked": 76,
       "completed": 45,
-      "unbooked": 33,
-      "weeklyTarget": 11,
-      "thisWeekUrgent": 31,
-      "atRisk": 30,
+      "unbooked": 31,
+      "weeklyTarget": 10,
+      "thisWeekUrgent": 29,
+      "atRisk": 28,
       "byUrgency": {
         "thisWeek": [
           {
@@ -575,39 +575,6 @@
             "ytdPacing": 0.28
           },
           {
-            "name": "Lemont Township High School District 210",
-            "shortName": "Lemont Township High 210",
-            "owner": "Monica Knott",
-            "csm": "monica",
-            "csmName": "Monica Knott",
-            "tier": "Tier 1",
-            "tierNum": 1,
-            "meetingType": "live",
-            "activeRenewal": false,
-            "lastDayOfSchool": "2026-05-14",
-            "bookingTarget": "2026-04-16",
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": true,
-            "asyncFormSent": null,
-            "completed": false,
-            "notes": "",
-            "status": "overdue",
-            "overdue": true,
-            "needsNudge": false,
-            "isUpsellCandidate": false,
-            "utilization": null,
-            "upsellData": null,
-            "mpocs": [
-              {
-                "name": "Denise Dalton",
-                "email": "ddalton@lhs210.net"
-              }
-            ],
-            "enrollment": 1338.0,
-            "ytdPacing": 0.76
-          },
-          {
             "name": "Livingston Parish",
             "shortName": "Livingston Parish",
             "owner": "Monica Knott",
@@ -639,39 +606,6 @@
             ],
             "enrollment": 26163.0,
             "ytdPacing": 2.48
-          },
-          {
-            "name": "Lucia Mar Unified School District",
-            "shortName": "Lucia Mar",
-            "owner": "Monica Knott",
-            "csm": "monica",
-            "csmName": "Monica Knott",
-            "tier": "Tier 2",
-            "tierNum": 2,
-            "meetingType": "live",
-            "activeRenewal": true,
-            "lastDayOfSchool": "2026-06-05",
-            "bookingTarget": "2026-05-08",
-            "booked": false,
-            "meetingDate": "2026-05-26",
-            "outreachSent": true,
-            "asyncFormSent": null,
-            "completed": false,
-            "notes": "",
-            "status": "overdue",
-            "overdue": true,
-            "needsNudge": false,
-            "isUpsellCandidate": false,
-            "utilization": null,
-            "upsellData": null,
-            "mpocs": [
-              {
-                "name": "Linda Pierce",
-                "email": "linda.pierce@lmusd.org"
-              }
-            ],
-            "enrollment": 9275.0,
-            "ytdPacing": 0.97
           },
           {
             "name": "Madera Unified School District",
@@ -1199,31 +1133,31 @@
     "stats": {
       "totalT1T2": 107,
       "completed": 30,
-      "booked": 74,
+      "booked": 76,
       "outreachSent": 61,
-      "overdue": 30,
+      "overdue": 28,
       "upsellCandidates": 26,
       "byTier": {
         "1": {
           "total": 42,
           "completed": 7,
-          "booked": 16,
-          "remaining": 19,
-          "overdue": 17
+          "booked": 17,
+          "remaining": 18,
+          "overdue": 16
         },
         "2": {
           "total": 65,
           "completed": 23,
-          "booked": 28,
-          "remaining": 14,
-          "overdue": 13
+          "booked": 29,
+          "remaining": 13,
+          "overdue": 12
         },
         "3": {
           "total": 68,
           "completed": 15,
-          "booked": 14,
-          "remaining": 39,
-          "overdue": 38
+          "booked": 15,
+          "remaining": 38,
+          "overdue": 37
         }
       }
     }
@@ -3260,7 +3194,7 @@
           "lastDayOfSchool": "2026-05-20",
           "bookingTarget": "2026-04-22",
           "booked": true,
-          "meetingDate": "2026-05-18",
+          "meetingDate": "2026-05-21",
           "outreachSent": true,
           "asyncFormSent": null,
           "completed": false,
@@ -6192,14 +6126,14 @@
           "activeRenewal": false,
           "lastDayOfSchool": "2026-05-14",
           "bookingTarget": "2026-04-16",
-          "booked": false,
-          "meetingDate": null,
+          "booked": true,
+          "meetingDate": "2026-05-21",
           "outreachSent": true,
           "asyncFormSent": null,
           "completed": false,
           "notes": "",
-          "status": "overdue",
-          "overdue": true,
+          "status": "booked",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -6295,14 +6229,14 @@
           "activeRenewal": true,
           "lastDayOfSchool": "2026-06-05",
           "bookingTarget": "2026-05-08",
-          "booked": false,
+          "booked": true,
           "meetingDate": "2026-05-26",
           "outreachSent": true,
           "asyncFormSent": null,
           "completed": false,
           "notes": "",
-          "status": "overdue",
-          "overdue": true,
+          "status": "booked",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -6779,14 +6713,14 @@
           "activeRenewal": true,
           "lastDayOfSchool": "2026-05-22",
           "bookingTarget": "2026-04-24",
-          "booked": false,
-          "meetingDate": null,
+          "booked": true,
+          "meetingDate": "2026-05-28",
           "outreachSent": false,
           "asyncFormSent": null,
           "completed": false,
           "notes": "",
           "status": "async",
-          "overdue": true,
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -6846,12 +6780,12 @@
       ],
       "gapToGoal": {
         "totalNeedingCall": 18,
-        "booked": 8,
+        "booked": 10,
         "completed": 2,
-        "unbooked": 10,
-        "weeklyTarget": 3,
-        "thisWeekUrgent": 9,
-        "atRisk": 9,
+        "unbooked": 8,
+        "weeklyTarget": 2,
+        "thisWeekUrgent": 7,
+        "atRisk": 7,
         "byUrgency": {
           "thisWeek": [
             {
@@ -6966,39 +6900,6 @@
               "ytdPacing": 1.68
             },
             {
-              "name": "Lemont Township High School District 210",
-              "shortName": "Lemont Township High 210",
-              "owner": "Monica Knott",
-              "csm": "monica",
-              "csmName": "Monica Knott",
-              "tier": "Tier 1",
-              "tierNum": 1,
-              "meetingType": "live",
-              "activeRenewal": false,
-              "lastDayOfSchool": "2026-05-14",
-              "bookingTarget": "2026-04-16",
-              "booked": false,
-              "meetingDate": null,
-              "outreachSent": true,
-              "asyncFormSent": null,
-              "completed": false,
-              "notes": "",
-              "status": "overdue",
-              "overdue": true,
-              "needsNudge": false,
-              "isUpsellCandidate": false,
-              "utilization": null,
-              "upsellData": null,
-              "mpocs": [
-                {
-                  "name": "Denise Dalton",
-                  "email": "ddalton@lhs210.net"
-                }
-              ],
-              "enrollment": 1338.0,
-              "ytdPacing": 0.76
-            },
-            {
               "name": "Livingston Parish",
               "shortName": "Livingston Parish",
               "owner": "Monica Knott",
@@ -7030,39 +6931,6 @@
               ],
               "enrollment": 26163.0,
               "ytdPacing": 2.48
-            },
-            {
-              "name": "Lucia Mar Unified School District",
-              "shortName": "Lucia Mar",
-              "owner": "Monica Knott",
-              "csm": "monica",
-              "csmName": "Monica Knott",
-              "tier": "Tier 2",
-              "tierNum": 2,
-              "meetingType": "live",
-              "activeRenewal": true,
-              "lastDayOfSchool": "2026-06-05",
-              "bookingTarget": "2026-05-08",
-              "booked": false,
-              "meetingDate": "2026-05-26",
-              "outreachSent": true,
-              "asyncFormSent": null,
-              "completed": false,
-              "notes": "",
-              "status": "overdue",
-              "overdue": true,
-              "needsNudge": false,
-              "isUpsellCandidate": false,
-              "utilization": null,
-              "upsellData": null,
-              "mpocs": [
-                {
-                  "name": "Linda Pierce",
-                  "email": "linda.pierce@lmusd.org"
-                }
-              ],
-              "enrollment": 9275.0,
-              "ytdPacing": 0.97
             },
             {
               "name": "Paulding County School District",
@@ -7223,31 +7091,31 @@
       "stats": {
         "totalT1T2": 18,
         "completed": 0,
-        "booked": 8,
+        "booked": 10,
         "outreachSent": 16,
-        "overdue": 9,
+        "overdue": 7,
         "upsellCandidates": 2,
         "byTier": {
           "1": {
             "total": 13,
             "completed": 0,
-            "booked": 5,
-            "remaining": 8,
-            "overdue": 7
+            "booked": 6,
+            "remaining": 7,
+            "overdue": 6
           },
           "2": {
             "total": 5,
             "completed": 0,
-            "booked": 3,
-            "remaining": 2,
-            "overdue": 2
+            "booked": 4,
+            "remaining": 1,
+            "overdue": 1
           },
           "3": {
             "total": 23,
             "completed": 2,
-            "booked": 3,
-            "remaining": 18,
-            "overdue": 17
+            "booked": 4,
+            "remaining": 17,
+            "overdue": 16
           }
         }
       }
