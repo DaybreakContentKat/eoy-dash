@@ -1,13 +1,13 @@
 {
-  "refreshedAt": "2026-05-29T16:40:27.322821Z",
+  "refreshedAt": "2026-05-30T14:26:18.763589Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 107,
       "booked": 80,
-      "completed": 92,
-      "unbooked": 27,
-      "weeklyTarget": 9,
+      "completed": 96,
+      "unbooked": 26,
+      "weeklyTarget": 8,
       "thisWeekUrgent": 25,
       "atRisk": 25,
       "byUrgency": {
@@ -363,7 +363,7 @@
             "notes": "",
             "status": "overdue",
             "overdue": true,
-            "needsNudge": false,
+            "needsNudge": true,
             "isUpsellCandidate": false,
             "utilization": null,
             "upsellData": null,
@@ -905,43 +905,6 @@
         "later": [],
         "noDate": [
           {
-            "name": "Effingham County School District",
-            "shortName": "Effingham County",
-            "owner": "Monica Knott",
-            "csm": "monica",
-            "csmName": "Monica Knott",
-            "tier": "Tier 1",
-            "tierNum": 1,
-            "meetingType": "async",
-            "activeRenewal": true,
-            "lastDayOfSchool": null,
-            "bookingTarget": null,
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": false,
-            "asyncFormSent": null,
-            "completed": false,
-            "notes": "",
-            "status": "async",
-            "overdue": false,
-            "needsNudge": false,
-            "isUpsellCandidate": false,
-            "utilization": null,
-            "upsellData": null,
-            "mpocs": [
-              {
-                "name": "Jacqueline Brown-Pinkney,",
-                "email": "jbrown@effingham.k12.ga.us"
-              },
-              {
-                "name": "Travis Nesmith",
-                "email": "tnesmith@effingham.k12.ga.us"
-              }
-            ],
-            "enrollment": 15352.0,
-            "ytdPacing": 0.11
-          },
-          {
             "name": "Options For Youth - Duarte Inc District",
             "shortName": "Options For Youth - Duarte Inc District",
             "owner": "Daisy Leahy",
@@ -983,7 +946,7 @@
     },
     "stats": {
       "totalT1T2": 107,
-      "completed": 55,
+      "completed": 58,
       "booked": 80,
       "outreachSent": 62,
       "overdue": 25,
@@ -991,24 +954,24 @@
       "byTier": {
         "1": {
           "total": 42,
-          "completed": 19,
+          "completed": 20,
           "booked": 7,
-          "remaining": 16,
+          "remaining": 15,
           "overdue": 14
         },
         "2": {
           "total": 65,
-          "completed": 36,
-          "booked": 18,
+          "completed": 38,
+          "booked": 16,
           "remaining": 11,
           "overdue": 11
         },
         "3": {
           "total": 68,
-          "completed": 37,
+          "completed": 38,
           "booked": 10,
-          "remaining": 21,
-          "overdue": 21
+          "remaining": 20,
+          "overdue": 20
         }
       }
     }
@@ -1407,7 +1370,7 @@
           "notes": "",
           "status": "overdue",
           "overdue": true,
-          "needsNudge": false,
+          "needsNudge": true,
           "isUpsellCandidate": false,
           "utilization": null,
           "upsellData": null,
@@ -1703,9 +1666,9 @@
           "meetingDate": "2026-05-28",
           "outreachSent": false,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -1975,9 +1938,9 @@
           "meetingDate": "2026-05-28",
           "outreachSent": false,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -2180,7 +2143,7 @@
       "gapToGoal": {
         "totalNeedingCall": 20,
         "booked": 16,
-        "completed": 10,
+        "completed": 12,
         "unbooked": 4,
         "weeklyTarget": 1,
         "thisWeekUrgent": 4,
@@ -2244,7 +2207,7 @@
               "notes": "",
               "status": "overdue",
               "overdue": true,
-              "needsNudge": false,
+              "needsNudge": true,
               "isUpsellCandidate": false,
               "utilization": null,
               "upsellData": null,
@@ -2332,7 +2295,7 @@
       },
       "stats": {
         "totalT1T2": 20,
-        "completed": 8,
+        "completed": 10,
         "booked": 16,
         "outreachSent": 3,
         "overdue": 4,
@@ -2347,8 +2310,8 @@
           },
           "2": {
             "total": 20,
-            "completed": 8,
-            "booked": 8,
+            "completed": 10,
+            "booked": 6,
             "remaining": 4,
             "overdue": 4
           },
@@ -5710,10 +5673,10 @@
           "booked": false,
           "meetingDate": null,
           "outreachSent": false,
-          "asyncFormSent": null,
-          "completed": false,
+          "asyncFormSent": "2026-05-29",
+          "completed": true,
           "notes": "",
-          "status": "async",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -6371,11 +6334,11 @@
           "booked": false,
           "meetingDate": null,
           "outreachSent": false,
-          "asyncFormSent": null,
-          "completed": false,
+          "asyncFormSent": "2026-05-29",
+          "completed": true,
           "notes": "",
-          "status": "async",
-          "overdue": true,
+          "status": "completed",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -6543,9 +6506,9 @@
       "gapToGoal": {
         "totalNeedingCall": 19,
         "booked": 13,
-        "completed": 26,
-        "unbooked": 6,
-        "weeklyTarget": 2,
+        "completed": 28,
+        "unbooked": 5,
+        "weeklyTarget": 1,
         "thisWeekUrgent": 5,
         "atRisk": 5,
         "byUrgency": {
@@ -6743,50 +6706,12 @@
           "nextWeek": [],
           "soon": [],
           "later": [],
-          "noDate": [
-            {
-              "name": "Effingham County School District",
-              "shortName": "Effingham County",
-              "owner": "Monica Knott",
-              "csm": "monica",
-              "csmName": "Monica Knott",
-              "tier": "Tier 1",
-              "tierNum": 1,
-              "meetingType": "async",
-              "activeRenewal": true,
-              "lastDayOfSchool": null,
-              "bookingTarget": null,
-              "booked": false,
-              "meetingDate": null,
-              "outreachSent": false,
-              "asyncFormSent": null,
-              "completed": false,
-              "notes": "",
-              "status": "async",
-              "overdue": false,
-              "needsNudge": false,
-              "isUpsellCandidate": false,
-              "utilization": null,
-              "upsellData": null,
-              "mpocs": [
-                {
-                  "name": "Jacqueline Brown-Pinkney,",
-                  "email": "jbrown@effingham.k12.ga.us"
-                },
-                {
-                  "name": "Travis Nesmith",
-                  "email": "tnesmith@effingham.k12.ga.us"
-                }
-              ],
-              "enrollment": 15352.0,
-              "ytdPacing": 0.11
-            }
-          ]
+          "noDate": []
         }
       },
       "stats": {
         "totalT1T2": 19,
-        "completed": 10,
+        "completed": 11,
         "booked": 13,
         "outreachSent": 17,
         "overdue": 5,
@@ -6794,9 +6719,9 @@
         "byTier": {
           "1": {
             "total": 13,
-            "completed": 6,
+            "completed": 7,
             "booked": 2,
-            "remaining": 5,
+            "remaining": 4,
             "overdue": 4
           },
           "2": {
@@ -6808,10 +6733,10 @@
           },
           "3": {
             "total": 21,
-            "completed": 16,
+            "completed": 17,
             "booked": 3,
-            "remaining": 2,
-            "overdue": 2
+            "remaining": 1,
+            "overdue": 1
           }
         }
       }
