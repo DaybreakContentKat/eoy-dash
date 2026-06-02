@@ -1,15 +1,15 @@
 {
-  "refreshedAt": "2026-06-01T18:35:01.859109Z",
+  "refreshedAt": "2026-06-02T17:17:21.901132Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 107,
       "booked": 82,
-      "completed": 101,
-      "unbooked": 23,
+      "completed": 105,
+      "unbooked": 22,
       "weeklyTarget": 7,
-      "thisWeekUrgent": 22,
-      "atRisk": 22,
+      "thisWeekUrgent": 21,
+      "atRisk": 21,
       "byUrgency": {
         "thisWeek": [
           {
@@ -387,43 +387,6 @@
             ],
             "enrollment": 55051.0,
             "ytdPacing": 0.22
-          },
-          {
-            "name": "Fullerton Elementary School District",
-            "shortName": "Fullerton Elementary",
-            "owner": "Monica Knott",
-            "csm": "monica",
-            "csmName": "Monica Knott",
-            "tier": "Tier 1",
-            "tierNum": 1,
-            "meetingType": "live",
-            "activeRenewal": true,
-            "lastDayOfSchool": "2026-05-15",
-            "bookingTarget": "2026-04-17",
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": true,
-            "asyncFormSent": null,
-            "completed": false,
-            "notes": "",
-            "status": "overdue",
-            "overdue": true,
-            "needsNudge": false,
-            "isUpsellCandidate": false,
-            "utilization": null,
-            "upsellData": null,
-            "mpocs": [
-              {
-                "name": "Erlinda Soltero-Ruiz",
-                "email": "erlinda_soltero_ruiz@myfsd.org"
-              },
-              {
-                "name": "Jenny Saul",
-                "email": "jennifer_saul@myfsd.org"
-              }
-            ],
-            "enrollment": 11304.0,
-            "ytdPacing": 1.68
           },
           {
             "name": "Madera Unified School District",
@@ -835,32 +798,32 @@
     },
     "stats": {
       "totalT1T2": 107,
-      "completed": 61,
+      "completed": 64,
       "booked": 82,
       "outreachSent": 63,
-      "overdue": 22,
+      "overdue": 21,
       "upsellCandidates": 25,
       "byTier": {
         "1": {
           "total": 42,
-          "completed": 22,
-          "booked": 7,
-          "remaining": 13,
-          "overdue": 12
+          "completed": 24,
+          "booked": 6,
+          "remaining": 12,
+          "overdue": 11
         },
         "2": {
           "total": 65,
-          "completed": 39,
-          "booked": 16,
+          "completed": 40,
+          "booked": 15,
           "remaining": 10,
           "overdue": 10
         },
         "3": {
           "total": 68,
-          "completed": 40,
+          "completed": 41,
           "booked": 10,
-          "remaining": 18,
-          "overdue": 18
+          "remaining": 17,
+          "overdue": 17
         }
       }
     }
@@ -1930,9 +1893,9 @@
           "meetingDate": "2026-06-01",
           "outreachSent": false,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": true,
@@ -2032,7 +1995,7 @@
       "gapToGoal": {
         "totalNeedingCall": 20,
         "booked": 17,
-        "completed": 15,
+        "completed": 16,
         "unbooked": 3,
         "weeklyTarget": 1,
         "thisWeekUrgent": 3,
@@ -2151,7 +2114,7 @@
       },
       "stats": {
         "totalT1T2": 20,
-        "completed": 11,
+        "completed": 12,
         "booked": 17,
         "outreachSent": 4,
         "overdue": 3,
@@ -2166,8 +2129,8 @@
           },
           "2": {
             "total": 20,
-            "completed": 11,
-            "booked": 6,
+            "completed": 12,
+            "booked": 5,
             "remaining": 3,
             "overdue": 3
           },
@@ -5600,10 +5563,10 @@
           "meetingDate": null,
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "overdue",
-          "overdue": true,
+          "status": "completed",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -5636,11 +5599,11 @@
           "booked": false,
           "meetingDate": null,
           "outreachSent": false,
-          "asyncFormSent": null,
-          "completed": false,
+          "asyncFormSent": "2026-06-01",
+          "completed": true,
           "notes": "",
-          "status": "async",
-          "overdue": true,
+          "status": "completed",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -6154,9 +6117,9 @@
           "meetingDate": "2026-06-02",
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -6362,11 +6325,11 @@
       "gapToGoal": {
         "totalNeedingCall": 19,
         "booked": 14,
-        "completed": 30,
-        "unbooked": 3,
+        "completed": 33,
+        "unbooked": 2,
         "weeklyTarget": 1,
-        "thisWeekUrgent": 3,
-        "atRisk": 3,
+        "thisWeekUrgent": 2,
+        "atRisk": 2,
         "byUrgency": {
           "thisWeek": [
             {
@@ -6411,43 +6374,6 @@
               "ytdPacing": 1.18
             },
             {
-              "name": "Fullerton Elementary School District",
-              "shortName": "Fullerton Elementary",
-              "owner": "Monica Knott",
-              "csm": "monica",
-              "csmName": "Monica Knott",
-              "tier": "Tier 1",
-              "tierNum": 1,
-              "meetingType": "live",
-              "activeRenewal": true,
-              "lastDayOfSchool": "2026-05-15",
-              "bookingTarget": "2026-04-17",
-              "booked": false,
-              "meetingDate": null,
-              "outreachSent": true,
-              "asyncFormSent": null,
-              "completed": false,
-              "notes": "",
-              "status": "overdue",
-              "overdue": true,
-              "needsNudge": false,
-              "isUpsellCandidate": false,
-              "utilization": null,
-              "upsellData": null,
-              "mpocs": [
-                {
-                  "name": "Erlinda Soltero-Ruiz",
-                  "email": "erlinda_soltero_ruiz@myfsd.org"
-                },
-                {
-                  "name": "Jenny Saul",
-                  "email": "jennifer_saul@myfsd.org"
-                }
-              ],
-              "enrollment": 11304.0,
-              "ytdPacing": 1.68
-            },
-            {
               "name": "Walker County School District",
               "shortName": "Walker County",
               "owner": "Monica Knott",
@@ -6489,18 +6415,18 @@
       },
       "stats": {
         "totalT1T2": 19,
-        "completed": 13,
+        "completed": 15,
         "booked": 14,
         "outreachSent": 17,
-        "overdue": 3,
+        "overdue": 2,
         "upsellCandidates": 2,
         "byTier": {
           "1": {
             "total": 13,
-            "completed": 9,
-            "booked": 2,
-            "remaining": 2,
-            "overdue": 2
+            "completed": 11,
+            "booked": 1,
+            "remaining": 1,
+            "overdue": 1
           },
           "2": {
             "total": 6,
@@ -6511,10 +6437,10 @@
           },
           "3": {
             "total": 21,
-            "completed": 17,
+            "completed": 18,
             "booked": 3,
-            "remaining": 1,
-            "overdue": 1
+            "remaining": 0,
+            "overdue": 0
           }
         }
       }
