@@ -344,6 +344,15 @@ for row in data_rows:
     # churned/onsite rows whose *owner* column already excludes them.
     is_churn = 'churn' in str(row[2]).strip().lower()
     csm_slug = csm_map.get(owner)
+    # Co-owned districts are entered as "A/B" (e.g. "Sarah Hough/Monica Knott").
+    # Assign to the first listed CSM so they land on a real CSM page instead of
+    # the orphan list; the full owner string is kept for display.
+    if not csm_slug and '/' in owner:
+        for part in owner.split('/'):
+            slug = csm_map.get(part.strip())
+            if slug:
+                csm_slug = slug
+                break
     if is_churn or not csm_slug:
         o = make_district(row, 'unassigned', owner, tier_num, meeting_type)
         o['orphanReason'] = orphan_reason(str(row[2]), owner)
