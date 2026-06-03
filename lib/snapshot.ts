@@ -1,4 +1,4 @@
-import type { Snapshot } from './types';
+import type { PortfolioStats, Snapshot, TierNum } from './types';
 
 // Snapshot is served straight from the repo via GitHub's raw CDN so the
 // dashboard reflects daily refreshes without needing a Netlify rebuild.
@@ -31,4 +31,23 @@ export function formatRefreshedAt(iso: string): string {
 
 export function formatNumber(n: number): string {
   return n.toLocaleString('en-US');
+}
+
+// The reconciling funnel for a set of districts: every district is in exactly
+// one of these states, so completed + booked + remaining = total. "booked"
+// here means on the calendar but NOT yet held — distinct from the raw
+// `stats.booked` (cumulative, which also counts completed meetings and so
+// can't be added to `completed` without double-counting). Use this everywhere
+// a "Booked" count sits next to "Completed"/"Done" so the numbers add up.
+export function funnelTotals(byTier: PortfolioStats['byTier']): {
+  completed: number;
+  booked: number;
+  remaining: number;
+} {
+  const tiers: TierNum[] = [1, 2, 3];
+  return {
+    completed: tiers.reduce((n, t) => n + byTier[t].completed, 0),
+    booked: tiers.reduce((n, t) => n + byTier[t].booked, 0),
+    remaining: tiers.reduce((n, t) => n + byTier[t].remaining, 0),
+  };
 }

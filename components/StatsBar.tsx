@@ -1,6 +1,6 @@
 import type { PortfolioStats } from '@/lib/types';
 import { UPSELL_REPORT_URL } from '@/lib/config';
-import { formatNumber } from '@/lib/snapshot';
+import { formatNumber, funnelTotals } from '@/lib/snapshot';
 
 interface Props {
   stats: PortfolioStats;
@@ -21,7 +21,7 @@ export function StatsBar({ stats }: Props) {
     { label: 'T1+T2', value: stats.totalT1T2 },
     { label: 'Total async', value: stats.asyncTotal },
     { label: 'Completed', value: stats.completed, tone: 'good' },
-    { label: 'Booked', value: stats.booked, tone: 'good' },
+    { label: 'Booked', value: funnelTotals(stats.byTier).booked, tone: 'good' },
     { label: 'Outreach sent', value: stats.outreachSent },
     {
       label: 'Upsell candidates',
