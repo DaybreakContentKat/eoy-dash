@@ -126,14 +126,23 @@ export function tierStats(districts: District[]): Record<TierNum, TierStats> {
   return out;
 }
 
+// NOTE: stats shown in the app come from the Python-generated snapshot
+// (scripts/generate_snapshot.py → build_portfolio_stats), not this function.
+// Kept in sync with that source of truth so it doesn't mislead if reused:
+// completed/booked/outreachSent/overdue are all-tier; totalT1T2 and
+// upsellCandidates keep their original scope.
 export function portfolioStats(districts: District[]): PortfolioStats {
   const t1t2 = districts.filter((d) => d.tierNum <= 2);
+  const asyncDistricts = districts.filter((d) => d.meetingType === 'async');
   return {
+    totalDistricts: districts.length,
     totalT1T2: t1t2.length,
-    completed: t1t2.filter((d) => d.completed).length,
-    booked: t1t2.filter((d) => d.booked).length,
-    outreachSent: t1t2.filter((d) => d.outreachSent).length,
-    overdue: t1t2.filter((d) => d.overdue).length,
+    asyncTotal: asyncDistricts.length,
+    asyncCompleted: asyncDistricts.filter((d) => d.completed).length,
+    completed: districts.filter((d) => d.completed).length,
+    booked: districts.filter((d) => d.booked).length,
+    outreachSent: districts.filter((d) => d.outreachSent).length,
+    overdue: districts.filter((d) => d.overdue).length,
     upsellCandidates: districts.filter((d) => d.isUpsellCandidate).length,
     byTier: tierStats(districts),
   };

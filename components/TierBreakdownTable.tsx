@@ -12,6 +12,23 @@ const TIER_DESCRIPTIONS: Record<TierNum, { label: string; sub: string }> = {
 };
 
 export function TierBreakdownTable({ byTier }: Props) {
+  // Booked and overdue are live-call concepts, so the totals (and the T3 cells)
+  // only sum Tier 1 + Tier 2. Completed sums all tiers — Tier 3 genuinely
+  // completes async check-ins, and surfacing them is the whole point of the
+  // all-tier fix. For Tier 3 the funnel is just completed vs not, so its
+  // "remaining" is total − completed (any booked async calls fold in here)
+  // rather than byTier.remaining, keeping the table reconciled.
+  const t3Remaining = byTier[3].total - byTier[3].completed;
+  const totals = {
+    total: byTier[1].total + byTier[2].total + byTier[3].total,
+    completed: byTier[1].completed + byTier[2].completed + byTier[3].completed,
+    booked: byTier[1].booked + byTier[2].booked,
+    remaining: byTier[1].remaining + byTier[2].remaining + t3Remaining,
+    overdue: byTier[1].overdue + byTier[2].overdue,
+  };
+  const totalPct =
+    totals.total > 0 ? ((totals.completed + totals.booked) / totals.total) * 100 : 0;
+
   return (
     <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm">
       <table className="w-full text-sm">
@@ -31,7 +48,12 @@ export function TierBreakdownTable({ byTier }: Props) {
             const t = byTier[n];
             const meta = TIER_DESCRIPTIONS[n];
             const isAsync = n === 3;
-            const pct = t.total > 0 ? ((t.completed + t.booked) / t.total) * 100 : 0;
+            // Async tiers track completion only (no bookings), so measure
+            // progress by completed/total rather than (completed+booked)/total.
+            const pct =
+              t.total > 0
+                ? ((isAsync ? t.completed : t.completed + t.booked) / t.total) * 100
+                : 0;
             return (
               <tr key={n} className="text-zinc-900">
                 <td className="px-4 py-3">
@@ -40,39 +62,58 @@ export function TierBreakdownTable({ byTier }: Props) {
                 </td>
                 <td className="px-4 py-3 text-right tabular-nums">{formatNumber(t.total)}</td>
                 <td className="px-4 py-3 text-right tabular-nums text-emerald-600">
-                  {isAsync ? '—' : formatNumber(t.completed)}
+                  {formatNumber(t.completed)}
                 </td>
                 <td className="px-4 py-3 text-right tabular-nums text-emerald-600">
                   {isAsync ? '—' : formatNumber(t.booked)}
                 </td>
                 <td className="px-4 py-3 text-right tabular-nums">
-                  {formatNumber(t.remaining)}
+                  {formatNumber(isAsync ? t.total - t.completed : t.remaining)}
                 </td>
                 <td className="px-4 py-3 text-right tabular-nums text-red-600">
                   {isAsync ? '—' : formatNumber(t.overdue)}
                 </td>
                 <td className="px-4 py-3">
-                  {isAsync ? (
-                    <span className="text-xs text-zinc-400">async only</span>
-                  ) : (
-                    <div className="flex items-center gap-2">
-                      <div className="h-2 w-32 rounded-full bg-zinc-200">
-                        <div
-                          className="h-2 rounded-full bg-emerald-500 transition-all"
-                          style={{ width: `${Math.min(100, pct).toFixed(1)}%` }}
-                        />
-                      </div>
-                      <span className="text-xs tabular-nums text-zinc-600">
-                        {pct.toFixed(0)}%
-                      </span>
-                    </div>
-                  )}
+                  <ProgressBar pct={pct} />
                 </td>
               </tr>
             );
           })}
         </tbody>
+        <tfoot className="border-t-2 border-zinc-200 bg-zinc-50 font-semibold text-zinc-900">
+          <tr>
+            <td className="px-4 py-3">Total</td>
+            <td className="px-4 py-3 text-right tabular-nums">{formatNumber(totals.total)}</td>
+            <td className="px-4 py-3 text-right tabular-nums text-emerald-600">
+              {formatNumber(totals.completed)}
+            </td>
+            <td className="px-4 py-3 text-right tabular-nums text-emerald-600">
+              {formatNumber(totals.booked)}
+            </td>
+            <td className="px-4 py-3 text-right tabular-nums">{formatNumber(totals.remaining)}</td>
+            <td className="px-4 py-3 text-right tabular-nums text-red-600">
+              {formatNumber(totals.overdue)}
+            </td>
+            <td className="px-4 py-3">
+              <ProgressBar pct={totalPct} />
+            </td>
+          </tr>
+        </tfoot>
       </table>
+    </div>
+  );
+}
+
+function ProgressBar({ pct }: { pct: number }) {
+  return (
+    <div className="flex items-center gap-2">
+      <div className="h-2 w-32 rounded-full bg-zinc-200">
+        <div
+          className="h-2 rounded-full bg-emerald-500 transition-all"
+          style={{ width: `${Math.min(100, pct).toFixed(1)}%` }}
+        />
+      </div>
+      <span className="text-xs tabular-nums text-zinc-600">{pct.toFixed(0)}%</span>
     </div>
   );
 }

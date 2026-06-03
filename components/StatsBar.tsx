@@ -17,7 +17,9 @@ interface Item {
 
 export function StatsBar({ stats }: Props) {
   const items: Item[] = [
-    { label: 'T1+T2 districts', value: stats.totalT1T2 },
+    { label: 'Total districts', value: stats.totalDistricts },
+    { label: 'T1+T2', value: stats.totalT1T2 },
+    { label: 'Total async', value: stats.asyncTotal },
     { label: 'Completed', value: stats.completed, tone: 'good' },
     { label: 'Booked', value: stats.booked, tone: 'good' },
     { label: 'Outreach sent', value: stats.outreachSent },
@@ -30,11 +32,37 @@ export function StatsBar({ stats }: Props) {
     },
   ];
   return (
-    <dl className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
-      {items.map((it) => (
-        <Tile key={it.label} item={it} />
-      ))}
-    </dl>
+    <div className="flex flex-col gap-3">
+      <dl className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-8">
+        {items.map((it) => (
+          <Tile key={it.label} item={it} />
+        ))}
+      </dl>
+      <AsyncProgress completed={stats.asyncCompleted} total={stats.asyncTotal} />
+    </div>
+  );
+}
+
+function AsyncProgress({ completed, total }: { completed: number; total: number }) {
+  if (total === 0) return null;
+  const pct = (completed / total) * 100;
+  return (
+    <div className="rounded-lg border border-zinc-200 bg-white px-4 py-3 shadow-sm">
+      <div className="flex items-baseline justify-between">
+        <span className="text-xs font-medium uppercase tracking-wide text-zinc-500">
+          Async check-ins completed
+        </span>
+        <span className="text-xs tabular-nums text-zinc-600">
+          {formatNumber(completed)} / {formatNumber(total)} · {pct.toFixed(0)}%
+        </span>
+      </div>
+      <div className="mt-2 h-2 w-full rounded-full bg-zinc-200">
+        <div
+          className="h-2 rounded-full bg-emerald-500 transition-all"
+          style={{ width: `${Math.min(100, pct).toFixed(1)}%` }}
+        />
+      </div>
+    </div>
   );
 }
 
