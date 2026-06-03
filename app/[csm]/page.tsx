@@ -122,16 +122,23 @@ export default async function CSMPage({ params }: PageProps) {
 function QuickStats({
   stats,
 }: {
-  stats: { totalT1T2: number; booked: number; overdue: number; upsellCandidates: number };
+  stats: {
+    totalT1T2: number;
+    asyncTotal: number;
+    completed: number;
+    booked: number;
+    upsellCandidates: number;
+  };
 }) {
   const items: Array<{ label: string; value: number; tone?: 'danger' | 'warning' | 'good' }> = [
     { label: 'T1+T2', value: stats.totalT1T2 },
+    { label: 'Total async', value: stats.asyncTotal },
+    { label: 'Completed', value: stats.completed, tone: 'good' },
     { label: 'Booked', value: stats.booked, tone: 'good' },
-    { label: 'Overdue', value: stats.overdue, tone: 'danger' },
     { label: 'Upsell', value: stats.upsellCandidates, tone: 'warning' },
   ];
   return (
-    <dl className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+    <dl className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
       {items.map((it) => (
         <div
           key={it.label}

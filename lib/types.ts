@@ -113,7 +113,10 @@ export interface TierStats {
 }
 
 export interface PortfolioStats {
+  totalDistricts: number;
   totalT1T2: number;
+  asyncTotal: number;
+  asyncCompleted: number;
   completed: number;
   booked: number;
   outreachSent: number;

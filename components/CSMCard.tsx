@@ -23,10 +23,9 @@ export function CSMCard({ csm, snapshot }: Props) {
       </div>
       <p className="mt-1 text-sm text-zinc-500">{formatNumber(total)} districts in portfolio</p>
 
-      <dl className="mt-4 grid grid-cols-3 gap-2 text-sm">
+      <dl className="mt-4 grid grid-cols-2 gap-2 text-sm">
         <Stat label="Booked" value={stats.booked} tone="good" />
         <Stat label="Done" value={stats.completed} tone="good" />
-        <Stat label="Overdue" value={stats.overdue} tone="danger" />
       </dl>
 
       {gap.unbooked > 0 ? (
