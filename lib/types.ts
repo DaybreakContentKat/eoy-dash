@@ -83,6 +83,10 @@ export interface District {
   mpocs: MPOCContact[];
   enrollment: number | null;
   ytdPacing: number | null;
+  // Only set for orphans (districts not on a CSM page): why they're excluded,
+  // read from the tracker — "Churn" / "Likely churn" / "Onsite only" /
+  // "Unsure or missing", or a verbatim non-CSM owner (e.g. co-owned).
+  orphanReason?: string;
 }
 
 export interface UrgencyBuckets {

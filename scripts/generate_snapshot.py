@@ -313,6 +313,21 @@ def make_district(row, csm_slug, csm_name, tier_num, meeting_type):
 districts = []
 orphans = []
 
+def orphan_reason(meeting_raw, owner):
+    # Why a district isn't on a CSM page, read from the tracker. Churn/onsite
+    # markers live in either the live-meeting column (col C) or the owner column
+    # (col D), so check both. A non-empty owner that isn't one of those markers
+    # (e.g. co-owned "Sarah Hough/Monica Knott") is shown verbatim; a blank
+    # owner means we can't tell who owns it.
+    combined = f'{meeting_raw} {owner}'.lower()
+    if 'churn' in combined:
+        return 'Likely churn' if 'likely' in combined else 'Churn'
+    if 'onsite' in combined or 'on-site' in combined or 'on site' in combined:
+        return 'Onsite only'
+    if owner.strip():
+        return owner.strip()
+    return 'Unsure or missing'
+
 for row in data_rows:
     while len(row) < 21:
         row.append('')
@@ -330,7 +345,9 @@ for row in data_rows:
     is_churn = 'churn' in str(row[2]).strip().lower()
     csm_slug = csm_map.get(owner)
     if is_churn or not csm_slug:
-        orphans.append(make_district(row, 'unassigned', owner, tier_num, meeting_type))
+        o = make_district(row, 'unassigned', owner, tier_num, meeting_type)
+        o['orphanReason'] = orphan_reason(str(row[2]), owner)
+        orphans.append(o)
         continue
     districts.append(make_district(row, csm_slug, owner, tier_num, meeting_type))
 
