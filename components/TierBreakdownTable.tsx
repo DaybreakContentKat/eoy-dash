@@ -8,26 +8,24 @@ interface Props {
 const TIER_DESCRIPTIONS: Record<TierNum, { label: string; sub: string }> = {
   1: { label: 'Tier 1', sub: 'Live EOY call required' },
   2: { label: 'Tier 2', sub: 'Live EOY call expected' },
-  3: { label: 'Tier 3', sub: 'Async outreach only' },
+  3: { label: 'Tier 3', sub: 'Async by default' },
 };
 
 export function TierBreakdownTable({ byTier }: Props) {
-  // A clean funnel: Completed + Booked + Remaining = Total. Booked is a
-  // live-call concept, so the T3 cell and the total only sum Tier 1 + Tier 2;
-  // Completed sums all tiers (surfacing async check-ins is the point of the
-  // all-tier fix). For Tier 3 the funnel is just completed vs not, so its
-  // "remaining" is total − completed (any booked async calls fold in here)
-  // rather than byTier.remaining, keeping the table reconciled.
-  // Overdue is intentionally not shown — it overlaps Remaining (it's a subset,
-  // not a separate bucket) and the live-call vs async distinction made it
-  // ambiguous, so it lived as a confusing addable column. The data still
-  // tracks it for the gap-to-goal at-risk nudge.
-  const t3Remaining = byTier[3].total - byTier[3].completed;
+  // A plain cohort funnel, reported by each district's actual state:
+  // Completed + Booked + Remaining = Total, summed across all tiers. Tier 3
+  // shows its real Booked too — owners flip some Tier-3 districts to live
+  // calls, and those bookings should report under Booked, not be hidden.
+  // The live-vs-async split is reported separately (by meeting type) via the
+  // async progress bar and "Total async" tile.
+  // Overdue is intentionally not shown — it overlaps Remaining (a subset, not
+  // a separate bucket), so it read as a confusing addable column. The data
+  // still tracks it for the gap-to-goal at-risk nudge.
   const totals = {
     total: byTier[1].total + byTier[2].total + byTier[3].total,
     completed: byTier[1].completed + byTier[2].completed + byTier[3].completed,
-    booked: byTier[1].booked + byTier[2].booked,
-    remaining: byTier[1].remaining + byTier[2].remaining + t3Remaining,
+    booked: byTier[1].booked + byTier[2].booked + byTier[3].booked,
+    remaining: byTier[1].remaining + byTier[2].remaining + byTier[3].remaining,
   };
   const totalPct =
     totals.total > 0 ? ((totals.completed + totals.booked) / totals.total) * 100 : 0;
@@ -49,13 +47,7 @@ export function TierBreakdownTable({ byTier }: Props) {
           {([1, 2, 3] as TierNum[]).map((n) => {
             const t = byTier[n];
             const meta = TIER_DESCRIPTIONS[n];
-            const isAsync = n === 3;
-            // Async tiers track completion only (no bookings), so measure
-            // progress by completed/total rather than (completed+booked)/total.
-            const pct =
-              t.total > 0
-                ? ((isAsync ? t.completed : t.completed + t.booked) / t.total) * 100
-                : 0;
+            const pct = t.total > 0 ? ((t.completed + t.booked) / t.total) * 100 : 0;
             return (
               <tr key={n} className="text-zinc-900">
                 <td className="px-4 py-3">
@@ -67,10 +59,10 @@ export function TierBreakdownTable({ byTier }: Props) {
                   {formatNumber(t.completed)}
                 </td>
                 <td className="px-4 py-3 text-right tabular-nums text-emerald-600">
-                  {isAsync ? '—' : formatNumber(t.booked)}
+                  {formatNumber(t.booked)}
                 </td>
                 <td className="px-4 py-3 text-right tabular-nums">
-                  {formatNumber(isAsync ? t.total - t.completed : t.remaining)}
+                  {formatNumber(t.remaining)}
                 </td>
                 <td className="px-4 py-3">
                   <ProgressBar pct={pct} />
