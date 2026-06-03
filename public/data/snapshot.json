@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-03T20:53:16.526771Z",
+  "refreshedAt": "2026-06-03T22:30:50.297091Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
@@ -7419,7 +7419,8 @@
         }
       ],
       "enrollment": 2063.0,
-      "ytdPacing": 0.16
+      "ytdPacing": 0.16,
+      "orphanReason": "Sarah Hough/Monica Knott"
     },
     {
       "name": "Fort Bragg Unified School District",
@@ -7447,7 +7448,8 @@
       "upsellData": null,
       "mpocs": [],
       "enrollment": null,
-      "ytdPacing": null
+      "ytdPacing": null,
+      "orphanReason": "Churn"
     },
     {
       "name": "Grady County School District",
@@ -7480,7 +7482,8 @@
         }
       ],
       "enrollment": 4463.0,
-      "ytdPacing": 0.0
+      "ytdPacing": 0.0,
+      "orphanReason": "Likely churn"
     },
     {
       "name": "Hearne Independent School District",
@@ -7508,7 +7511,8 @@
       "upsellData": null,
       "mpocs": [],
       "enrollment": null,
-      "ytdPacing": null
+      "ytdPacing": null,
+      "orphanReason": "Onsite only"
     },
     {
       "name": "Humboldt County Office Of Education",
@@ -7536,7 +7540,8 @@
       "upsellData": null,
       "mpocs": [],
       "enrollment": null,
-      "ytdPacing": null
+      "ytdPacing": null,
+      "orphanReason": "Churn"
     },
     {
       "name": "Lake Elsinore Unified School District (all other campuses)",
@@ -7573,7 +7578,8 @@
         }
       ],
       "enrollment": null,
-      "ytdPacing": null
+      "ytdPacing": null,
+      "orphanReason": "Unsure or missing"
     },
     {
       "name": "Opportunities for Learning - Baldwin Park",
@@ -7610,7 +7616,8 @@
         }
       ],
       "enrollment": 2307.0,
-      "ytdPacing": 0.0
+      "ytdPacing": 0.0,
+      "orphanReason": "Churn"
     },
     {
       "name": "Opportunities for Learning - Duarte",
@@ -7638,7 +7645,8 @@
       "upsellData": null,
       "mpocs": [],
       "enrollment": 122.0,
-      "ytdPacing": 0.0
+      "ytdPacing": 0.0,
+      "orphanReason": "Churn"
     },
     {
       "name": "Options For Youth - Duarte Inc District",
@@ -7675,7 +7683,8 @@
         }
       ],
       "enrollment": 915.0,
-      "ytdPacing": 0.0
+      "ytdPacing": 0.0,
+      "orphanReason": "Churn"
     },
     {
       "name": "Oroville Union High School District",
@@ -7708,7 +7717,8 @@
         }
       ],
       "enrollment": 2542.0,
-      "ytdPacing": 0.11
+      "ytdPacing": 0.11,
+      "orphanReason": "Churn"
     },
     {
       "name": "San Diego Unified School District",
@@ -7741,7 +7751,8 @@
         }
       ],
       "enrollment": null,
-      "ytdPacing": null
+      "ytdPacing": null,
+      "orphanReason": "Onsite only"
     },
     {
       "name": "Tarkington Independent School District",
@@ -7774,7 +7785,8 @@
         }
       ],
       "enrollment": null,
-      "ytdPacing": null
+      "ytdPacing": null,
+      "orphanReason": "Churn"
     },
     {
       "name": "Waelder Independent School District",
@@ -7802,7 +7814,8 @@
       "upsellData": null,
       "mpocs": [],
       "enrollment": null,
-      "ytdPacing": null
+      "ytdPacing": null,
+      "orphanReason": "Churn"
     }
   ]
 }
