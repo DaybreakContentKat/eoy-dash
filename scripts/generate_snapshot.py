@@ -239,7 +239,10 @@ def empty_gap_to_goal():
 
 def empty_portfolio_stats():
     return {
+        'totalDistricts': 0,
         'totalT1T2': 0,
+        'asyncTotal': 0,
+        'asyncCompleted': 0,
         'completed': 0,
         'booked': 0,
         'outreachSent': 0,
@@ -319,8 +322,14 @@ for row in data_rows:
     tier_num = parse_tier(row[1])
     meeting_type = parse_meeting_type(row[2], tier_num)
     owner = row[3].strip()
+    # A "Churn" marker in the live-meeting column (col C) means the district is
+    # churning and should not count toward EOY call stats — even when it still
+    # has a real account owner (e.g. the Opportunities for Learning / Options
+    # For Youth rows owned by Daisy). Route these to orphans alongside the
+    # churned/onsite rows whose *owner* column already excludes them.
+    is_churn = 'churn' in str(row[2]).strip().lower()
     csm_slug = csm_map.get(owner)
-    if not csm_slug:
+    if is_churn or not csm_slug:
         orphans.append(make_district(row, 'unassigned', owner, tier_num, meeting_type))
         continue
     districts.append(make_district(row, csm_slug, owner, tier_num, meeting_type))
@@ -383,12 +392,20 @@ def build_portfolio_stats(all_districts, t1t2_districts):
         if d['overdue']:
             by_tier[tn]['overdue'] += 1
 
+    # Completed / booked / outreach / overdue count ALL tiers — the headline
+    # numbers were previously T1+T2 only, which silently hid the ~48 completed
+    # Tier-3 meetings (the "completed not syncing" complaint). totalT1T2 and
+    # upsellCandidates keep their original scope.
+    async_districts = [d for d in all_districts if d['meetingType'] == 'async']
     return {
+        'totalDistricts': len(all_districts),
         'totalT1T2': len(t1t2_districts),
-        'completed': len([d for d in t1t2_districts if d['completed']]),
-        'booked': len([d for d in t1t2_districts if d['booked']]),
-        'outreachSent': len([d for d in t1t2_districts if d['outreachSent']]),
-        'overdue': len([d for d in t1t2_districts if d['overdue']]),
+        'asyncTotal': len(async_districts),
+        'asyncCompleted': len([d for d in async_districts if d['completed']]),
+        'completed': len([d for d in all_districts if d['completed']]),
+        'booked': len([d for d in all_districts if d['booked']]),
+        'outreachSent': len([d for d in all_districts if d['outreachSent']]),
+        'overdue': len([d for d in all_districts if d['overdue']]),
         'upsellCandidates': len([d for d in all_districts if d['isUpsellCandidate']]),
         'byTier': by_tier,
     }
