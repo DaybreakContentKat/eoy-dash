@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { BTS_TRACKER_URL, CSM_CONFIG, CSM_SLUGS } from '@/lib/config';
-import { formatNumber, formatRefreshedAt, loadSnapshot } from '@/lib/snapshot';
+import { formatNumber, formatRefreshedAt, funnelTotals, loadSnapshot } from '@/lib/snapshot';
 import { BatchActionBar } from '@/components/BatchActionBar';
 import { DistrictCard } from '@/components/DistrictCard';
 import { GapToGoalBanner } from '@/components/GapToGoalBanner';
 import { StaleWarning } from '@/components/StaleWarning';
-import type { CardStatus, CSMConfig, District } from '@/lib/types';
+import type { CardStatus, CSMConfig, District, PortfolioStats } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
@@ -119,22 +119,12 @@ export default async function CSMPage({ params }: PageProps) {
   );
 }
 
-function QuickStats({
-  stats,
-}: {
-  stats: {
-    totalT1T2: number;
-    asyncTotal: number;
-    completed: number;
-    booked: number;
-    upsellCandidates: number;
-  };
-}) {
+function QuickStats({ stats }: { stats: PortfolioStats }) {
   const items: Array<{ label: string; value: number; tone?: 'danger' | 'warning' | 'good' }> = [
     { label: 'T1+T2', value: stats.totalT1T2 },
     { label: 'Total async', value: stats.asyncTotal },
     { label: 'Completed', value: stats.completed, tone: 'good' },
-    { label: 'Booked', value: stats.booked, tone: 'good' },
+    { label: 'Booked', value: funnelTotals(stats.byTier).booked, tone: 'good' },
     { label: 'Upsell', value: stats.upsellCandidates, tone: 'warning' },
   ];
   return (

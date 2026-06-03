@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { CSMConfig, CSMSnapshot } from '@/lib/types';
-import { formatNumber } from '@/lib/snapshot';
+import { formatNumber, funnelTotals } from '@/lib/snapshot';
 
 interface Props {
   csm: CSMConfig;
@@ -10,6 +10,9 @@ interface Props {
 export function CSMCard({ csm, snapshot }: Props) {
   const { stats, gapToGoal: gap, districts } = snapshot;
   const total = districts.length;
+  // Done + Booked + Remaining = total. "Booked" = on the calendar, not yet
+  // held (so it doesn't overlap Done the way the cumulative stats.booked does).
+  const funnel = funnelTotals(stats.byTier);
   return (
     <Link
       href={`/${csm.slug}`}
@@ -23,9 +26,10 @@ export function CSMCard({ csm, snapshot }: Props) {
       </div>
       <p className="mt-1 text-sm text-zinc-500">{formatNumber(total)} districts in portfolio</p>
 
-      <dl className="mt-4 grid grid-cols-2 gap-2 text-sm">
-        <Stat label="Booked" value={stats.booked} tone="good" />
-        <Stat label="Done" value={stats.completed} tone="good" />
+      <dl className="mt-4 grid grid-cols-3 gap-2 text-sm">
+        <Stat label="Done" value={funnel.completed} tone="good" />
+        <Stat label="Booked" value={funnel.booked} tone="good" />
+        <Stat label="Remaining" value={funnel.remaining} />
       </dl>
 
       {gap.unbooked > 0 ? (
