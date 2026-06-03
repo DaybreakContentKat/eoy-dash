@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-03T22:30:50.297091Z",
+  "refreshedAt": "2026-06-03T22:36:38.571374Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
@@ -502,13 +502,13 @@
       }
     },
     "stats": {
-      "totalDistricts": 171,
+      "totalDistricts": 172,
       "totalT1T2": 103,
       "asyncTotal": 60,
       "asyncCompleted": 41,
       "completed": 117,
-      "booked": 120,
-      "outreachSent": 99,
+      "booked": 121,
+      "outreachSent": 100,
       "overdue": 27,
       "upsellCandidates": 25,
       "byTier": {
@@ -527,9 +527,9 @@
           "overdue": 7
         },
         "3": {
-          "total": 68,
+          "total": 69,
           "completed": 48,
-          "booked": 7,
+          "booked": 8,
           "remaining": 13,
           "overdue": 13
         }
@@ -2061,6 +2061,43 @@
           "mpocs": [],
           "enrollment": 3744.0,
           "ytdPacing": 0.14
+        },
+        {
+          "name": "Caswell County Schools",
+          "shortName": "Caswell County Schools",
+          "owner": "Sarah Hough/Monica Knott",
+          "csm": "sarah",
+          "csmName": "Sarah Hough/Monica Knott",
+          "tier": "Tier 3",
+          "tierNum": 3,
+          "meetingType": "live",
+          "activeRenewal": false,
+          "lastDayOfSchool": "2026-06-09",
+          "bookingTarget": "2026-05-12",
+          "booked": true,
+          "meetingDate": "2026-06-23",
+          "outreachSent": true,
+          "asyncFormSent": null,
+          "completed": false,
+          "notes": "",
+          "status": "booked",
+          "overdue": false,
+          "needsNudge": false,
+          "isUpsellCandidate": false,
+          "utilization": null,
+          "upsellData": null,
+          "mpocs": [
+            {
+              "name": "Medina Jones",
+              "email": "medina.jones@caswell.k12.nc.us"
+            },
+            {
+              "name": "Cassidy Wilson",
+              "email": "cassidy.wilson@caswell.k12.nc.us"
+            }
+          ],
+          "enrollment": 2063.0,
+          "ytdPacing": 0.16
         },
         {
           "name": "Chapel Hill-Carrboro City Schools",
@@ -4457,13 +4494,13 @@
         }
       },
       "stats": {
-        "totalDistricts": 66,
+        "totalDistricts": 67,
         "totalT1T2": 41,
         "asyncTotal": 18,
         "asyncCompleted": 14,
         "completed": 47,
-        "booked": 51,
-        "outreachSent": 62,
+        "booked": 52,
+        "outreachSent": 63,
         "overdue": 10,
         "upsellCandidates": 18,
         "byTier": {
@@ -4482,9 +4519,9 @@
             "overdue": 5
           },
           "3": {
-            "total": 25,
+            "total": 26,
             "completed": 22,
-            "booked": 0,
+            "booked": 1,
             "remaining": 3,
             "overdue": 3
           }
@@ -7384,44 +7421,6 @@
     }
   },
   "orphans": [
-    {
-      "name": "Caswell County Schools",
-      "shortName": "Caswell County Schools",
-      "owner": "Sarah Hough/Monica Knott",
-      "csm": "unassigned",
-      "csmName": "Sarah Hough/Monica Knott",
-      "tier": "Tier 3",
-      "tierNum": 3,
-      "meetingType": "live",
-      "activeRenewal": false,
-      "lastDayOfSchool": "2026-06-09",
-      "bookingTarget": "2026-05-12",
-      "booked": true,
-      "meetingDate": "2026-06-23",
-      "outreachSent": true,
-      "asyncFormSent": null,
-      "completed": false,
-      "notes": "",
-      "status": "booked",
-      "overdue": false,
-      "needsNudge": false,
-      "isUpsellCandidate": false,
-      "utilization": null,
-      "upsellData": null,
-      "mpocs": [
-        {
-          "name": "Medina Jones",
-          "email": "medina.jones@caswell.k12.nc.us"
-        },
-        {
-          "name": "Cassidy Wilson",
-          "email": "cassidy.wilson@caswell.k12.nc.us"
-        }
-      ],
-      "enrollment": 2063.0,
-      "ytdPacing": 0.16,
-      "orphanReason": "Sarah Hough/Monica Knott"
-    },
     {
       "name": "Fort Bragg Unified School District",
       "shortName": "Fort Bragg",
