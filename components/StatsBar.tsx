@@ -23,7 +23,6 @@ export function StatsBar({ stats }: Props) {
     { label: 'Completed', value: stats.completed, tone: 'good' },
     { label: 'Booked', value: stats.booked, tone: 'good' },
     { label: 'Outreach sent', value: stats.outreachSent },
-    { label: 'Overdue', value: stats.overdue, tone: 'danger' },
     {
       label: 'Upsell candidates',
       value: stats.upsellCandidates,
@@ -33,7 +32,7 @@ export function StatsBar({ stats }: Props) {
   ];
   return (
     <div className="flex flex-col gap-3">
-      <dl className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-8">
+      <dl className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
         {items.map((it) => (
           <Tile key={it.label} item={it} />
         ))}

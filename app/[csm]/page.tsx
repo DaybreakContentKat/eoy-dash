@@ -127,7 +127,6 @@ function QuickStats({
     asyncTotal: number;
     completed: number;
     booked: number;
-    overdue: number;
     upsellCandidates: number;
   };
 }) {
@@ -136,11 +135,10 @@ function QuickStats({
     { label: 'Total async', value: stats.asyncTotal },
     { label: 'Completed', value: stats.completed, tone: 'good' },
     { label: 'Booked', value: stats.booked, tone: 'good' },
-    { label: 'Overdue', value: stats.overdue, tone: 'danger' },
     { label: 'Upsell', value: stats.upsellCandidates, tone: 'warning' },
   ];
   return (
-    <dl className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
+    <dl className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
       {items.map((it) => (
         <div
           key={it.label}

@@ -12,19 +12,22 @@ const TIER_DESCRIPTIONS: Record<TierNum, { label: string; sub: string }> = {
 };
 
 export function TierBreakdownTable({ byTier }: Props) {
-  // Booked and overdue are live-call concepts, so the totals (and the T3 cells)
-  // only sum Tier 1 + Tier 2. Completed sums all tiers — Tier 3 genuinely
-  // completes async check-ins, and surfacing them is the whole point of the
-  // all-tier fix. For Tier 3 the funnel is just completed vs not, so its
+  // A clean funnel: Completed + Booked + Remaining = Total. Booked is a
+  // live-call concept, so the T3 cell and the total only sum Tier 1 + Tier 2;
+  // Completed sums all tiers (surfacing async check-ins is the point of the
+  // all-tier fix). For Tier 3 the funnel is just completed vs not, so its
   // "remaining" is total − completed (any booked async calls fold in here)
   // rather than byTier.remaining, keeping the table reconciled.
+  // Overdue is intentionally not shown — it overlaps Remaining (it's a subset,
+  // not a separate bucket) and the live-call vs async distinction made it
+  // ambiguous, so it lived as a confusing addable column. The data still
+  // tracks it for the gap-to-goal at-risk nudge.
   const t3Remaining = byTier[3].total - byTier[3].completed;
   const totals = {
     total: byTier[1].total + byTier[2].total + byTier[3].total,
     completed: byTier[1].completed + byTier[2].completed + byTier[3].completed,
     booked: byTier[1].booked + byTier[2].booked,
     remaining: byTier[1].remaining + byTier[2].remaining + t3Remaining,
-    overdue: byTier[1].overdue + byTier[2].overdue,
   };
   const totalPct =
     totals.total > 0 ? ((totals.completed + totals.booked) / totals.total) * 100 : 0;
@@ -39,7 +42,6 @@ export function TierBreakdownTable({ byTier }: Props) {
             <th className="px-4 py-3 text-right font-semibold">Completed</th>
             <th className="px-4 py-3 text-right font-semibold">Booked</th>
             <th className="px-4 py-3 text-right font-semibold">Remaining</th>
-            <th className="px-4 py-3 text-right font-semibold">Overdue</th>
             <th className="px-4 py-3 text-left font-semibold">Progress</th>
           </tr>
         </thead>
@@ -70,9 +72,6 @@ export function TierBreakdownTable({ byTier }: Props) {
                 <td className="px-4 py-3 text-right tabular-nums">
                   {formatNumber(isAsync ? t.total - t.completed : t.remaining)}
                 </td>
-                <td className="px-4 py-3 text-right tabular-nums text-red-600">
-                  {isAsync ? '—' : formatNumber(t.overdue)}
-                </td>
                 <td className="px-4 py-3">
                   <ProgressBar pct={pct} />
                 </td>
@@ -91,9 +90,6 @@ export function TierBreakdownTable({ byTier }: Props) {
               {formatNumber(totals.booked)}
             </td>
             <td className="px-4 py-3 text-right tabular-nums">{formatNumber(totals.remaining)}</td>
-            <td className="px-4 py-3 text-right tabular-nums text-red-600">
-              {formatNumber(totals.overdue)}
-            </td>
             <td className="px-4 py-3">
               <ProgressBar pct={totalPct} />
             </td>
