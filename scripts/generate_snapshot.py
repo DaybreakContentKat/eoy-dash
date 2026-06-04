@@ -411,7 +411,11 @@ def build_portfolio_stats(all_districts, t1t2_districts):
         by_tier[tn]['total'] += 1
         if d['completed']:
             by_tier[tn]['completed'] += 1
-        elif d['booked']:
+        # Booking is a live-meeting concept. Async districts only ever complete
+        # an async form or stay remaining — they never count as "booked", even
+        # if a stray "booked" flag is checked in the tracker. (A district doing
+        # a real call should have its live-meeting column set to live.)
+        elif d['booked'] and d['meetingType'] == 'live':
             by_tier[tn]['booked'] += 1
         else:
             by_tier[tn]['remaining'] += 1
