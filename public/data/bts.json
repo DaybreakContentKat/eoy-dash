@@ -1,16 +1,16 @@
 {
-  "refreshedAt": "2026-06-04T04:03:28.489113Z",
+  "refreshedAt": "2026-06-04T16:18:55.334923Z",
   "totals": {
     "totalDistricts": 172,
-    "formsSubmitted": 72,
-    "formsWithGaps": 65,
+    "formsSubmitted": 73,
+    "formsWithGaps": 66,
     "formsClean": 7,
     "t1t2Total": 103,
     "t1t2Complete": 2,
     "t3Total": 69,
     "t3Complete": 5,
-    "withGaps": 65,
-    "unmatchedCount": 0,
+    "withGaps": 66,
+    "unmatchedCount": 2,
     "tierSummary": {
       "1": {
         "total": 38,
@@ -26,9 +26,9 @@
       },
       "3": {
         "total": 69,
-        "noForm": 44,
-        "submitted": 25,
-        "withGaps": 20
+        "noForm": 43,
+        "submitted": 26,
+        "withGaps": 21
       }
     }
   },
@@ -36,7 +36,8 @@
     "Brianna Masciel",
     "Sarah Hough",
     "Monica Knott",
-    "Daisy Leahy"
+    "Daisy Leahy",
+    "Unknown"
   ],
   "owners": {
     "Brianna Masciel": {
@@ -3108,12 +3109,6 @@
           "ldos": "2026-05-21"
         },
         {
-          "name": "Fulton County School District",
-          "shortName": "Fulton County",
-          "tier": 3,
-          "ldos": "2026-05-21"
-        },
-        {
           "name": "Jefferson Davis Parish",
           "shortName": "Jefferson Davis Parish",
           "tier": 3,
@@ -3241,6 +3236,50 @@
         }
       ],
       "missing": [
+        {
+          "name": "Fulton County School District",
+          "tier": 3,
+          "gapCount": 5,
+          "missingFields": [
+            "Summer comms discussed",
+            "Summer resource post",
+            "Training date",
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "Kind of"
+            },
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Will know after preplanning"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Late August",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": "Tifanie Bshop"
+        },
         {
           "name": "Livingston Parish",
           "tier": 1,
@@ -3610,6 +3649,48 @@
           "trainingDate": "TBD"
         },
         {
+          "name": "Fulton County School District",
+          "tier": 3,
+          "gapCount": 5,
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "Kind of"
+            },
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Will know after preplanning"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": "Tifanie Bshop",
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Late August",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Will know after preplanning"
+        },
+        {
           "name": "Bremen Community High School District 228",
           "tier": 1,
           "gapCount": 4,
@@ -3912,9 +3993,9 @@
         },
         "3": {
           "total": 21,
-          "noForm": 16,
-          "submitted": 5,
-          "withGaps": 2
+          "noForm": 15,
+          "submitted": 6,
+          "withGaps": 3
         }
       }
     },
@@ -5233,9 +5314,49 @@
     },
     "Unknown": {
       "noForm": [],
-      "missing": [],
+      "missing": [
+        {
+          "name": "Redding",
+          "tier": "Unknown",
+          "gapCount": 0,
+          "missingFields": [],
+          "gaps": [],
+          "trainingStatus": null,
+          "kickoffStatus": null,
+          "coOwned": false,
+          "unmatched": true
+        },
+        {
+          "name": "Redding School District",
+          "tier": "Unknown",
+          "gapCount": 0,
+          "missingFields": [],
+          "gaps": [],
+          "trainingStatus": null,
+          "kickoffStatus": null,
+          "coOwned": false,
+          "unmatched": true
+        }
+      ],
       "complete": [],
-      "submitted": [],
+      "submitted": [
+        {
+          "name": "Redding",
+          "tier": "Unknown",
+          "gapCount": 0,
+          "gaps": [],
+          "coOwned": false,
+          "unmatched": true
+        },
+        {
+          "name": "Redding School District",
+          "tier": "Unknown",
+          "gapCount": 0,
+          "gaps": [],
+          "coOwned": false,
+          "unmatched": true
+        }
+      ],
       "byTier": {
         "1": {
           "total": 0,
@@ -6025,5 +6146,8 @@
       }
     }
   ],
-  "unmatched": []
+  "unmatched": [
+    "Redding",
+    "Redding School District"
+  ]
 }
