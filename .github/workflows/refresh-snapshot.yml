@@ -25,10 +25,22 @@ jobs:
           GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
         run: python scripts/generate_snapshot.py
 
+      # BTS readiness runs after the snapshot — it reads public/data/snapshot.json
+      # for the district -> owner/tier lookup. A failure here must not block the
+      # snapshot commit, so it's allowed to fail softly (the script also catches
+      # its own Sheets errors and exits 0).
+      - name: Generate BTS readiness
+        continue-on-error: true
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+        run: python scripts/generate_bts.py
+
       - name: Commit and push snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/snapshot.json
+          git add public/data/bts.json 2>/dev/null || true
+          git add unmatched_districts.txt 2>/dev/null || true
           git diff --staged --quiet || git commit -m "chore: refresh snapshot $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
