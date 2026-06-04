@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-04T19:23:36.374050Z",
+  "refreshedAt": "2026-06-04T20:30:28.230729Z",
   "totals": {
     "totalDistricts": 172,
     "formsSubmitted": 73,
@@ -6149,5 +6149,6 @@
   "unmatched": [
     "Redding",
     "Redding School District"
-  ]
+  ],
+  "synthesis": null
 }
