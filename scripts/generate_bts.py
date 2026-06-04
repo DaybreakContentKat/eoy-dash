@@ -73,6 +73,19 @@ SCHED_TRAINING_SCHEDULED = 'staff training scheduled'
 SCHED_STAFF_FILE = 'staff files status'
 SCHED_FAMILY_COMMS = 'are you planning to send a message to families'  # async "complete" preview
 
+# Free-text columns fed to the Claude synthesis (lib/prompts side). Each key maps
+# to the substring needles to try in order; the CSM/AM and Async tabs word these
+# questions differently, so several keys list a per-tab fallback.
+SYNTH_NEEDLES = {
+    'teacher_resources': ('teacher resource expression of interest',),  # CSM/AM tab only
+    'outstanding_items': ('outstanding items still needed',),           # CSM/AM tab only
+    'feedback': ('feedback',),  # CSM "Feedback"; Async "...feedback on last year?"
+    'comms_channels': ('district comms channels',
+                       'how does your district usually communicate'),
+    'family_comms_plan': ('are you planning to send a message to families',),  # Async tab
+}
+SYNTH_KEYS = tuple(SYNTH_NEEDLES)
+
 SUFFIXES = [
     'independent school district', 'unified school district', 'elementary school district',
     'union high school district', 'community unit school district', 'joint unified school district',
@@ -252,6 +265,17 @@ def parse_tab(header, rows, is_csm_tab):
         'family_comms': col(SCHED_FAMILY_COMMS),
     }
 
+    def col_any(*needles):
+        for needle in needles:
+            i = col(needle)
+            if i is not None:
+                return i
+        return None
+
+    # Free-text fields fed to the Claude synthesis. The two tabs phrase these
+    # differently, so each key lists the needles to try in order (first hit wins).
+    synth_i = {k: col_any(*needles) for k, needles in SYNTH_NEEDLES.items()}
+
     def cell(row, i):
         if i is None or i >= len(row):
             return ''
@@ -272,6 +296,7 @@ def parse_tab(header, rows, is_csm_tab):
             'missing_fields': [g['field'] for g in gaps],  # back-compat
             'gap_count': len(gaps),
             'is_csm_tab': is_csm_tab,
+            'synth': {k: cell(row, synth_i[k]) for k in SYNTH_KEYS},
         }
         if is_csm_tab:
             resp['training_date'] = cell(row, sched_i['training_date'])
@@ -486,6 +511,117 @@ def build_bts(tracker, match, csm_responses, async_responses, refreshed_at):
 
 
 # --------------------------------------------------------------------------
+# Claude synthesis — turn the free-text form fields into CSM-facing themes
+# --------------------------------------------------------------------------
+
+SYNTH_SYSTEM = (
+    "You are summarizing BTS planning form responses for a school mental "
+    "health company's customer success team. Output valid JSON only. "
+    "No preamble, no markdown fences, no explanation outside the JSON."
+)
+
+
+def build_synthesis_rows(all_responses, match, tracker):
+    """One dict per form row that has at least one non-blank synthesis field.
+    District/owner resolve through the tracker when matched, else fall back to
+    the form's own self-reported values."""
+    rows = []
+    for r in all_responses:
+        synth = r.get('synth', {})
+        if not any((synth.get(k) or '').strip() for k in SYNTH_KEYS):
+            continue
+        canon, _ = match(r['raw_name'])
+        if canon and canon in tracker:
+            district = tracker[canon]['shortName'] or canon
+            owner = tracker[canon]['owner']
+        else:
+            district = r['raw_name']
+            form_owner, _ = normalize_owner(r.get('owner_raw'))
+            owner = form_owner or (r.get('owner_raw') or '').strip() or 'Unknown'
+        row = {'district': district, 'owner': owner}
+        row.update({k: (synth.get(k) or '').strip() for k in SYNTH_KEYS})
+        rows.append(row)
+    return rows
+
+
+def synthesize(form_rows_for_synthesis):
+    """Call Claude to theme the free-text responses. Returns the parsed JSON
+    dict, or None on any failure (missing key, network, bad JSON) — the caller
+    treats None as "no synthesis this run" and the pipeline continues."""
+    import urllib.error
+    import urllib.request
+
+    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    if not api_key:
+        print('WARNING: ANTHROPIC_API_KEY not set, skipping BTS synthesis',
+              file=sys.stderr)
+        return None
+    if not form_rows_for_synthesis:
+        print('WARNING: no synthesis rows to send, skipping BTS synthesis',
+              file=sys.stderr)
+        return None
+
+    user_prompt = (
+        "Analyze these BTS planning form responses and return a JSON object "
+        "with exactly these four keys:\n\n"
+        "teacher_themes: Array of up to 5 objects:\n"
+        "  { label, explanation, districts[] }\n"
+        "  Derive from the Teacher Resource Expression of Interest field.\n"
+        "  Skip blank, N/A, No responses.\n\n"
+        "comms_channels: Array of objects sorted by count descending:\n"
+        "  { channel, count, districts[] }\n"
+        "  Normalize similar labels (e.g. ParentSquare/Peachjar/text platform).\n\n"
+        "outstanding_items: Array of objects, one per district with substantive "
+        "content in the Outstanding items still needed field. Skip NA/None/blank:\n"
+        "  { district, owner, items[] }\n"
+        "  items[] = short action strings, max 12 words each.\n\n"
+        "feedback_themes: Array of up to 4 objects:\n"
+        "  { theme, sentiment (working_well | needs_improvement | mixed), examples[] }\n"
+        "  examples[] = up to 3 paraphrases max 20 words each with district attribution.\n\n"
+        "Form responses: " + json.dumps(form_rows_for_synthesis)
+    )
+
+    body = json.dumps({
+        'model': 'claude-sonnet-4-6',
+        'max_tokens': 2000,
+        'system': SYNTH_SYSTEM,
+        'messages': [{'role': 'user', 'content': user_prompt}],
+    }).encode('utf-8')
+
+    req = urllib.request.Request(
+        'https://api.anthropic.com/v1/messages',
+        data=body,
+        headers={
+            'x-api-key': api_key,
+            'anthropic-version': '2023-06-01',
+            'content-type': 'application/json',
+        },
+        method='POST',
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            payload = json.loads(resp.read().decode('utf-8'))
+        text = ''.join(
+            block.get('text', '')
+            for block in payload.get('content', [])
+            if block.get('type') == 'text'
+        )
+        result = json.loads(text)
+        print(f'BTS synthesis: ok ({len(form_rows_for_synthesis)} rows -> '
+              f'{", ".join(result.keys())})')
+        return result
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode('utf-8', 'replace')[:500]
+        print(f'WARNING: BTS synthesis HTTP {e.code}: {detail}', file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f'WARNING: BTS synthesis failed ({type(e).__name__}): {e}',
+              file=sys.stderr)
+        return None
+
+
+# --------------------------------------------------------------------------
 # Sheets read (the only part that needs service-account credentials)
 # --------------------------------------------------------------------------
 
@@ -574,7 +710,24 @@ def select_tabs(tabs):
     return csm_tab, async_tab
 
 
+def load_dotenv_local():
+    """Local-dev convenience: pull ANTHROPIC_API_KEY (and friends) from
+    scripts/.env.local if not already in the environment. In CI the value comes
+    from the workflow's env block, so this is a no-op there."""
+    env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env.local')
+    if not os.path.exists(env_path):
+        return
+    with open(env_path) as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith('#') or '=' not in line:
+                continue
+            key, _, val = line.partition('=')
+            os.environ.setdefault(key.strip(), val.strip().strip('"').strip("'"))
+
+
 def main():
+    load_dotenv_local()
     with open(SNAPSHOT_PATH) as f:
         snapshot = json.load(f)
     with open(CROSSWALK_PATH) as f:
@@ -595,6 +748,11 @@ def main():
 
     bts = build_bts(tracker, match, csm_responses, async_responses,
                     snapshot.get('refreshedAt', ''))
+
+    # Claude synthesis of the free-text fields. Failure here is non-fatal:
+    # synthesize() returns None and we write bts.json without it.
+    synth_rows = build_synthesis_rows(csm_responses + async_responses, match, tracker)
+    bts['synthesis'] = synthesize(synth_rows)
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, 'w') as f:

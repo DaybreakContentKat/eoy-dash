@@ -102,6 +102,42 @@ export interface BtsTotals {
   tierSummary: Record<string, TierCount>;
 }
 
+// Claude synthesis of the free-text form fields (generate_bts.py -> synthesize()).
+// Null when the run had no API key, no rows, or the call/parse failed — the page
+// must treat a missing synthesis as "not available this run", not an error.
+export interface TeacherTheme {
+  label: string;
+  explanation: string;
+  districts: string[];
+}
+
+export interface CommsChannel {
+  channel: string;
+  count: number;
+  districts: string[];
+}
+
+export interface OutstandingItem {
+  district: string;
+  owner: string;
+  items: string[];
+}
+
+export type FeedbackSentiment = 'working_well' | 'needs_improvement' | 'mixed';
+
+export interface FeedbackTheme {
+  theme: string;
+  sentiment: FeedbackSentiment;
+  examples: string[];
+}
+
+export interface BtsSynthesis {
+  teacher_themes: TeacherTheme[];
+  comms_channels: CommsChannel[];
+  outstanding_items: OutstandingItem[];
+  feedback_themes: FeedbackTheme[];
+}
+
 export interface BtsData {
   refreshedAt: string;
   totals: BtsTotals;
@@ -109,6 +145,7 @@ export interface BtsData {
   owners: Record<string, OwnerGroups>;
   scheduling: SchedulingRow[];
   unmatched: string[];
+  synthesis?: BtsSynthesis | null;
 }
 
 const BTS_URL_BASE =
