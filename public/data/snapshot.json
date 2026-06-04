@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-03T22:36:38.571374Z",
+  "refreshedAt": "2026-06-04T00:17:53.308949Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
@@ -529,8 +529,8 @@
         "3": {
           "total": 69,
           "completed": 48,
-          "booked": 8,
-          "remaining": 13,
+          "booked": 4,
+          "remaining": 17,
           "overdue": 13
         }
       }
@@ -1778,8 +1778,8 @@
           "3": {
             "total": 13,
             "completed": 5,
-            "booked": 2,
-            "remaining": 6,
+            "booked": 0,
+            "remaining": 8,
             "overdue": 6
           }
         }
@@ -7412,8 +7412,8 @@
           "3": {
             "total": 9,
             "completed": 3,
-            "booked": 2,
-            "remaining": 4,
+            "booked": 0,
+            "remaining": 6,
             "overdue": 4
           }
         }
