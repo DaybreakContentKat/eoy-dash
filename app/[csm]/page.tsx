@@ -47,9 +47,14 @@ export default async function CSMPage({ params }: PageProps) {
               {formatNumber(csmSnap.districts.length)} districts in portfolio
             </p>
           </div>
-          <p className="text-xs text-zinc-500">
-            Last refreshed {formatRefreshedAt(snapshot.refreshedAt)}
-          </p>
+          <div className="flex flex-col items-start gap-1 sm:items-end">
+            <Link href="/bts" className="text-xs font-medium text-zinc-500 hover:text-zinc-700">
+              BTS Readiness →
+            </Link>
+            <p className="text-xs text-zinc-500">
+              Last refreshed {formatRefreshedAt(snapshot.refreshedAt)}
+            </p>
+          </div>
         </header>
 
         {snapshot.stale && <StaleWarning />}

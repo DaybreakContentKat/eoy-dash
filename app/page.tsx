@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { CSM_CONFIG, CSM_SLUGS } from '@/lib/config';
 import { formatRefreshedAt, loadSnapshot } from '@/lib/snapshot';
 
@@ -25,9 +26,14 @@ export default async function Home() {
               EOY Dashboard
             </h1>
           </div>
-          <p className="text-xs text-zinc-500">
-            Last refreshed {formatRefreshedAt(refreshedAt)}
-          </p>
+          <div className="flex flex-col items-start gap-1 sm:items-end">
+            <Link href="/bts" className="text-xs font-medium text-zinc-500 hover:text-zinc-700">
+              BTS Readiness →
+            </Link>
+            <p className="text-xs text-zinc-500">
+              Last refreshed {formatRefreshedAt(refreshedAt)}
+            </p>
+          </div>
         </header>
 
         {stale && <StaleWarning />}
