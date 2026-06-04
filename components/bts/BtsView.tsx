@@ -5,11 +5,11 @@ import { TierBadge } from '@/components/TierBadge';
 import { BTS_OWNER_TABS } from '@/lib/bts';
 import type {
   BtsData,
-  CompleteDistrict,
-  MissingDistrict,
   NoFormDistrict,
   OwnerGroups,
   SchedStatus,
+  SubmittedDistrict,
+  TierCount,
 } from '@/lib/bts';
 import { SchedulingTable } from './SchedulingTable';
 
@@ -132,48 +132,54 @@ function NoFormRows({ items }: { items: NoFormDistrict[] }) {
   );
 }
 
-function MissingCards({ items }: { items: MissingDistrict[] }) {
-  if (items.length === 0) return <Empty>No forms with missing fields.</Empty>;
+// Each district with gaps is a click-to-expand row: the summary shows tier +
+// name + gap count; expanding reveals every unmet field and what the CSM put.
+function GapDistricts({ items }: { items: SubmittedDistrict[] }) {
+  if (items.length === 0) return <Empty>No forms with gaps. 🎉</Empty>;
   return (
-    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+    <ul className="flex flex-col gap-2">
       {items.map((d) => (
-        <div
-          key={d.name}
-          className={`rounded-lg border bg-white p-3 ${d.unmatched ? 'border-amber-300 bg-amber-50' : 'border-zinc-200'}`}
-        >
-          <div className="flex flex-wrap items-center gap-1.5">
-            <TierTag tier={d.tier} />
-            <span className="flex-1 text-sm font-semibold text-zinc-900">{d.name}</span>
-            <span className="rounded bg-red-100 px-1.5 py-0.5 text-[10px] font-bold text-red-700">
-              {d.gapCount} gap{d.gapCount === 1 ? '' : 's'}
-            </span>
-          </div>
-          <div className="mt-1 flex flex-wrap items-center gap-1.5">
-            {d.coOwned && <Shared />}
-            {d.formOwner && <FormOwnerNote owner={d.formOwner} />}
-            {d.unmatched && (
-              <span className="text-[11px] font-medium text-amber-700">⚠ unmatched district</span>
-            )}
-          </div>
-          <ul className="mt-2 list-disc pl-4 text-xs text-zinc-600">
-            {d.missingFields.map((f) => (
-              <li key={f}>{f}</li>
-            ))}
-          </ul>
-          {(d.trainingStatus || d.kickoffStatus) && (
-            <div className="mt-2 flex flex-wrap gap-1.5">
-              {d.trainingStatus && <StatusPill status={d.trainingStatus} prefix="Training" />}
-              {d.kickoffStatus && <StatusPill status={d.kickoffStatus} prefix="Kickoff" />}
+        <li key={d.name}>
+          <details
+            className={`group/g rounded-lg border bg-white ${d.unmatched ? 'border-amber-300 bg-amber-50' : 'border-zinc-200'}`}
+          >
+            <summary className="flex cursor-pointer flex-wrap items-center gap-2 px-3 py-2 text-sm hover:bg-zinc-50">
+              <TierTag tier={d.tier} />
+              <span className="font-semibold text-zinc-900">{d.name}</span>
+              {d.coOwned && <Shared />}
+              {d.formOwner && <FormOwnerNote owner={d.formOwner} />}
+              {d.unmatched && (
+                <span className="text-[11px] font-medium text-amber-700">⚠ unmatched district</span>
+              )}
+              <span className="ml-auto rounded bg-red-100 px-1.5 py-0.5 text-[10px] font-bold text-red-700">
+                {d.gapCount} gap{d.gapCount === 1 ? '' : 's'}
+              </span>
+              <span className="text-zinc-300 transition group-open/g:rotate-90">▸</span>
+            </summary>
+            <div className="border-t border-zinc-100 px-3 py-2">
+              <ul className="flex flex-col gap-1">
+                {d.gaps.map((g, i) => (
+                  <li key={`${g.field}-${i}`} className="flex gap-2 text-xs">
+                    <span className="min-w-[9rem] shrink-0 font-medium text-zinc-700">{g.field}</span>
+                    <span
+                      className="flex-1 truncate text-amber-700"
+                      title={g.value || '(blank)'}
+                    >
+                      {g.value ? g.value : <span className="italic text-zinc-400">(blank)</span>}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
-          )}
-        </div>
+          </details>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
-function CompleteRows({ items }: { items: CompleteDistrict[] }) {
-  if (items.length === 0) return <Empty>None complete yet.</Empty>;
+function CleanRows({ items }: { items: SubmittedDistrict[] }) {
+  if (items.length === 0) return <Empty>None fully complete yet.</Empty>;
   return (
     <ul className="flex flex-col gap-1.5">
       {items.map((d) => (
@@ -199,24 +205,72 @@ function CompleteRows({ items }: { items: CompleteDistrict[] }) {
   );
 }
 
+// Per-owner readiness summary, organized by tier 1 → 3 (mirrors the main dash).
+function TierSummaryTable({ byTier }: { byTier: Record<string, TierCount> }) {
+  const tiers = ['1', '2', '3'].filter((t) => byTier[t] && byTier[t].total > 0);
+  const sum = (k: keyof TierCount) =>
+    tiers.reduce((acc, t) => acc + byTier[t][k], 0);
+  if (tiers.length === 0) return null;
+  return (
+    <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="bg-zinc-50 text-left text-[11px] uppercase tracking-wide text-zinc-500">
+            <th className="px-3 py-2 font-medium">Tier</th>
+            <th className="px-3 py-2 text-right font-medium">Districts</th>
+            <th className="px-3 py-2 text-right font-medium">No form</th>
+            <th className="px-3 py-2 text-right font-medium">Submitted</th>
+            <th className="px-3 py-2 text-right font-medium">With gaps</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-zinc-100 tabular-nums">
+          {tiers.map((t) => {
+            const c = byTier[t];
+            return (
+              <tr key={t} className="text-zinc-800">
+                <td className="px-3 py-1.5"><TierTag tier={Number(t)} /></td>
+                <td className="px-3 py-1.5 text-right">{c.total}</td>
+                <td className={`px-3 py-1.5 text-right ${c.noForm > 0 ? 'text-red-600' : 'text-zinc-400'}`}>{c.noForm}</td>
+                <td className="px-3 py-1.5 text-right">{c.submitted}</td>
+                <td className={`px-3 py-1.5 text-right ${c.withGaps > 0 ? 'text-amber-600 font-medium' : 'text-zinc-400'}`}>{c.withGaps}</td>
+              </tr>
+            );
+          })}
+          <tr className="bg-zinc-50 font-semibold text-zinc-900">
+            <td className="px-3 py-1.5">Total</td>
+            <td className="px-3 py-1.5 text-right">{sum('total')}</td>
+            <td className="px-3 py-1.5 text-right">{sum('noForm')}</td>
+            <td className="px-3 py-1.5 text-right">{sum('submitted')}</td>
+            <td className="px-3 py-1.5 text-right">{sum('withGaps')}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 function Empty({ children }: { children: React.ReactNode }) {
   return <p className="text-center text-sm text-zinc-400">{children}</p>;
 }
 
 function OwnerSection({ owner, groups }: { owner: string; groups: OwnerGroups }) {
-  const total = groups.noForm.length + groups.missing.length + groups.complete.length;
+  const submitted = groups.submitted ?? [];
+  const withGaps = submitted.filter((d) => d.gapCount > 0);
+  const clean = submitted.filter((d) => d.gapCount === 0);
+  const total = groups.noForm.length + submitted.length;
   if (total === 0) return null;
   return (
     <section className="flex flex-col gap-3">
       <h3 className="text-base font-semibold text-zinc-900">{owner}</h3>
-      <Group icon="❌" title="No form submitted" count={groups.noForm.length} open={groups.noForm.length > 0}>
+      {groups.byTier && <TierSummaryTable byTier={groups.byTier} />}
+      <Group icon="❌" title="No form submitted" count={groups.noForm.length} open={false}>
         <NoFormRows items={groups.noForm} />
       </Group>
-      <Group icon="⚠️" title="Form in — missing required fields" count={groups.missing.length} open={groups.missing.length > 0}>
-        <MissingCards items={groups.missing} />
+      <Group icon="⚠️" title="Submitted — has gaps" count={withGaps.length} open={withGaps.length > 0}>
+        <GapDistricts items={withGaps} />
       </Group>
-      <Group icon="✅" title="Complete — no gaps" count={groups.complete.length}>
-        <CompleteRows items={groups.complete} />
+      <Group icon="✅" title="Submitted — no gaps" count={clean.length} open={false}>
+        <CleanRows items={clean} />
       </Group>
     </section>
   );
@@ -260,9 +314,9 @@ export function BtsView({ data }: { data: BtsData }) {
       {/* Stat pills */}
       <dl className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         <Pill label="Forms submitted" value={t.formsSubmitted} total={t.totalDistricts} />
-        <Pill label="T1/T2 complete" value={t.t1t2Complete} total={t.t1t2Total} />
-        <Pill label="T3 async complete" value={t.t3Complete} total={t.t3Total} />
-        <Pill label="Districts with gaps" value={t.withGaps} countTone={t.withGaps > 0 ? 'text-amber-600' : 'text-emerald-600'} />
+        <Pill label="No form yet" value={t.totalDistricts - t.formsSubmitted} countTone={t.totalDistricts - t.formsSubmitted > 0 ? 'text-red-600' : 'text-emerald-600'} />
+        <Pill label="Submitted with gaps" value={t.formsWithGaps} countTone={t.formsWithGaps > 0 ? 'text-amber-600' : 'text-emerald-600'} />
+        <Pill label="Submitted, no gaps" value={t.formsClean} countTone="text-emerald-600" />
       </dl>
 
       {/* Per-owner sections */}
