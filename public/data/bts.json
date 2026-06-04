@@ -1,14 +1,36 @@
 {
-  "refreshedAt": "2026-06-04T03:08:26.963931Z",
+  "refreshedAt": "2026-06-04T04:03:28.489113Z",
   "totals": {
     "totalDistricts": 172,
     "formsSubmitted": 72,
+    "formsWithGaps": 65,
+    "formsClean": 7,
     "t1t2Total": 103,
-    "t1t2Complete": 47,
+    "t1t2Complete": 2,
     "t3Total": 69,
-    "t3Complete": 25,
-    "withGaps": 0,
-    "unmatchedCount": 0
+    "t3Complete": 5,
+    "withGaps": 65,
+    "unmatchedCount": 0,
+    "tierSummary": {
+      "1": {
+        "total": 38,
+        "noForm": 20,
+        "submitted": 18,
+        "withGaps": 18
+      },
+      "2": {
+        "total": 65,
+        "noForm": 36,
+        "submitted": 29,
+        "withGaps": 27
+      },
+      "3": {
+        "total": 69,
+        "noForm": 44,
+        "submitted": 25,
+        "withGaps": 20
+      }
+    }
   },
   "ownerOrder": [
     "Brianna Masciel",
@@ -128,128 +150,79 @@
           "ldos": "2026-06-11"
         }
       ],
-      "missing": [],
-      "complete": [
+      "missing": [
         {
-          "name": "Arp Independent School District",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "Yes, we will do this in late July before the start of summer",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Beaumont Unified School District",
+          "name": "Lompoc Unified School District",
           "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
-          "familyComms": "Not yet, need help with ideas or languag\u2026"
-        },
-        {
-          "name": "Buena Park Elementary School District",
-          "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 5,
+          "missingFields": [
+            "Summer resource post",
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Will set in our june meeting"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will discuss in june"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
-            "label": "Tentative Hold",
-            "state": "amber"
+            "label": "Not Yet",
+            "state": "red"
           },
           "kickoffStatus": {
-            "label": "End of July - week of the 27th is best. Send an invite for that week",
+            "label": "June 12th - July 21st. (Cassi - is out on maternity leave next fall - with no real coverage).  Sent an invite for June 9th for kickoff",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "East Whittier City Elementary School District",
-          "tier": 2,
           "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Tentative Hold",
-            "state": "amber"
-          },
-          "kickoffStatus": {
-            "label": "July after 4th -",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "File coming",
-            "state": "amber"
-          }
-        },
-        {
-          "name": "Escondido Union School District",
-          "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "August 12th is when she is back - so we are doing the goals now",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Ferris Independent School District",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Tentative Hold",
-            "state": "amber"
-          },
-          "kickoffStatus": {
-            "label": "July 16th / 17th - send some times",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Helendale Elementary School District",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "29th of July",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "formOwner": null
         },
         {
           "name": "Hurst-Euless-Bedford Independent School District",
           "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "New student information system, so the before school PD is in the new system - no time for a training before school starts. She thinks it's best if we join a team call - will have one in August w/ the Elementary team. Another in Sept - Elementary & Secondary Social worker meeting. Might need to do async + office hours"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            },
+            {
+              "field": "Staff files status",
+              "value": "File coming"
+            }
+          ],
           "trainingStatus": {
             "label": "Not Yet",
             "state": "red"
@@ -258,14 +231,384 @@
             "label": "Sent time for July 8th for a kickoff/ followup BTS prep call",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "File coming",
-            "state": "amber"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
+        {
+          "name": "East Whittier City Elementary School District",
+          "tier": 2,
+          "gapCount": 3,
+          "missingFields": [
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July after 4th -",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Beaumont Unified School District",
+          "tier": 2,
+          "gapCount": 2,
+          "missingFields": [
+            "Family summer comms plan",
+            "Staff list update"
+          ],
+          "gaps": [
+            {
+              "field": "Family summer comms plan",
+              "value": "Not yet, need help with ideas or language"
+            },
+            {
+              "field": "Staff list update",
+              "value": "Not sure, need to discuss"
+            }
+          ],
+          "trainingStatus": null,
+          "kickoffStatus": null,
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Ferris Independent School District",
+          "tier": 3,
+          "gapCount": 2,
+          "missingFields": [
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July 16th / 17th - send some times",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Rio Elementary School District",
+          "tier": 2,
+          "gapCount": 2,
+          "missingFields": [
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "Last week of July",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Rowland Unified School District",
+          "tier": 2,
+          "gapCount": 2,
+          "missingFields": [
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "End of july - sent an invite for the 21st",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "San Jacinto Unified School District",
+          "tier": 2,
+          "gapCount": 2,
+          "missingFields": [
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "Mid July for a meeting",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Willis Independent School District",
+          "tier": 3,
+          "gapCount": 2,
+          "missingFields": [
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Probably not needed but could be setup",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Arp Independent School District",
+          "tier": 3,
+          "gapCount": 1,
+          "missingFields": [
+            "Training date"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Agreed to async training for this small team and then check in Sept"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Yes, we will do this in late July before the start of summer",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Buena Park Elementary School District",
+          "tier": 2,
+          "gapCount": 1,
+          "missingFields": [
+            "Training scheduled"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "End of July - week of the 27th is best. Send an invite for that week",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Escondido Union School District",
+          "tier": 2,
+          "gapCount": 1,
+          "missingFields": [
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "August 12th is when she is back - so we are doing the goals now",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Helendale Elementary School District",
+          "tier": 3,
+          "gapCount": 1,
+          "missingFields": [
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "29th of July",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Rockport-Fulton Independent School District",
+          "tier": 3,
+          "gapCount": 1,
+          "missingFields": [
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "July 14th - sent invite",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Snowline Joint Unified School District",
+          "tier": 2,
+          "gapCount": 1,
+          "missingFields": [
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Not needed - as for goals, might not have hazel next fall - which would mean an increase in referrals. Check in with Julie/Katie in late July",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        }
+      ],
+      "complete": [],
+      "submitted": [
         {
           "name": "Lompoc Unified School District",
           "tier": 2,
+          "gapCount": 5,
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Will set in our june meeting"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will discuss in june"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -279,11 +622,113 @@
           "staffFileStatus": {
             "label": "Confirmed we will use this year's file for now",
             "state": "green"
-          }
+          },
+          "trainingDate": "Will set in our june meeting"
+        },
+        {
+          "name": "Hurst-Euless-Bedford Independent School District",
+          "tier": 2,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "New student information system, so the before school PD is in the new system - no time for a training before school starts. She thinks it's best if we join a team call - will have one in August w/ the Elementary team. Another in Sept - Elementary & Secondary Social worker meeting. Might need to do async + office hours"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            },
+            {
+              "field": "Staff files status",
+              "value": "File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Sent time for July 8th for a kickoff/ followup BTS prep call",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "File coming",
+            "state": "amber"
+          },
+          "trainingDate": "New student information system, so the before school PD is in the new system - no time for a training before school starts. She thinks it's best if we join a team call - will have one in August w/ the Elementary team. Another in Sept - Elementary & Secondary Social worker meeting. Might need to do async + office hours"
+        },
+        {
+          "name": "East Whittier City Elementary School District",
+          "tier": 2,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July after 4th -",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "File coming",
+            "state": "amber"
+          },
+          "trainingDate": "Staff return 1st week of August (11st first day of school) 2nd week of august. School scoialworker / conselor meeting - we could join!"
+        },
+        {
+          "name": "Beaumont Unified School District",
+          "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Family summer comms plan",
+              "value": "Not yet, need help with ideas or language"
+            },
+            {
+              "field": "Staff list update",
+              "value": "Not sure, need to discuss"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Not yet, need help with ideas or languag\u2026"
         },
         {
           "name": "Rio Elementary School District",
           "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -297,29 +742,23 @@
           "staffFileStatus": {
             "label": "Confirmed we will use this year's file for now",
             "state": "green"
-          }
-        },
-        {
-          "name": "Rockport-Fulton Independent School District",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
           },
-          "kickoffStatus": {
-            "label": "July 14th - sent invite",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "trainingDate": "Admins - August 1st - 18th start of school / staff after school starts."
         },
         {
           "name": "Rowland Unified School District",
           "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -333,11 +772,23 @@
           "staffFileStatus": {
             "label": "Confirmed we will use this year's file for now",
             "state": "green"
-          }
+          },
+          "trainingDate": "August 6th staff return, need to find a time for a quick touchpoint - will set that during our July meeting"
         },
         {
           "name": "San Jacinto Unified School District",
           "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -351,29 +802,53 @@
           "staffFileStatus": {
             "label": "Confirmed we will use this year's file for now",
             "state": "green"
-          }
+          },
+          "trainingDate": "Come back 1st week of August - come back on Monday Aug 3rd. (3rd or 4th is PD days and we might be able to squeeze in)"
         },
         {
-          "name": "Snowline Joint Unified School District",
-          "tier": 2,
+          "name": "Ferris Independent School District",
+          "tier": 3,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
+            "label": "Tentative Hold",
+            "state": "amber"
           },
           "kickoffStatus": {
-            "label": "Not needed - as for goals, might not have hazel next fall - which would mean an increase in referrals. Check in with Julie/Katie in late July",
+            "label": "July 16th / 17th - send some times",
             "state": "amber"
           },
           "staffFileStatus": {
             "label": "Confirmed we will use this year's file for now",
             "state": "green"
-          }
+          },
+          "trainingDate": "Training for staff - come back July 13th or 20th // gets busy the first 2 weeks in Augusts. July 23rd / July 24th - CSM meeting in September"
         },
         {
           "name": "Willis Independent School District",
           "tier": 3,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -387,9 +862,186 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
+          },
+          "trainingDate": "async works for cohort 3 - 1st week of Sept for a connect Sept 8th - 8-noon. 1-4:30"
+        },
+        {
+          "name": "Buena Park Elementary School District",
+          "tier": 2,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "End of July - week of the 27th is best. Send an invite for that week",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Student come back the 12th - staff come back a few days before. End of August 1st counselor meeting. Get on the agenda for principals - need to ask super int"
+        },
+        {
+          "name": "Escondido Union School District",
+          "tier": 2,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "August 12th is when she is back - so we are doing the goals now",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "August 12th - staff back / 18th is when students start. August 20th - training date at 1 - 1:45 pm."
+        },
+        {
+          "name": "Snowline Joint Unified School District",
+          "tier": 2,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Not needed - as for goals, might not have hazel next fall - which would mean an increase in referrals. Check in with Julie/Katie in late July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "August 3rd - school starts Aug 13th - set a training date for Aug 4th"
+        },
+        {
+          "name": "Arp Independent School District",
+          "tier": 3,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Agreed to async training for this small team and then check in Sept"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Yes, we will do this in late July before the start of summer",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Agreed to async training for this small team and then check in Sept"
+        },
+        {
+          "name": "Helendale Elementary School District",
+          "tier": 3,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "29th of July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "29th of July"
+        },
+        {
+          "name": "Rockport-Fulton Independent School District",
+          "tier": 3,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "July 14th - sent invite",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Counselors back on the 21st of July - Start school on the 12th of August. They want a refresher training since folks are new - August 17th sent invite"
         }
-      ]
+      ],
+      "byTier": {
+        "1": {
+          "total": 0,
+          "noForm": 0,
+          "submitted": 0,
+          "withGaps": 0
+        },
+        "2": {
+          "total": 20,
+          "noForm": 10,
+          "submitted": 10,
+          "withGaps": 10
+        },
+        "3": {
+          "total": 13,
+          "noForm": 8,
+          "submitted": 5,
+          "withGaps": 5
+        }
+      }
     },
     "Sarah Hough": {
       "noForm": [
@@ -616,146 +1268,123 @@
           "ldos": "2026-06-18"
         }
       ],
-      "missing": [],
-      "complete": [
+      "missing": [
         {
-          "name": "Alliance College",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "7/9",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Belmont-Redwood Shores Elementary School District",
+          "name": "San Jose Unified School District",
           "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 5,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Maura will check on this"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "trainingStatus": {
             "label": "Tentative Hold",
             "state": "amber"
           },
           "kickoffStatus": {
-            "label": "End of July",
+            "label": "August 3rd",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
         {
-          "name": "Bladen County Schools",
+          "name": "Wake County Schools",
           "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Not Yet",
-            "state": "red"
-          },
-          "kickoffStatus": {
-            "label": "7/2",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Chapel Hill-Carrboro City Schools",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "July 7th  (Brandy Reeves)",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "New File coming",
-            "state": "amber"
-          }
-        },
-        {
-          "name": "Corpus Christi Independent School District",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 5,
+          "missingFields": [
+            "Summer resource post",
+            "Training date",
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Start in Mid September (August is only district trainings)"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "trainingStatus": {
             "label": "Tentative Hold",
             "state": "amber"
           },
           "kickoffStatus": {
-            "label": "7/21/26",
+            "label": "After July 13th  / 20th",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Currituck County Schools",
-          "tier": 2,
           "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "6/16",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Del Valle",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "familyComms": "Yes, planning to send soon"
-        },
-        {
-          "name": "Escalon Unified School District",
-          "tier": 2,
-          "coOwned": true,
-          "formOwner": "Daisy Leahy",
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "\u2014",
-            "state": "red"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "formOwner": null
         },
         {
           "name": "Freeport School District 145",
           "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Not yet- RIF in progress- She received notice her position has been aeliminated. Doing a warm introduction to her superintendent and having a last meeting in June."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will discuss in June as part of hand off strategy"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Not Yet",
             "state": "red"
@@ -764,34 +1393,37 @@
             "label": "Our next meeting is June confirm then.",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Granville County Schools",
-          "tier": 2,
           "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Tentative Hold",
-            "state": "amber"
-          },
-          "kickoffStatus": {
-            "label": "July",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "formOwner": null
         },
         {
           "name": "Horizon Charters (District)",
           "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Late August- will get back to me- wants to work on tighening systems- counselors to check their referrals weekly and nudging parents."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Group Meeting August- new middle school principal Shawna gong into more of curriculum and oversight of the three academies that fall under Horizon Charter"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "trainingStatus": {
             "label": "Not Yet",
             "state": "red"
@@ -800,34 +1432,37 @@
             "label": "June 2-",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "New File coming",
-            "state": "amber"
-          }
-        },
-        {
-          "name": "International Community School",
-          "tier": 3,
           "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "July",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "formOwner": null
         },
         {
           "name": "Jackson County School District",
           "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "NA- centralized referrers - discussing whether to expand to counseling staff"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Discuss in June"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Not Yet",
             "state": "red"
@@ -836,16 +1471,37 @@
             "label": "In June- in process of scheduling",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
         {
           "name": "Jefferson County School District",
           "tier": 1,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Summer comms discussed",
+            "Summer resource post",
+            "Training date",
+            "Admin/principal outreach"
+          ],
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "No"
+            },
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Only a refresh a needed- tighten context around sessions during day- Discuss in July"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will let them know via outreach"
+            }
+          ],
           "trainingStatus": {
             "label": "Confirmed",
             "state": "green"
@@ -854,16 +1510,37 @@
             "label": "7/31/2026",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
         {
           "name": "Joliet Public School District 86",
           "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Pending"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Pending"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Not Yet",
             "state": "red"
@@ -872,52 +1549,37 @@
             "label": "Pending",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Lammersville Joint Unified School District",
-          "tier": 2,
           "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Tentative Hold",
-            "state": "amber"
-          },
-          "kickoffStatus": {
-            "label": "August- sending calendly now",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Lansing School District 158",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Tentative Hold",
-            "state": "amber"
-          },
-          "kickoffStatus": {
-            "label": "August 7th",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "formOwner": null
         },
         {
           "name": "Lincoln County Schools",
           "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "April will look into going about this"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Tentative Hold",
             "state": "amber"
@@ -926,16 +1588,37 @@
             "label": "June 29th",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
         {
           "name": "Manor Independent School District",
           "tier": 1,
-          "coOwned": false,
-          "formOwner": "Monica Knott",
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "During team meeting in B2S"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "trainingStatus": {
             "label": "Tentative Hold",
             "state": "amber"
@@ -944,34 +1627,134 @@
             "label": "7/23/2026",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "New File coming",
-            "state": "amber"
-          }
+          "coOwned": false,
+          "formOwner": "Monica Knott"
         },
         {
-          "name": "Morgan Hill Unified School District",
+          "name": "Belmont-Redwood Shores Elementary School District",
           "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 3,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "No New counselors- Perhaps Psychologists (Aug)"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "8-10-2026",
+            "label": "Tentative Hold",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "kickoffStatus": {
+            "label": "End of July",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Lammersville Joint Unified School District",
+          "tier": 2,
+          "gapCount": 3,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "August- staff calendar not finalized for B2S26"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "August- sending calendly now",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Lansing School District 158",
+          "tier": 3,
+          "gapCount": 3,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "N/A"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "August 7th",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
         },
         {
           "name": "Oconee County School District",
           "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 3,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "No changes"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Tentative Hold",
             "state": "amber"
@@ -980,16 +1763,32 @@
             "label": "Comes back last week of July",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
         {
           "name": "Reef-Sunset Unified School District",
           "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 3,
+          "missingFields": [
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will ask supt. These are monthyl"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Tentative Hold",
             "state": "amber"
@@ -998,11 +1797,327 @@
             "label": "April Torres",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
+        {
+          "name": "Union Elementary School District",
+          "tier": 2,
+          "gapCount": 3,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Discuss in June/July"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Discuss in June/July",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Alliance College",
+          "tier": 3,
+          "gapCount": 2,
+          "missingFields": [
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Admin/principal outreach",
+              "value": "Maybe later"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "7/9",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Bladen County Schools",
+          "tier": 2,
+          "gapCount": 2,
+          "missingFields": [
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "7/2",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Chapel Hill-Carrboro City Schools",
+          "tier": 3,
+          "gapCount": 2,
+          "missingFields": [
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "July 7th  (Brandy Reeves)",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Granville County Schools",
+          "tier": 2,
+          "gapCount": 2,
+          "missingFields": [
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "International Community School",
+          "tier": 3,
+          "gapCount": 2,
+          "missingFields": [
+            "Training date",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "July"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "July",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Morgan Hill Unified School District",
+          "tier": 2,
+          "gapCount": 2,
+          "missingFields": [
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Admin/principal outreach",
+              "value": "Meet bi weekly TBD"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "8-10-2026",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Corpus Christi Independent School District",
+          "tier": 3,
+          "gapCount": 1,
+          "missingFields": [
+            "Training scheduled"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "7/21/26",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Currituck County Schools",
+          "tier": 2,
+          "gapCount": 1,
+          "missingFields": [
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "6/16",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Del Valle",
+          "tier": 3,
+          "gapCount": 1,
+          "missingFields": [
+            "Staff list update"
+          ],
+          "gaps": [
+            {
+              "field": "Staff list update",
+              "value": "Not sure, need to discuss"
+            }
+          ],
+          "trainingStatus": null,
+          "kickoffStatus": null,
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Escalon Unified School District",
+          "tier": 2,
+          "gapCount": 1,
+          "missingFields": [
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": true,
+          "formOwner": "Daisy Leahy"
+        },
+        {
+          "name": "Whiteville City Schools",
+          "tier": 3,
+          "gapCount": 1,
+          "missingFields": [
+            "Family summer comms plan"
+          ],
+          "gaps": [
+            {
+              "field": "Family summer comms plan",
+              "value": "Not yet, need help with ideas or language"
+            }
+          ],
+          "trainingStatus": null,
+          "kickoffStatus": null,
+          "coOwned": false,
+          "formOwner": null
+        }
+      ],
+      "complete": [
         {
           "name": "Riverbank Unified School District",
           "tier": 2,
@@ -1029,8 +2144,47 @@
           }
         },
         {
+          "name": "St. Ignatius",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, planning to send soon"
+        },
+        {
+          "name": "Streator Elementary School District 44",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, already sent"
+        }
+      ],
+      "submitted": [
+        {
           "name": "San Jose Unified School District",
           "tier": 2,
+          "gapCount": 5,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Maura will check on this"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1044,43 +2198,35 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
-        },
-        {
-          "name": "St. Ignatius",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "familyComms": "Yes, planning to send soon"
-        },
-        {
-          "name": "Streator Elementary School District 44",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "familyComms": "Yes, already sent"
-        },
-        {
-          "name": "Union Elementary School District",
-          "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Not Yet",
-            "state": "red"
           },
-          "kickoffStatus": {
-            "label": "Discuss in June/July",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "trainingDate": "TBD"
         },
         {
           "name": "Wake County Schools",
           "tier": 2,
+          "gapCount": 5,
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Start in Mid September (August is only district trainings)"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1094,16 +2240,834 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
+          },
+          "trainingDate": "Start in Mid September (August is only district trainings)"
+        },
+        {
+          "name": "Jefferson County School District",
+          "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "No"
+            },
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Only a refresh a needed- tighten context around sessions during day- Discuss in July"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will let them know via outreach"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "7/31/2026",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Only a refresh a needed- tighten context around sessions during day- Discuss in July"
+        },
+        {
+          "name": "Manor Independent School District",
+          "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "During team meeting in B2S"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": "Monica Knott",
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "7/23/2026",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          },
+          "trainingDate": "During team meeting in B2S"
+        },
+        {
+          "name": "Joliet Public School District 86",
+          "tier": 2,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Pending"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Pending"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Pending",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Pending"
+        },
+        {
+          "name": "Freeport School District 145",
+          "tier": 3,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Not yet- RIF in progress- She received notice her position has been aeliminated. Doing a warm introduction to her superintendent and having a last meeting in June."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will discuss in June as part of hand off strategy"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Our next meeting is June confirm then.",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Not yet- RIF in progress- She received notice her position has been aeliminated. Doing a warm introduction to her superintendent and having a last meeting in June."
+        },
+        {
+          "name": "Horizon Charters (District)",
+          "tier": 3,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Late August- will get back to me- wants to work on tighening systems- counselors to check their referrals weekly and nudging parents."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Group Meeting August- new middle school principal Shawna gong into more of curriculum and oversight of the three academies that fall under Horizon Charter"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "June 2-",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          },
+          "trainingDate": "Late August- will get back to me- wants to work on tighening systems- counselors to check their referrals weekly and nudging parents."
+        },
+        {
+          "name": "Jackson County School District",
+          "tier": 3,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "NA- centralized referrers - discussing whether to expand to counseling staff"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Discuss in June"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "In June- in process of scheduling",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "NA- centralized referrers - discussing whether to expand to counseling staff"
+        },
+        {
+          "name": "Lincoln County Schools",
+          "tier": 3,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "April will look into going about this"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "June 29th",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "TBD"
+        },
+        {
+          "name": "Belmont-Redwood Shores Elementary School District",
+          "tier": 2,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "No New counselors- Perhaps Psychologists (Aug)"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "End of July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "No New counselors- Perhaps Psychologists (Aug)"
+        },
+        {
+          "name": "Lammersville Joint Unified School District",
+          "tier": 2,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "August- staff calendar not finalized for B2S26"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "August- sending calendly now",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "August- staff calendar not finalized for B2S26"
+        },
+        {
+          "name": "Reef-Sunset Unified School District",
+          "tier": 2,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will ask supt. These are monthyl"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "April Torres",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "7/6"
+        },
+        {
+          "name": "Union Elementary School District",
+          "tier": 2,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Discuss in June/July"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Discuss in June/July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Discuss in June/July"
+        },
+        {
+          "name": "Lansing School District 158",
+          "tier": 3,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "N/A"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "August 7th",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "N/A"
+        },
+        {
+          "name": "Oconee County School District",
+          "tier": 3,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "No changes"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "Comes back last week of July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "No changes"
+        },
+        {
+          "name": "Bladen County Schools",
+          "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "7/2",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Discuss 7/2"
+        },
+        {
+          "name": "Granville County Schools",
+          "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "TBD soon- week of - August 3rd staff come back or possibly 4th"
+        },
+        {
+          "name": "Morgan Hill Unified School District",
+          "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Admin/principal outreach",
+              "value": "Meet bi weekly TBD"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "8-10-2026",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "8/25/2026"
+        },
+        {
+          "name": "Alliance College",
+          "tier": 3,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Admin/principal outreach",
+              "value": "Maybe later"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "7/9",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "9/16"
+        },
+        {
+          "name": "Chapel Hill-Carrboro City Schools",
+          "tier": 3,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "July 7th  (Brandy Reeves)",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          },
+          "trainingDate": "Week of August 18th and 19th (Combine MS staff who will be new and new updates with everyone-refresh)"
+        },
+        {
+          "name": "International Community School",
+          "tier": 3,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "July"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "July"
+        },
+        {
+          "name": "Currituck County Schools",
+          "tier": 2,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "6/16",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "8/11"
+        },
+        {
+          "name": "Escalon Unified School District",
+          "tier": 2,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": true,
+          "formOwner": "Daisy Leahy",
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "August 12th (sending me invite on 5/12)"
+        },
+        {
+          "name": "Corpus Christi Independent School District",
+          "tier": 3,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "7/21/26",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "TBD- July 22nd PD starts -- also new counselor meeting this week. 27th or 28th"
+        },
+        {
+          "name": "Del Valle",
+          "tier": 3,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Staff list update",
+              "value": "Not sure, need to discuss"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, planning to send soon"
         },
         {
           "name": "Whiteville City Schools",
           "tier": 3,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Family summer comms plan",
+              "value": "Not yet, need help with ideas or language"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "familyComms": "Not yet, need help with ideas or languag\u2026"
+        },
+        {
+          "name": "Riverbank Unified School District",
+          "tier": 2,
+          "gapCount": 0,
+          "gaps": [],
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, already sent"
+        },
+        {
+          "name": "Rockingham County Public Schools",
+          "tier": 2,
+          "gapCount": 0,
+          "gaps": [],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "8/28/26",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "8/12/2026- Emily will send PD"
+        },
+        {
+          "name": "St. Ignatius",
+          "tier": 3,
+          "gapCount": 0,
+          "gaps": [],
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, planning to send soon"
+        },
+        {
+          "name": "Streator Elementary School District 44",
+          "tier": 3,
+          "gapCount": 0,
+          "gaps": [],
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, already sent"
         }
-      ]
+      ],
+      "byTier": {
+        "1": {
+          "total": 4,
+          "noForm": 2,
+          "submitted": 2,
+          "withGaps": 2
+        },
+        "2": {
+          "total": 37,
+          "noForm": 23,
+          "submitted": 14,
+          "withGaps": 12
+        },
+        "3": {
+          "total": 26,
+          "noForm": 12,
+          "submitted": 14,
+          "withGaps": 12
+        }
+      }
     },
     "Monica Knott": {
       "noForm": [
@@ -1276,31 +3240,79 @@
           "ldos": null
         }
       ],
-      "missing": [],
-      "complete": [
+      "missing": [
         {
-          "name": "Atwood Heights School District 125",
+          "name": "Livingston Parish",
           "tier": 1,
-          "coOwned": false,
-          "formOwner": "Sarah Hough",
+          "gapCount": 5,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "TBD likely meeting or email"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
+            "label": "Not Yet",
+            "state": "red"
           },
           "kickoffStatus": {
-            "label": "Early August",
+            "label": "TBD",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
         {
           "name": "Bremen Community High School District 228",
           "tier": 1,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "TBD"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Not Yet",
             "state": "red"
@@ -1309,34 +3321,37 @@
             "label": "TBD (30-45 days post training)",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Buford City School District",
-          "tier": 2,
           "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Confirmed",
-            "state": "green"
-          },
-          "kickoffStatus": {
-            "label": "Laura Beth Waycaster",
-            "state": "amber"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "formOwner": null
         },
         {
           "name": "Chicago Heights School District 170",
           "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Async training followed by zoom training date TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "e-mail (both internal and by Monica Knott)"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Not Yet",
             "state": "red"
@@ -1345,16 +3360,37 @@
             "label": "TBD",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
         {
           "name": "Dekalb Community Unit School District 428",
           "tier": 1,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will gather more information"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Not Yet",
             "state": "red"
@@ -1363,23 +3399,61 @@
             "label": "TBD",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": null
         },
         {
-          "name": "Dodge County School District",
+          "name": "Wayne County School District",
           "tier": 3,
+          "gapCount": 3,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD likely first week of August"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
           "coOwned": false,
-          "formOwner": null,
-          "familyComms": "Yes, already sent"
+          "formOwner": null
         },
         {
           "name": "Griffin-Spalding County Schools",
           "tier": 2,
-          "coOwned": false,
-          "formOwner": "Sarah Hough",
+          "gapCount": 2,
+          "missingFields": [
+            "Training date",
+            "Training scheduled"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            }
+          ],
           "trainingStatus": {
             "label": "Tentative Hold",
             "state": "amber"
@@ -1388,14 +3462,137 @@
             "label": "June 8th - send invite",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "coOwned": false,
+          "formOwner": "Sarah Hough"
         },
+        {
+          "name": "Park Forest School District 163",
+          "tier": 2,
+          "gapCount": 2,
+          "missingFields": [
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Atwood Heights School District 125",
+          "tier": 1,
+          "gapCount": 1,
+          "missingFields": [
+            "Admin/principal outreach"
+          ],
+          "gaps": [
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA Laura is a principal"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Early August",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": "Sarah Hough"
+        },
+        {
+          "name": "Buford City School District",
+          "tier": 2,
+          "gapCount": 1,
+          "missingFields": [
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Laura Beth Waycaster",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        }
+      ],
+      "complete": [
+        {
+          "name": "Dodge County School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, already sent"
+        },
+        {
+          "name": "McHenry Community Consolidated School District 15",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, planning to send soon"
+        },
+        {
+          "name": "White County School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, planning to send soon"
+        }
+      ],
+      "submitted": [
         {
           "name": "Livingston Parish",
           "tier": 1,
+          "gapCount": 5,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "TBD likely meeting or email"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1409,18 +3606,69 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
+          },
+          "trainingDate": "TBD"
         },
         {
-          "name": "McHenry Community Consolidated School District 15",
-          "tier": 3,
+          "name": "Bremen Community High School District 228",
+          "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "TBD"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
-          "familyComms": "Yes, planning to send soon"
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD (30-45 days post training)",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "TBD"
         },
         {
-          "name": "Park Forest School District 163",
-          "tier": 2,
+          "name": "Dekalb Community Unit School District 428",
+          "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will gather more information"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1434,11 +3682,65 @@
           "staffFileStatus": {
             "label": "Confirmed we will use this year's file for now",
             "state": "green"
-          }
+          },
+          "trainingDate": "TBD"
+        },
+        {
+          "name": "Chicago Heights School District 170",
+          "tier": 3,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Async training followed by zoom training date TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "e-mail (both internal and by Monica Knott)"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Async training followed by zoom training date TBD"
         },
         {
           "name": "Wayne County School District",
           "tier": 3,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD likely first week of August"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1452,16 +3754,169 @@
           "staffFileStatus": {
             "label": "Confirmed we will use this year's file for now",
             "state": "green"
-          }
+          },
+          "trainingDate": "TBD likely first week of August"
+        },
+        {
+          "name": "Griffin-Spalding County Schools",
+          "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": "Sarah Hough",
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "June 8th - send invite",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "TBD"
+        },
+        {
+          "name": "Park Forest School District 163",
+          "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Aug 13, 14, 17 (will confirm date and time in the next week)"
+        },
+        {
+          "name": "Atwood Heights School District 125",
+          "tier": 1,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA Laura is a principal"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": "Sarah Hough",
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Early August",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "8/31"
+        },
+        {
+          "name": "Buford City School District",
+          "tier": 2,
+          "gapCount": 1,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Laura Beth Waycaster",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "July 28th"
+        },
+        {
+          "name": "Dodge County School District",
+          "tier": 3,
+          "gapCount": 0,
+          "gaps": [],
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, already sent"
+        },
+        {
+          "name": "McHenry Community Consolidated School District 15",
+          "tier": 3,
+          "gapCount": 0,
+          "gaps": [],
+          "coOwned": false,
+          "formOwner": null,
+          "familyComms": "Yes, planning to send soon"
         },
         {
           "name": "White County School District",
           "tier": 3,
+          "gapCount": 0,
+          "gaps": [],
           "coOwned": false,
           "formOwner": null,
           "familyComms": "Yes, planning to send soon"
         }
-      ]
+      ],
+      "byTier": {
+        "1": {
+          "total": 13,
+          "noForm": 9,
+          "submitted": 4,
+          "withGaps": 4
+        },
+        "2": {
+          "total": 6,
+          "noForm": 3,
+          "submitted": 3,
+          "withGaps": 3
+        },
+        "3": {
+          "total": 21,
+          "noForm": 16,
+          "submitted": 5,
+          "withGaps": 2
+        }
+      }
     },
     "Daisy Leahy": {
       "noForm": [
@@ -1568,31 +4023,45 @@
           "ldos": "2026-06-12"
         }
       ],
-      "missing": [],
-      "complete": [
-        {
-          "name": "Antelope Valley Union High School District",
-          "tier": 1,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Not Yet",
-            "state": "red"
-          },
-          "kickoffStatus": {
-            "label": "\u2014",
-            "state": "red"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
+      "missing": [
         {
           "name": "Apple Valley Unified School District",
           "tier": 1,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 6,
+          "missingFields": [
+            "Summer resource post",
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Wants async. Quick and low lift. Video is fine."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "trainingStatus": {
             "label": "Not Yet",
             "state": "red"
@@ -1601,16 +4070,520 @@
             "label": "\u2014",
             "state": "red"
           },
-          "staffFileStatus": {
-            "label": "New File coming",
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Palm Springs Unified School District",
+          "tier": 1,
+          "gapCount": 6,
+          "missingFields": [
+            "Summer resource post",
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "No need for training - async video"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Siskiyou County Office of Education",
+          "tier": 3,
+          "gapCount": 6,
+          "missingFields": [
+            "Summer comms discussed",
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "Kind of"
+            },
+            {
+              "field": "Training date",
+              "value": "Wants a short video, async option."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Antelope Valley Union High School District",
+          "tier": 1,
+          "gapCount": 5,
+          "missingFields": [
+            "Summer resource post",
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Wants a training refresher. End of July or early August. Wants group together. She will let me know in the next few weeks. Wants to add on clinical in same period."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Palmdale Aerospace Academy (District)",
+          "tier": 1,
+          "gapCount": 5,
+          "missingFields": [
+            "Summer comms discussed",
+            "Summer resource post",
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "Kind of"
+            },
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
             "state": "amber"
-          }
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Santa Barbara Unified School District",
+          "tier": 1,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Wants to prioritize Elem. Asyc video for MS and HS\nWants training of education for Family Liaisons \nWants us to run a PD day for teachers.......\nWants MLAC team educated\nNeed to train MH staff."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Sierra Sands Unified School District",
+          "tier": 1,
+          "gapCount": 4,
+          "missingFields": [
+            "Summer comms discussed",
+            "Summer resource post",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "Kind of"
+            },
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Simi Valley Unified School District",
+          "tier": 1,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD - she does not have calendar yet."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Soledad Unified School District",
+          "tier": 1,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "South San Francisco Unified School District",
+          "tier": 1,
+          "gapCount": 4,
+          "missingFields": [
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Na"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Vista Unified School District",
+          "tier": 2,
+          "gapCount": 4,
+          "missingFields": [
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Dr. Faus wants to.... she is going to try to get us time. They have AP meetings. They do not run agendas so not certain they will. Last week of July admin trainings. Hold for Brianna to present for 20 min last week of July. Brianna please see if they want access / accounts."
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Yucaipa-Calimesa Joint Unified School District",
+          "tier": 1,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "If they are adding new staff (via expansion), we need to train virtually with Brianna\nExisting users can have a asyc"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Los Angeles Unified School District",
+          "tier": 1,
+          "gapCount": 3,
+          "missingFields": [
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will discuss in June"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
         },
         {
           "name": "Keppel Union School District",
           "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 2,
+          "missingFields": [
+            "Training scheduled",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
           "trainingStatus": {
             "label": "Tentative Hold",
             "state": "amber"
@@ -1619,34 +4592,27 @@
             "label": "13th (11 am) or 14th in morning - even earlier is better",
             "state": "amber"
           },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
-        },
-        {
-          "name": "Los Angeles Unified School District",
-          "tier": 1,
           "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Not Yet",
-            "state": "red"
-          },
-          "kickoffStatus": {
-            "label": "\u2014",
-            "state": "red"
-          },
-          "staffFileStatus": {
-            "label": "Confirmed we will use this year's file for now",
-            "state": "green"
-          }
+          "formOwner": null
         },
         {
           "name": "Morongo Unified School District",
           "tier": 1,
-          "coOwned": false,
-          "formOwner": null,
+          "gapCount": 2,
+          "missingFields": [
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "trainingStatus": {
             "label": "Confirmed",
             "state": "green"
@@ -1655,14 +4621,42 @@
             "label": "\u2014",
             "state": "red"
           },
-          "staffFileStatus": {
-            "label": "New File coming",
-            "state": "amber"
-          }
-        },
+          "coOwned": false,
+          "formOwner": null
+        }
+      ],
+      "complete": [],
+      "submitted": [
         {
-          "name": "Palm Springs Unified School District",
+          "name": "Apple Valley Unified School District",
           "tier": 1,
+          "gapCount": 6,
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Wants async. Quick and low lift. Video is fine."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1676,11 +4670,169 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
+          },
+          "trainingDate": "Wants async. Quick and low lift. Video is fine."
+        },
+        {
+          "name": "Palm Springs Unified School District",
+          "tier": 1,
+          "gapCount": 6,
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "No need for training - async video"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          },
+          "trainingDate": "No need for training - async video"
+        },
+        {
+          "name": "Siskiyou County Office of Education",
+          "tier": 3,
+          "gapCount": 6,
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "Kind of"
+            },
+            {
+              "field": "Training date",
+              "value": "Wants a short video, async option."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          },
+          "trainingDate": "Wants a short video, async option."
+        },
+        {
+          "name": "Antelope Valley Union High School District",
+          "tier": 1,
+          "gapCount": 5,
+          "gaps": [
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training date",
+              "value": "Wants a training refresher. End of July or early August. Wants group together. She will let me know in the next few weeks. Wants to add on clinical in same period."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "NA"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Wants a training refresher. End of July or early August. Wants group together. She will let me know in the next few weeks. Wants to add on clinical in same period."
         },
         {
           "name": "Palmdale Aerospace Academy (District)",
           "tier": 1,
+          "gapCount": 5,
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "Kind of"
+            },
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1694,11 +4846,31 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
+          },
+          "trainingDate": "Aug 7, 10, 11. She will follow up on dates soon."
         },
         {
           "name": "Santa Barbara Unified School District",
           "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "Wants to prioritize Elem. Asyc video for MS and HS\nWants training of education for Family Liaisons \nWants us to run a PD day for teachers.......\nWants MLAC team educated\nNeed to train MH staff."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1712,11 +4884,31 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
+          },
+          "trainingDate": "Wants to prioritize Elem. Asyc video for MS and HS\nWants training of education for Family Liaisons \nWants us to run a PD day for teachers.......\nWants MLAC team educated\nNeed to train MH staff."
         },
         {
           "name": "Sierra Sands Unified School District",
           "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Summer comms discussed",
+              "value": "Kind of"
+            },
+            {
+              "field": "Summer resource post",
+              "value": "No"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1730,11 +4922,31 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
+          },
+          "trainingDate": "Aug 21 - counselor and new admin training\nAlso one pager for the admin team\nNew AP"
         },
         {
           "name": "Simi Valley Unified School District",
           "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD - she does not have calendar yet."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1748,29 +4960,31 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
-        },
-        {
-          "name": "Siskiyou County Office of Education",
-          "tier": 3,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Not Yet",
-            "state": "red"
           },
-          "kickoffStatus": {
-            "label": "\u2014",
-            "state": "red"
-          },
-          "staffFileStatus": {
-            "label": "New File coming",
-            "state": "amber"
-          }
+          "trainingDate": "TBD - she does not have calendar yet."
         },
         {
           "name": "Soledad Unified School District",
           "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1784,11 +4998,31 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
+          },
+          "trainingDate": "TBD"
         },
         {
           "name": "South San Francisco Unified School District",
           "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Na"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1802,29 +5036,31 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
-        },
-        {
-          "name": "Vista Unified School District",
-          "tier": 2,
-          "coOwned": false,
-          "formOwner": null,
-          "trainingStatus": {
-            "label": "Tentative Hold",
-            "state": "amber"
           },
-          "kickoffStatus": {
-            "label": "\u2014",
-            "state": "red"
-          },
-          "staffFileStatus": {
-            "label": "New File coming",
-            "state": "amber"
-          }
+          "trainingDate": "Hold for Aug 21. But shes checking for earlier"
         },
         {
           "name": "Yucaipa-Calimesa Joint Unified School District",
           "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "If they are adding new staff (via expansion), we need to train virtually with Brianna\nExisting users can have a asyc"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
           "coOwned": false,
           "formOwner": null,
           "trainingStatus": {
@@ -1838,14 +5074,188 @@
           "staffFileStatus": {
             "label": "New File coming",
             "state": "amber"
-          }
+          },
+          "trainingDate": "If they are adding new staff (via expansion), we need to train virtually with Brianna\nExisting users can have a asyc"
+        },
+        {
+          "name": "Vista Unified School District",
+          "tier": 2,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Dr. Faus wants to.... she is going to try to get us time. They have AP meetings. They do not run agendas so not certain they will. Last week of July admin trainings. Hold for Brianna to present for 20 min last week of July. Brianna please see if they want access / accounts."
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          },
+          "trainingDate": "They are on board with clinician led training. \nAug 7 with social workers and psych"
+        },
+        {
+          "name": "Los Angeles Unified School District",
+          "tier": 1,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Will discuss in June"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "Staff return Aug 11\nBrianna to try to get time with navigators and psws (possibly in person)\nOF meeting would be end of July"
+        },
+        {
+          "name": "Morongo Unified School District",
+          "tier": 1,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          },
+          "trainingDate": "Monthly meetings with all MH Team. \nBrianna to train Sept 9 at 2pm."
+        },
+        {
+          "name": "Keppel Union School District",
+          "tier": 2,
+          "gapCount": 2,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "13th (11 am) or 14th in morning - even earlier is better",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "August 3rd  and on -they are back. August 6th / 7th is best for a training. Could do it the 10th/11th but wouldn't be as nice"
         }
-      ]
+      ],
+      "byTier": {
+        "1": {
+          "total": 21,
+          "noForm": 9,
+          "submitted": 12,
+          "withGaps": 12
+        },
+        "2": {
+          "total": 2,
+          "noForm": 0,
+          "submitted": 2,
+          "withGaps": 2
+        },
+        "3": {
+          "total": 9,
+          "noForm": 8,
+          "submitted": 1,
+          "withGaps": 1
+        }
+      }
     },
     "Unknown": {
       "noForm": [],
       "missing": [],
-      "complete": []
+      "complete": [],
+      "submitted": [],
+      "byTier": {
+        "1": {
+          "total": 0,
+          "noForm": 0,
+          "submitted": 0,
+          "withGaps": 0
+        },
+        "2": {
+          "total": 0,
+          "noForm": 0,
+          "submitted": 0,
+          "withGaps": 0
+        },
+        "3": {
+          "total": 0,
+          "noForm": 0,
+          "submitted": 0,
+          "withGaps": 0
+        }
+      }
     }
   },
   "scheduling": [
