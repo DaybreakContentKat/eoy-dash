@@ -126,6 +126,53 @@ def status_state(value):
     return 'amber'
 
 
+# A required field counts as a GAP unless it has a firm, affirmative answer.
+# Blanks, placeholders ("TBD"/"Pending"/"Discuss later"), and in-progress
+# statuses ("Not Yet"/"Tentative Hold"/"Partial"/"New File coming") all flag.
+# The actual entered value is always shown next to the flag, so the human can
+# eyeball any mis-flag — these heuristics just decide the amber highlight.
+COMPLETE_PREFIXES = ('yes', 'confirmed', 'received', 'complete', 'done', 'already')
+NOTDONE_PATTERNS = [
+    'tbd', 'pending', 'n/a', 'not yet', 'tentative', 'partial', 'new file coming',
+    'file coming', 'to discuss', 'discuss in', 'discuss after', "let's discuss",
+    'lets discuss', 'will gather', 'will discuss', 'will set', 'will send',
+    'will confirm', 'will look', 'will get', 'will check', 'will let', 'will have',
+    'will ask', 'will plan', 'soon', 'unknown', 'maybe', 'not sure', 'need to discuss',
+    'not needed', 'not right now', 'kind of', '?', 'none', 'na',
+]
+_MONTHS = (r'jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec')
+
+
+def _has_real_date(v):
+    """True if the value names a concrete day (7/23, 8-11, 'August 7th', '16th'),
+    not a vague window ('Late August', 'End of July', 'July', 'TBD')."""
+    if re.search(r'\b\d{1,2}\s*[/-]\s*\d{1,2}', v):
+        return True
+    if re.search(r'(' + _MONTHS + r')[a-z]*\.?\s+\d{1,2}', v, re.I):
+        return True
+    if re.search(r'\b\d{1,2}(st|nd|rd|th)\b', v):
+        return True
+    return False
+
+
+def field_gap(header, value):
+    """Return True if this required-field value is a gap (no firm answer)."""
+    h = norm(header)
+    v = (value or '').strip()
+    low = v.lower()
+    if not v:
+        return True
+    if 'staff training date' in h:
+        return not _has_real_date(v)
+    if low.startswith(COMPLETE_PREFIXES) or 'use this year' in low:
+        return False
+    if any(p in low for p in NOTDONE_PATTERNS):
+        return True
+    if low in ('no', 'na', 'n/a', 'none'):
+        return True
+    return False
+
+
 def normalize_owner(raw):
     """Return (canonical_full_name_or_None, co_owned_bool)."""
     if not raw:
@@ -215,13 +262,15 @@ def parse_tab(header, rows, is_csm_tab):
         name = cell(row, district_i)
         if not name:
             continue  # skip blank district rows silently
-        missing = [short_label(h) for i, h in required if not cell(row, i)]
+        gaps = [{'field': short_label(h), 'value': cell(row, i)}
+                for i, h in required if field_gap(h, cell(row, i))]
         resp = {
             'raw_name': name,
             'owner_raw': cell(row, owner_i),
             'timestamp': cell(row, ts_i),
-            'missing_fields': missing,
-            'gap_count': len(missing),
+            'gaps': gaps,
+            'missing_fields': [g['field'] for g in gaps],  # back-compat
+            'gap_count': len(gaps),
             'is_csm_tab': is_csm_tab,
         }
         if is_csm_tab:
@@ -268,8 +317,16 @@ def build_bts(tracker, match, csm_responses, async_responses, refreshed_at):
         else:
             unmatched.append(r)
 
-    owners = {name: {'noForm': [], 'missing': [], 'complete': []} for name in OWNER_ORDER}
-    owners['Unknown'] = {'noForm': [], 'missing': [], 'complete': []}
+    def new_owner():
+        return {
+            'noForm': [], 'missing': [], 'complete': [], 'submitted': [],
+            # per-tier summary: districts owned, no-form, submitted, submitted-with-gaps
+            'byTier': {str(t): {'total': 0, 'noForm': 0, 'submitted': 0, 'withGaps': 0}
+                       for t in (1, 2, 3)},
+        }
+
+    owners = {name: new_owner() for name in OWNER_ORDER}
+    owners['Unknown'] = new_owner()
 
     def sched(resp, key):
         val = resp.get(key, '') if resp else ''
@@ -278,12 +335,17 @@ def build_bts(tracker, match, csm_responses, async_responses, refreshed_at):
     for canon, meta in tracker.items():
         owner = meta['owner'] if meta['owner'] in owners else 'Unknown'
         tier = meta['tier']
+        bt = owners[owner]['byTier'].get(str(tier))
+        if bt is not None:
+            bt['total'] += 1
         resp = choose_response(by_district.get(canon, []), tier)
         if resp is None:
             owners[owner]['noForm'].append({
                 'name': canon, 'shortName': meta['shortName'],
                 'tier': tier, 'ldos': meta['ldos'],
             })
+            if bt is not None:
+                bt['noForm'] += 1
             continue
         form_owner, form_co = normalize_owner(resp.get('owner_raw'))
         co_owned = bool(meta['coOwned'] or form_co)
@@ -292,10 +354,33 @@ def build_bts(tracker, match, csm_responses, async_responses, refreshed_at):
         raw_fo = (resp.get('owner_raw') or '').strip()
         display_fo = form_owner or raw_fo
         form_owner_note = display_fo if (display_fo and norm(display_fo) != norm(meta['owner'])) else None
-        if resp['gap_count'] > 0:
+        has_gaps = resp['gap_count'] > 0
+
+        # A submitted form always counts as submitted; gaps are an overlay flag.
+        sub = {
+            'name': canon, 'tier': tier, 'gapCount': resp['gap_count'],
+            'gaps': resp.get('gaps', []),  # [{field, value}] — what's missing + what they put
+            'coOwned': co_owned, 'formOwner': form_owner_note,
+        }
+        if resp['is_csm_tab']:
+            sub['trainingStatus'] = sched(resp, 'training_scheduled')
+            sub['kickoffStatus'] = sched(resp, 'kickoff_status')
+            sub['staffFileStatus'] = sched(resp, 'staff_file_status')
+            sub['trainingDate'] = resp.get('training_date', '') or ''
+        else:
+            fc = (resp.get('family_comms') or '').strip()
+            sub['familyComms'] = (fc[:40] + '…') if len(fc) > 40 else fc
+        owners[owner]['submitted'].append(sub)
+        if bt is not None:
+            bt['submitted'] += 1
+            if has_gaps:
+                bt['withGaps'] += 1
+
+        # --- back-compat: keep populating missing/complete (old frontend reads these) ---
+        if has_gaps:
             owners[owner]['missing'].append({
                 'name': canon, 'tier': tier, 'gapCount': resp['gap_count'],
-                'missingFields': resp['missing_fields'],
+                'missingFields': resp['missing_fields'], 'gaps': resp.get('gaps', []),
                 'trainingStatus': sched(resp, 'training_scheduled') if resp['is_csm_tab'] else None,
                 'kickoffStatus': sched(resp, 'kickoff_status') if resp['is_csm_tab'] else None,
                 'coOwned': co_owned, 'formOwner': form_owner_note,
@@ -313,9 +398,13 @@ def build_bts(tracker, match, csm_responses, async_responses, refreshed_at):
 
     # unmatched form districts -> Unknown owner, yellow flag
     for r in unmatched:
+        owners['Unknown']['submitted'].append({
+            'name': r['raw_name'], 'tier': 'Unknown', 'gapCount': r['gap_count'],
+            'gaps': r.get('gaps', []), 'coOwned': False, 'unmatched': True,
+        })
         owners['Unknown']['missing'].append({
             'name': r['raw_name'], 'tier': 'Unknown', 'gapCount': r['gap_count'],
-            'missingFields': r['missing_fields'],
+            'missingFields': r['missing_fields'], 'gaps': r.get('gaps', []),
             'trainingStatus': None, 'kickoffStatus': None,
             'coOwned': False, 'unmatched': True,
         })
@@ -325,6 +414,8 @@ def build_bts(tracker, match, csm_responses, async_responses, refreshed_at):
         o['noForm'].sort(key=lambda d: (d['ldos'] is None, d['ldos'] or ''))
         o['missing'].sort(key=lambda d: -d['gapCount'])
         o['complete'].sort(key=lambda d: d['name'])
+        # submitted: worst gaps first, then by tier, then name
+        o['submitted'].sort(key=lambda d: (-d['gapCount'], d['tier'] if isinstance(d['tier'], int) else 9, d['name']))
 
     # scheduling summary table (T1/T2 districts with a CSM-tab response)
     scheduling = []
@@ -361,23 +452,33 @@ def build_bts(tracker, match, csm_responses, async_responses, refreshed_at):
         1 for canon in matched_canon
         if (choose_response(by_district[canon], tracker[canon]['tier']) or {}).get('gap_count', 0) > 0
     )
+    # portfolio-wide tier summary (sum of per-owner byTier across the 4 CSMs)
+    tier_summary = {str(t): {'total': 0, 'noForm': 0, 'submitted': 0, 'withGaps': 0}
+                    for t in (1, 2, 3)}
+    for name in OWNER_ORDER:
+        for t, c in owners[name]['byTier'].items():
+            for k in ('total', 'noForm', 'submitted', 'withGaps'):
+                tier_summary[t][k] += c[k]
+
     totals = {
         'totalDistricts': len(universe),
         'formsSubmitted': len(matched_canon),
+        'formsWithGaps': with_gaps,
+        'formsClean': len(matched_canon) - with_gaps,
         't1t2Total': len(t1t2),
         't1t2Complete': sum(1 for c in complete_canon if tracker[c]['tier'] in (1, 2)),
         't3Total': len(t3),
         't3Complete': sum(1 for c in complete_canon if tracker[c]['tier'] == 3),
         'withGaps': with_gaps,
         'unmatchedCount': len(unmatched),
+        'tierSummary': tier_summary,
     }
 
     return {
         'refreshedAt': refreshed_at,
         'totals': totals,
-        'ownerOrder': OWNER_ORDER + (['Unknown'] if (owners['Unknown']['missing'] or
-                                                     owners['Unknown']['noForm'] or
-                                                     owners['Unknown']['complete']) else []),
+        'ownerOrder': OWNER_ORDER + (['Unknown'] if (owners['Unknown']['submitted'] or
+                                                     owners['Unknown']['noForm']) else []),
         'owners': owners,
         'scheduling': scheduling,
         'unmatched': sorted({r['raw_name'] for r in unmatched}),
