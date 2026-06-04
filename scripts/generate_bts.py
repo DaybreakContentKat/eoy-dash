@@ -426,8 +426,51 @@ def find_tab(tabs, wanted):
     for name, data in tabs.items():
         if norm(name) == norm(wanted):
             return data
-    print(f'WARNING: tab not found: {wanted!r}', file=sys.stderr)
+    print(f'WARNING: tab not found by name: {wanted!r}', file=sys.stderr)
     return None
+
+
+def classify_tab(header):
+    """Identify a form tab by its header signature rather than its sheet name.
+
+    The sheet is a Google Form responses workbook; tab names drift (renames,
+    "Form Responses N" defaults), so matching on the columns each form owns is
+    far more robust. Returns 'csm', 'async', or None.
+      - CSM/AM tab: has an "Account Owner" column AND "Summer comms discussed?".
+      - Async tab:  has the "...send a message to families..." column.
+    """
+    hs = [norm(h) for h in header]
+    has = lambda needle: any(needle in h for h in hs)
+    if has('account owner') and has('summer comms discussed'):
+        return 'csm'
+    if has('are you planning to send a message to families'):
+        return 'async'
+    return None
+
+
+def select_tabs(tabs):
+    """Return (csm_tab_data, async_tab_data), each (header, rows) or None.
+    Prefer header-signature detection; fall back to exact-name lookup."""
+    csm_tab = async_tab = None
+    for name, data in tabs.items():
+        kind = classify_tab(data[0])
+        if kind == 'csm' and csm_tab is None:
+            csm_tab = data
+            print(f'BTS: CSM/AM tab matched by header signature: {name!r}')
+        elif kind == 'async' and async_tab is None:
+            async_tab = data
+            print(f'BTS: Async tab matched by header signature: {name!r}')
+    if csm_tab is None:
+        csm_tab = find_tab(tabs, CSM_TAB)
+    if async_tab is None:
+        async_tab = find_tab(tabs, ASYNC_TAB)
+    if csm_tab is None:
+        print('ERROR: could not locate the CSM/AM form tab (by signature or name)',
+              file=sys.stderr)
+    if async_tab is None:
+        print('ERROR: could not locate the Async form tab (by signature or name)',
+              file=sys.stderr)
+    return csm_tab, async_tab
 
 
 def main():
@@ -445,8 +488,7 @@ def main():
               file=sys.stderr)
         return 0
 
-    csm_tab = find_tab(tabs, CSM_TAB)
-    async_tab = find_tab(tabs, ASYNC_TAB)
+    csm_tab, async_tab = select_tabs(tabs)
     csm_responses = parse_tab(csm_tab[0], csm_tab[1], True)[1] if csm_tab else []
     async_responses = parse_tab(async_tab[0], async_tab[1], False)[1] if async_tab else []
 
