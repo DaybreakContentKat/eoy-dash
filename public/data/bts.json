@@ -1,12 +1,12 @@
 {
-  "refreshedAt": "2026-06-04T01:47:02.623041Z",
+  "refreshedAt": "2026-06-04T03:08:26.963931Z",
   "totals": {
     "totalDistricts": 172,
-    "formsSubmitted": 10,
+    "formsSubmitted": 72,
     "t1t2Total": 103,
-    "t1t2Complete": 3,
+    "t1t2Complete": 47,
     "t3Total": 69,
-    "t3Complete": 7,
+    "t3Complete": 25,
     "withGaps": 0,
     "unmatchedCount": 0
   },
@@ -20,20 +20,8 @@
     "Brianna Masciel": {
       "noForm": [
         {
-          "name": "Arp Independent School District",
-          "shortName": "Arp Independent",
-          "tier": 3,
-          "ldos": "2026-05-21"
-        },
-        {
           "name": "Hays Consolidated Independent School District",
           "shortName": "Hays Consolidated Independent",
-          "tier": 3,
-          "ldos": "2026-05-21"
-        },
-        {
-          "name": "Rockport-Fulton Independent School District",
-          "shortName": "Rockport-Fulton Independent",
           "tier": 3,
           "ldos": "2026-05-21"
         },
@@ -50,21 +38,9 @@
           "ldos": "2026-05-22"
         },
         {
-          "name": "Ferris Independent School District",
-          "shortName": "Ferris Independent",
-          "tier": 3,
-          "ldos": "2026-05-22"
-        },
-        {
           "name": "Highland Park Independent School District",
           "shortName": "Highland Park Independent",
           "tier": 3,
-          "ldos": "2026-05-22"
-        },
-        {
-          "name": "Hurst-Euless-Bedford Independent School District",
-          "shortName": "Hurst-Euless-Bedford Independent",
-          "tier": 2,
           "ldos": "2026-05-22"
         },
         {
@@ -80,27 +56,9 @@
           "ldos": "2026-05-22"
         },
         {
-          "name": "Willis Independent School District",
-          "shortName": "Willis Independent",
-          "tier": 3,
-          "ldos": "2026-05-22"
-        },
-        {
-          "name": "Buena Park Elementary School District",
-          "shortName": "Buena Park Elementary",
-          "tier": 2,
-          "ldos": "2026-05-26"
-        },
-        {
           "name": "Burbank Unified School District",
           "shortName": "Burbank",
           "tier": 2,
-          "ldos": "2026-05-28"
-        },
-        {
-          "name": "Helendale Elementary School District",
-          "shortName": "Helendale Elementary",
-          "tier": 3,
           "ldos": "2026-05-28"
         },
         {
@@ -122,12 +80,6 @@
           "ldos": "2026-05-29"
         },
         {
-          "name": "East Whittier City Elementary School District",
-          "shortName": "East Whittier City Elementary",
-          "tier": 2,
-          "ldos": "2026-06-03"
-        },
-        {
           "name": "Oxnard Union High School District",
           "shortName": "Oxnard Union High",
           "tier": 2,
@@ -146,26 +98,8 @@
           "ldos": "2026-06-04"
         },
         {
-          "name": "Lompoc Unified School District",
-          "shortName": "Lompoc",
-          "tier": 2,
-          "ldos": "2026-06-04"
-        },
-        {
           "name": "Pasadena Unified School District",
           "shortName": "Pasadena",
-          "tier": 2,
-          "ldos": "2026-06-04"
-        },
-        {
-          "name": "Rowland Unified School District",
-          "shortName": "Rowland",
-          "tier": 2,
-          "ldos": "2026-06-04"
-        },
-        {
-          "name": "San Jacinto Unified School District",
-          "shortName": "San Jacinto",
           "tier": 2,
           "ldos": "2026-06-04"
         },
@@ -192,34 +126,268 @@
           "shortName": "Burlingame Elementary",
           "tier": 2,
           "ldos": "2026-06-11"
-        },
-        {
-          "name": "Snowline Joint Unified School District",
-          "shortName": "Snowline Joint",
-          "tier": 2,
-          "ldos": "2026-06-11"
-        },
-        {
-          "name": "Rio Elementary School District",
-          "shortName": "Rio Elementary",
-          "tier": 2,
-          "ldos": "2026-06-16"
-        },
-        {
-          "name": "Escondido Union School District",
-          "shortName": "Escondido Union",
-          "tier": 2,
-          "ldos": "2027-06-10"
         }
       ],
       "missing": [],
       "complete": [
+        {
+          "name": "Arp Independent School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Yes, we will do this in late July before the start of summer",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
         {
           "name": "Beaumont Unified School District",
           "tier": 2,
           "coOwned": false,
           "formOwner": null,
           "familyComms": "Not yet, need help with ideas or languag\u2026"
+        },
+        {
+          "name": "Buena Park Elementary School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "End of July - week of the 27th is best. Send an invite for that week",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "East Whittier City Elementary School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July after 4th -",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Escondido Union School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "August 12th is when she is back - so we are doing the goals now",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Ferris Independent School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July 16th / 17th - send some times",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Helendale Elementary School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "29th of July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Hurst-Euless-Bedford Independent School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Sent time for July 8th for a kickoff/ followup BTS prep call",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Lompoc Unified School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "June 12th - July 21st. (Cassi - is out on maternity leave next fall - with no real coverage).  Sent an invite for June 9th for kickoff",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Rio Elementary School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "Last week of July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Rockport-Fulton Independent School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "July 14th - sent invite",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Rowland Unified School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "End of july - sent an invite for the 21st",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "San Jacinto Unified School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "Mid July for a meeting",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Snowline Joint Unified School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Not needed - as for goals, might not have hazel next fall - which would mean an increase in referrals. Check in with Julie/Katie in late July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Willis Independent School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Probably not needed but could be setup",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
         }
       ]
     },
@@ -244,33 +412,9 @@
           "ldos": "2026-05-20"
         },
         {
-          "name": "Jackson County School District",
-          "shortName": "Jackson County",
-          "tier": 3,
-          "ldos": "2026-05-20"
-        },
-        {
-          "name": "Granville County Schools",
-          "shortName": "Granville County Schools",
-          "tier": 2,
-          "ldos": "2026-05-21"
-        },
-        {
-          "name": "Jefferson County School District",
-          "shortName": "Jefferson County",
-          "tier": 1,
-          "ldos": "2026-05-21"
-        },
-        {
           "name": "San Benito",
           "shortName": "San Benito",
           "tier": 3,
-          "ldos": "2026-05-21"
-        },
-        {
-          "name": "Union Elementary School District",
-          "shortName": "Union Elementary",
-          "tier": 2,
           "ldos": "2026-05-21"
         },
         {
@@ -288,12 +432,6 @@
         {
           "name": "North Boone Community Unit School District 200",
           "shortName": "North Boone Community Unit 200",
-          "tier": 3,
-          "ldos": "2026-05-22"
-        },
-        {
-          "name": "Oconee County School District",
-          "shortName": "Oconee County",
           "tier": 3,
           "ldos": "2026-05-22"
         },
@@ -334,24 +472,6 @@
           "ldos": "2026-05-27"
         },
         {
-          "name": "Corpus Christi Independent School District",
-          "shortName": "Corpus Christi Independent",
-          "tier": 3,
-          "ldos": "2026-05-28"
-        },
-        {
-          "name": "International Community School",
-          "shortName": "International Community School",
-          "tier": 3,
-          "ldos": "2026-05-28"
-        },
-        {
-          "name": "Manor Independent School District",
-          "shortName": "Manor Independent",
-          "tier": 1,
-          "ldos": "2026-05-28"
-        },
-        {
           "name": "Okeechobee County Public Schools",
           "shortName": "Okeechobee County Public Schools",
           "tier": 2,
@@ -382,46 +502,10 @@
           "ldos": "2026-05-29"
         },
         {
-          "name": "Currituck County Schools",
-          "shortName": "Currituck County Schools",
-          "tier": 2,
-          "ldos": "2026-05-29"
-        },
-        {
-          "name": "Escalon Unified School District",
-          "shortName": "Escalon",
-          "tier": 2,
-          "ldos": "2026-05-29"
-        },
-        {
-          "name": "Lammersville Joint Unified School District",
-          "shortName": "Lammersville Joint",
-          "tier": 2,
-          "ldos": "2026-05-29"
-        },
-        {
-          "name": "Lincoln County Schools",
-          "shortName": "Lincoln County Schools",
-          "tier": 3,
-          "ldos": "2026-05-29"
-        },
-        {
           "name": "Pleasanton Unified School District",
           "shortName": "Pleasanton",
           "tier": 2,
           "ldos": "2026-05-29"
-        },
-        {
-          "name": "San Jose Unified School District",
-          "shortName": "San Jose",
-          "tier": 2,
-          "ldos": "2026-05-29"
-        },
-        {
-          "name": "Joliet Public School District 86",
-          "shortName": "Joliet Public 86",
-          "tier": 2,
-          "ldos": "2026-06-02"
         },
         {
           "name": "Sumter County Public Schools",
@@ -436,33 +520,9 @@
           "ldos": "2026-06-03"
         },
         {
-          "name": "Horizon Charters (District)",
-          "shortName": "Horizon Charters (District)",
-          "tier": 3,
-          "ldos": "2026-06-03"
-        },
-        {
-          "name": "Rockingham County Public Schools",
-          "shortName": "Rockingham County Public Schools",
-          "tier": 2,
-          "ldos": "2026-06-03"
-        },
-        {
           "name": "Big Oak Flat-Groveland Unified School District",
           "shortName": "Big Oak Flat-Groveland",
           "tier": 1,
-          "ldos": "2026-06-04"
-        },
-        {
-          "name": "Bladen County Schools",
-          "shortName": "Bladen County Schools",
-          "tier": 2,
-          "ldos": "2026-06-04"
-        },
-        {
-          "name": "Freeport School District 145",
-          "shortName": "Freeport 145",
-          "tier": 3,
           "ldos": "2026-06-04"
         },
         {
@@ -484,12 +544,6 @@
           "ldos": "2026-06-04"
         },
         {
-          "name": "Belmont-Redwood Shores Elementary School District",
-          "shortName": "Belmont-Redwood Shores Elementary",
-          "tier": 2,
-          "ldos": "2026-06-05"
-        },
-        {
           "name": "Dare County Schools",
           "shortName": "Dare County Schools",
           "tier": 2,
@@ -502,20 +556,8 @@
           "ldos": "2026-06-05"
         },
         {
-          "name": "Lansing School District 158",
-          "shortName": "Lansing 158",
-          "tier": 3,
-          "ldos": "2026-06-05"
-        },
-        {
           "name": "Milpitas Unified School District",
           "shortName": "Milpitas",
-          "tier": 2,
-          "ldos": "2026-06-05"
-        },
-        {
-          "name": "Morgan Hill Unified School District",
-          "shortName": "Morgan Hill",
           "tier": 2,
           "ldos": "2026-06-05"
         },
@@ -532,12 +574,6 @@
           "ldos": "2026-06-05"
         },
         {
-          "name": "Reef-Sunset Unified School District",
-          "shortName": "Reef-Sunset",
-          "tier": 2,
-          "ldos": "2026-06-05"
-        },
-        {
           "name": "Twin Rivers Unified School District",
           "shortName": "Twin Rivers",
           "tier": 2,
@@ -550,12 +586,6 @@
           "ldos": "2026-06-09"
         },
         {
-          "name": "Chapel Hill-Carrboro City Schools",
-          "shortName": "Chapel Hill-Carrboro City Schools",
-          "tier": 3,
-          "ldos": "2026-06-11"
-        },
-        {
           "name": "Eureka City School District",
           "shortName": "Eureka City",
           "tier": 2,
@@ -566,18 +596,6 @@
           "shortName": "Santa Monica-Malibu",
           "tier": 2,
           "ldos": "2026-06-11"
-        },
-        {
-          "name": "Wake County Schools",
-          "shortName": "Wake County Schools",
-          "tier": 2,
-          "ldos": "2026-06-11"
-        },
-        {
-          "name": "Alliance College",
-          "shortName": "Alliance College",
-          "tier": 3,
-          "ldos": "2026-06-12"
         },
         {
           "name": "Berryessa Union School District",
@@ -601,6 +619,114 @@
       "missing": [],
       "complete": [
         {
+          "name": "Alliance College",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "7/9",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Belmont-Redwood Shores Elementary School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "End of July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Bladen County Schools",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "7/2",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Chapel Hill-Carrboro City Schools",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "July 7th  (Brandy Reeves)",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Corpus Christi Independent School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "7/21/26",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Currituck County Schools",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "6/16",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
           "name": "Del Valle",
           "tier": 3,
           "coOwned": false,
@@ -608,11 +734,317 @@
           "familyComms": "Yes, planning to send soon"
         },
         {
+          "name": "Escalon Unified School District",
+          "tier": 2,
+          "coOwned": true,
+          "formOwner": "Daisy Leahy",
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Freeport School District 145",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Our next meeting is June confirm then.",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Granville County Schools",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Horizon Charters (District)",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "June 2-",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "International Community School",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Jackson County School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "In June- in process of scheduling",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Jefferson County School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "7/31/2026",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Joliet Public School District 86",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Pending",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Lammersville Joint Unified School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "August- sending calendly now",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Lansing School District 158",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "August 7th",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Lincoln County Schools",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "June 29th",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Manor Independent School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": "Monica Knott",
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "7/23/2026",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Morgan Hill Unified School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "8-10-2026",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Oconee County School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "Comes back last week of July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Reef-Sunset Unified School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "April Torres",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
           "name": "Riverbank Unified School District",
           "tier": 2,
           "coOwned": false,
           "formOwner": null,
           "familyComms": "Yes, already sent"
+        },
+        {
+          "name": "Rockingham County Public Schools",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "8/28/26",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "San Jose Unified School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "August 3rd",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
         },
         {
           "name": "St. Ignatius",
@@ -627,6 +1059,42 @@
           "coOwned": false,
           "formOwner": null,
           "familyComms": "Yes, already sent"
+        },
+        {
+          "name": "Union Elementary School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Discuss in June/July",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Wake County Schools",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "After July 13th  / 20th",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
         },
         {
           "name": "Whiteville City Schools",
@@ -664,20 +1132,8 @@
           "ldos": "2026-05-20"
         },
         {
-          "name": "Buford City School District",
-          "shortName": "Buford City",
-          "tier": 2,
-          "ldos": "2026-05-21"
-        },
-        {
           "name": "Crystal Lake Community Consolidated School District 47",
           "shortName": "Crystal Lake Community Consolidated 47",
-          "tier": 1,
-          "ldos": "2026-05-21"
-        },
-        {
-          "name": "Dekalb Community Unit School District 428",
-          "shortName": "Dekalb Community Unit 428",
           "tier": 1,
           "ldos": "2026-05-21"
         },
@@ -748,18 +1204,6 @@
           "ldos": "2026-05-22"
         },
         {
-          "name": "Griffin-Spalding County Schools",
-          "shortName": "Griffin-Spalding County Schools",
-          "tier": 2,
-          "ldos": "2026-05-22"
-        },
-        {
-          "name": "Livingston Parish",
-          "shortName": "Livingston Parish",
-          "tier": 1,
-          "ldos": "2026-05-22"
-        },
-        {
           "name": "Oglethorpe County School District",
           "shortName": "Oglethorpe County",
           "tier": 3,
@@ -772,21 +1216,9 @@
           "ldos": "2026-05-22"
         },
         {
-          "name": "Wayne County School District",
-          "shortName": "Wayne County",
-          "tier": 3,
-          "ldos": "2026-05-22"
-        },
-        {
           "name": "Belvidere Community Unit School District 100",
           "shortName": "Belvidere Community Unit 100",
           "tier": 3,
-          "ldos": "2026-05-27"
-        },
-        {
-          "name": "Bremen Community High School District 228",
-          "shortName": "Bremen Community High 228",
-          "tier": 1,
           "ldos": "2026-05-27"
         },
         {
@@ -796,28 +1228,10 @@
           "ldos": "2026-05-28"
         },
         {
-          "name": "Chicago Heights School District 170",
-          "shortName": "Chicago Heights 170",
-          "tier": 3,
-          "ldos": "2026-05-28"
-        },
-        {
           "name": "Martin County Schools",
           "shortName": "Martin County Schools",
           "tier": 3,
           "ldos": "2026-05-28"
-        },
-        {
-          "name": "Atwood Heights School District 125",
-          "shortName": "Atwood Heights 125",
-          "tier": 1,
-          "ldos": "2026-05-29"
-        },
-        {
-          "name": "Park Forest School District 163",
-          "shortName": "Park Forest 163",
-          "tier": 2,
-          "ldos": "2026-06-02"
         },
         {
           "name": "San Lorenzo Unified School District",
@@ -865,6 +1279,96 @@
       "missing": [],
       "complete": [
         {
+          "name": "Atwood Heights School District 125",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": "Sarah Hough",
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Early August",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Bremen Community High School District 228",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD (30-45 days post training)",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Buford City School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "Laura Beth Waycaster",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Chicago Heights School District 170",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Dekalb Community Unit School District 428",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
           "name": "Dodge County School District",
           "tier": 3,
           "coOwned": false,
@@ -872,11 +1376,83 @@
           "familyComms": "Yes, already sent"
         },
         {
+          "name": "Griffin-Spalding County Schools",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": "Sarah Hough",
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "June 8th - send invite",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Livingston Parish",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
           "name": "McHenry Community Consolidated School District 15",
           "tier": 3,
           "coOwned": false,
           "formOwner": null,
           "familyComms": "Yes, planning to send soon"
+        },
+        {
+          "name": "Park Forest School District 163",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Wayne County School District",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
         },
         {
           "name": "White County School District",
@@ -896,18 +1472,6 @@
           "ldos": "2026-05-22"
         },
         {
-          "name": "Sierra Sands Unified School District",
-          "shortName": "Sierra Sands",
-          "tier": 1,
-          "ldos": "2026-05-28"
-        },
-        {
-          "name": "Apple Valley Unified School District",
-          "shortName": "Apple Valley",
-          "tier": 1,
-          "ldos": "2026-05-29"
-        },
-        {
           "name": "Castro Valley Unified School District",
           "shortName": "Castro Valley",
           "tier": 1,
@@ -924,24 +1488,6 @@
           "shortName": "Adelanto Elementary",
           "tier": 1,
           "ldos": "2026-06-02"
-        },
-        {
-          "name": "Palmdale Aerospace Academy (District)",
-          "shortName": "Palmdale Aerospace Academy (District)",
-          "tier": 1,
-          "ldos": "2026-06-03"
-        },
-        {
-          "name": "Yucaipa-Calimesa Joint Unified School District",
-          "shortName": "Yucaipa-Calimesa Joint",
-          "tier": 1,
-          "ldos": "2026-06-03"
-        },
-        {
-          "name": "Antelope Valley Union High School District",
-          "shortName": "Antelope Valley Union High",
-          "tier": 1,
-          "ldos": "2026-06-04"
         },
         {
           "name": "Campbell Union High School District",
@@ -980,26 +1526,8 @@
           "ldos": "2026-06-04"
         },
         {
-          "name": "Vista Unified School District",
-          "shortName": "Vista",
-          "tier": 2,
-          "ldos": "2026-06-04"
-        },
-        {
           "name": "Desert Sands Unified School District",
           "shortName": "Desert Sands",
-          "tier": 1,
-          "ldos": "2026-06-05"
-        },
-        {
-          "name": "Keppel Union School District",
-          "shortName": "Keppel Union",
-          "tier": 2,
-          "ldos": "2026-06-05"
-        },
-        {
-          "name": "Morongo Unified School District",
-          "shortName": "Morongo",
           "tier": 1,
           "ldos": "2026-06-05"
         },
@@ -1010,45 +1538,15 @@
           "ldos": "2026-06-05"
         },
         {
-          "name": "Palm Springs Unified School District",
-          "shortName": "Palm Springs",
-          "tier": 1,
-          "ldos": "2026-06-05"
-        },
-        {
           "name": "Redwood City Elementary School District",
           "shortName": "Redwood City Elementary",
           "tier": 3,
           "ldos": "2026-06-05"
         },
         {
-          "name": "Simi Valley Unified School District",
-          "shortName": "Simi Valley",
-          "tier": 1,
-          "ldos": "2026-06-05"
-        },
-        {
-          "name": "Los Angeles Unified School District",
-          "shortName": "Los Angeles",
-          "tier": 1,
-          "ldos": "2026-06-10"
-        },
-        {
-          "name": "Santa Barbara Unified School District",
-          "shortName": "Santa Barbara",
-          "tier": 1,
-          "ldos": "2026-06-10"
-        },
-        {
           "name": "Newport School District",
           "shortName": "Newport",
           "tier": 3,
-          "ldos": "2026-06-11"
-        },
-        {
-          "name": "Soledad Unified School District",
-          "shortName": "Soledad",
-          "tier": 1,
           "ldos": "2026-06-11"
         },
         {
@@ -1068,22 +1566,279 @@
           "shortName": "Wenatchee",
           "tier": 3,
           "ldos": "2026-06-12"
-        },
-        {
-          "name": "Siskiyou County Office of Education",
-          "shortName": "Siskiyou County Office of Education",
-          "tier": 3,
-          "ldos": null
         }
       ],
       "missing": [],
       "complete": [
         {
+          "name": "Antelope Valley Union High School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Apple Valley Unified School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Keppel Union School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "13th (11 am) or 14th in morning - even earlier is better",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Los Angeles Unified School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          }
+        },
+        {
+          "name": "Morongo Unified School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Palm Springs Unified School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Palmdale Aerospace Academy (District)",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Santa Barbara Unified School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Sierra Sands Unified School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Confirmed",
+            "state": "green"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Simi Valley Unified School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Siskiyou County Office of Education",
+          "tier": 3,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Soledad Unified School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
           "name": "South San Francisco Unified School District",
           "tier": 1,
           "coOwned": false,
           "formOwner": null,
-          "familyComms": "Yes, planning to send soon"
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Vista Unified School District",
+          "tier": 2,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
+        },
+        {
+          "name": "Yucaipa-Calimesa Joint Unified School District",
+          "tier": 1,
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          }
         }
       ]
     },
@@ -1093,6 +1848,772 @@
       "complete": []
     }
   },
-  "scheduling": [],
+  "scheduling": [
+    {
+      "district": "Buena Park Elementary School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "Student come back the 12th - staff come back a few days before. End of August 1st counselor meeting. Get on the agenda for principals - need to ask super int",
+      "kickoffStatus": {
+        "label": "End of July - week of the 27th is best. Send an invite for that week",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "East Whittier City Elementary School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "Staff return 1st week of August (11st first day of school) 2nd week of august. School scoialworker / conselor meeting - we could join!",
+      "kickoffStatus": {
+        "label": "July after 4th -",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Escondido Union School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "August 12th - staff back / 18th is when students start. August 20th - training date at 1 - 1:45 pm.",
+      "kickoffStatus": {
+        "label": "August 12th is when she is back - so we are doing the goals now",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Hurst-Euless-Bedford Independent School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "New student information system, so the before school PD is in the new system - no time for a training before school starts. She thinks it's best if we join a team call - will have one in August w/ the Elementary team. Another in Sept - Elementary & Secondary Social worker meeting. Might need to do async + office hours",
+      "kickoffStatus": {
+        "label": "Sent time for July 8th for a kickoff/ followup BTS prep call",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Lompoc Unified School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "Will set in our june meeting",
+      "kickoffStatus": {
+        "label": "June 12th - July 21st. (Cassi - is out on maternity leave next fall - with no real coverage).  Sent an invite for June 9th for kickoff",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Rio Elementary School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "Admins - August 1st - 18th start of school / staff after school starts.",
+      "kickoffStatus": {
+        "label": "Last week of July",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Rowland Unified School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "August 6th staff return, need to find a time for a quick touchpoint - will set that during our July meeting",
+      "kickoffStatus": {
+        "label": "End of july - sent an invite for the 21st",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "San Jacinto Unified School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "Come back 1st week of August - come back on Monday Aug 3rd. (3rd or 4th is PD days and we might be able to squeeze in)",
+      "kickoffStatus": {
+        "label": "Mid July for a meeting",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Snowline Joint Unified School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "August 3rd - school starts Aug 13th - set a training date for Aug 4th",
+      "kickoffStatus": {
+        "label": "Not needed - as for goals, might not have hazel next fall - which would mean an increase in referrals. Check in with Julie/Katie in late July",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Antelope Valley Union High School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "Wants a training refresher. End of July or early August. Wants group together. She will let me know in the next few weeks. Wants to add on clinical in same period.",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Apple Valley Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "Wants async. Quick and low lift. Video is fine.",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Keppel Union School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "August 3rd  and on -they are back. August 6th / 7th is best for a training. Could do it the 10th/11th but wouldn't be as nice",
+      "kickoffStatus": {
+        "label": "13th (11 am) or 14th in morning - even earlier is better",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Los Angeles Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "Staff return Aug 11\nBrianna to try to get time with navigators and psws (possibly in person)\nOF meeting would be end of July",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Morongo Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "Monthly meetings with all MH Team. \nBrianna to train Sept 9 at 2pm.",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Palm Springs Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "No need for training - async video",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Palmdale Aerospace Academy (District)",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "Aug 7, 10, 11. She will follow up on dates soon.",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Santa Barbara Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "Wants to prioritize Elem. Asyc video for MS and HS\nWants training of education for Family Liaisons \nWants us to run a PD day for teachers.......\nWants MLAC team educated\nNeed to train MH staff.",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Sierra Sands Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "Aug 21 - counselor and new admin training\nAlso one pager for the admin team\nNew AP",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Simi Valley Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "TBD - she does not have calendar yet.",
+      "kickoffStatus": {
+        "label": "TBD",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Soledad Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "TBD",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "South San Francisco Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "Hold for Aug 21. But shes checking for earlier",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Vista Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "They are on board with clinician led training. \nAug 7 with social workers and psych",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Yucaipa-Calimesa Joint Unified School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "If they are adding new staff (via expansion), we need to train virtually with Brianna\nExisting users can have a asyc",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Atwood Heights School District 125",
+      "owner": "Monica Knott",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "8/31",
+      "kickoffStatus": {
+        "label": "Early August",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Bremen Community High School District 228",
+      "owner": "Monica Knott",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "TBD",
+      "kickoffStatus": {
+        "label": "TBD (30-45 days post training)",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Buford City School District",
+      "owner": "Monica Knott",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "July 28th",
+      "kickoffStatus": {
+        "label": "Laura Beth Waycaster",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Dekalb Community Unit School District 428",
+      "owner": "Monica Knott",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "TBD",
+      "kickoffStatus": {
+        "label": "TBD",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Griffin-Spalding County Schools",
+      "owner": "Monica Knott",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "TBD",
+      "kickoffStatus": {
+        "label": "June 8th - send invite",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Livingston Parish",
+      "owner": "Monica Knott",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "TBD",
+      "kickoffStatus": {
+        "label": "TBD",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Park Forest School District 163",
+      "owner": "Monica Knott",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "Aug 13, 14, 17 (will confirm date and time in the next week)",
+      "kickoffStatus": {
+        "label": "TBD",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Belmont-Redwood Shores Elementary School District",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "No New counselors- Perhaps Psychologists (Aug)",
+      "kickoffStatus": {
+        "label": "End of July",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Bladen County Schools",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "Discuss 7/2",
+      "kickoffStatus": {
+        "label": "7/2",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Currituck County Schools",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "8/11",
+      "kickoffStatus": {
+        "label": "6/16",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Escalon Unified School District",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "August 12th (sending me invite on 5/12)",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Granville County Schools",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "TBD soon- week of - August 3rd staff come back or possibly 4th",
+      "kickoffStatus": {
+        "label": "July",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Jefferson County School District",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "Only a refresh a needed- tighten context around sessions during day- Discuss in July",
+      "kickoffStatus": {
+        "label": "7/31/2026",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Joliet Public School District 86",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "Pending",
+      "kickoffStatus": {
+        "label": "Pending",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Lammersville Joint Unified School District",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "August- staff calendar not finalized for B2S26",
+      "kickoffStatus": {
+        "label": "August- sending calendly now",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Manor Independent School District",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "During team meeting in B2S",
+      "kickoffStatus": {
+        "label": "7/23/2026",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Morgan Hill Unified School District",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "8/25/2026",
+      "kickoffStatus": {
+        "label": "8-10-2026",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Reef-Sunset Unified School District",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "7/6",
+      "kickoffStatus": {
+        "label": "April Torres",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Rockingham County Public Schools",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Confirmed",
+        "state": "green"
+      },
+      "trainingDate": "8/12/2026- Emily will send PD",
+      "kickoffStatus": {
+        "label": "8/28/26",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "San Jose Unified School District",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "TBD",
+      "kickoffStatus": {
+        "label": "August 3rd",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    },
+    {
+      "district": "Union Elementary School District",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "Discuss in June/July",
+      "kickoffStatus": {
+        "label": "Discuss in June/July",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
+      "district": "Wake County Schools",
+      "owner": "Sarah Hough",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "Start in Mid September (August is only district trainings)",
+      "kickoffStatus": {
+        "label": "After July 13th  / 20th",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
+      }
+    }
+  ],
   "unmatched": []
 }
