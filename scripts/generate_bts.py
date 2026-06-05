@@ -544,6 +544,25 @@ def build_synthesis_rows(all_responses, match, tracker):
     return rows
 
 
+def _extract_json(text):
+    """Best-effort recovery of a JSON object from a model reply. Strips a
+    leading/trailing ```json fence if present, otherwise trims to the outermost
+    braces. Returns the original text unchanged when no object is found, so the
+    caller's json.loads still raises (and logs) on genuinely bad output."""
+    s = text.strip()
+    if s.startswith('```'):
+        s = s[3:]
+        if s[:4].lower() == 'json':
+            s = s[4:]
+        if s.endswith('```'):
+            s = s[:-3]
+        s = s.strip()
+    start, end = s.find('{'), s.rfind('}')
+    if start != -1 and end > start:
+        return s[start:end + 1]
+    return s
+
+
 def synthesize(form_rows_for_synthesis):
     """Call Claude to theme the free-text responses. Returns the parsed JSON
     dict, or None on any failure (missing key, network, bad JSON) — the caller
@@ -599,6 +618,7 @@ def synthesize(form_rows_for_synthesis):
         method='POST',
     )
 
+    text = ''
     try:
         with urllib.request.urlopen(req, timeout=120) as resp:
             payload = json.loads(resp.read().decode('utf-8'))
@@ -607,7 +627,10 @@ def synthesize(form_rows_for_synthesis):
             for block in payload.get('content', [])
             if block.get('type') == 'text'
         )
-        result = json.loads(text)
+        # The system prompt asks for bare JSON, but the model occasionally wraps
+        # it in ```json fences or adds a stray word. Strip fences and fall back
+        # to the outermost {...} so a cosmetic wrapper doesn't null the synthesis.
+        result = json.loads(_extract_json(text))
         print(f'BTS synthesis: ok ({len(form_rows_for_synthesis)} rows -> '
               f'{", ".join(result.keys())})')
         return result
@@ -616,8 +639,8 @@ def synthesize(form_rows_for_synthesis):
         print(f'WARNING: BTS synthesis HTTP {e.code}: {detail}', file=sys.stderr)
         return None
     except Exception as e:
-        print(f'WARNING: BTS synthesis failed ({type(e).__name__}): {e}',
-              file=sys.stderr)
+        print(f'WARNING: BTS synthesis failed ({type(e).__name__}): {e}; '
+              f'raw text: {text[:300]!r}', file=sys.stderr)
         return None
 
 
