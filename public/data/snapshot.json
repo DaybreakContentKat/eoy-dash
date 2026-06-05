@@ -1,11 +1,11 @@
 {
-  "refreshedAt": "2026-06-05T15:49:56.426396Z",
+  "refreshedAt": "2026-06-05T21:19:26.694864Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 103,
       "booked": 85,
-      "completed": 117,
+      "completed": 119,
       "unbooked": 13,
       "weeklyTarget": 4,
       "thisWeekUrgent": 13,
@@ -27,7 +27,7 @@
             "booked": false,
             "meetingDate": null,
             "outreachSent": true,
-            "asyncFormSent": "2026-05-12",
+            "asyncFormSent": null,
             "completed": false,
             "notes": "",
             "status": "async",
@@ -476,12 +476,12 @@
     "stats": {
       "totalDistricts": 172,
       "totalT1T2": 103,
-      "asyncTotal": 60,
-      "asyncCompleted": 41,
-      "completed": 117,
-      "booked": 122,
+      "asyncTotal": 59,
+      "asyncCompleted": 42,
+      "completed": 119,
+      "booked": 123,
       "outreachSent": 100,
-      "overdue": 26,
+      "overdue": 25,
       "upsellCandidates": 25,
       "byTier": {
         "1": {
@@ -493,17 +493,17 @@
         },
         "2": {
           "total": 65,
-          "completed": 42,
-          "booked": 16,
+          "completed": 43,
+          "booked": 15,
           "remaining": 7,
           "overdue": 7
         },
         "3": {
           "total": 69,
-          "completed": 48,
+          "completed": 49,
           "booked": 4,
-          "remaining": 17,
-          "overdue": 13
+          "remaining": 16,
+          "overdue": 12
         }
       }
     }
@@ -1988,7 +1988,7 @@
           "booked": false,
           "meetingDate": null,
           "outreachSent": true,
-          "asyncFormSent": "2026-05-12",
+          "asyncFormSent": null,
           "completed": false,
           "notes": "",
           "status": "async",
@@ -3495,9 +3495,9 @@
           "meetingDate": "2026-06-06",
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": true,
@@ -3681,7 +3681,7 @@
           "csmName": "Sarah Hough",
           "tier": "Tier 3",
           "tierNum": 3,
-          "meetingType": "async",
+          "meetingType": "live",
           "activeRenewal": false,
           "lastDayOfSchool": "2026-05-21",
           "bookingTarget": "2026-04-23",
@@ -3691,7 +3691,7 @@
           "asyncFormSent": null,
           "completed": false,
           "notes": "",
-          "status": "async",
+          "status": "overdue",
           "overdue": true,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -4203,7 +4203,7 @@
       "gapToGoal": {
         "totalNeedingCall": 41,
         "booked": 34,
-        "completed": 47,
+        "completed": 48,
         "unbooked": 7,
         "weeklyTarget": 2,
         "thisWeekUrgent": 7,
@@ -4225,7 +4225,7 @@
               "booked": false,
               "meetingDate": null,
               "outreachSent": true,
-              "asyncFormSent": "2026-05-12",
+              "asyncFormSent": null,
               "completed": false,
               "notes": "",
               "status": "async",
@@ -4468,9 +4468,9 @@
       "stats": {
         "totalDistricts": 67,
         "totalT1T2": 41,
-        "asyncTotal": 18,
+        "asyncTotal": 17,
         "asyncCompleted": 14,
-        "completed": 47,
+        "completed": 48,
         "booked": 52,
         "outreachSent": 63,
         "overdue": 10,
@@ -4485,8 +4485,8 @@
           },
           "2": {
             "total": 37,
-            "completed": 23,
-            "booked": 9,
+            "completed": 24,
+            "booked": 8,
             "remaining": 5,
             "overdue": 5
           },
@@ -6235,14 +6235,14 @@
           "activeRenewal": true,
           "lastDayOfSchool": "2026-06-04",
           "bookingTarget": "2026-05-07",
-          "booked": false,
+          "booked": true,
           "meetingDate": null,
           "outreachSent": false,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "async",
-          "overdue": true,
+          "status": "completed",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -7174,7 +7174,7 @@
       "gapToGoal": {
         "totalNeedingCall": 23,
         "booked": 19,
-        "completed": 18,
+        "completed": 19,
         "unbooked": 4,
         "weeklyTarget": 1,
         "thisWeekUrgent": 4,
@@ -7332,11 +7332,11 @@
         "totalDistricts": 32,
         "totalT1T2": 23,
         "asyncTotal": 9,
-        "asyncCompleted": 3,
-        "completed": 18,
-        "booked": 24,
+        "asyncCompleted": 4,
+        "completed": 19,
+        "booked": 25,
         "outreachSent": 3,
-        "overdue": 8,
+        "overdue": 7,
         "upsellCandidates": 2,
         "byTier": {
           "1": {
@@ -7355,10 +7355,10 @@
           },
           "3": {
             "total": 9,
-            "completed": 3,
+            "completed": 4,
             "booked": 0,
-            "remaining": 6,
-            "overdue": 4
+            "remaining": 5,
+            "overdue": 3
           }
         }
       }
