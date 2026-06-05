@@ -602,7 +602,10 @@ def synthesize(form_rows_for_synthesis):
 
     body = json.dumps({
         'model': 'claude-sonnet-4-6',
-        'max_tokens': 2000,
+        # Full synthesis across ~70+ forms runs well past 2k tokens; too low a
+        # cap truncates the reply mid-JSON and the parse fails. 16k leaves ample
+        # headroom for the largest BTS run.
+        'max_tokens': 16000,
         'system': SYNTH_SYSTEM,
         'messages': [{'role': 'user', 'content': user_prompt}],
     }).encode('utf-8')
