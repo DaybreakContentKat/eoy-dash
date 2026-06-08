@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-07T14:49:30.027563Z",
+  "refreshedAt": "2026-06-08T16:45:43.331262Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
@@ -479,9 +479,9 @@
       "asyncTotal": 59,
       "asyncCompleted": 42,
       "completed": 119,
-      "booked": 123,
+      "booked": 124,
       "outreachSent": 100,
-      "overdue": 25,
+      "overdue": 24,
       "upsellCandidates": 25,
       "byTier": {
         "1": {
@@ -501,9 +501,9 @@
         "3": {
           "total": 69,
           "completed": 49,
-          "booked": 4,
-          "remaining": 16,
-          "overdue": 12
+          "booked": 5,
+          "remaining": 15,
+          "overdue": 11
         }
       }
     }
@@ -3685,14 +3685,14 @@
           "activeRenewal": false,
           "lastDayOfSchool": "2026-05-21",
           "bookingTarget": "2026-04-23",
-          "booked": false,
+          "booked": true,
           "meetingDate": "2026-06-08",
           "outreachSent": true,
           "asyncFormSent": null,
           "completed": false,
           "notes": "",
-          "status": "overdue",
-          "overdue": true,
+          "status": "booked",
+          "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
@@ -4471,9 +4471,9 @@
         "asyncTotal": 17,
         "asyncCompleted": 14,
         "completed": 48,
-        "booked": 52,
+        "booked": 53,
         "outreachSent": 63,
-        "overdue": 10,
+        "overdue": 9,
         "upsellCandidates": 18,
         "byTier": {
           "1": {
@@ -4493,9 +4493,9 @@
           "3": {
             "total": 26,
             "completed": 22,
-            "booked": 1,
-            "remaining": 3,
-            "overdue": 3
+            "booked": 2,
+            "remaining": 2,
+            "overdue": 2
           }
         }
       }
