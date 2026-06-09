@@ -1,34 +1,34 @@
 {
-  "refreshedAt": "2026-06-08T16:45:43.331262Z",
+  "refreshedAt": "2026-06-09T15:51:04.011980Z",
   "totals": {
     "totalDistricts": 172,
-    "formsSubmitted": 73,
-    "formsWithGaps": 66,
+    "formsSubmitted": 77,
+    "formsWithGaps": 70,
     "formsClean": 7,
     "t1t2Total": 103,
     "t1t2Complete": 2,
     "t3Total": 69,
     "t3Complete": 5,
-    "withGaps": 66,
+    "withGaps": 70,
     "unmatchedCount": 2,
     "tierSummary": {
       "1": {
         "total": 38,
-        "noForm": 20,
-        "submitted": 18,
-        "withGaps": 18
+        "noForm": 18,
+        "submitted": 20,
+        "withGaps": 20
       },
       "2": {
         "total": 65,
-        "noForm": 36,
-        "submitted": 29,
-        "withGaps": 27
+        "noForm": 35,
+        "submitted": 30,
+        "withGaps": 28
       },
       "3": {
         "total": 69,
-        "noForm": 43,
-        "submitted": 26,
-        "withGaps": 21
+        "noForm": 42,
+        "submitted": 27,
+        "withGaps": 22
       }
     }
   },
@@ -107,12 +107,6 @@
           "shortName": "Oxnard Union High",
           "tier": 2,
           "ldos": "2026-06-03"
-        },
-        {
-          "name": "Farmersville Unified School District",
-          "shortName": "Farmersville",
-          "tier": 2,
-          "ldos": "2026-06-04"
         },
         {
           "name": "Fillmore Unified School District",
@@ -264,6 +258,40 @@
           },
           "kickoffStatus": {
             "label": "July after 4th -",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Farmersville Unified School District",
+          "tier": 2,
+          "gapCount": 3,
+          "missingFields": [
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Email. Informational letter. He will add the contacts to the staff file"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Not needed - goal around 20 since they only send 40 to their in person community partners",
             "state": "amber"
           },
           "coOwned": false,
@@ -699,6 +727,40 @@
           "trainingDate": "Staff return 1st week of August (11st first day of school) 2nd week of august. School scoialworker / conselor meeting - we could join!"
         },
         {
+          "name": "Farmersville Unified School District",
+          "tier": 2,
+          "gapCount": 3,
+          "gaps": [
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Email. Informational letter. He will add the contacts to the staff file"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "Not needed - goal around 20 since they only send 40 to their in person community partners",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "23 of July - staff back. School starts Aug 6th - 2 day PD but fully busy. He will look at dates"
+        },
+        {
           "name": "Beaumont Unified School District",
           "tier": 2,
           "gapCount": 2,
@@ -1032,9 +1094,9 @@
         },
         "2": {
           "total": 20,
-          "noForm": 10,
-          "submitted": 10,
-          "withGaps": 10
+          "noForm": 9,
+          "submitted": 11,
+          "withGaps": 11
         },
         "3": {
           "total": 13,
@@ -1063,12 +1125,6 @@
           "shortName": "Gaston County Schools",
           "tier": 2,
           "ldos": "2026-05-20"
-        },
-        {
-          "name": "San Benito",
-          "shortName": "San Benito",
-          "tier": 3,
-          "ldos": "2026-05-21"
         },
         {
           "name": "University View Academy",
@@ -1630,6 +1686,45 @@
           },
           "coOwned": false,
           "formOwner": "Monica Knott"
+        },
+        {
+          "name": "San Benito",
+          "tier": 3,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Not yet- first time metting them since ALe transition"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": null
         },
         {
           "name": "Belmont-Redwood Shores Elementary School District",
@@ -2511,6 +2606,44 @@
           "trainingDate": "TBD"
         },
         {
+          "name": "San Benito",
+          "tier": 3,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "Not yet- first time metting them since ALe transition"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "TBD",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "Confirmed we will use this year's file for now",
+            "state": "green"
+          },
+          "trainingDate": "TBD"
+        },
+        {
           "name": "Belmont-Redwood Shores Elementary School District",
           "tier": 2,
           "gapCount": 3,
@@ -3064,9 +3197,9 @@
         },
         "3": {
           "total": 26,
-          "noForm": 12,
-          "submitted": 14,
-          "withGaps": 12
+          "noForm": 11,
+          "submitted": 15,
+          "withGaps": 13
         }
       }
     },
@@ -3099,12 +3232,6 @@
         {
           "name": "Crystal Lake Community Consolidated School District 47",
           "shortName": "Crystal Lake Community Consolidated 47",
-          "tier": 1,
-          "ldos": "2026-05-21"
-        },
-        {
-          "name": "Evans County School District",
-          "shortName": "Evans County",
           "tier": 1,
           "ldos": "2026-05-21"
         },
@@ -3442,6 +3569,45 @@
           "formOwner": null
         },
         {
+          "name": "Evans County School District",
+          "tier": 1,
+          "gapCount": 4,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "We do not have any pd dates until October.  Let's set some pd times during the summer kickoff."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July 21 at 9:30 AM, principals, counselors, student support staff",
+            "state": "amber"
+          },
+          "coOwned": false,
+          "formOwner": "Kristy Vandenberg"
+        },
+        {
           "name": "Wayne County School District",
           "tier": 3,
           "gapCount": 3,
@@ -3767,6 +3933,44 @@
           "trainingDate": "TBD"
         },
         {
+          "name": "Evans County School District",
+          "tier": 1,
+          "gapCount": 4,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "We do not have any pd dates until October.  Let's set some pd times during the summer kickoff."
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Tentative Hold"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "Partial (needs to be reviewed)"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": "Kristy Vandenberg",
+          "trainingStatus": {
+            "label": "Tentative Hold",
+            "state": "amber"
+          },
+          "kickoffStatus": {
+            "label": "July 21 at 9:30 AM, principals, counselors, student support staff",
+            "state": "amber"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          },
+          "trainingDate": "We do not have any pd dates until October.  Let's set some pd times during the summer kickoff."
+        },
+        {
           "name": "Chicago Heights School District 170",
           "tier": 3,
           "gapCount": 4,
@@ -3981,9 +4185,9 @@
       "byTier": {
         "1": {
           "total": 13,
-          "noForm": 9,
-          "submitted": 4,
-          "withGaps": 4
+          "noForm": 8,
+          "submitted": 5,
+          "withGaps": 5
         },
         "2": {
           "total": 6,
@@ -4018,12 +4222,6 @@
           "shortName": "Gompers Preparatory Academy (Charter)",
           "tier": 3,
           "ldos": "2026-05-29"
-        },
-        {
-          "name": "Adelanto Elementary School District",
-          "shortName": "Adelanto Elementary",
-          "tier": 1,
-          "ldos": "2026-06-02"
         },
         {
           "name": "Campbell Union High School District",
@@ -4231,6 +4429,50 @@
             {
               "field": "Admin/principal outreach",
               "value": "NA"
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "coOwned": false,
+          "formOwner": null
+        },
+        {
+          "name": "Adelanto Elementary School District",
+          "tier": 1,
+          "gapCount": 5,
+          "missingFields": [
+            "Training date",
+            "Training scheduled",
+            "Admin/principal outreach",
+            "Principal contact list",
+            "Staff files status"
+          ],
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD - tuesday afternoon in aug or sept. she is sending me dates"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "She will send comms."
             },
             {
               "field": "Principal contact list",
@@ -4847,6 +5089,48 @@
           "trainingDate": "Wants a short video, async option."
         },
         {
+          "name": "Adelanto Elementary School District",
+          "tier": 1,
+          "gapCount": 5,
+          "gaps": [
+            {
+              "field": "Training date",
+              "value": "TBD - tuesday afternoon in aug or sept. she is sending me dates"
+            },
+            {
+              "field": "Training scheduled",
+              "value": "Not Yet"
+            },
+            {
+              "field": "Admin/principal outreach",
+              "value": "She will send comms."
+            },
+            {
+              "field": "Principal contact list",
+              "value": "No"
+            },
+            {
+              "field": "Staff files status",
+              "value": "New File coming"
+            }
+          ],
+          "coOwned": false,
+          "formOwner": null,
+          "trainingStatus": {
+            "label": "Not Yet",
+            "state": "red"
+          },
+          "kickoffStatus": {
+            "label": "\u2014",
+            "state": "red"
+          },
+          "staffFileStatus": {
+            "label": "New File coming",
+            "state": "amber"
+          },
+          "trainingDate": "TBD - tuesday afternoon in aug or sept. she is sending me dates"
+        },
+        {
           "name": "Antelope Valley Union High School District",
           "tier": 1,
           "gapCount": 5,
@@ -5294,9 +5578,9 @@
       "byTier": {
         "1": {
           "total": 21,
-          "noForm": 9,
-          "submitted": 12,
-          "withGaps": 12
+          "noForm": 8,
+          "submitted": 13,
+          "withGaps": 13
         },
         "2": {
           "total": 2,
@@ -5432,6 +5716,23 @@
       }
     },
     {
+      "district": "Farmersville Unified School District",
+      "owner": "Brianna Masciel",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "23 of July - staff back. School starts Aug 6th - 2 day PD but fully busy. He will look at dates",
+      "kickoffStatus": {
+        "label": "Not needed - goal around 20 since they only send 40 to their in person community partners",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "Confirmed we will use this year's file for now",
+        "state": "green"
+      }
+    },
+    {
       "district": "Hurst-Euless-Bedford Independent School District",
       "owner": "Brianna Masciel",
       "trainingScheduled": {
@@ -5531,6 +5832,23 @@
       "staffFileStatus": {
         "label": "Confirmed we will use this year's file for now",
         "state": "green"
+      }
+    },
+    {
+      "district": "Adelanto Elementary School District",
+      "owner": "Daisy Leahy",
+      "trainingScheduled": {
+        "label": "Not Yet",
+        "state": "red"
+      },
+      "trainingDate": "TBD - tuesday afternoon in aug or sept. she is sending me dates",
+      "kickoffStatus": {
+        "label": "\u2014",
+        "state": "red"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
       }
     },
     {
@@ -5837,6 +6155,23 @@
       "staffFileStatus": {
         "label": "Confirmed we will use this year's file for now",
         "state": "green"
+      }
+    },
+    {
+      "district": "Evans County School District",
+      "owner": "Monica Knott",
+      "trainingScheduled": {
+        "label": "Tentative Hold",
+        "state": "amber"
+      },
+      "trainingDate": "We do not have any pd dates until October.  Let's set some pd times during the summer kickoff.",
+      "kickoffStatus": {
+        "label": "July 21 at 9:30 AM, principals, counselors, student support staff",
+        "state": "amber"
+      },
+      "staffFileStatus": {
+        "label": "New File coming",
+        "state": "amber"
       }
     },
     {
@@ -6153,51 +6488,58 @@
   "synthesis": {
     "teacher_themes": [
       {
-        "label": "Classroom Support Resources & Tier 1 Interventions",
-        "explanation": "Districts want practical classroom tools such as handouts, sticker charts, de-escalation strategies, and downloadable resources teachers can use directly with students.",
+        "label": "Classroom Support Tools & Tier 1 Interventions",
+        "explanation": "Districts want practical, downloadable resources for teachers to support students in the classroom, including behavior management, sticker charts, and intervention handouts.",
         "districts": [
           "Escondido Union",
-          "Lompoc",
-          "Buena Park Elementary"
+          "Buena Park Elementary",
+          "Rowland",
+          "Lompoc"
         ]
       },
       {
         "label": "Early Identification of Struggling Students",
-        "explanation": "Interest in helping teachers recognize early signs of mental health challenges, including students who appear high-performing but are struggling in silence.",
+        "explanation": "Interest in helping teachers recognize mental health symptoms early, including anxiety, depression, and students who struggle silently (high performers).",
         "districts": [
           "Livingston Parish",
           "Wayne County",
-          "Lammersville Joint"
+          "Lammersville Joint",
+          "Oconee County"
         ]
       },
       {
-        "label": "Professional Development / PD Sessions",
-        "explanation": "Multiple districts want structured PD sessions or professional learning opportunities for teachers, either hosted by Daybreak or embedded in existing PD days.",
+        "label": "Professional Development / PD Sessions for Teachers",
+        "explanation": "Multiple districts want structured PD sessions, either hosted by Daybreak or embedded in existing PD days, to build teacher MH literacy.",
         "districts": [
           "Rio Elementary",
           "Santa Barbara",
           "Jefferson County",
-          "Griffin-Spalding County Schools"
-        ]
-      },
-      {
-        "label": "Supporting Students with IEPs & Special Needs",
-        "explanation": "Teachers want content specifically tailored to students with IEPs and behavioral challenges, including 1-pagers and targeted behavior resources.",
-        "districts": [
-          "Rowland"
-        ]
-      },
-      {
-        "label": "Humanizing Mental Health / Cultural & Emotional Awareness",
-        "explanation": "Teachers need help separating behavioral health from personal judgment, with culturally responsive resources, success stories, and FAQ-style content.",
-        "districts": [
           "Chicago Heights 170"
+        ]
+      },
+      {
+        "label": "Teacher Therapy / Wellness Support",
+        "explanation": "Some districts expressed interest in mental health support for teachers themselves, not just students.",
+        "districts": [
+          "Yucaipa-Calimesa Joint"
+        ]
+      },
+      {
+        "label": "Cascading Awareness Through Counselors & Principals",
+        "explanation": "Several districts plan to route teacher awareness through counselors or principals first before engaging teachers directly.",
+        "districts": [
+          "Lansing 158",
+          "Manor Independent",
+          "Rockingham County Public Schools",
+          "Bladen County Schools",
+          "Lincoln County Schools",
+          "Buena Park Elementary"
         ]
       }
     ],
     "comms_channels": [
       {
-        "channel": "Text platform (ParentSquare, Peachjar, etc.)",
+        "channel": "Text platform (ParentSquare / Peachjar / similar)",
         "count": 47,
         "districts": [
           "East Whittier City Elementary",
@@ -6227,42 +6569,48 @@
           "San Jose",
           "Vista",
           "Rockingham County Public Schools",
+          "Corpus Christi Independent",
+          "Dekalb Community Unit 428",
+          "Morongo",
+          "Bremen Community High 228",
+          "Park Forest 163",
           "Granville County Schools",
           "Keppel Union",
-          "Los Angeles (text n/a - email only)",
           "Siskiyou County Office of Education",
           "Livingston Parish",
           "San Jacinto",
+          "Santa Barbara",
           "South San Francisco",
-          "Alliance College",
+          "South San Francisco",
           "Rowland",
           "Lompoc",
           "Snowline Joint",
-          "Rockport-Fulton Independent",
           "Fulton County",
+          "Adelanto Elementary",
+          "Farmersville",
+          "Evans County",
           "Del Valle",
-          "South San Francisco (second entry)",
-          "Whiteville City Schools (second entry)",
           "Streator Elementary 44",
           "Riverbank",
           "Dodge County",
           "Beaumont",
           "Redding",
           "Redding School District",
-          "Morongo",
-          "Bremen Community High 228",
-          "Park Forest 163"
+          "Whiteville City Schools",
+          "Alliance College"
         ]
       },
       {
         "channel": "Email (newsletter or blasts)",
-        "count": 36,
+        "count": 40,
         "districts": [
           "Hurst-Euless-Bedford Independent",
+          "Arp Independent",
           "Arp Independent",
           "Buena Park Elementary",
           "Union Elementary",
           "Horizon Charters (District)",
+          "Lammersville Joint",
           "Freeport 145",
           "Lansing 158",
           "Ferris Independent",
@@ -6277,69 +6625,73 @@
           "Escalon",
           "Griffin-Spalding County Schools",
           "San Jose",
+          "Chapel Hill-Carrboro City Schools",
+          "Atwood Heights 125",
+          "Dekalb Community Unit 428",
+          "Reef-Sunset",
+          "Bremen Community High 228",
+          "Buford City",
+          "Park Forest 163",
+          "Los Angeles",
           "Livingston Parish",
-          "Granville County Schools",
           "Wayne County",
-          "Whiteville City Schools",
-          "Escondido Union (site newsletters)",
           "Rockport-Fulton Independent",
           "Helendale Elementary",
           "Fulton County",
-          "Atwood Heights 125",
-          "Reef-Sunset",
-          "Bremen Community High 228",
-          "Park Forest 163",
-          "Buford City",
-          "Los Angeles",
+          "San Benito",
+          "Evans County",
+          "Whiteville City Schools",
           "St. Ignatius",
           "Streator Elementary 44",
           "Dodge County",
           "McHenry Community Consolidated 15",
-          "Chapel Hill-Carrboro City Schools"
+          "Escondido Union"
         ]
       },
       {
-        "channel": "Physical collateral / paper flyers",
-        "count": 15,
+        "channel": "Physical / Paper Collateral",
+        "count": 18,
         "districts": [
           "Union Elementary",
-          "Chicago Heights 170",
-          "Escalon",
-          "International Community School",
           "Bladen County Schools",
           "Currituck County Schools",
           "Jackson County",
           "Joliet Public 86",
+          "Chicago Heights 170",
+          "Escalon",
+          "International Community School",
+          "Morgan Hill",
+          "Dekalb Community Unit 428",
           "Granville County Schools",
           "Wayne County",
           "Oconee County",
-          "Dekalb Community Unit 428",
-          "White County",
+          "Adelanto Elementary",
+          "Streator Elementary 44",
           "Dodge County",
+          "White County",
           "Beaumont",
-          "Streator Elementary 44"
+          "Rio Elementary"
         ]
       },
       {
-        "channel": "App (Blackboard, etc.)",
-        "count": 7,
+        "channel": "App (Blackboard / similar)",
+        "count": 6,
         "districts": [
           "Freeport 145",
           "Chicago Heights 170",
           "Escalon",
-          "Livingston Parish",
           "Dekalb Community Unit 428",
-          "Willis Independent (Blackboard/Dojo)",
+          "Livingston Parish",
           "Streator Elementary 44"
         ]
       },
       {
-        "channel": "Social media",
+        "channel": "Social Media",
         "count": 3,
         "districts": [
-          "Ferris Independent",
           "Rockingham County Public Schools",
-          "Fulton County"
+          "Fulton County",
+          "Ferris Independent"
         ]
       },
       {
@@ -6347,26 +6699,47 @@
         "count": 3,
         "districts": [
           "Horizon Charters (District)",
-          "Atwood Heights 125",
-          "Reef-Sunset"
+          "Reef-Sunset",
+          "Atwood Heights 125"
         ]
       },
       {
-        "channel": "School/district app or platform (Class Dojo, Skyward, Thrillshare, Communicator)",
-        "count": 5,
+        "channel": "Class Dojo / Blackboard / Peachjar campus newsletters (bundled district-specific apps)",
+        "count": 3,
+        "districts": [
+          "Manor Independent",
+          "Willis Independent",
+          "Granville County Schools"
+        ]
+      },
+      {
+        "channel": "Thrillshare",
+        "count": 2,
         "districts": [
           "Arp Independent",
-          "Arp Independent (second entry)",
-          "Ferris Independent (Skyward)",
-          "Manor Independent (Class Dojo)",
-          "Griffin-Spalding County Schools (Communicator)"
+          "Arp Independent"
         ]
       },
       {
-        "channel": "MH Fair / community event",
+        "channel": "MH / Community Fair",
         "count": 1,
         "districts": [
           "Lammersville Joint"
+        ]
+      },
+      {
+        "channel": "Skyward",
+        "count": 1,
+        "districts": [
+          "Ferris Independent"
+        ]
+      },
+      {
+        "channel": "Site-specific / direct outreach",
+        "count": 2,
+        "districts": [
+          "Rio Elementary",
+          "Escondido Union"
         ]
       }
     ],
@@ -6375,134 +6748,143 @@
         "district": "Hurst-Euless-Bedford Independent",
         "owner": "Brianna Masciel",
         "items": [
-          "Create new staff files to reflect significant personnel changes"
+          "Create and upload new staff files due to significant personnel changes."
         ]
       },
       {
         "district": "East Whittier City Elementary",
         "owner": "Brianna Masciel",
         "items": [
-          "Capture full outstanding items list from initial test/renewal conversation"
+          "Capture full BTS planning data; this was an initial test conversation."
         ]
       },
       {
         "district": "Horizon Charters (District)",
         "owner": "Sarah Hough",
         "items": [
-          "Define care request onboarding plan of attack",
-          "Send data summary to district (Sarah)"
+          "Finalize care request onboarding plan of attack.",
+          "Send data summary to district."
         ]
       },
       {
         "district": "Freeport 145",
         "owner": "Sarah Hough",
         "items": [
-          "Lock down Dr. Alvarado introduction",
-          "Leverage teachers and principals if RIFs impact mental health staff"
-        ]
-      },
-      {
-        "district": "Soledad",
-        "owner": "Daisy Leahy",
-        "items": [
-          "Finalize staff file (ETA July)",
-          "Confirm training dates"
-        ]
-      },
-      {
-        "district": "Dekalb Community Unit 428",
-        "owner": "Monica Knott",
-        "items": [
-          "Complete staff file",
-          "Schedule kickoff and training/PD dates"
+          "Lock down Dr. Alvarado introduction with district.",
+          "Prepare plan if RIFs impact mental health staff next year."
         ]
       },
       {
         "district": "Wake County Schools",
         "owner": "Sarah Hough",
         "items": [
-          "Referral deadline in two weeks \u2014 ensure submissions are complete"
+          "Confirm last day for referrals deadline (2 weeks out)."
         ]
       },
       {
         "district": "Manor Independent",
         "owner": "Sarah Hough",
         "items": [
-          "Develop family surveys for 2026-27 planning"
+          "Develop and send family surveys for 26-27 school year.",
+          "Send parent outreach content to leadership folder."
         ]
       },
       {
         "district": "Bladen County Schools",
         "owner": "Sarah Hough",
         "items": [
-          "Explore uninsured upsell opportunity"
+          "Explore possible uninsured upsell opportunity."
         ]
       },
       {
         "district": "Jackson County",
         "owner": "Sarah Hough",
         "items": [
-          "Complete onboarding for 1 pending student"
+          "Complete onboarding for 1 pending student."
         ]
       },
       {
         "district": "Atwood Heights 125",
         "owner": "Monica Knott",
         "items": [
-          "Clarify close-out and enrollment discharge process for district contact"
+          "Clarify close-out/enrollment discharge process with district contact."
+        ]
+      },
+      {
+        "district": "Soledad",
+        "owner": "Daisy Leahy",
+        "items": [
+          "Upload staff file (ETA July).",
+          "Confirm training dates."
+        ]
+      },
+      {
+        "district": "Dekalb Community Unit 428",
+        "owner": "Monica Knott",
+        "items": [
+          "Upload staff file.",
+          "Schedule kickoff and training/PD dates."
         ]
       },
       {
         "district": "Sierra Sands",
         "owner": "Daisy Leahy",
         "items": [
-          "Schedule summer communications meeting",
-          "Conduct summer data review"
+          "Schedule summer communications meeting and data review."
+        ]
+      },
+      {
+        "district": "San Benito",
+        "owner": "Sarah Hough",
+        "items": [
+          "Send current staff list to district.",
+          "Prepare refreshed BTS materials.",
+          "Set up async training/update for fall."
         ]
       },
       {
         "district": "Siskiyou County Office of Education",
         "owner": "Daisy Leahy",
         "items": [
-          "Plan for program expansion"
+          "Plan expansion of program scope."
         ]
       }
     ],
     "feedback_themes": [
       {
-        "theme": "Communication & Workflow Transparency Gaps",
+        "theme": "Communication & Notification Gaps",
         "sentiment": "needs_improvement",
         "examples": [
-          "District needs real-time notifications when appointments occur during school hours (Snowline Joint)",
-          "Staff frustrated by lack of referral status updates and no-show communication (Horizon Charters)",
-          "Requests for clearer communication on denied self-funded insurance plans (Belmont-Redwood Shores Elementary)"
+          "Snowline: Teachers want easy notification of appointments during school hours to plan their day. (Snowline Joint)",
+          "Horizon Charters: Need better no-show alerts and clearer referral status updates for staff. (Horizon Charters)",
+          "Jefferson County: All services and denials need to be triaged and communicated through counselors. (Jefferson County)"
         ]
       },
       {
-        "theme": "Positive Partnership & Program Growth",
+        "theme": "Positive Partnership & Growth Momentum",
         "sentiment": "working_well",
         "examples": [
-          "Referrals increased significantly compared to prior year; district pleased with growth (Escalon)",
-          "First year deemed a success; Daybreak seen as a viable, helpful resource (Chicago Heights 170)",
-          "Expanding to elementary level next year; excited about program integration (Whiteville City Schools)"
-        ]
-      },
-      {
-        "theme": "Need for More Family-Facing & Community Resources",
-        "sentiment": "needs_improvement",
-        "examples": [
-          "Wants paper flyers to distribute at food drives and back-to-school community events (White County)",
-          "Requests materials on school avoidance, anxiety, and somatic symptoms for families (Oconee County)",
-          "Needs emergency/after-hours escalation contact for urgent clinical situations (Rowland)"
+          "Chicago Heights 170: First year was strong; Daybreak is a viable resource and partner. (Chicago Heights 170)",
+          "Escalon: Referrals went up significantly compared to the prior year; district is pleased. (Escalon)",
+          "Lammersville Joint: District is looking forward to year two of the partnership. (Lammersville Joint)"
         ]
       },
       {
         "theme": "Utilization & Access Concerns",
+        "sentiment": "needs_improvement",
+        "examples": [
+          "Fulton County: Only 1 of 6 sign-ups received services; district frustrated by low conversion rate. (Fulton County)",
+          "Apple Valley: Utilization expected to continue dropping as district adds on-site clinicians. (Apple Valley)",
+          "Redding: Low access because program launched late in year; expects higher usage next year. (Redding School District)"
+        ]
+      },
+      {
+        "theme": "Requests for More Resources & Outreach Support",
         "sentiment": "mixed",
         "examples": [
-          "Frustrated that 6 students enrolled but only 1 received services due to slow timelines (Fulton County)",
-          "Expects utilization to drop as on-site clinicians expand (Apple Valley)",
-          "Late program start limited access; anticipates stronger utilization next year (Redding School District)"
+          "Escondido Union: Wants a dedicated teacher landing page with downloadable classroom resources. (Escondido Union)",
+          "Rowland: Needs an after-hours emergency escalation number for urgent clinician contact. (Rowland)",
+          "Oconee County: Would value materials on school avoidance and anxiety for families who don't recognize signs. (Oconee County)"
         ]
       }
     ]
