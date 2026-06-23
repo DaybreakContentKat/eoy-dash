@@ -1,11 +1,11 @@
 {
-  "refreshedAt": "2026-06-22T17:27:57.228204Z",
+  "refreshedAt": "2026-06-23T15:45:04.618933Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 103,
       "booked": 85,
-      "completed": 134,
+      "completed": 138,
       "unbooked": 13,
       "weeklyTarget": 4,
       "thisWeekUrgent": 13,
@@ -448,7 +448,7 @@
             "booked": false,
             "meetingDate": null,
             "outreachSent": true,
-            "asyncFormSent": null,
+            "asyncFormSent": "2026-05-21",
             "completed": false,
             "notes": "",
             "status": "async",
@@ -477,33 +477,33 @@
       "totalDistricts": 172,
       "totalT1T2": 103,
       "asyncTotal": 59,
-      "asyncCompleted": 43,
-      "completed": 134,
+      "asyncCompleted": 44,
+      "completed": 138,
       "booked": 124,
       "outreachSent": 101,
-      "overdue": 24,
+      "overdue": 23,
       "upsellCandidates": 25,
       "byTier": {
         "1": {
           "total": 38,
-          "completed": 28,
-          "booked": 4,
+          "completed": 29,
+          "booked": 3,
           "remaining": 6,
           "overdue": 6
         },
         "2": {
           "total": 65,
-          "completed": 52,
-          "booked": 6,
+          "completed": 53,
+          "booked": 5,
           "remaining": 7,
           "overdue": 7
         },
         "3": {
           "total": 69,
-          "completed": 54,
-          "booked": 1,
-          "remaining": 14,
-          "overdue": 11
+          "completed": 56,
+          "booked": 0,
+          "remaining": 13,
+          "overdue": 10
         }
       }
     }
@@ -2050,9 +2050,9 @@
           "meetingDate": "2026-06-23",
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -2533,6 +2533,34 @@
           ],
           "enrollment": 10621.0,
           "ytdPacing": 0.2
+        },
+        {
+          "name": "Gompers Preparatory Academy (Charter)",
+          "shortName": "Gompers Preparatory Academy (Charter)",
+          "owner": "Sarah Hough",
+          "csm": "sarah",
+          "csmName": "Sarah Hough",
+          "tier": "Tier 3",
+          "tierNum": 3,
+          "meetingType": "async",
+          "activeRenewal": false,
+          "lastDayOfSchool": "2026-05-29",
+          "bookingTarget": "2026-05-01",
+          "booked": false,
+          "meetingDate": "2026-06-23",
+          "outreachSent": false,
+          "asyncFormSent": null,
+          "completed": true,
+          "notes": "",
+          "status": "completed",
+          "overdue": false,
+          "needsNudge": false,
+          "isUpsellCandidate": false,
+          "utilization": null,
+          "upsellData": null,
+          "mpocs": [],
+          "enrollment": 2100.0,
+          "ytdPacing": 0.37
         },
         {
           "name": "Granville County Schools",
@@ -4203,7 +4231,7 @@
       "gapToGoal": {
         "totalNeedingCall": 41,
         "booked": 34,
-        "completed": 55,
+        "completed": 57,
         "unbooked": 7,
         "weeklyTarget": 2,
         "thisWeekUrgent": 7,
@@ -4466,11 +4494,11 @@
         }
       },
       "stats": {
-        "totalDistricts": 67,
+        "totalDistricts": 68,
         "totalT1T2": 41,
-        "asyncTotal": 17,
-        "asyncCompleted": 14,
-        "completed": 55,
+        "asyncTotal": 18,
+        "asyncCompleted": 15,
+        "completed": 57,
         "booked": 53,
         "outreachSent": 63,
         "overdue": 9,
@@ -4491,9 +4519,9 @@
             "overdue": 5
           },
           "3": {
-            "total": 26,
-            "completed": 23,
-            "booked": 1,
+            "total": 27,
+            "completed": 25,
+            "booked": 0,
             "remaining": 2,
             "overdue": 2
           }
@@ -4518,9 +4546,9 @@
           "meetingDate": "2026-06-22",
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -5024,9 +5052,9 @@
           "meetingDate": "2026-06-17",
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "booked",
+          "status": "completed",
           "overdue": false,
           "needsNudge": false,
           "isUpsellCandidate": false,
@@ -5832,7 +5860,7 @@
           "booked": false,
           "meetingDate": null,
           "outreachSent": true,
-          "asyncFormSent": null,
+          "asyncFormSent": "2026-05-21",
           "completed": false,
           "notes": "",
           "status": "async",
@@ -5930,7 +5958,7 @@
       "gapToGoal": {
         "totalNeedingCall": 19,
         "booked": 14,
-        "completed": 37,
+        "completed": 39,
         "unbooked": 1,
         "weeklyTarget": 1,
         "thisWeekUrgent": 1,
@@ -5952,7 +5980,7 @@
               "booked": false,
               "meetingDate": null,
               "outreachSent": true,
-              "asyncFormSent": null,
+              "asyncFormSent": "2026-05-21",
               "completed": false,
               "notes": "",
               "status": "async",
@@ -5982,7 +6010,7 @@
         "totalT1T2": 19,
         "asyncTotal": 20,
         "asyncCompleted": 19,
-        "completed": 37,
+        "completed": 39,
         "booked": 21,
         "outreachSent": 25,
         "overdue": 1,
@@ -5990,15 +6018,15 @@
         "byTier": {
           "1": {
             "total": 13,
-            "completed": 12,
-            "booked": 1,
+            "completed": 13,
+            "booked": 0,
             "remaining": 0,
             "overdue": 0
           },
           "2": {
             "total": 6,
-            "completed": 4,
-            "booked": 1,
+            "completed": 5,
+            "booked": 0,
             "remaining": 1,
             "overdue": 1
           },
@@ -6366,34 +6394,6 @@
           ],
           "enrollment": 5964.0,
           "ytdPacing": 1.11
-        },
-        {
-          "name": "Gompers Preparatory Academy (Charter)",
-          "shortName": "Gompers Preparatory Academy (Charter)",
-          "owner": "Daisy Leahy",
-          "csm": "daisy",
-          "csmName": "Daisy Leahy",
-          "tier": "Tier 3",
-          "tierNum": 3,
-          "meetingType": "async",
-          "activeRenewal": false,
-          "lastDayOfSchool": "2026-05-29",
-          "bookingTarget": "2026-05-01",
-          "booked": false,
-          "meetingDate": null,
-          "outreachSent": false,
-          "asyncFormSent": null,
-          "completed": false,
-          "notes": "",
-          "status": "async",
-          "overdue": true,
-          "needsNudge": false,
-          "isUpsellCandidate": false,
-          "utilization": null,
-          "upsellData": null,
-          "mpocs": [],
-          "enrollment": 2100.0,
-          "ytdPacing": 0.37
         },
         {
           "name": "Keppel Union School District",
@@ -7329,14 +7329,14 @@
         }
       },
       "stats": {
-        "totalDistricts": 32,
+        "totalDistricts": 31,
         "totalT1T2": 23,
-        "asyncTotal": 9,
+        "asyncTotal": 8,
         "asyncCompleted": 4,
         "completed": 20,
         "booked": 25,
         "outreachSent": 3,
-        "overdue": 7,
+        "overdue": 6,
         "upsellCandidates": 2,
         "byTier": {
           "1": {
@@ -7354,11 +7354,11 @@
             "overdue": 0
           },
           "3": {
-            "total": 9,
+            "total": 8,
             "completed": 4,
             "booked": 0,
-            "remaining": 5,
-            "overdue": 3
+            "remaining": 4,
+            "overdue": 2
           }
         }
       }
