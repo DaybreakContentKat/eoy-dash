@@ -1,15 +1,15 @@
 {
-  "refreshedAt": "2026-07-05T14:27:51.554513Z",
+  "refreshedAt": "2026-07-06T16:16:21.786482Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
       "totalNeedingCall": 103,
       "booked": 85,
-      "completed": 138,
-      "unbooked": 13,
+      "completed": 139,
+      "unbooked": 12,
       "weeklyTarget": 4,
-      "thisWeekUrgent": 13,
-      "atRisk": 13,
+      "thisWeekUrgent": 12,
+      "atRisk": 12,
       "byUrgency": {
         "thisWeek": [
           {
@@ -77,43 +77,6 @@
             ],
             "enrollment": 8681.0,
             "ytdPacing": 0.32
-          },
-          {
-            "name": "Community High School District 155",
-            "shortName": "Community High 155",
-            "owner": "Sarah Hough",
-            "csm": "sarah",
-            "csmName": "Sarah Hough",
-            "tier": "Tier 2",
-            "tierNum": 2,
-            "meetingType": "live",
-            "activeRenewal": true,
-            "lastDayOfSchool": "2026-05-20",
-            "bookingTarget": "2026-04-22",
-            "booked": false,
-            "meetingDate": null,
-            "outreachSent": true,
-            "asyncFormSent": null,
-            "completed": false,
-            "notes": "",
-            "status": "overdue",
-            "overdue": true,
-            "needsNudge": true,
-            "isUpsellCandidate": false,
-            "utilization": null,
-            "upsellData": null,
-            "mpocs": [
-              {
-                "name": "Rachel Keesey",
-                "email": "rkeesey@d155.org"
-              },
-              {
-                "name": "Shannon Podzimek",
-                "email": "spodzimek@d155.org"
-              }
-            ],
-            "enrollment": 5339.0,
-            "ytdPacing": 0.01
           },
           {
             "name": "Desert Sands Unified School District",
@@ -478,10 +441,10 @@
       "totalT1T2": 103,
       "asyncTotal": 59,
       "asyncCompleted": 44,
-      "completed": 138,
+      "completed": 139,
       "booked": 124,
       "outreachSent": 101,
-      "overdue": 23,
+      "overdue": 22,
       "upsellCandidates": 25,
       "byTier": {
         "1": {
@@ -493,10 +456,10 @@
         },
         "2": {
           "total": 65,
-          "completed": 53,
+          "completed": 54,
           "booked": 5,
-          "remaining": 7,
-          "overdue": 7
+          "remaining": 6,
+          "overdue": 6
         },
         "3": {
           "total": 69,
@@ -2153,11 +2116,11 @@
           "meetingDate": null,
           "outreachSent": true,
           "asyncFormSent": null,
-          "completed": false,
+          "completed": true,
           "notes": "",
-          "status": "overdue",
-          "overdue": true,
-          "needsNudge": true,
+          "status": "completed",
+          "overdue": false,
+          "needsNudge": false,
           "isUpsellCandidate": false,
           "utilization": null,
           "upsellData": null,
@@ -4231,11 +4194,11 @@
       "gapToGoal": {
         "totalNeedingCall": 41,
         "booked": 34,
-        "completed": 57,
-        "unbooked": 7,
+        "completed": 58,
+        "unbooked": 6,
         "weeklyTarget": 2,
-        "thisWeekUrgent": 7,
-        "atRisk": 7,
+        "thisWeekUrgent": 6,
+        "atRisk": 6,
         "byUrgency": {
           "thisWeek": [
             {
@@ -4303,43 +4266,6 @@
               ],
               "enrollment": 8681.0,
               "ytdPacing": 0.32
-            },
-            {
-              "name": "Community High School District 155",
-              "shortName": "Community High 155",
-              "owner": "Sarah Hough",
-              "csm": "sarah",
-              "csmName": "Sarah Hough",
-              "tier": "Tier 2",
-              "tierNum": 2,
-              "meetingType": "live",
-              "activeRenewal": true,
-              "lastDayOfSchool": "2026-05-20",
-              "bookingTarget": "2026-04-22",
-              "booked": false,
-              "meetingDate": null,
-              "outreachSent": true,
-              "asyncFormSent": null,
-              "completed": false,
-              "notes": "",
-              "status": "overdue",
-              "overdue": true,
-              "needsNudge": true,
-              "isUpsellCandidate": false,
-              "utilization": null,
-              "upsellData": null,
-              "mpocs": [
-                {
-                  "name": "Rachel Keesey",
-                  "email": "rkeesey@d155.org"
-                },
-                {
-                  "name": "Shannon Podzimek",
-                  "email": "spodzimek@d155.org"
-                }
-              ],
-              "enrollment": 5339.0,
-              "ytdPacing": 0.01
             },
             {
               "name": "Forsyth County Schools",
@@ -4498,10 +4424,10 @@
         "totalT1T2": 41,
         "asyncTotal": 18,
         "asyncCompleted": 15,
-        "completed": 57,
+        "completed": 58,
         "booked": 53,
         "outreachSent": 63,
-        "overdue": 9,
+        "overdue": 8,
         "upsellCandidates": 18,
         "byTier": {
           "1": {
@@ -4513,10 +4439,10 @@
           },
           "2": {
             "total": 37,
-            "completed": 30,
+            "completed": 31,
             "booked": 2,
-            "remaining": 5,
-            "overdue": 5
+            "remaining": 4,
+            "overdue": 4
           },
           "3": {
             "total": 27,
