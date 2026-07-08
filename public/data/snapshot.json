@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-07T15:41:35.435315Z",
+  "refreshedAt": "2026-07-08T15:15:33.822070Z",
   "stale": false,
   "portfolio": {
     "gapToGoal": {
@@ -2035,8 +2035,8 @@
           "ytdPacing": 0.16
         },
         {
-          "name": "Chapel Hill-Carrboro City Schools",
-          "shortName": "Chapel Hill-Carrboro City Schools",
+          "name": "F",
+          "shortName": "F",
           "owner": "Sarah Hough",
           "csm": "sarah",
           "csmName": "Sarah Hough",
@@ -2058,14 +2058,9 @@
           "isUpsellCandidate": false,
           "utilization": null,
           "upsellData": null,
-          "mpocs": [
-            {
-              "name": "Andy Jenks",
-              "email": "ajenks@chccs.k12.nc.us"
-            }
-          ],
-          "enrollment": 11530.0,
-          "ytdPacing": 0.5
+          "mpocs": [],
+          "enrollment": 14023.0,
+          "ytdPacing": 0.66
         },
         {
           "name": "Colquitt County School District",
