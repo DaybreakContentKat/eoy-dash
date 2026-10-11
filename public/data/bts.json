@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-10T17:36:04.277961Z",
+  "refreshedAt": "2026-10-11T17:52:38.946950Z",
   "totals": {
     "totalDistricts": 172,
     "formsSubmitted": 79,
@@ -4673,57 +4673,59 @@
   "synthesis": {
     "teacher_themes": [
       {
-        "label": "Classroom Support & Early Identification of Struggling Students",
-        "explanation": "Districts want resources to help teachers recognize students who are struggling, including those who appear high-performing but suffer in silence, and those showing signs of anxiety, depression, or suicidal ideation.",
+        "label": "Classroom Support Tools & Tier 1 Interventions",
+        "explanation": "Districts want practical, ready-to-use classroom resources such as handouts, sticker charts, landing pages, de-escalation tools, and downloadable materials teachers can access independently.",
+        "districts": [
+          "Escondido Union",
+          "Lompoc",
+          "Buena Park Elementary"
+        ]
+      },
+      {
+        "label": "Early Identification of Struggling Students",
+        "explanation": "Interest in helping teachers recognize mental health warning signs, including students who struggle in silence, anxiety/depression symptoms, and suicide warning signs.",
         "districts": [
           "Lammersville Joint",
           "Livingston Parish",
-          "Wayne County",
           "East Whittier City Elementary",
-          "Oconee County"
+          "Wayne County"
         ]
       },
       {
-        "label": "Teacher-Facing PD Sessions & Professional Learning",
-        "explanation": "Several districts expressed interest in structured professional development or PD-day sessions delivered by Daybreak, ranging from 1-hour workshops to multi-session formats.",
+        "label": "Formal Professional Development / PD Sessions",
+        "explanation": "Several districts want structured PD sessions hosted by Daybreak, including during PD days, back-to-school events, or through teacher leads.",
         "districts": [
           "Rio Elementary",
           "Santa Barbara",
-          "Jefferson County",
-          "Chicago Heights 170",
-          "Reef-Sunset"
+          "Horizon Charters (District)",
+          "Jefferson County"
         ]
       },
       {
-        "label": "Dedicated Teacher Resource Hub / Landing Page",
-        "explanation": "Districts want a centralized, accessible landing page or resource library with downloadable tools, handouts, sticker charts, and tier-1 intervention supports specifically for teachers.",
-        "districts": [
-          "Escondido Union",
-          "Buena Park Elementary",
-          "Griffin-Spalding County Schools"
-        ]
-      },
-      {
-        "label": "IEP, Special Needs & Behavioral Health Resources for Teachers",
-        "explanation": "Districts requested 1-pagers and targeted content for teachers working with students on IEPs or with special needs, including behavior management and de-escalation tools.",
+        "label": "Special Populations: IEP / Behavioral & Cultural Diversity",
+        "explanation": "Teachers want content tailored to students with IEPs, special needs, behavioral issues, and culturally diverse backgrounds including FAQS and success stories.",
         "districts": [
           "Rowland Unified",
-          "Lompoc",
-          "Chicago Heights 170"
+          "Chicago Heights 170",
+          "Evans County"
         ]
       },
       {
-        "label": "Teacher Therapy / Staff Mental Health Support",
-        "explanation": "At least one district explicitly requested mental health therapy services for teachers themselves, not just resources for supporting students.",
+        "label": "Phased Rollout: Principals First, Then Teachers",
+        "explanation": "Multiple districts are not yet ready to engage teachers directly and plan to start with principals or counselors before cascading resources to teaching staff.",
         "districts": [
-          "Yucaipa-Calimesa Joint"
+          "Lansing 158",
+          "Bladen County Schools",
+          "Jackson County",
+          "Oconee County",
+          "Lincoln County Schools"
         ]
       }
     ],
     "comms_channels": [
       {
         "channel": "Text platform (ParentSquare / Peachjar / similar)",
-        "count": 55,
+        "count": 57,
         "districts": [
           "East Whittier City Elementary",
           "Arp Independent",
@@ -4759,18 +4761,19 @@
           "San Jacinto",
           "Santa Barbara",
           "South San Francisco",
-          "Alliance College",
           "Rowland Unified",
           "Lompoc",
-          "Rockport-Fulton Independent",
           "Snowline Joint",
           "Fulton County",
-          "East Whittier City Elementary",
+          "Adelanto Elementary",
+          "Farmersville",
           "Evans County",
           "Lompoc",
           "Burlingame Elementary",
           "The Accelerated School",
           "Mountain Empire",
+          "East Whittier City Elementary",
+          "Martin County Schools",
           "Santa Monica Malibu",
           "Del Valle",
           "South San Francisco",
@@ -4781,13 +4784,7 @@
           "Beaumont",
           "Redding",
           "Redding School District",
-          "Cobb County",
-          "Morongo",
-          "Corpus Christi Independent",
-          "Park Forest 163",
-          "Bremen Community High 228",
-          "Martin County Schools",
-          "Granville County Schools"
+          "Cobb County"
         ]
       },
       {
@@ -4795,6 +4792,7 @@
         "count": 40,
         "districts": [
           "Hurst-Euless-Bedford Independent",
+          "Arp Independent",
           "Arp Independent",
           "Buena Park Elementary",
           "Union Elementary",
@@ -4814,68 +4812,64 @@
           "Escalon",
           "Griffin-Spalding County Schools",
           "San Jose",
+          "Livingston Parish",
+          "Wayne County",
+          "Rockport-Fulton Independent",
+          "Fulton County",
+          "San Benito",
+          "Evans County",
+          "Martin County Schools",
+          "Kipp Nor Cal",
           "Atwood Heights 125",
+          "Whiteville City Schools",
+          "Los Angeles",
           "Chapel Hill CS",
-          "Dekalb Community Unit 428",
           "Reef-Sunset",
           "Bremen Community High 228",
           "Buford City",
           "Park Forest 163",
-          "Evans County",
-          "Fulton County",
-          "San Benito",
-          "Whiteville City Schools",
-          "Los Angeles",
-          "Wayne County",
-          "McHenry Community Consolidated 15",
+          "St. Ignatius",
           "Streator Elementary 44",
           "Dodge County",
-          "Cobb County",
-          "Martin County Schools",
-          "Livingston Parish",
-          "St. Ignatius",
-          "Helendale Elementary",
-          "Kipp Nor Cal",
-          "Lincoln County Schools"
+          "McHenry Community Consolidated 15",
+          "Cobb County"
         ]
       },
       {
-        "channel": "Physical collateral (flyers / printed materials)",
-        "count": 20,
+        "channel": "Physical collateral / paper flyers",
+        "count": 18,
         "districts": [
           "Union Elementary",
+          "Chicago Heights 170",
           "Bladen County Schools",
           "Currituck County Schools",
           "Jackson County",
           "Joliet Public 86",
-          "Chicago Heights 170",
           "Escalon",
           "International Community School",
           "Morgan Hill",
-          "Granville County Schools",
-          "Oconee County",
           "Wayne County",
+          "Oconee County",
+          "Granville County Schools",
           "Dekalb Community Unit 428",
+          "Lincoln County Schools",
           "White County",
           "Beaumont",
           "Dodge County",
-          "Cobb County",
-          "Rio Elementary",
-          "Lincoln County Schools",
-          "Streator Elementary 44"
+          "Cobb County"
         ]
       },
       {
-        "channel": "App (Blackboard / Class Dojo / similar)",
+        "channel": "App (Blackboard / similar)",
         "count": 7,
         "districts": [
           "Freeport 145",
           "Chicago Heights 170",
           "Escalon",
-          "Dekalb Community Unit 428",
           "Livingston Parish",
-          "Willis Independent",
-          "Streator Elementary 44"
+          "Dekalb Community Unit 428",
+          "Streator Elementary 44",
+          "Willis Independent"
         ]
       },
       {
@@ -4883,10 +4877,10 @@
         "count": 5,
         "districts": [
           "Horizon Charters (District)",
-          "Atwood Heights 125",
           "Reef-Sunset",
           "Kipp Nor Cal",
-          "Santa Monica Malibu"
+          "Santa Monica Malibu",
+          "Atwood Heights 125"
         ]
       },
       {
@@ -4899,6 +4893,22 @@
         ]
       },
       {
+        "channel": "Site-specific / staff newsletter cascade",
+        "count": 3,
+        "districts": [
+          "Escondido Union",
+          "Lincoln County Schools",
+          "Buena Park Elementary"
+        ]
+      },
+      {
+        "channel": "Mental health / community fair",
+        "count": 1,
+        "districts": [
+          "Lammersville Joint"
+        ]
+      },
+      {
         "channel": "Thrillshare",
         "count": 2,
         "districts": [
@@ -4907,17 +4917,31 @@
         ]
       },
       {
-        "channel": "MH Fair / Community Event",
+        "channel": "Skyward",
         "count": 1,
         "districts": [
-          "Lammersville Joint"
+          "Ferris Independent"
         ]
       },
       {
-        "channel": "Site-based / direct school outreach",
+        "channel": "Facebook",
         "count": 1,
         "districts": [
-          "Rio Elementary"
+          "Ferris Independent"
+        ]
+      },
+      {
+        "channel": "Direct parent communications",
+        "count": 1,
+        "districts": [
+          "Park Forest 163"
+        ]
+      },
+      {
+        "channel": "Class Dojo / Leadership Folder",
+        "count": 1,
+        "districts": [
+          "Manor Independent"
         ]
       }
     ],
@@ -4926,154 +4950,152 @@
         "district": "Hurst-Euless-Bedford Independent",
         "owner": "Brianna Masciel",
         "items": [
-          "Create and upload new staff files due to significant staff changes."
+          "Create and upload new staff files due to significant staff changes"
         ]
       },
       {
         "district": "East Whittier City Elementary",
         "owner": "Brianna Masciel",
         "items": [
-          "Capture full outstanding items list; conversation was initial test/renewal only."
+          "Capture full outstanding items list; initial call was test/renewal conversation only"
         ]
       },
       {
         "district": "Horizon Charters (District)",
         "owner": "Sarah Hough",
         "items": [
-          "Develop plan of attack for care requests in onboarding.",
-          "Send data summary to district."
+          "Develop care request onboarding plan of attack",
+          "Send data summary to district"
         ]
       },
       {
         "district": "Freeport 145",
         "owner": "Sarah Hough",
         "items": [
-          "Lock down Dr. Alvarado introduction.",
-          "Identify teachers and principals as resources if RIFs impact mental health staff."
+          "Lock down Dr. Alvarado introduction",
+          "Explore using teachers and principals if RIFs impact mental health staff"
         ]
       },
       {
         "district": "Soledad",
         "owner": "Daisy Leahy",
         "items": [
-          "Upload staff file by July ETA.",
-          "Confirm training dates."
-        ]
-      },
-      {
-        "district": "Bladen County Schools",
-        "owner": "Sarah Hough",
-        "items": [
-          "Explore uninsured upsell opportunity."
+          "Obtain updated staff file, ETA July",
+          "Confirm training dates"
         ]
       },
       {
         "district": "Jackson County",
         "owner": "Sarah Hough",
         "items": [
-          "Complete onboarding for 1 student."
+          "Complete onboarding for 1 pending student"
         ]
       },
       {
         "district": "Atwood Heights 125",
         "owner": "Monica Knott",
         "items": [
-          "Explain closeout/enrollment deactivation process to district contact.",
-          "Add district website listing to to-do list."
-        ]
-      },
-      {
-        "district": "Wake County Schools",
-        "owner": "Sarah Hough",
-        "items": [
-          "Communicate referral deadline (2 weeks) to relevant staff."
-        ]
-      },
-      {
-        "district": "Manor Independent",
-        "owner": "Sarah Hough",
-        "items": [
-          "Create and distribute family surveys for 2026-27 planning.",
-          "Send parent outreach materials to leadership folder."
+          "Explain close-out and enrollment deactivation process to district contact"
         ]
       },
       {
         "district": "Dekalb Community Unit 428",
         "owner": "Monica Knott",
         "items": [
-          "Upload staff file.",
-          "Schedule kickoff and training/PD dates."
+          "Obtain updated staff file",
+          "Schedule kickoff and training/PD dates"
+        ]
+      },
+      {
+        "district": "Wake County Schools",
+        "owner": "Sarah Hough",
+        "items": [
+          "Confirm referral submission deadline in two weeks"
+        ]
+      },
+      {
+        "district": "Manor Independent",
+        "owner": "Sarah Hough",
+        "items": [
+          "Develop and send family surveys for 2026-27 planning"
+        ]
+      },
+      {
+        "district": "Bladen County Schools",
+        "owner": "Sarah Hough",
+        "items": [
+          "Explore possible uninsured upsell opportunity"
         ]
       },
       {
         "district": "Sierra Sands",
         "owner": "Daisy Leahy",
         "items": [
-          "Schedule summer communications meeting and data review."
-        ]
-      },
-      {
-        "district": "Siskiyou County Office of Education",
-        "owner": "Daisy Leahy",
-        "items": [
-          "Develop plan to expand district program."
+          "Schedule summer communications meeting and data review"
         ]
       },
       {
         "district": "Kipp Nor Cal",
         "owner": "Sarah Hough",
         "items": [
-          "Account for provider vacancies.",
-          "Update data list.",
-          "Prepare BTS deck.",
-          "Finalize new MOU."
+          "Account for clinician vacancies",
+          "Compile updated data list",
+          "Prepare back-to-school deck",
+          "Finalize new MOU"
         ]
       },
       {
         "district": "San Benito",
         "owner": "Sarah Hough",
         "items": [
-          "Send current staff list to district.",
-          "Send refreshed BTS materials.",
-          "Plan async training/update for fall."
+          "Send current staff list to district",
+          "Share refreshed BTS materials",
+          "Provide async training/update option for fall"
+        ]
+      },
+      {
+        "district": "Siskiyou County Office of Education",
+        "owner": "Daisy Leahy",
+        "items": [
+          "Plan district expansion"
         ]
       }
     ],
     "feedback_themes": [
       {
-        "theme": "Referral-to-care conversion and communication gaps",
+        "theme": "Referral conversion, follow-up, and closure communication gaps",
         "sentiment": "needs_improvement",
         "examples": [
-          "Kipp Nor Cal: 57 referrals but only 7 in care; dashboard monitoring is a critical BTS need.",
-          "Fulton County: 6 students signed up but only 1 received service; timeline concerns raised.",
-          "Horizon Charters: Need better no-show alerts and referral status updates; discharge expectations unclear."
+          "Kipp NorCal: 57 referrals, only 7 in care; need better dashboard monitoring and pre-closure alerts.",
+          "Horizon Charters: Staff want notification of no-shows and referral statuses; set 2-session discharge expectation.",
+          "Fulton County: Only 1 of 6 signed-up students received service; lengthy timeline is a concern."
         ]
       },
       {
-        "theme": "Appointment scheduling visibility and staff notification",
+        "theme": "Scheduling transparency and appointment notifications for school staff",
         "sentiment": "needs_improvement",
         "examples": [
-          "Snowline Joint: Staff frustrated by lack of notification for appointments during school hours; Hazel previously provided this.",
-          "Jefferson County: All services must be triaged through counselors; communication when services are provided or denied needs fixing.",
-          "Beaumont: Outreach going directly to sites instead of through district office as requested."
+          "Snowline Joint: Teachers need easy notification of appointments during school hours to plan their day.",
+          "Jefferson County: All services must be triaged through counselors; communication when services are provided or denied.",
+          "Belmont-Redwood Shores: Request more transparency on denied self-funded/self-insured CYBHI plan communications."
         ]
       },
       {
-        "theme": "Growing utilization and program satisfaction entering Year 2",
+        "theme": "Positive program reception and growing utilization",
         "sentiment": "working_well",
         "examples": [
-          "Escalon: Referrals increased significantly compared to prior year; district is pleased.",
-          "Chicago Heights 170: First year was good; Daybreak viewed as a viable and helpful resource.",
-          "Lammersville Joint: Looking forward to Year 2 with positive momentum."
+          "Chicago Heights 170: First year was strong; Daybreak described as a viable and helpful resource.",
+          "Escalon: Referrals went up significantly compared to prior year; district is pleased.",
+          "Rockingham County: District appreciates quick response and support from Daybreak team."
         ]
       },
       {
-        "theme": "Requests for improved resources, materials, and culturally responsive content",
+        "theme": "Desire for expanded resources, marketing, and awareness",
         "sentiment": "mixed",
         "examples": [
-          "Oconee County: Wants materials helping parents recognize school avoidance and anxiety symptoms.",
-          "Adelanto Elementary: Marketing content needs to feel more friendly and approachable.",
-          "Belmont-Redwood Shores: Needs more Brazilian Portuguese-speaking therapists and clearer CYBHI self-funded plan communication."
+          "Escondido Union: Wants a dedicated teacher landing page with downloadable Daybreak tools and resources.",
+          "Freeport 145: Year 2 focus is more advertising and getting the word out to families.",
+          "Adelanto Elementary: Marketing content needs to feel more friendly and approachable for families."
         ]
       }
     ]
